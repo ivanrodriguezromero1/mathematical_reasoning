@@ -1,0 +1,11 @@
+# Excluir carpetas y archivos generados automaticamente
+.gradle
+.idea
+gradle/
+gradlew
+gradlew.bat
+local.properties
+
+# Excluir archivos de compilacion
+app/build
+app/.cxx
