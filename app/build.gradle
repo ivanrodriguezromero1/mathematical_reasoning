@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.mathematical_reasoning.raz_mat'
-    compileSdkVersion 35
+    compileSdk 35
     defaultConfig {
         applicationId "com.mathematical_reasoning.raz_mat"
         minSdkVersion 21
@@ -37,4 +37,6 @@ android {
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'com.google.android.material:material:1.3.0'
+
 }

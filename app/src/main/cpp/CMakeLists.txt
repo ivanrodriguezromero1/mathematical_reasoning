@@ -1,7 +1,7 @@
 # For the C++ Hello World app
 cmake_minimum_required(VERSION 3.10.2)
 
-project(mathematical_reasoning) # Usa el nombre que prefieras para tu proyecto
+project(mathematical_reasoning)
 
 add_library(lib SHARED lib.cpp)
 

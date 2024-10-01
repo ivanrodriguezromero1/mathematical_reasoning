@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="25dp"
+              android:gravity="center_vertical"
+              android:background="@drawable/rounded_item_background">
+
+    <!-- Ícono del ítem (lado izquierdo) -->
+    <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_book"
+            android:layout_marginEnd="10dp"
+            android:scaleType="fitCenter" />
+
+    <TextView
+            android:id="@+id/item_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Item Text"
+            android:textSize="18sp" />
+
+    <!-- LinearLayout para los botones (lado derecho) -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <!-- Reemplazar ImageButton con ImageView -->
+        <ImageButton
+                android:id="@+id/button_book"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_book"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:padding="8dp"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:focusable="true"
+        />
+
+        <ImageButton
+                android:id="@+id/button_resolver"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_resolver"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:padding="8dp"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:focusable="true"
+        />
+    </LinearLayout>
+</LinearLayout>
