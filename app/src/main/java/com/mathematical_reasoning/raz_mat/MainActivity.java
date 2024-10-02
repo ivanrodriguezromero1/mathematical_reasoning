@@ -1,5 +1,6 @@
 package com.mathematical_reasoning.raz_mat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -28,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        // Habilitar scroll vertical y evitar que se desvanezca
+        recyclerView.setVerticalScrollBarEnabled(true); // Mostrar siempre la barra de desplazamiento vertical
+        recyclerView.setScrollBarFadeDuration(0); // Evita que se desvanezca
+
         // Títulos e íconos de los ítems
         String[] itemTitles = {"Series", "Edades", "Móviles", "Cronometría", "Probabilidades"};
         int[] itemIconsLeft = {R.drawable.ic_series, R.drawable.ic_edades, R.drawable.ic_moviles,
@@ -46,12 +51,11 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(MenuItem item) {
                 int id = item.getItemId();
                 if (id == R.id.bottom_nav_home) {
-                    // Lógica para Home
-                    Toast.makeText(MainActivity.this, stringFromHome(), Toast.LENGTH_SHORT).show();
                     return true;
-                } else if (id == R.id.bottom_nav_settings) {
-                    // Lógica para Settings
-                    Toast.makeText(MainActivity.this, stringFromSettings(), Toast.LENGTH_SHORT).show();
+                } else if (id == R.id.bottom_nav_options) {
+                    Intent intent = new Intent(MainActivity.this, OptionsActivity.class);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left); // Aplicar animación
                     return true;
                 }
                 return false;

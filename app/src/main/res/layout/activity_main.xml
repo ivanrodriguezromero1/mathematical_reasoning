@@ -44,7 +44,12 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="outsideOverlay"
             android:padding="30dp"
+            android:fadeScrollbars="false"
+            android:scrollbarFadeDuration="0"
+            style="@style/CustomRecyclerViewScroll"
     />
 
     <!-- Bottom Navigation Bar -->
