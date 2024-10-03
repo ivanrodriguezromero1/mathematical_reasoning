@@ -1,6 +1,7 @@
 package com.mathematical_reasoning.raz_mat;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,7 +62,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 // Usa holder.getAdapterPosition() en lugar de "position"
                 int currentPosition = holder.getAdapterPosition();
                 if (currentPosition != RecyclerView.NO_POSITION) {
-                    Toast.makeText(mContext, "Clicked book button: " + mTitles[currentPosition], Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(mContext, TeoriaActivity.class);
+                    intent.putExtra("iconResource", mIconsLeft[currentPosition]); // Pasar el ícono correspondiente
+                    intent.putExtra("title", mTitles[currentPosition]); // Pasar el título correspondiente
+                    mContext.startActivity(intent); // Iniciar TeoriaActivity
                 }
             }
         });

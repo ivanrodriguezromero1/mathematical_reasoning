@@ -22,5 +22,10 @@
                   android:exported="true"
                   android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         />
+        <activity
+                android:name=".TeoriaActivity"
+                android:exported="true"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
     </application>
 </manifest>
