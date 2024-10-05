@@ -2,15 +2,12 @@ package com.mathematical_reasoning.raz_mat;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.content.Intent;
-import android.widget.ImageView;
+import com.google.android.material.button.MaterialButton;
 import com.mathematical_reasoning.raz_mat.utils.RadioButtonUtils;
 
 
@@ -46,8 +43,8 @@ public class ProblemasActivity extends AppCompatActivity {
         // Referencias a los componentes
 //        timerTextView = findViewById(R.id.timerTextView);
 //        ImageButton restartButton = findViewById(R.id.restartButton);
-        Button checkButton = findViewById(R.id.comprobarButton);
-        Button newButton = findViewById(R.id.nuevoButton);
+        LinearLayout comprobarButton = findViewById(R.id.comprobarLayout);
+        LinearLayout newButton = findViewById(R.id.nuevoLayout);
 
 //        // Iniciar el temporizador
 //        startTime = System.currentTimeMillis();
@@ -83,7 +80,7 @@ public class ProblemasActivity extends AppCompatActivity {
         });
 
         // Acción de comprobar respuesta
-        checkButton.setOnClickListener(v -> {
+        comprobarButton.setOnClickListener(v -> {
             // Lógica para verificar la respuesta seleccionada
         });
 

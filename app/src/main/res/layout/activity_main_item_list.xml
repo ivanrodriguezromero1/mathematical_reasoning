@@ -6,8 +6,7 @@
               android:padding="25dp"
               android:gravity="center_vertical"
               android:background="@drawable/rounded_item_background"
-              android:layout_marginBottom="10dp"
->
+              android:layout_marginBottom="10dp">
 
     <!-- Ícono del ítem (lado izquierdo) -->
     <ImageView
