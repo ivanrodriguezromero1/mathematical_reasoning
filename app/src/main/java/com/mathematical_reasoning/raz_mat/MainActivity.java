@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         int[] itemIconsLeft = {R.drawable.ic_series, R.drawable.ic_edades, R.drawable.ic_moviles,
                 R.drawable.ic_cronometro, R.drawable.ic_probabilidades};
         int[] itemIconsRight1 = {R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book}; // Íconos de libro
-        int[] itemIconsRight2 = {R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver}; // Íconos de editar
+        int[] itemIconsRight2 = {R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver}; // Íconos de resolver
 
         // Setear Adapter pasando los íconos de la izquierda y derecha
         MyAdapter adapter = new MyAdapter(this, itemTitles, itemIconsLeft, itemIconsRight1, itemIconsRight2);

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@android:color/white">
+
+    <!-- Barra de título con icono, título, botón y temporizador -->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/appBarImage"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pathbar" />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:paddingTop="12dp"
+                android:gravity="center_vertical">
+
+            <ImageView
+                    android:id="@+id/iconImageView"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:tint="@android:color/white"
+                    android:layout_marginEnd="8dp" />
+
+            <TextView
+                    android:id="@+id/appBarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Problema"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+<!--        &lt;!&ndash; Botón de reinicio en la barra de título &ndash;&gt;-->
+<!--        <ImageButton-->
+<!--                android:id="@+id/restartButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                app:tint="@android:color/white"-->
+<!--                android:src="@drawable/ic_refresh"-->
+<!--                android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--                android:contentDescription="Reiniciar problema" />-->
+
+<!--        &lt;!&ndash; Temporizador en la barra de título &ndash;&gt;-->
+<!--        <TextView-->
+<!--                android:id="@+id/timerTextView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:text="00:00:00"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:padding="10dp" />-->
+
+
+    <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="outsideOverlay"
+            android:padding="20dp"
+            android:fadeScrollbars="false"
+            android:scrollbarFadeDuration="0"
+            style="@style/CustomRecyclerViewScroll">
+
+        <!-- Envuelve todo el contenido en un LinearLayout -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <!-- Contenido del problema -->
+            <TextView
+                    android:id="@+id/problemStatement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="Encuentra el término 5 de la serie aritmética: 1, 10, 19, ..."
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black" />
+
+            <!-- Botones de opciones de problemas (filtro y pista) -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="16dp"
+                    android:gravity="start|center_vertical">
+
+                <ImageButton
+                        android:id="@+id/filterButton"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_filter"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:padding="4dp"
+                        android:background="@drawable/ripple_effect_filtro"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:tint="@color/buttonFiltroColor"
+                        android:layout_marginEnd="8dp" />
+
+                <ImageButton
+                        android:id="@+id/hintButton"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_lightbulb"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:padding="4dp"
+                        android:background="@drawable/ripple_effect_items"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:tint="@color/buttonBombillaColor"
+                        android:layout_marginEnd="16dp" />
+            </LinearLayout>
+
+            <!-- RadioGroup con las opciones de respuesta -->
+            <RadioGroup
+                    android:id="@+id/answersRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                <RadioButton
+                        android:id="@+id/answerA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A) 36"
+                        android:textSize="18sp"
+                        android:textColor="@color/radio_button_selector"
+                        android:buttonTint="@color/radio_button_selector"
+                        android:layout_marginBottom="5dp"/>
+
+                <RadioButton
+                        android:id="@+id/answerB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B) 42"
+                        android:textSize="18sp"
+                        android:textColor="@color/radio_button_selector"
+                        android:buttonTint="@color/radio_button_selector"
+                        android:layout_marginBottom="5dp"/>
+
+                <RadioButton
+                        android:id="@+id/answerC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C) 35"
+                        android:textSize="18sp"
+                        android:textColor="@color/radio_button_selector"
+                        android:buttonTint="@color/radio_button_selector"
+                        android:layout_marginBottom="5dp"/>
+
+                <RadioButton
+                        android:id="@+id/answerD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="D) 37"
+                        android:textSize="18sp"
+                        android:textColor="@color/radio_button_selector"
+                        android:buttonTint="@color/radio_button_selector"
+                        android:layout_marginBottom="5dp"/>
+
+            </RadioGroup>
+
+            <!-- Botones de Comprobar y Nuevo -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp">
+
+                <Button
+                        android:id="@+id/comprobarButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="COMPROBAR"
+                        android:textSize="16sp"
+                        android:drawableStart="@drawable/ic_eye"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        app:tint="@android:color/white"
+                        android:padding="16dp"
+                        android:backgroundTint="@color/buttonComprobarColor" />
+
+                <Button
+                        android:id="@+id/nuevoButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NUEVO"
+                        android:textSize="16sp"
+                        android:drawableStart="@drawable/ic_refresh"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        app:tint="@android:color/white"
+                        android:padding="16dp"
+                        android:layout_marginStart="16dp"
+                        android:backgroundTint="@color/buttonNuevoColor" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/pathbar"
+            android:padding="8dp"
+            app:menu="@menu/bottom_nav_menu"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white" />
+
+</LinearLayout>

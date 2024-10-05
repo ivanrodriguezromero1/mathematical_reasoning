@@ -41,7 +41,7 @@
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
                 android:padding="8dp"
-                android:background="@drawable/ripple_effect"
+                android:background="@drawable/ripple_effect_items"
                 android:clickable="true"
                 android:focusable="true"
                 android:layout_marginEnd="5dp"
@@ -55,7 +55,7 @@
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
                 android:padding="8dp"
-                android:background="@drawable/ripple_effect"
+                android:background="@drawable/ripple_effect_items"
                 android:clickable="true"
                 android:focusable="true"
         />

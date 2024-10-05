@@ -73,13 +73,21 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         holder.mButtonResolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Usa holder.getAdapterPosition() en lugar de "position"
                 int currentPosition = holder.getAdapterPosition();
                 if (currentPosition != RecyclerView.NO_POSITION) {
-                    Toast.makeText(mContext, "Clicked Resolver button: " + mTitles[currentPosition], Toast.LENGTH_SHORT).show();
+                    // Crear un Intent para ir a ProblemasActivity
+                    Intent intent = new Intent(mContext, ProblemasActivity.class);
+
+                    // Pasar el título y el ícono del ítem seleccionado si es necesario
+                    intent.putExtra("iconResource", mIconsLeft[currentPosition]);  // Pasar el ícono correspondiente
+                    intent.putExtra("title", mTitles[currentPosition]);            // Pasar el título correspondiente
+
+                    // Iniciar la actividad de problemas
+                    mContext.startActivity(intent);
                 }
             }
         });
+
     }
 
     @Override

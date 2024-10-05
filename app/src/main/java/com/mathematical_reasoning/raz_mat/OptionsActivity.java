@@ -66,6 +66,13 @@ public class OptionsActivity extends AppCompatActivity {
                         startActivity(intent);
                         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);  // Transición inversa
                         return true;
+                    } else if (fromActivity != null && fromActivity.equals("ProblemasActivity")) {
+                        Intent intent = new Intent(OptionsActivity.this, ProblemasActivity.class);
+                        intent.putExtra("iconResource", iconResource); // Restaurar el ícono
+                        intent.putExtra("title", title); // Restaurar el título
+                        startActivity(intent);
+                        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);  // Transición inversa
+                        return true;
                     }
                 }
                 return false;
