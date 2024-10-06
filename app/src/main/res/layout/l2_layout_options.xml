@@ -30,39 +30,11 @@
     />
 
     <!-- Grupo de RadioButtons para la selección de la dificultad -->
-    <RadioGroup
-            android:id="@+id/difficultyRadioGroup"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:orientation="vertical"
-            android:layout_marginStart="24dp"
-            android:layout_weight="1">
-
-        <RadioButton
-                android:id="@+id/radio_easy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/options_easy"
-                android:checked="true"
-                android:layout_marginBottom="10dp"/>
-
-        <RadioButton
-                android:id="@+id/radio_normal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/options_normal"
-                android:layout_marginBottom="10dp"/>
-
-        <RadioButton
-                android:id="@+id/radio_hard"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/options_hard" />
-    </RadioGroup>
+    <include
+            layout="@layout/l2_layout_options_radio_group"/>
 
     <!-- Bottom Navigation Bar -->
     <include
-            android:id="@+id/bottom_navigation"
             layout="@layout/bottom_navigation_view"/>
 
 </LinearLayout>
