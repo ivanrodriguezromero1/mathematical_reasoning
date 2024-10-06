@@ -1,5 +1,7 @@
 package com.mathematical_reasoning.raz_mat;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.*;
@@ -7,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.view.MenuItem;
 import android.content.Intent;
-import com.google.android.material.button.MaterialButton;
 import com.mathematical_reasoning.raz_mat.utils.RadioButtonUtils;
 
 
@@ -20,7 +21,7 @@ public class ProblemasActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_problemas);
+        setContentView(R.layout.l4_layout_problemas);
         // Referencias a los componentes del layout
         ImageView iconImageView = findViewById(R.id.iconImageView);
         TextView titleTextView = findViewById(R.id.appBarTitle);
@@ -55,8 +56,8 @@ public class ProblemasActivity extends AppCompatActivity {
 
         // Configurar Bottom Navigation
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.bottom_nav_home);
-
+        bottomNavigationView.setItemIconTintList(ColorStateList.valueOf(Color.WHITE));
+        bottomNavigationView.setItemTextColor(ColorStateList.valueOf(Color.WHITE));
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {

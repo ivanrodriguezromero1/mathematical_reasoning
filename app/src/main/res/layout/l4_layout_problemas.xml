@@ -11,36 +11,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/pathbar" />
+        <include
+                layout="@layout/image_pathbar" />
 
-        <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="16dp"
-                android:paddingTop="12dp"
-                android:gravity="center_vertical">
-
-            <ImageView
-                    android:id="@+id/iconImageView"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    app:tint="@android:color/white"
-                    android:layout_marginEnd="8dp" />
-
-            <TextView
-                    android:id="@+id/appBarTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-        </LinearLayout>
+        <include
+                layout="@layout/l4_layout_problemas_header_content" />
     </RelativeLayout>
 <!--        &lt;!&ndash; Botón de reinicio en la barra de título &ndash;&gt;-->
 <!--        <ImageButton-->
@@ -139,7 +114,7 @@
 
             <!-- RadioGroup con las opciones de respuesta -->
             <include
-                    layout="@layout/activity_problemas_radio_group"
+                    layout="@layout/l4_layout_problemas_radio_group"
                     android:id="@+id/answersRadioGroup" />
 
             <!-- Botones de Comprobar y Nuevo -->
@@ -151,23 +126,17 @@
                     android:layout_marginTop="30dp">
                 <include
                     android:id="@+id/comprobarLayout"
-                    layout="@layout/activity_problemas_comprobar_button"/>
+                    layout="@layout/l4_layout_problemas_comprobar_button"/>
                 <include
                     android:id="@+id/nuevoLayout"
-                    layout="@layout/activity_problemas_nuevo_button"/>
+                    layout="@layout/l4_layout_problemas_nuevo_button"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
     <!-- Bottom Navigation Bar -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+    <include
             android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@drawable/pathbar"
-            android:padding="8dp"
-            app:menu="@menu/bottom_nav_menu"
-            app:itemIconTint="@color/white"
-            app:itemTextColor="@color/white" />
+            layout="@layout/bottom_navigation_view"/>
 
 </LinearLayout>

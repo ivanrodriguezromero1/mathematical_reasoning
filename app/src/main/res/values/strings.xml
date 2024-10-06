@@ -4,6 +4,10 @@
     <string name="see_theory">Ver Teoría</string>
     <string name="solve_problem">Resolver Problema</string>
     <string name="options_title">Opciones</string>
+    <string name="options_difficulty">Dificultad</string>
+    <string name="options_easy">Fácil</string>
+    <string name="options_normal">Normal</string>
+    <string name="options_hard">Difícil</string>
     <string name="filtrar_button_description">Filtrar</string>
     <string name="hint_button_description">Mostrar pista</string>
 </resources>

@@ -13,25 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- Reducir la altura del ImageView -->
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/pathbar"
-                android:contentDescription="@null"/>
+        <include
+                layout="@layout/image_pathbar" />
 
-        <!-- Texto centrado con tamaño ajustado -->
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="@string/app_title"
-                android:textColor="@android:color/white"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"/>
+        <include
+                layout="@layout/l1_layout_main_header_content" />
     </RelativeLayout>
 
 
@@ -49,13 +35,8 @@
             style="@style/CustomRecyclerViewScroll"/>
 
     <!-- Bottom Navigation Bar -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+    <include
             android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@drawable/pathbar"
-            android:padding="8dp"
-            app:menu="@menu/bottom_nav_menu"
-            app:itemIconTint="@color/nav_item_color"
-            app:itemTextColor="@color/nav_item_color"/>
+            layout="@layout/bottom_navigation_view"/>
+
 </LinearLayout>

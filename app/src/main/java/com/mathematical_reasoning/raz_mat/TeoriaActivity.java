@@ -1,6 +1,8 @@
 package com.mathematical_reasoning.raz_mat;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +22,7 @@ public class TeoriaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teoria);
+        setContentView(R.layout.l3_layout_teoria);
 
         // Referencias a los componentes del layout
         iconImageView = findViewById(R.id.iconImageView);
@@ -51,8 +53,8 @@ public class TeoriaActivity extends AppCompatActivity {
 
         // Configurar Bottom Navigation
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.bottom_nav_home);
-
+        bottomNavigationView.setItemIconTintList(ColorStateList.valueOf(Color.WHITE));
+        bottomNavigationView.setItemTextColor(ColorStateList.valueOf(Color.WHITE));
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
