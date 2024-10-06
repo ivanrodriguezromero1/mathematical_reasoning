@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+    <RadioButton
+            android:id="@+id/answerA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A) 36"
+            android:textSize="18sp"
+            android:textColor="@color/radio_button_selector"
+            android:buttonTint="@color/radio_button_selector"
+            android:layout_marginBottom="5dp" />
+
+    <RadioButton
+            android:id="@+id/answerB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B) 42"
+            android:textSize="18sp"
+            android:textColor="@color/radio_button_selector"
+            android:buttonTint="@color/radio_button_selector"
+            android:layout_marginBottom="5dp" />
+
+    <RadioButton
+            android:id="@+id/answerC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C) 35"
+            android:textSize="18sp"
+            android:textColor="@color/radio_button_selector"
+            android:buttonTint="@color/radio_button_selector"
+            android:layout_marginBottom="5dp" />
+
+    <RadioButton
+            android:id="@+id/answerD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D) 37"
+            android:textSize="18sp"
+            android:textColor="@color/radio_button_selector"
+            android:buttonTint="@color/radio_button_selector"
+            android:layout_marginBottom="5dp" />
+</RadioGroup>

@@ -12,7 +12,6 @@
             android:layout_height="wrap_content">
 
         <ImageView
-                android:id="@+id/appBarImage"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:scaleType="centerCrop"
@@ -38,7 +37,6 @@
                     android:id="@+id/appBarTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Problema"
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -140,53 +138,9 @@
             </LinearLayout>
 
             <!-- RadioGroup con las opciones de respuesta -->
-            <RadioGroup
-                    android:id="@+id/answersRadioGroup"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="16dp">
-
-                <RadioButton
-                        android:id="@+id/answerA"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="A) 36"
-                        android:textSize="18sp"
-                        android:textColor="@color/radio_button_selector"
-                        android:buttonTint="@color/radio_button_selector"
-                        android:layout_marginBottom="5dp"/>
-
-                <RadioButton
-                        android:id="@+id/answerB"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="B) 42"
-                        android:textSize="18sp"
-                        android:textColor="@color/radio_button_selector"
-                        android:buttonTint="@color/radio_button_selector"
-                        android:layout_marginBottom="5dp"/>
-
-                <RadioButton
-                        android:id="@+id/answerC"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="C) 35"
-                        android:textSize="18sp"
-                        android:textColor="@color/radio_button_selector"
-                        android:buttonTint="@color/radio_button_selector"
-                        android:layout_marginBottom="5dp"/>
-
-                <RadioButton
-                        android:id="@+id/answerD"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="D) 37"
-                        android:textSize="18sp"
-                        android:textColor="@color/radio_button_selector"
-                        android:buttonTint="@color/radio_button_selector"
-                        android:layout_marginBottom="5dp"/>
-
-            </RadioGroup>
+            <include
+                    layout="@layout/activity_problemas_radio_group"
+                    android:id="@+id/answersRadioGroup" />
 
             <!-- Botones de Comprobar y Nuevo -->
             <LinearLayout
@@ -194,7 +148,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:gravity="center"
-                    android:layout_marginHorizontal="60dp"
                     android:layout_marginTop="30dp">
                 <include
                     android:id="@+id/comprobarLayout"

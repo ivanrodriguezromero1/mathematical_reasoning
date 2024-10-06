@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_title">Razonamiento Matemático</string>
+    <string name="see_theory">Ver Teoría</string>
+    <string name="solve_problem">Resolver Problema</string>
+    <string name="options_title">Opciones</string>
     <string name="filtrar_button_description">Filtrar</string>
     <string name="hint_button_description">Mostrar pista</string>
 </resources>

@@ -4,50 +4,21 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              android:background="@android:color/white"
->
+              android:background="@android:color/white">
 
     <!-- AppBar con imagen de fondo -->
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
         <ImageView
-                android:id="@+id/appBarImage"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/pathbar" />
 
         <!-- LinearLayout para el icono y el texto del título -->
-        <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="16dp"
-                android:paddingTop="15dp"
-                android:gravity="center_vertical">
-
-            <!-- Icono de Opciones -->
-            <ImageView
-                    android:id="@+id/optionsIcon"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_options"
-                    app:tint="@android:color/white"
-                    android:layout_marginEnd="8dp" />
-
-            <!-- Título Opciones -->
-            <TextView
-                    android:id="@+id/appBarTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Opciones"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-        </LinearLayout>
+        <include
+                layout="@layout/activity_options_header_content"/>
     </RelativeLayout>
 
     <!-- Sección de configuración de dificultad -->

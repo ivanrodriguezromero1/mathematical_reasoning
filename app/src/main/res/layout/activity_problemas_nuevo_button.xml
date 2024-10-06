@@ -6,6 +6,7 @@
               android:orientation="horizontal"
               android:gravity="center"
               android:padding="16dp"
+              android:layout_marginHorizontal="60dp"
               android:background="@drawable/ripple_effect_nuevo"
               android:layout_gravity="center"
               android:clickable="true"
