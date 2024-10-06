@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        android:color="#0b62b8"> <!-- 20% del color #0e7cea -->
+
+    <!-- Fondo principal del botón -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/buttonNuevoColor" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+
+    <!-- Enmascarado para el efecto ripple respetando los bordes redondeados -->
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/black" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+</ripple>
