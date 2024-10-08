@@ -23,6 +23,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@android:color/black"
             android:textSize="18sp" />
 
     <!-- LinearLayout para los botones (lado derecho) -->
@@ -43,6 +44,7 @@
                 android:background="@drawable/ripple_effect_items"
                 android:clickable="true"
                 android:focusable="true"
+                android:layout_marginStart="10dp"
                 android:layout_marginEnd="5dp"
                 android:contentDescription="@string/see_theory"/>
 

@@ -42,17 +42,17 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         // Establece el título y el ícono de la izquierda
         holder.mTextView.setText(mTitles[position]);
         holder.mImageViewLeft.setImageResource(mIconsLeft[position]);
-
+        int color =  R.color.azulPersonalizado;
         // Aplicar el filtro de color a los íconos de la izquierda
-        holder.mImageViewLeft.setColorFilter(ContextCompat.getColor(mContext, R.color.orange));
+        holder.mImageViewLeft.setColorFilter(ContextCompat.getColor(mContext,color));
 
         // Configura los íconos de la derecha (botón de libro y botón de resolver)
         holder.mButtonBook.setImageResource(mIconsRight1[position]);
         holder.mButtonResolver.setImageResource(mIconsRight2[position]);
 
         // Aplicar el filtro de color a los íconos de la derecha
-        holder.mButtonBook.setColorFilter(ContextCompat.getColor(mContext, R.color.orange));
-        holder.mButtonResolver.setColorFilter(ContextCompat.getColor(mContext, R.color.orange));
+        holder.mButtonBook.setColorFilter(ContextCompat.getColor(mContext, color));
+        holder.mButtonResolver.setColorFilter(ContextCompat.getColor(mContext, color));
 
         // Manejar eventos de clic en los botones de la derecha
         holder.mButtonBook.setOnClickListener(new View.OnClickListener() {
