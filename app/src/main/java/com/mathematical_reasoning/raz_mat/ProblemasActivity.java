@@ -1,5 +1,6 @@
 package com.mathematical_reasoning.raz_mat;
 
+import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -17,6 +18,8 @@ import java.io.InputStreamReader;
 import java.util.Random;
 
 public class ProblemasActivity extends AppCompatActivity {
+
+    private SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,12 +46,15 @@ public class ProblemasActivity extends AppCompatActivity {
         iconImageView.setImageResource(iconResource);
         titleTextView.setText(title);
 
-        // Generar y mostrar el enunciado dinámico de series
+        // Obtener SharedPreferences para la dificultad
+        sharedPreferences = getSharedPreferences("OptionsPrefs", MODE_PRIVATE);
+        int dificultad = sharedPreferences.getInt("selected_difficulty", 1); // 1: Fácil, 2: Normal, 3: Difícil
 
+        // Generar y mostrar el enunciado dinámico de series
         String enunciadoFinal = "";
         if (title.equals("Series")) {
             String enunciadoBase = getEnunciadoFromRaw(R.raw.series_enunciado);  // Cargar el archivo raw
-            enunciadoFinal = generarEnunciadoSeries(enunciadoBase);
+            enunciadoFinal = generarEnunciadoSeries(enunciadoBase, dificultad);
         }
 
         problemStatement.setText(enunciadoFinal);  // Mostrar en el TextView
@@ -113,12 +119,12 @@ public class ProblemasActivity extends AppCompatActivity {
         return enunciado.toString();
     }
 
-    // Generar el enunciado dinámico de series
-    private String generarEnunciadoSeries(String enunciado) {
+    // Generar el enunciado dinámico de series basado en la dificultad
+    private String generarEnunciadoSeries(String enunciado, int dificultad) {
         Random random = new Random();
         int a = random.nextInt(8) + 1; // Generar el valor de 'a'
         int r = random.nextInt(8) + 2; // Generar la razón 'r'
-        int n = random.nextInt(5) + 16;  // Generar 'n' (ejemplo con 16 términos)
+        int n = (dificultad + 1) * 5 + random.nextInt(5);  // Generar 'n' basado en la dificultad
         String serie = a + ", " + (a + r) + ", " + (a + 2 * r) + ", ...";
 
         // Reemplazar los placeholders en el enunciado
