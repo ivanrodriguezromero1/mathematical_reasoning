@@ -10,37 +10,9 @@
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-        <include
-                layout="@layout/image_pathbar" />
-
-        <include
-                layout="@layout/l4_layout_problemas_header_content" />
+        <include layout="@layout/image_pathbar" />
+        <include layout="@layout/l4_layout_problemas_header_content" />
     </RelativeLayout>
-<!--        &lt;!&ndash; Botón de reinicio en la barra de título &ndash;&gt;-->
-<!--        <ImageButton-->
-<!--                android:id="@+id/restartButton"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_alignParentEnd="true"-->
-<!--                android:layout_marginEnd="16dp"-->
-<!--                app:tint="@android:color/white"-->
-<!--                android:src="@drawable/ic_refresh"-->
-<!--                android:background="?attr/selectableItemBackgroundBorderless"-->
-<!--                android:contentDescription="Reiniciar problema" />-->
-
-<!--        &lt;!&ndash; Temporizador en la barra de título &ndash;&gt;-->
-<!--        <TextView-->
-<!--                android:id="@+id/timerTextView"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_centerInParent="true"-->
-<!--                android:text="00:00:00"-->
-<!--                android:textColor="@android:color/white"-->
-<!--                android:textSize="16sp"-->
-<!--                android:textStyle="bold"-->
-<!--                android:padding="10dp" />-->
-
 
     <ScrollView
             android:id="@+id/scrollView"
@@ -59,7 +31,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
             <!-- Contenido del problema -->
             <TextView
                     android:id="@+id/problemStatement"
@@ -113,9 +84,7 @@
             </LinearLayout>
 
             <!-- RadioGroup con las opciones de respuesta -->
-            <include
-                    layout="@layout/l4_layout_problemas_radio_group"
-                    android:id="@+id/answersRadioGroup" />
+            <include layout="@layout/l4_layout_problemas_radio_group"/>
 
             <!-- Botones de Comprobar y Nuevo -->
             <LinearLayout
@@ -124,18 +93,13 @@
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_marginTop="30dp">
-                <include
-                    android:id="@+id/comprobarLayout"
-                    layout="@layout/l4_layout_problemas_comprobar_button"/>
-                <include
-                    android:id="@+id/nuevoLayout"
-                    layout="@layout/l4_layout_problemas_nuevo_button"/>
+                <include layout="@layout/l4_layout_problemas_comprobar_button"/>
+                <include layout="@layout/l4_layout_problemas_nuevo_button"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
     <!-- Bottom Navigation Bar -->
-    <include
-            layout="@layout/bottom_navigation_view"/>
+    <include layout="@layout/bottom_navigation_view"/>
 
 </LinearLayout>

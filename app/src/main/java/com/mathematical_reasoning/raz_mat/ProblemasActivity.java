@@ -42,17 +42,8 @@ public class ProblemasActivity extends AppCompatActivity {
         titleTextView.setText(title);
 
         // Referencias a los componentes
-//        timerTextView = findViewById(R.id.timerTextView);
-//        ImageButton restartButton = findViewById(R.id.restartButton);
         LinearLayout comprobarButton = findViewById(R.id.comprobarLayout);
         LinearLayout newButton = findViewById(R.id.nuevoLayout);
-
-//        // Iniciar el temporizador
-//        startTime = System.currentTimeMillis();
-//        timerHandler.postDelayed(timerRunnable, 0);
-
-        // Reiniciar el temporizador al hacer clic en el botón de reinicio
-//        restartButton.setOnClickListener(v -> resetTimer());
 
         // Configurar Bottom Navigation
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -91,25 +82,4 @@ public class ProblemasActivity extends AppCompatActivity {
         });
     }
 
-    // Reiniciar el temporizador
-//    private void resetTimer() {
-//        startTime = System.currentTimeMillis();
-//        timerHandler.postDelayed(timerRunnable, 0);
-//    }
-
-    // Runnable para actualizar el temporizador cada segundo
-//    private Runnable timerRunnable = new Runnable() {
-//        @Override
-//        public void run() {
-//            long millis = System.currentTimeMillis() - startTime;
-//            int seconds = (int) (millis / 1000);
-//            int minutes = seconds / 60;
-//            seconds = seconds % 60;
-//
-//            timerTextView.setText(String.format("%02d:%02d:%02d", minutes / 60, minutes % 60, seconds));
-//
-//            // Actualizar cada segundo
-//            timerHandler.postDelayed(this, 1000);
-//        }
-//    };
 }

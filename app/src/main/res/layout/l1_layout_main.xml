@@ -12,14 +12,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
-        <include
-                layout="@layout/image_pathbar" />
-
-        <include
-                layout="@layout/l1_layout_main_header_content" />
+        <include layout="@layout/image_pathbar" />
+        <include layout="@layout/l1_layout_main_header_content" />
     </RelativeLayout>
-
 
     <!-- ListView para los ítems -->
     <androidx.recyclerview.widget.RecyclerView
@@ -35,7 +30,6 @@
             style="@style/CustomRecyclerViewScroll"/>
 
     <!-- Bottom Navigation Bar -->
-    <include
-            layout="@layout/bottom_navigation_view"/>
+    <include layout="@layout/bottom_navigation_view"/>
 
 </LinearLayout>

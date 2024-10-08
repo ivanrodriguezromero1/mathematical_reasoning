@@ -9,12 +9,8 @@
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-        <include
-                layout="@layout/image_pathbar" />
-
-        <include
-                layout="@layout/l2_layout_options_header_content"/>
+        <include layout="@layout/image_pathbar" />
+        <include layout="@layout/l2_layout_options_header_content"/>
     </RelativeLayout>
 
     <!-- Título dificultad -->
@@ -26,15 +22,12 @@
             android:textStyle="bold"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginStart="24dp"
-    />
+            android:layout_marginStart="24dp"/>
 
     <!-- Grupo de RadioButtons para la selección de la dificultad -->
-    <include
-            layout="@layout/l2_layout_options_radio_group"/>
+    <include layout="@layout/l2_layout_options_radio_group"/>
 
     <!-- Bottom Navigation Bar -->
-    <include
-            layout="@layout/bottom_navigation_view"/>
+    <include layout="@layout/bottom_navigation_view"/>
 
 </LinearLayout>
