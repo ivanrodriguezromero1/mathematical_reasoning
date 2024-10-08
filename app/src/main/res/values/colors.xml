@@ -2,7 +2,7 @@
 <resources>
     <color name="white">#FFFFFF</color>
     <color name="colorAccent">#135997</color>
-    <color name="azulPersonalizado">#000080</color>
+    <color name="azulPersonalizado">#0707B1</color>
     <color name="buttonComprobarColor">#1a8081</color>
     <color name="buttonNuevoColor">#0e7cea</color>
     <color name="buttonFiltroColor">#006400</color>
