@@ -26,7 +26,7 @@
             android:id="@+id/nuevoText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NUEVO"
+            android:text="@string/button_nuevo"
             android:textSize="16sp"
             android:textColor="@android:color/white"
             android:layout_marginStart="8dp" />

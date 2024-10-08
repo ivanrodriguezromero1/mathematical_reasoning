@@ -10,21 +10,23 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.view.MenuItem;
 import android.content.Intent;
 import com.mathematical_reasoning.raz_mat.utils.RadioButtonUtils;
-
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.Random;
 
 public class ProblemasActivity extends AppCompatActivity {
-
-    private TextView timerTextView;
-    private Handler timerHandler = new Handler();
-    private long startTime = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.l4_layout_problemas);
+
         // Referencias a los componentes del layout
         ImageView iconImageView = findViewById(R.id.iconImageView);
         TextView titleTextView = findViewById(R.id.appBarTitle);
+        TextView problemStatement = findViewById(R.id.problemStatement);  // Referencia al TextView del enunciado
 
         // Encuentra el RadioGroup en el layout
         RadioGroup answersRadioGroup = findViewById(R.id.answersRadioGroup);
@@ -41,7 +43,17 @@ public class ProblemasActivity extends AppCompatActivity {
         iconImageView.setImageResource(iconResource);
         titleTextView.setText(title);
 
-        // Referencias a los componentes
+        // Generar y mostrar el enunciado dinámico de series
+
+        String enunciadoFinal = "";
+        if (title.equals("Series")) {
+            String enunciadoBase = getEnunciadoFromRaw(R.raw.series_enunciado);  // Cargar el archivo raw
+            enunciadoFinal = generarEnunciadoSeries(enunciadoBase);
+        }
+
+        problemStatement.setText(enunciadoFinal);  // Mostrar en el TextView
+
+        // Referencias a los botones
         LinearLayout comprobarButton = findViewById(R.id.comprobarLayout);
         LinearLayout newButton = findViewById(R.id.nuevoLayout);
 
@@ -82,4 +94,37 @@ public class ProblemasActivity extends AppCompatActivity {
         });
     }
 
+    // Función para cargar el contenido desde un archivo en raw
+    private String getEnunciadoFromRaw(int resourceId) {
+        StringBuilder enunciado = new StringBuilder();
+        InputStream inputStream = getResources().openRawResource(resourceId);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+        String line;
+
+        try {
+            while ((line = reader.readLine()) != null) {
+                enunciado.append(line).append("\n");
+            }
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return enunciado.toString();
+    }
+
+    // Generar el enunciado dinámico de series
+    private String generarEnunciadoSeries(String enunciado) {
+        Random random = new Random();
+        int a = random.nextInt(8) + 1; // Generar el valor de 'a'
+        int r = random.nextInt(8) + 2; // Generar la razón 'r'
+        int n = random.nextInt(5) + 16;  // Generar 'n' (ejemplo con 16 términos)
+        String serie = a + ", " + (a + r) + ", " + (a + 2 * r) + ", ...";
+
+        // Reemplazar los placeholders en el enunciado
+        enunciado = enunciado.replace("_n_", String.valueOf(n))
+                .replace("_serie_", serie);
+
+        return enunciado;
+    }
 }

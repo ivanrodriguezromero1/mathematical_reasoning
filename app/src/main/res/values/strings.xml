@@ -10,4 +10,6 @@
     <string name="options_hard">Difícil</string>
     <string name="filtrar_button_description">Filtrar</string>
     <string name="hint_button_description">Mostrar pista</string>
+    <string name="button_comprobar">COMPROBAR</string>
+    <string name="button_nuevo">NUEVO</string>
 </resources>

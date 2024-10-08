@@ -39,7 +39,6 @@
                     android:paddingTop="8dp"
                     android:paddingStart="16dp"
                     android:paddingBottom="8dp"
-                    android:text="Encuentra el término 5 de la serie aritmética: 1, 10, 19, ..."
                     android:textSize="18sp"
                     android:textColor="@android:color/black" />
 
