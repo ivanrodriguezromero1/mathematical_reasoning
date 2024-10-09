@@ -3,5 +3,5 @@
            android:layout_width="match_parent"
            android:layout_height="60dp"
            android:scaleType="centerCrop"
-           android:src="@drawable/pathbar"
+           android:src="@drawable/image_top_bar"
            android:contentDescription="@null" />

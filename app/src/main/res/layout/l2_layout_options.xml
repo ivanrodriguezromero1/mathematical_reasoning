@@ -9,7 +9,7 @@
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        <include layout="@layout/image_pathbar" />
+        <include layout="@layout/image_top_bar" />
         <include layout="@layout/l2_layout_options_header_content"/>
     </RelativeLayout>
 
