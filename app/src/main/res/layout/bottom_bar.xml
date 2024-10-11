@@ -58,6 +58,36 @@
 
         <!-- Icono y texto para el botón "Opciones" -->
         <LinearLayout
+                android:id="@+id/btn_options"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/btn_options_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_options"
+                    app:tint="@android:color/white"/>
+
+            <TextView
+                    android:id="@+id/btn_options_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_opciones"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/white"/>
+        </LinearLayout>
+        <!-- Espaciador flexible entre los botones -->
+        <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        <!-- Icono y texto para el botón "Premium" -->
+        <LinearLayout
                 android:id="@+id/btn_premium"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -87,37 +117,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"/>
 
-        <!-- Icono y texto para el botón "Opciones" -->
-        <LinearLayout
-                android:id="@+id/btn_options"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_weight="1">
-
-            <ImageView
-                    android:id="@+id/btn_options_icon"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_options"
-                    app:tint="@android:color/white"/>
-
-            <TextView
-                    android:id="@+id/btn_options_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/button_opciones"
-                    android:textSize="11sp"
-                    android:textColor="@android:color/white"/>
-        </LinearLayout>
-        <!-- Espaciador flexible entre los botones -->
-        <View
-                android:layout_width="2dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
-
-        <!-- Icono y texto para el botón "Opciones" -->
+        <!-- Icono y texto para el botón "Compartir" -->
         <LinearLayout
                 android:id="@+id/btn_compartir"
                 android:layout_width="0dp"

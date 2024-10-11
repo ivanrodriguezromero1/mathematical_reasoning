@@ -53,7 +53,7 @@ public class ProblemasActivity extends AppCompatActivity {
 
         // Generar y mostrar el enunciado dinámico de series
         String enunciadoFinal = "";
-        if (title.equals("Series")) {
+        if (title.equals("Sucesiones y Series")) {
             String enunciadoBase = getEnunciadoFromRaw(R.raw.series_enunciado);  // Cargar el archivo raw
             enunciadoFinal = generarEnunciadoSeries(enunciadoBase, dificultad);
         }

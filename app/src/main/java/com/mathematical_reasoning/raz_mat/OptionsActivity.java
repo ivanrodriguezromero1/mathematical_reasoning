@@ -48,13 +48,10 @@ public class OptionsActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 if (checkedId == R.id.radio_easy) {
-                    Toast.makeText(OptionsActivity.this, "Dificultad: Fácil", Toast.LENGTH_SHORT).show();
                     editor.putInt("selected_difficulty", 1);
                 } else if (checkedId == R.id.radio_normal) {
-                    Toast.makeText(OptionsActivity.this, "Dificultad: Normal", Toast.LENGTH_SHORT).show();
                     editor.putInt("selected_difficulty", 2);
                 } else if (checkedId == R.id.radio_hard) {
-                    Toast.makeText(OptionsActivity.this, "Dificultad: Difícil", Toast.LENGTH_SHORT).show();
                     editor.putInt("selected_difficulty", 3);
                 }
                 editor.apply();  // Guardar la selección en SharedPreferences
