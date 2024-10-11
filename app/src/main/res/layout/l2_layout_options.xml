@@ -9,7 +9,7 @@
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        <include layout="@layout/image_top_bar" />
+        <include layout="@layout/top_bar" />
         <include layout="@layout/l2_layout_options_header_content"/>
     </RelativeLayout>
 
@@ -28,6 +28,6 @@
     <include layout="@layout/l2_layout_options_radio_group"/>
 
     <!-- Bottom Navigation Bar -->
-    <include layout="@layout/bottom_navigation_view"/>
+    <include layout="@layout/bottom_bar"/>
 
 </LinearLayout>

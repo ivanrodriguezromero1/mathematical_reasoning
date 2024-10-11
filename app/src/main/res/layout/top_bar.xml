@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="60dp">
+
+    <!-- Fondo con el color #0B429E -->
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0B429E" />
+
+    <!-- Imagen con transparencia al 50% -->
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_top_bar"
+            android:alpha="0.5"
+            android:contentDescription="@null" />
+</FrameLayout>

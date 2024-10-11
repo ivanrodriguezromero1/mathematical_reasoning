@@ -12,4 +12,8 @@
     <string name="hint_button_description">Mostrar pista</string>
     <string name="button_comprobar">COMPROBAR</string>
     <string name="button_nuevo">NUEVO</string>
+    <string name="button_inicio">Inicio</string>
+    <string name="button_opciones">Opciones</string>
+    <string name="button_premium">Premium</string>
+    <string name="button_compartir">Compartir</string>
 </resources>

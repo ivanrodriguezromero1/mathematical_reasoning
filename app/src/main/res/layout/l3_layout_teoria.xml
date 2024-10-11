@@ -9,7 +9,7 @@
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        <include layout="@layout/image_top_bar" />
+        <include layout="@layout/top_bar" />
         <include layout="@layout/l3_layout_teoria_header_content" />
     </RelativeLayout>
 
@@ -35,5 +35,5 @@
     </ScrollView>
 
     <!-- Bottom Navigation Bar -->
-    <include layout="@layout/bottom_navigation_view"/>
+    <include layout="@layout/bottom_bar"/>
 </LinearLayout>

@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.content.SharedPreferences;
+import android.view.View;
+import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.widget.RadioButton;
@@ -60,42 +62,25 @@ public class OptionsActivity extends AppCompatActivity {
         });
 
         // Configurar Bottom Navigation
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.bottom_nav_options);
+        LinearLayout btnHome = findViewById(R.id.btn_home);
+        LinearLayout btnOptions = findViewById(R.id.btn_options);
 
-        // Obtener la información de qué actividad proviene y los datos del ícono y título
-        String fromActivity = getIntent().getStringExtra("fromActivity");
-        int iconResource = getIntent().getIntExtra("iconResource", 0);
-        String title = getIntent().getStringExtra("title");
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        // Configurar listener para el botón de Inicio
+        btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(MenuItem item) {
-                int id = item.getItemId();
-                if (id == R.id.bottom_nav_home) {
-                    Intent intent = new Intent(OptionsActivity.this, MainActivity.class);
-                    startActivity(intent);
-                    overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
-                    return true;
-                } else if (id == R.id.bottom_nav_options) {
-                    // Verificar si se debe volver a TeoriaActivity u otra actividad
-                    if (fromActivity != null && fromActivity.equals("TeoriaActivity")) {
-                        Intent intent = new Intent(OptionsActivity.this, TeoriaActivity.class);
-                        intent.putExtra("iconResource", iconResource); // Restaurar el ícono
-                        intent.putExtra("title", title); // Restaurar el título
-                        startActivity(intent);
-                        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);  // Transición inversa
-                        return true;
-                    } else if (fromActivity != null && fromActivity.equals("ProblemasActivity")) {
-                        Intent intent = new Intent(OptionsActivity.this, ProblemasActivity.class);
-                        intent.putExtra("iconResource", iconResource); // Restaurar el ícono
-                        intent.putExtra("title", title); // Restaurar el título
-                        startActivity(intent);
-                        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);  // Transición inversa
-                        return true;
-                    }
-                }
-                return false;
+            public void onClick(View v) {
+                // Acción cuando se presiona "Inicio"
+                Intent intent = new Intent(OptionsActivity.this, MainActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right); // Aplicar animación
+            }
+        });
+
+        // Configurar listener para el botón de Opciones
+        btnOptions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Acción para abrir la actividad de opciones
             }
         });
     }

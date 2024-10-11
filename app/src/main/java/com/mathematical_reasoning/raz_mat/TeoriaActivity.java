@@ -5,6 +5,8 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -51,29 +53,43 @@ public class TeoriaActivity extends AppCompatActivity {
             contentTextView.setText(getTeoriaFromFile(R.raw.probabilidades_teoria));  // Contenido para "Probabilidades"
         }
 
-        // Configurar Bottom Navigation
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setItemIconTintList(ColorStateList.valueOf(Color.WHITE));
-        bottomNavigationView.setItemTextColor(ColorStateList.valueOf(Color.WHITE));
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(MenuItem item) {
-                int itemId = item.getItemId();
+        // Configurar botones del LinearLayout
+        LinearLayout btnHome = findViewById(R.id.btn_home);
+        LinearLayout btnOptions = findViewById(R.id.btn_options);
 
-                if (itemId == R.id.bottom_nav_home) {
-                    startActivity(new Intent(TeoriaActivity.this, MainActivity.class));
-                    overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
-                    return true;
-                } else if (itemId == R.id.bottom_nav_options) {
-                    Intent intent = new Intent(TeoriaActivity.this, OptionsActivity.class);
-                    intent.putExtra("fromActivity", "TeoriaActivity");  // Pasar información de qué actividad proviene
-                    intent.putExtra("iconResource", getIntent().getIntExtra("iconResource", 0)); // Pasar el ícono correspondiente
-                    intent.putExtra("title", getIntent().getStringExtra("title")); // Pasar el título correspondiente
-                    startActivity(intent);
-                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-                    return true;
-                }
-                return false;
+        // Cambiar color de los íconos y textos a blanco
+        ImageView iconHome = btnHome.findViewById(R.id.btn_home_icon);
+        TextView textHome = btnHome.findViewById(R.id.btn_home_text);
+        iconHome.setColorFilter(Color.WHITE);  // Cambia el color del ícono
+        textHome.setTextColor(Color.WHITE);    // Cambia el color del texto
+
+        ImageView iconOptions = btnOptions.findViewById(R.id.btn_options_icon);
+        TextView textOptions = btnOptions.findViewById(R.id.btn_options_text);
+        iconOptions.setColorFilter(Color.WHITE);  // Cambia el color del ícono
+        textOptions.setTextColor(Color.WHITE);    // Cambia el color del texto
+
+        // Configurar listener para el botón de Inicio
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Acción para abrir la actividad de MainActivity
+                Intent intent = new Intent(TeoriaActivity.this, MainActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+            }
+        });
+
+        // Configurar listener para el botón de Opciones
+        btnOptions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Acción para abrir la actividad de OptionsActivity
+                Intent intent = new Intent(TeoriaActivity.this, OptionsActivity.class);
+                intent.putExtra("fromActivity", "TeoriaActivity");  // Pasar información de qué actividad proviene
+                intent.putExtra("iconResource", getIntent().getIntExtra("iconResource", 0)); // Pasar el ícono correspondiente
+                intent.putExtra("title", getIntent().getStringExtra("title")); // Pasar el título correspondiente
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
 

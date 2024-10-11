@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+    <!-- Fondo de color #0B429E -->
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0B429E" />
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image_bottom_bar"
+            android:scaleType="centerCrop"
+            android:alpha="0.5"
+            android:contentDescription="@null" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@android:color/transparent">
+
+        <!-- Icono y texto para el botón "Inicio" -->
+        <LinearLayout
+                android:id="@+id/btn_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/btn_home_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_home"
+                    app:tint="@android:color/white"/>
+
+            <TextView
+                    android:id="@+id/btn_home_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_inicio"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <!-- Espaciador flexible entre los botones -->
+        <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        <!-- Icono y texto para el botón "Opciones" -->
+        <LinearLayout
+                android:id="@+id/btn_premium"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/btn_premium_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_premium"
+                    app:tint="@android:color/white"/>
+
+            <TextView
+                    android:id="@+id/btn_premium_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_premium"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <!-- Espaciador flexible entre los botones -->
+        <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        <!-- Icono y texto para el botón "Opciones" -->
+        <LinearLayout
+                android:id="@+id/btn_options"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/btn_options_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_options"
+                    app:tint="@android:color/white"/>
+
+            <TextView
+                    android:id="@+id/btn_options_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_opciones"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/white"/>
+        </LinearLayout>
+        <!-- Espaciador flexible entre los botones -->
+        <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        <!-- Icono y texto para el botón "Opciones" -->
+        <LinearLayout
+                android:id="@+id/btn_compartir"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/btn_compartir_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_share"
+                    app:tint="@android:color/white"/>
+
+            <TextView
+                    android:id="@+id/btn_compartir_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_compartir"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
