@@ -41,11 +41,11 @@ public class TeoriaActivity extends AppCompatActivity {
         titleTextView.setText(title);
 
         // Configurar el contenido de la teoría según el título
-        if (title.equals("Series")) {
+        if (title.equals("Sucesiones y Series")) {
             contentTextView.setText(getTeoriaFromFile(R.raw.series_teoria));  // Contenido para "Series"
-        } else if (title.equals("Edades")) {
+        } else if (title.equals("Problemas sobre edades")) {
             contentTextView.setText(getTeoriaFromFile(R.raw.edades_teoria));  // Contenido para "Edades"
-        } else if (title.equals("Móviles")) {
+        } else if (title.equals("Problemas sobre móviles")) {
             contentTextView.setText(getTeoriaFromFile(R.raw.moviles_teoria));  // Contenido para "Móviles"
         } else if (title.equals("Cronometría")) {
             contentTextView.setText(getTeoriaFromFile(R.raw.cronometra_teoria));  // Contenido para "Cronometría"

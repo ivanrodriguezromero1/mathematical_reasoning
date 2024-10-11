@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book,
                 R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book,
                 R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book,
-                R.drawable.ic_book, R.drawable.ic_book
+                R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book
         };
 
         int[] itemIconsRight2 = {
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver,
                 R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver,
                 R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver,
-                R.drawable.ic_resolver, R.drawable.ic_resolver
+                R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver
         };
 
         // Setear el Adapter con los nuevos temas e íconos
