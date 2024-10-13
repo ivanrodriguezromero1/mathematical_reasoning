@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.widget.LinearLayout;
 
+import java.util.*;
+
 public class MainActivity extends AppCompatActivity {
 
     // Cargar la biblioteca nativa
@@ -32,76 +34,43 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setVerticalScrollBarEnabled(true);
         recyclerView.setScrollBarFadeDuration(0);
 
-        // Lista actualizada con todos los temas solicitados
-        String[] itemTitles = {
-                "Sucesiones y Series",
-                "Problemas sobre edades",
-                "Problemas sobre móviles",
-                "Cronometría",
-                "Probabilidades",
-                "Razonamiento lógico",
-                "Verdades y mentiras",
-                "Distribuciones numéricas",
-                "Ordenamiento de información",
-                "Lógica proposicional",
-                "Lógica inferencial",
-                "Razonamiento inductivo",
-                "Razonamiento deductivo",
-                "Planteo de ecuaciones",
-                "Ecuaciones diofánticas",
-                "Operaciones matemáticas",
-                "Comparación de magnitudes",
-                "Fracciones",
-                "Tanto por cuanto",
-                "Conteo de figuras",
-                "Sucesos mínimos",
-                "Introducción al análisis combinatorio",
-                "Áreas y perímetros de regiones sombreadas"
-        };
+        // Map para los títulos y los íconos de la izquierda
+        Map<String, Integer> itemMap = new HashMap<>();
+        itemMap.put("Sucesiones y Series", R.drawable.symbols_123);
+        itemMap.put("Problemas sobre edades", R.drawable.symbols_face_4);
+        itemMap.put("Problemas sobre móviles", R.drawable.symbols_directions_car);
+        itemMap.put("Cronometría", R.drawable.symbols_timer);
+        itemMap.put("Probabilidades", R.drawable.symbols_casino);
+        itemMap.put("Razonamiento lógico", R.drawable.symbols_cognition);
+        itemMap.put("Verdades y mentiras", R.drawable.symbols_balance);
+        itemMap.put("Distribuciones numéricas", R.drawable.symbols_pin);
+        itemMap.put("Ordenamiento de información", R.drawable.symbols_sort);
+        itemMap.put("Lógica proposicional", R.drawable.symbols_arrow_forward);
+        itemMap.put("Lógica inferencial", R.drawable.symbols_manage_search);
+        itemMap.put("Razonamiento inductivo", R.drawable.symbols_trending_up);
+        itemMap.put("Razonamiento deductivo", R.drawable.symbols_fact_check);
+        itemMap.put("Planteo de ecuaciones", R.drawable.symbols_cancel_presentation);
+        itemMap.put("Ecuaciones diofánticas", R.drawable.symbols_numbers);
+        itemMap.put("Operaciones matemáticas", R.drawable.symbols_calculate);
+        itemMap.put("Comparación de magnitudes", R.drawable.symbols_scale);
+        itemMap.put("Fracciones", R.drawable.symbols_incomplete_circle);
+        itemMap.put("Tanto por cuanto", R.drawable.symbols_percent);
+        itemMap.put("Conteo de figuras", R.drawable.symbols_grid_on);
+        itemMap.put("Sucesos mínimos", R.drawable.symbols_linear_scale);
+        itemMap.put("Introducción al análisis combinatorio", R.drawable.symbols_bar_chart);
+        itemMap.put("Áreas y perímetros de regiones sombreadas", R.drawable.symbols_square_foot);
 
-        // Íconos seleccionados de Google Fonts para cada tema
-        int[] itemIconsLeft = {
-                R.drawable.symbols_123,             // Sucesiones y Series
-                R.drawable.symbols_face_4,   // Problemas sobre edades
-                R.drawable.symbols_directions_car,  // Problemas sobre móviles
-                R.drawable.symbols_timer,           // Cronometría
-                R.drawable.symbols_casino,         // Probabilidades
-                R.drawable.symbols_cognition,   // Razonamiento lógico
-                R.drawable.symbols_balance,           // Verdades y mentiras
-                R.drawable.symbols_pin,  // Distribuciones numéricas
-                R.drawable.symbols_sort,            // Ordenamiento de información
-                R.drawable.symbols_arrow_forward, // Lógica proposicional
-                R.drawable.symbols_manage_search,   // Lógica inferencial
-                R.drawable.symbols_trending_up,     // Razonamiento inductivo
-                R.drawable.symbols_fact_check,      // Razonamiento deductivo
-                R.drawable.symbols_cancel_presentation,  // Planteo de ecuaciones
-                R.drawable.symbols_numbers,         // Ecuaciones diofánticas
-                R.drawable.symbols_calculate,             // Operaciones matemáticas
-                R.drawable.symbols_scale,           // Comparación de magnitudes
-                R.drawable.symbols_incomplete_circle, // Fracciones
-                R.drawable.symbols_percent,         // Tanto por cuanto
-                R.drawable.symbols_grid_on,         // Conteo de figuras
-                R.drawable.symbols_linear_scale,    // Sucesos mínimos
-                R.drawable.symbols_bar_chart,       // Introducción al análisis combinatorio
-                R.drawable.symbols_square_foot      // Áreas y perímetros de regiones sombreadas
-        };
+// Listado de íconos adicionales (libro y resolver)
+        int[] itemIconsRight1 = new int[itemMap.size()];
+        int[] itemIconsRight2 = new int[itemMap.size()];
 
-        // Íconos adicionales (libro y resolver)
-        int[] itemIconsRight1 = {
-                R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book,
-                R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book,
-                R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book,
-                R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book,
-                R.drawable.ic_book, R.drawable.ic_book, R.drawable.ic_book
-        };
+// Rellenar los arrays de íconos adicionales con el mismo ícono para cada entrada
+        Arrays.fill(itemIconsRight1, R.drawable.ic_book);
+        Arrays.fill(itemIconsRight2, R.drawable.ic_resolver);
 
-        int[] itemIconsRight2 = {
-                R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver,
-                R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver,
-                R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver,
-                R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver,
-                R.drawable.ic_resolver, R.drawable.ic_resolver, R.drawable.ic_resolver
-        };
+// Ahora puedes utilizar el Map para acceder a los títulos y los íconos
+        List<String> itemTitles = new ArrayList<>(itemMap.keySet());
+        List<Integer> itemIconsLeft = new ArrayList<>(itemMap.values());
 
         // Setear el Adapter con los nuevos temas e íconos
         MyAdapter adapter = new MyAdapter(this, itemTitles, itemIconsLeft, itemIconsRight1, itemIconsRight2);

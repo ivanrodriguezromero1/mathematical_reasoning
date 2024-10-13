@@ -12,16 +12,18 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
-    private String[] mTitles;
-    private int[] mIconsLeft;    // Íconos de la izquierda
+    private List<String> mTitles;
+    private List<Integer> mIconsLeft;    // Íconos de la izquierda
     private int[] mIconsRight1;  // Primer ícono de la derecha (libro)
     private int[] mIconsRight2;  // Segundo ícono de la derecha (resolver)
     private Context mContext;
 
     // Constructor que incluye los íconos de la derecha
-    public MyAdapter(Context context, String[] titles, int[] iconsLeft, int[] iconsRight1, int[] iconsRight2) {
+    public MyAdapter(Context context, List<String> titles, List<Integer> iconsLeft, int[] iconsRight1, int[] iconsRight2) {
         mTitles = titles;
         mIconsLeft = iconsLeft;
         mIconsRight1 = iconsRight1;
@@ -40,8 +42,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         // Establece el título y el ícono de la izquierda
-        holder.mTextView.setText(mTitles[position]);
-        holder.mImageViewLeft.setImageResource(mIconsLeft[position]);
+        holder.mTextView.setText(mTitles.get(position));
+        holder.mImageViewLeft.setImageResource(mIconsLeft.get(position));
         int color =  R.color.azulPersonalizado;
         // Aplicar el filtro de color a los íconos de la izquierda
         holder.mImageViewLeft.setColorFilter(ContextCompat.getColor(mContext,color));
@@ -62,8 +64,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 int currentPosition = holder.getAdapterPosition();
                 if (currentPosition != RecyclerView.NO_POSITION) {
                     Intent intent = new Intent(mContext, TeoriaActivity.class);
-                    intent.putExtra("iconResource", mIconsLeft[currentPosition]); // Pasar el ícono correspondiente
-                    intent.putExtra("title", mTitles[currentPosition]); // Pasar el título correspondiente
+                    intent.putExtra("iconResource", mIconsLeft.get(currentPosition)); // Pasar el ícono correspondiente
+                    intent.putExtra("title", mTitles.get(currentPosition)); // Pasar el título correspondiente
                     mContext.startActivity(intent); // Iniciar TeoriaActivity
                 }
             }
@@ -78,8 +80,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                     Intent intent = new Intent(mContext, ProblemasActivity.class);
 
                     // Pasar el título y el ícono del ítem seleccionado si es necesario
-                    intent.putExtra("iconResource", mIconsLeft[currentPosition]);  // Pasar el ícono correspondiente
-                    intent.putExtra("title", mTitles[currentPosition]);            // Pasar el título correspondiente
+                    intent.putExtra("iconResource", mIconsLeft.get(currentPosition));  // Pasar el ícono correspondiente
+                    intent.putExtra("title", mTitles.get(currentPosition));            // Pasar el título correspondiente
 
                     // Iniciar la actividad de problemas
                     mContext.startActivity(intent);
@@ -91,7 +93,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     @Override
     public int getItemCount() {
-        return mTitles.length;
+        return mTitles.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
