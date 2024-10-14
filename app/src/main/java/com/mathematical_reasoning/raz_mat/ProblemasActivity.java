@@ -16,6 +16,7 @@ import java.util.List;
 public class ProblemasActivity extends AppCompatActivity {
 
     private SharedPreferences sharedPreferences;
+    Problema problema = new Problema();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +46,7 @@ public class ProblemasActivity extends AppCompatActivity {
         int dificultad = sharedPreferences.getInt("selected_difficulty", 1); // 1: Fácil, 2: Normal, 3: Difícil
 
         // Generar y mostrar el enunciado dinámico de series
-        Problema problema = new Problema();
+
         if (currentPosition == 0) {
             problema = ProblemSucesionesSeriesFactory.createProblemSucesionesSeries(this, dificultad);
             problemStatement.setText(problema.getEnunciado());
@@ -102,7 +103,8 @@ public class ProblemasActivity extends AppCompatActivity {
 
         // Acción filtro
         btnFilter.setOnClickListener(v -> {
-
+            int correctAnswerIndex = problema.getClave();  // Índice de la respuesta correcta
+            RadioButtonManager.disableTwoIncorrectOptions(answersRadioGroup, problema.getAlternativas(), correctAnswerIndex);
         });
         // Acción tips
         btnTips.setOnClickListener(v -> {

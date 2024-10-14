@@ -1,12 +1,15 @@
 package com.mathematical_reasoning.raz_mat.utils;
 
 import android.content.Context;
+import android.graphics.Paint;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import androidx.core.content.ContextCompat;
 import com.mathematical_reasoning.raz_mat.R;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class RadioButtonManager {
@@ -43,4 +46,32 @@ public class RadioButtonManager {
         // Configurar el estilo de RadioButton (poner en negrita cuando está seleccionado)
         RadioButtonUtils.setBoldWhenChecked(radioGroup);
     }
+
+    // Método para inhabilitar dos alternativas incorrectas
+    public static void disableTwoIncorrectOptions(RadioGroup radioGroup, List<String> alternativas, int correctAnswerIndex) {
+        List<Integer> incorrectIndexes = new ArrayList<>();
+
+        // Recoger los índices de las alternativas incorrectas
+        for (int i = 0; i < alternativas.size(); i++) {
+            if (i != correctAnswerIndex) {
+                incorrectIndexes.add(i);
+            }
+        }
+
+        // Mezclar los índices incorrectos y seleccionar dos
+        Collections.shuffle(incorrectIndexes);
+        List<Integer> selectedIndexes = incorrectIndexes.subList(0, 2);
+
+        // Aplicar el estilo de deshabilitado a las dos alternativas seleccionadas
+        for (int index : selectedIndexes) {
+            RadioButton radioButton = (RadioButton) radioGroup.getChildAt(index);
+            if (radioButton.isChecked()) {
+                radioButton.setChecked(false);
+            }
+            radioButton.setEnabled(false);  // Deshabilitar el RadioButton
+            radioButton.setTextColor(radioButton.getContext().getResources().getColor(android.R.color.darker_gray));  // Cambiar color a gris
+            radioButton.setPaintFlags(radioButton.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);  // Subrayar el texto (tachado)
+        }
+    }
+
 }

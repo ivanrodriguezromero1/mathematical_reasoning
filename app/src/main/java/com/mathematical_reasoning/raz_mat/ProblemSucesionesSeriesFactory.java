@@ -18,7 +18,7 @@ public class ProblemSucesionesSeriesFactory {
         // Determinar el tipo de problema basado en la dificultad
         switch (dificultad) {
             case 1:
-                tipo = random.nextInt(2) + 1;
+                tipo = 1;
                 break;
             case 2:
                 tipo = random.nextInt(4) + 1;
@@ -72,7 +72,7 @@ public class ProblemSucesionesSeriesFactory {
         Random random = new Random();
         int a = random.nextInt(5) + 1;
         int r = random.nextInt(5) + 2;
-        int n = dificultad * 5 + random.nextInt(4);
+        int n = dificultad * 4 + random.nextInt(5);
         int an = a + (n - 1) * r;
         String serie = a + ", " + (a + r) + ", " + (a + 2 * r) + ", ...";
         enunciado = getStatementSucesiones(enunciado, n, serie);
@@ -86,7 +86,7 @@ public class ProblemSucesionesSeriesFactory {
         Random random = new Random();
         int a = random.nextInt(5) + 1;
         int r = random.nextInt(5) + 2;
-        int n = dificultad * 5 + random.nextInt(4);
+        int n = dificultad * 4 + random.nextInt(5);
         int sn = a * n + (n - 1) * n * r / 2;
         String serie = a + ", " + (a + r) + ", " + (a + 2 * r) + ", ...";
         enunciado = getStatementSeries(enunciado, n, serie);
@@ -102,7 +102,7 @@ public class ProblemSucesionesSeriesFactory {
         int a = random.nextInt(6) + 1;
         int r1 = random.nextInt(6) + 2;
         int r2 = random.nextInt(4) + 1;
-        int n = dificultad * 5 + random.nextInt(4);
+        int n = dificultad * 5 + random.nextInt(5);
         int an = a + (n - 1) * r1 + (n - 1) * (n - 2) * r2 / 2;
         String serie = a + ", " + (a + r1) + ", " + (a + 2 * r1 + r2) + ", " + (a + 3 * r1 + 3 * r2) + ", ...";
         enunciado = getStatementSucesiones(enunciado, n, serie);
@@ -117,7 +117,7 @@ public class ProblemSucesionesSeriesFactory {
         int a = random.nextInt(6) + 1;
         int r1 = random.nextInt(6) + 2;
         int r2 = random.nextInt(4) + 1;
-        int n = dificultad * 5 + random.nextInt(4);
+        int n = dificultad * 5 + random.nextInt(5);
         int sn = a * n + (n - 1) * n * r1 / 2 + (n - 2) * (n - 1) * n * r2 / 6;
         String serie = a + ", " + (a + r1) + ", " + (a + 2 * r1 + r2) + ", " + (a + 3 * r1 + 3 * r2) + ", ...";
         enunciado = getStatementSeries(enunciado, n, serie);
@@ -134,7 +134,7 @@ public class ProblemSucesionesSeriesFactory {
         int r1 = random.nextInt(6) + 2;
         int r2 = random.nextInt(4) + 2;
         int r3 = random.nextInt(3) + 1;
-        int n = dificultad * 5 + random.nextInt(4);
+        int n = dificultad * 5 + random.nextInt(5);
         int an = a + (n - 1) * r1 + (n - 1) * (n - 2) * r2 / 2 + (n - 1) * (n - 2) * (n - 3) * r3 / 6;
         String serie = a + ", " + (a + r1) + ", " + (a + 2 * r1 + r2) + ", " + (a + 3 * r1 + 3 * r2 + r3) + ", ...";
         enunciado = getStatementSucesiones(enunciado, n, serie);
@@ -150,7 +150,7 @@ public class ProblemSucesionesSeriesFactory {
         int r1 = random.nextInt(6) + 2;
         int r2 = random.nextInt(4) + 2;
         int r3 = random.nextInt(3) + 1;
-        int n = dificultad * 5 + random.nextInt(4);
+        int n = dificultad * 5 + random.nextInt(5);
         int sn = a * n + (n - 1) * n * r1 / 2 + (n - 2) * (n - 1) * n * r2 / 6 + (n - 3) * (n - 2) * (n - 1) * n * r3 / 24;
         String serie = a + ", " + (a + r1) + ", " + (a + 2 * r1 + r2) + ", " + (a + 3 * r1 + 3 * r2 + r3) + ", ...";
         enunciado = getStatementSeries(enunciado, n, serie);
@@ -227,12 +227,15 @@ public class ProblemSucesionesSeriesFactory {
         int rpta = Integer.parseInt(respuesta);
         Random random = new Random();
         List<String> alternativas = new ArrayList<>();
-        alternativas.add(respuesta);
+        alternativas.add(respuesta); // Agregar la respuesta correcta
 
+        // Generar 3 alternativas incorrectas
         for (int i = 0; i < 3; i++) {
             int alternativa = random.nextInt(2) == 0
                     ? rpta + random.nextInt(5) + 1
                     : rpta - random.nextInt(3) - 1;
+
+            // Asegurarse de que no se repita una alternativa ya generada
             while (alternativas.contains(Integer.toString(alternativa))) {
                 alternativa = random.nextInt(2) == 0
                         ? rpta + random.nextInt(5) + 1
@@ -240,8 +243,12 @@ public class ProblemSucesionesSeriesFactory {
             }
             alternativas.add(Integer.toString(alternativa));
         }
-        Collections.sort(alternativas); // Para asegurar que las alternativas estén ordenadas
+
+        // Mezclar las alternativas para que la respuesta correcta no esté siempre en la misma posición
+        Collections.shuffle(alternativas);
+
         return alternativas;
     }
+
 }
 
