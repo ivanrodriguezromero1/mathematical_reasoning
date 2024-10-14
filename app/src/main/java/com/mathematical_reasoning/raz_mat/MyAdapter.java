@@ -81,7 +81,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
                     // Pasar el título y el ícono del ítem seleccionado si es necesario
                     intent.putExtra("iconResource", mIconsLeft.get(currentPosition));  // Pasar el ícono correspondiente
-                    intent.putExtra("title", mTitles.get(currentPosition));            // Pasar el título correspondiente
+                    intent.putExtra("title", mTitles.get(currentPosition));
+                    intent.putExtra("currentPosition", currentPosition);
 
                     // Iniciar la actividad de problemas
                     mContext.startActivity(intent);

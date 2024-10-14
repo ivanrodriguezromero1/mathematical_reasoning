@@ -1,1 +1,2 @@
-Encuentra el término _n_ de la serie aritmética: _serie_
+Encuentra la suma de los primeros _n_ términos de la siguiente sucesión aritmética:
+ _sucesion_

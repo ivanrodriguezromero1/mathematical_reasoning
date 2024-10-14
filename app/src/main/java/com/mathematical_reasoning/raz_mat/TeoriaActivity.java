@@ -1,16 +1,14 @@
 package com.mathematical_reasoning.raz_mat;
 
 import android.content.Intent;
-import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -42,7 +40,7 @@ public class TeoriaActivity extends AppCompatActivity {
 
         // Configurar el contenido de la teoría según el título
         if (title.equals("Sucesiones y Series")) {
-            contentTextView.setText(getTeoriaFromFile(R.raw.series_teoria));  // Contenido para "Series"
+            contentTextView.setText(getTeoriaFromFile(R.raw.sucesiones_teoria));  // Contenido para "Series"
         } else if (title.equals("Problemas sobre edades")) {
             contentTextView.setText(getTeoriaFromFile(R.raw.edades_teoria));  // Contenido para "Edades"
         } else if (title.equals("Problemas sobre móviles")) {

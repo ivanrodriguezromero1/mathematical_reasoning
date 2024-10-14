@@ -1,0 +1,2 @@
+Encuentra el término _n_ de la sucesión aritmética:
+ _sucesion_

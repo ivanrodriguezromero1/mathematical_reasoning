@@ -1,22 +1,17 @@
 package com.mathematical_reasoning.raz_mat;
 
 import android.content.SharedPreferences;
-import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import android.view.MenuItem;
 import android.content.Intent;
+import com.mathematical_reasoning.raz_mat.models.Problema;
+import com.mathematical_reasoning.raz_mat.utils.RadioButtonManager;
 import com.mathematical_reasoning.raz_mat.utils.RadioButtonUtils;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.Random;
+import java.util.List;
+
 
 public class ProblemasActivity extends AppCompatActivity {
 
@@ -35,13 +30,11 @@ public class ProblemasActivity extends AppCompatActivity {
         // Encuentra el RadioGroup en el layout
         RadioGroup answersRadioGroup = findViewById(R.id.answersRadioGroup);
 
-        // Usar el método de RadioButtonUtils para cambiar el estilo de texto
-        RadioButtonUtils.setBoldWhenChecked(answersRadioGroup);
-
         // Obtener los datos del Intent
         Intent intent = getIntent();
         int iconResource = intent.getIntExtra("iconResource", 0);
         String title = intent.getStringExtra("title");
+        int currentPosition = intent.getIntExtra("currentPosition",0);
 
         // Configurar el icono y el título
         iconImageView.setImageResource(iconResource);
@@ -52,21 +45,24 @@ public class ProblemasActivity extends AppCompatActivity {
         int dificultad = sharedPreferences.getInt("selected_difficulty", 1); // 1: Fácil, 2: Normal, 3: Difícil
 
         // Generar y mostrar el enunciado dinámico de series
-        String enunciadoFinal = "";
-        if (title.equals("Sucesiones y Series")) {
-            String enunciadoBase = getEnunciadoFromRaw(R.raw.series_enunciado);  // Cargar el archivo raw
-            enunciadoFinal = generarEnunciadoSeries(enunciadoBase, dificultad);
+        Problema problema = new Problema();
+        if (currentPosition == 0) {
+            problema = ProblemSucesionesSeriesFactory.createProblemSucesionesSeries(this, dificultad);
+            problemStatement.setText(problema.getEnunciado());
+            RadioButtonManager.setupRadioButtons(this, answersRadioGroup, problema.getAlternativas());
         }
 
-        problemStatement.setText(enunciadoFinal);  // Mostrar en el TextView
-
         // Referencias a los botones
-        LinearLayout comprobarButton = findViewById(R.id.comprobarLayout);
-        LinearLayout newButton = findViewById(R.id.nuevoLayout);
+        LinearLayout btnComprobar = findViewById(R.id.comprobarLayout);
+        LinearLayout btnNuevo = findViewById(R.id.nuevoLayout);
 
         // Configurar Bottom Navigation
         LinearLayout btnHome = findViewById(R.id.btn_home);
         LinearLayout btnOptions = findViewById(R.id.btn_options);
+
+        // Button filter and button tips
+        ImageButton btnFilter = findViewById(R.id.btnFilter);
+        ImageButton btnTips = findViewById(R.id.btnTips);
 
         // Cambiar color de los íconos y textos a blanco
         ImageView iconHome = btnHome.findViewById(R.id.btn_home_icon);
@@ -104,48 +100,26 @@ public class ProblemasActivity extends AppCompatActivity {
             }
         });
 
+        // Acción filtro
+        btnFilter.setOnClickListener(v -> {
+
+        });
+        // Acción tips
+        btnTips.setOnClickListener(v -> {
+
+        });
+
         // Acción de comprobar respuesta
-        comprobarButton.setOnClickListener(v -> {
+        btnComprobar.setOnClickListener(v -> {
             // Lógica para verificar la respuesta seleccionada
         });
 
         // Acción de nuevo problema
-        newButton.setOnClickListener(v -> {
+        btnNuevo.setOnClickListener(v -> {
             // Lógica para cargar un nuevo problema
         });
+
+
     }
 
-    // Función para cargar el contenido desde un archivo en raw
-    private String getEnunciadoFromRaw(int resourceId) {
-        StringBuilder enunciado = new StringBuilder();
-        InputStream inputStream = getResources().openRawResource(resourceId);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-        String line;
-
-        try {
-            while ((line = reader.readLine()) != null) {
-                enunciado.append(line).append("\n");
-            }
-            reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return enunciado.toString();
-    }
-
-    // Generar el enunciado dinámico de series basado en la dificultad
-    private String generarEnunciadoSeries(String enunciado, int dificultad) {
-        Random random = new Random();
-        int a = random.nextInt(8) + 1; // Generar el valor de 'a'
-        int r = random.nextInt(8) + 2; // Generar la razón 'r'
-        int n = (dificultad + 1) * 5 + random.nextInt(5);  // Generar 'n' basado en la dificultad
-        String serie = a + ", " + (a + r) + ", " + (a + 2 * r) + ", ...";
-
-        // Reemplazar los placeholders en el enunciado
-        enunciado = enunciado.replace("_n_", String.valueOf(n))
-                .replace("_serie_", serie);
-
-        return enunciado;
-    }
 }

@@ -52,7 +52,7 @@
                     android:gravity="start|center_vertical">
 
                 <ImageButton
-                        android:id="@+id/filterButton"
+                        android:id="@+id/btnFilter"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:src="@drawable/ic_filter"
@@ -67,7 +67,7 @@
                         android:contentDescription="@string/filtrar_button_description"/>
 
                 <ImageButton
-                        android:id="@+id/hintButton"
+                        android:id="@+id/btnTips"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:src="@drawable/ic_lightbulb"
