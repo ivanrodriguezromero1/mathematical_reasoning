@@ -81,10 +81,25 @@
                         android:layout_marginEnd="16dp"
                         android:contentDescription="@string/hint_button_description"/>
             </LinearLayout>
-
-            <!-- RadioGroup con las opciones de respuesta -->
-            <include layout="@layout/l4_layout_problemas_radio_group"/>
-
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <!-- RadioGroup con las opciones de respuesta -->
+                <include
+                        layout="@layout/l4_layout_problemas_radio_group"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                <ImageView
+                        android:id="@+id/answerResultImage"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/image_correct"
+                        android:visibility="gone"
+                        android:layout_weight="2"/>
+            </LinearLayout>
             <!-- Botones de Comprobar y Nuevo -->
             <LinearLayout
                     android:layout_width="match_parent"

@@ -1,5 +1,5 @@
-Serie aritmética de primer grado:
-  _serie_
+Sucesión aritmética de primer grado:
+  _sucesion_
 
  Primer término: a₁ = _a_
  Razón aritmética: r = _r_

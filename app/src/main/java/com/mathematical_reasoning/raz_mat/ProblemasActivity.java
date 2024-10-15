@@ -17,7 +17,7 @@ public class ProblemasActivity extends AppCompatActivity {
 
     private SharedPreferences sharedPreferences;
     Problema problema = new Problema();
-
+    boolean isCheckMode = true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -113,7 +113,48 @@ public class ProblemasActivity extends AppCompatActivity {
 
         // Acción de comprobar respuesta
         btnComprobar.setOnClickListener(v -> {
-            // Lógica para verificar la respuesta seleccionada
+            if (isCheckMode) {
+                // Estado "Comprobar"
+
+                // Obtener el ID del RadioButton seleccionado
+                int selectedId = answersRadioGroup.getCheckedRadioButtonId();
+
+                if (selectedId == -1) {
+                    // Si no se ha seleccionado ninguna opción
+                    Toast.makeText(this, "Por favor, selecciona una opción.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                // Verificar si la opción seleccionada es correcta
+                RadioButton selectedRadioButton = findViewById(selectedId);
+                String selectedText = selectedRadioButton.getText().toString();
+
+                // Comprobar si la respuesta es correcta
+                if (selectedText.equals(problema.getAlternativas().get(problema.getClave()))) {
+                    // Mostrar imagen de correcto
+                    ImageView resultIcon = findViewById(R.id.answerResultImage);
+                    resultIcon.setImageResource(R.drawable.image_correct);
+                    resultIcon.setVisibility(View.VISIBLE);
+                } else {
+                    // Mostrar imagen de incorrecto
+                    ImageView resultIcon = findViewById(R.id.answerResultImage);
+                    resultIcon.setImageResource(R.drawable.image_error);
+                    resultIcon.setVisibility(View.VISIBLE);
+                }
+
+                // Cambiar el texto dentro del LinearLayout "btnComprobar"
+                TextView btnComprobarText = btnComprobar.findViewById(R.id.comprobarText); // Aquí debes asegurarte de tener el ID correcto del TextView
+                btnComprobarText.setText("Ver solución");
+                isCheckMode = false;  // Cambiar a modo "Ver solución"
+
+            } else {
+                // Estado "Ver solución"
+                // Aquí puedes mostrar la solución del problema
+                // Ejemplo: Mostrar la explicación completa de la solución en un TextView
+
+                // Muestra la solución completa
+                Toast.makeText(this, problema.getSolucion(), Toast.LENGTH_LONG).show();
+            }
         });
 
         // Acción de nuevo problema

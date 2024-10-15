@@ -1,5 +1,5 @@
- Serie aritmética de tercer grado:
-  _serie_
+ Sucesión aritmética de tercer grado:
+  _sucesion_
 
  Primer término: a₁ = _a_
  Primera razón aritmética: r₁ = _r1_
