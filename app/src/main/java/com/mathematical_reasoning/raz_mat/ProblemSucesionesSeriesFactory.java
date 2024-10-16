@@ -31,44 +31,51 @@ public class ProblemSucesionesSeriesFactory {
         Problema problema;
         String enunciado;
         String solucion;
+        String tip;
         // Crear problema basado en el tipo generado
         switch (tipo) {
             case 1:
                 enunciado = FileUtils.getTextFromRaw(context, R.raw.sucesiones_enunciado);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_sucesiones_nth1);
-                problema = createProblemSucesionesNth1(enunciado, solucion, dificultad);
+                tip = FileUtils.getTextFromRaw(context, R.raw.tip_sucesiones_nth1);
+                problema = createProblemSucesionesNth1(enunciado, solucion, dificultad, tip);
                 break;
             case 2:
                 enunciado = FileUtils.getTextFromRaw(context, R.raw.series_enunciado);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_series_nth1);
-                problema = createProblemSeriesNth1(enunciado, solucion, dificultad);
+                tip = FileUtils.getTextFromRaw(context, R.raw.tip_series_nth1);
+                problema = createProblemSeriesNth1(enunciado, solucion, dificultad, tip);
                 break;
             case 3:
                 enunciado = FileUtils.getTextFromRaw(context, R.raw.sucesiones_enunciado);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_sucesiones_nth2);
-                problema = createProblemSucesionesNth2(enunciado, solucion, dificultad);
+                tip = FileUtils.getTextFromRaw(context, R.raw.tip_sucesiones_nth2);
+                problema = createProblemSucesionesNth2(enunciado, solucion, dificultad, tip);
                 break;
             case 4:
                 enunciado = FileUtils.getTextFromRaw(context, R.raw.series_enunciado);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_series_nth2);
-                problema = createProblemSeriesNth2(enunciado, solucion, dificultad);
+                tip = FileUtils.getTextFromRaw(context, R.raw.tip_series_nth2);
+                problema = createProblemSeriesNth2(enunciado, solucion, dificultad, tip);
                 break;
             case 5:
                 enunciado = FileUtils.getTextFromRaw(context, R.raw.sucesiones_enunciado);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_sucesiones_nth3);
-                problema = createProblemSucesionesNth3(enunciado, solucion, dificultad);
+                tip = FileUtils.getTextFromRaw(context, R.raw.tip_sucesiones_nth3);
+                problema = createProblemSucesionesNth3(enunciado, solucion, dificultad, tip);
                 break;
             default:
                 enunciado = FileUtils.getTextFromRaw(context, R.raw.series_enunciado);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_series_nth3);
-                problema = createProblemSeriesNth3(enunciado, solucion, dificultad);
+                tip = FileUtils.getTextFromRaw(context, R.raw.tip_series_nth3);
+                problema = createProblemSeriesNth3(enunciado, solucion, dificultad, tip);
                 break;
         }
         return problema;
     }
 
     // Métodos para crear problemas de series de primer grado (término n-ésimo y suma)
-    public static Problema createProblemSucesionesNth1(String enunciado, String solucion, int dificultad) {
+    public static Problema createProblemSucesionesNth1(String enunciado, String solucion, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(5) + 1;
         int r = random.nextInt(5) + 2;
@@ -79,10 +86,10 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSucesionNth1(solucion, sucesion, a, r, n, an);
         List<String> alternativas = getAlternatives(Integer.toString(an));
         int clave = alternativas.indexOf(Integer.toString(an));
-        return new Problema(enunciado, alternativas, clave, solucion);
+        return new Problema(enunciado, alternativas, clave, solucion, tip);
     }
 
-    public static Problema createProblemSeriesNth1(String enunciado, String solucion, int dificultad) {
+    public static Problema createProblemSeriesNth1(String enunciado, String solucion, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(5) + 1;
         int r = random.nextInt(5) + 2;
@@ -93,11 +100,11 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSerieNth1(solucion, sucesion, a, r, n, sn);
         List<String> alternativas = getAlternatives(Integer.toString(sn));
         int clave = alternativas.indexOf(Integer.toString(sn));
-        return new Problema(enunciado, alternativas, clave, solucion);
+        return new Problema(enunciado, alternativas, clave, solucion, tip);
     }
 
     // Métodos para crear problemas de series de segundo grado (término n-ésimo y suma)
-    public static Problema createProblemSucesionesNth2(String enunciado, String solucion, int dificultad) {
+    public static Problema createProblemSucesionesNth2(String enunciado, String solucion, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(6) + 1;
         int r1 = random.nextInt(6) + 2;
@@ -109,10 +116,10 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSucesionNth2(solucion, sucesion, a, r1, r2, n, an);
         List<String> alternativas = getAlternatives(Integer.toString(an));
         int clave = alternativas.indexOf(Integer.toString(an));
-        return new Problema(enunciado, alternativas, clave, solucion);
+        return new Problema(enunciado, alternativas, clave, solucion, tip);
     }
 
-    public static Problema createProblemSeriesNth2(String enunciado, String solucion, int dificultad) {
+    public static Problema createProblemSeriesNth2(String enunciado, String solucion, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(6) + 1;
         int r1 = random.nextInt(6) + 2;
@@ -124,11 +131,11 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSerieNth2(solucion, sucesion, a, r1, r2, n, sn);
         List<String> alternativas = getAlternatives(Integer.toString(sn));
         int clave = alternativas.indexOf(Integer.toString(sn));
-        return new Problema(enunciado, alternativas, clave, solucion);
+        return new Problema(enunciado, alternativas, clave, solucion, tip);
     }
 
     // Métodos para crear problemas de series de tercer grado (término n-ésimo y suma)
-    public static Problema createProblemSucesionesNth3(String enunciado, String solucion, int dificultad) {
+    public static Problema createProblemSucesionesNth3(String enunciado, String solucion, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(7) + 1;
         int r1 = random.nextInt(6) + 2;
@@ -141,10 +148,10 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSucesionNth3(solucion, sucesion, a, r1, r2, r3, n, an);
         List<String> alternativas = getAlternatives(Integer.toString(an));
         int clave = alternativas.indexOf(Integer.toString(an));
-        return new Problema(enunciado, alternativas, clave, solucion);
+        return new Problema(enunciado, alternativas, clave, solucion, tip);
     }
 
-    public static Problema createProblemSeriesNth3(String enunciado, String solucion, int dificultad) {
+    public static Problema createProblemSeriesNth3(String enunciado, String solucion, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(7) + 1;
         int r1 = random.nextInt(6) + 2;
@@ -157,7 +164,7 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSerieNth3(solucion, sucesion, a, r1, r2, r3, n, sn);
         List<String> alternativas = getAlternatives(Integer.toString(sn));
         int clave = alternativas.indexOf(Integer.toString(sn));
-        return new Problema(enunciado, alternativas, clave, solucion);
+        return new Problema(enunciado, alternativas, clave, solucion, tip);
     }
 
     // Métodos auxiliares

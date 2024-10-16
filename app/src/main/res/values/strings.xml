@@ -21,5 +21,7 @@
     <string name="solution_icon">Icono de solución</string>
     <string name="back_icon">Icono de atrás</string>
     <string name="ver_solucion">VER SOLUCIÓN</string>
+    <string name="tip_title">Consejo</string>
+    <string name="close">Cerrar</string>
     <string name="selecciona_opcion">Por favor, selecciona una opción.</string>
 </resources>

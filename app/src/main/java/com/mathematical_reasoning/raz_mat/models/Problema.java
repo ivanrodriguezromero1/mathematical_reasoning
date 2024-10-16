@@ -14,4 +14,5 @@ public class Problema {
     private List<String> alternativas;
     private int clave;
     private String solucion;
+    private String tip;
 }

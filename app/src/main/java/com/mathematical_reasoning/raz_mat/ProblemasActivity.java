@@ -12,6 +12,8 @@ import com.mathematical_reasoning.raz_mat.utils.RadioButtonManager;
 import com.mathematical_reasoning.raz_mat.utils.RadioButtonUtils;
 import java.util.List;
 
+import static com.mathematical_reasoning.raz_mat.utils.DialogAlert.showTipDialog;
+
 
 public class ProblemasActivity extends AppCompatActivity {
 
@@ -110,7 +112,7 @@ public class ProblemasActivity extends AppCompatActivity {
         });
         // Acción tips
         btnTips.setOnClickListener(v -> {
-
+            showTipDialog(this, problema.getTip());
         });
 
         // Acción de comprobar respuesta
@@ -185,7 +187,6 @@ public class ProblemasActivity extends AppCompatActivity {
             startActivity(renovarIntent);
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         });
-
 
     }
 
