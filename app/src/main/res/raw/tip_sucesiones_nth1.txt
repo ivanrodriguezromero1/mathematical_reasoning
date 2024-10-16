@@ -1,0 +1,7 @@
+ Sucesión aritmética de primer grado:
+ Término enésimo:
+  aₙ = a₁ + (n-1).r
+ Donde:
+  a₁ : Primer término
+  r : Razón aritmética
+  n : Número de término
