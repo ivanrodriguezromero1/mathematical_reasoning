@@ -74,9 +74,9 @@ public class ProblemSucesionesSeriesFactory {
         int r = random.nextInt(5) + 2;
         int n = dificultad * 4 + random.nextInt(5);
         int an = a + (n - 1) * r;
-        String serie = a + ", " + (a + r) + ", " + (a + 2 * r) + ", ...";
-        enunciado = getStatementSucesiones(enunciado, n, serie);
-        solucion = getSolutionSucesionNth1(solucion, serie, a, r, n, an);
+        String sucesion = a + ", " + (a + r) + ", " + (a + 2 * r) + ", ...";
+        enunciado = getStatementSucesiones(enunciado, n, sucesion);
+        solucion = getSolutionSucesionNth1(solucion, sucesion, a, r, n, an);
         List<String> alternativas = getAlternatives(Integer.toString(an));
         int clave = alternativas.indexOf(Integer.toString(an));
         return new Problema(enunciado, alternativas, clave, solucion);
@@ -88,9 +88,9 @@ public class ProblemSucesionesSeriesFactory {
         int r = random.nextInt(5) + 2;
         int n = dificultad * 4 + random.nextInt(5);
         int sn = a * n + (n - 1) * n * r / 2;
-        String serie = a + ", " + (a + r) + ", " + (a + 2 * r) + ", ...";
-        enunciado = getStatementSeries(enunciado, n, serie);
-        solucion = getSolutionSerieNth1(solucion, serie, a, r, n, sn);
+        String sucesion = a + ", " + (a + r) + ", " + (a + 2 * r) + ", ...";
+        enunciado = getStatementSeries(enunciado, n, sucesion);
+        solucion = getSolutionSerieNth1(solucion, sucesion, a, r, n, sn);
         List<String> alternativas = getAlternatives(Integer.toString(sn));
         int clave = alternativas.indexOf(Integer.toString(sn));
         return new Problema(enunciado, alternativas, clave, solucion);
@@ -104,9 +104,9 @@ public class ProblemSucesionesSeriesFactory {
         int r2 = random.nextInt(4) + 1;
         int n = dificultad * 5 + random.nextInt(5);
         int an = a + (n - 1) * r1 + (n - 1) * (n - 2) * r2 / 2;
-        String serie = a + ", " + (a + r1) + ", " + (a + 2 * r1 + r2) + ", " + (a + 3 * r1 + 3 * r2) + ", ...";
-        enunciado = getStatementSucesiones(enunciado, n, serie);
-        solucion = getSolutionSucesionNth2(solucion, serie, a, r1, r2, n, an);
+        String sucesion = a + ", " + (a + r1) + ", " + (a + 2 * r1 + r2) + ", " + (a + 3 * r1 + 3 * r2) + ", ...";
+        enunciado = getStatementSucesiones(enunciado, n, sucesion);
+        solucion = getSolutionSucesionNth2(solucion, sucesion, a, r1, r2, n, an);
         List<String> alternativas = getAlternatives(Integer.toString(an));
         int clave = alternativas.indexOf(Integer.toString(an));
         return new Problema(enunciado, alternativas, clave, solucion);
@@ -119,9 +119,9 @@ public class ProblemSucesionesSeriesFactory {
         int r2 = random.nextInt(4) + 1;
         int n = dificultad * 5 + random.nextInt(5);
         int sn = a * n + (n - 1) * n * r1 / 2 + (n - 2) * (n - 1) * n * r2 / 6;
-        String serie = a + ", " + (a + r1) + ", " + (a + 2 * r1 + r2) + ", " + (a + 3 * r1 + 3 * r2) + ", ...";
-        enunciado = getStatementSeries(enunciado, n, serie);
-        solucion = getSolutionSerieNth2(solucion, serie, a, r1, r2, n, sn);
+        String sucesion = a + ", " + (a + r1) + ", " + (a + 2 * r1 + r2) + ", " + (a + 3 * r1 + 3 * r2) + ", ...";
+        enunciado = getStatementSeries(enunciado, n, sucesion);
+        solucion = getSolutionSerieNth2(solucion, sucesion, a, r1, r2, n, sn);
         List<String> alternativas = getAlternatives(Integer.toString(sn));
         int clave = alternativas.indexOf(Integer.toString(sn));
         return new Problema(enunciado, alternativas, clave, solucion);
@@ -136,9 +136,9 @@ public class ProblemSucesionesSeriesFactory {
         int r3 = random.nextInt(3) + 1;
         int n = dificultad * 5 + random.nextInt(5);
         int an = a + (n - 1) * r1 + (n - 1) * (n - 2) * r2 / 2 + (n - 1) * (n - 2) * (n - 3) * r3 / 6;
-        String serie = a + ", " + (a + r1) + ", " + (a + 2 * r1 + r2) + ", " + (a + 3 * r1 + 3 * r2 + r3) + ", ...";
-        enunciado = getStatementSucesiones(enunciado, n, serie);
-        solucion = getSolutionSucesionNth3(solucion, serie, a, r1, r2, r3, n, an);
+        String sucesion = a + ", " + (a + r1) + ", " + (a + 2 * r1 + r2) + ", " + (a + 3 * r1 + 3 * r2 + r3) + ", ...";
+        enunciado = getStatementSucesiones(enunciado, n, sucesion);
+        solucion = getSolutionSucesionNth3(solucion, sucesion, a, r1, r2, r3, n, an);
         List<String> alternativas = getAlternatives(Integer.toString(an));
         int clave = alternativas.indexOf(Integer.toString(an));
         return new Problema(enunciado, alternativas, clave, solucion);
@@ -152,9 +152,9 @@ public class ProblemSucesionesSeriesFactory {
         int r3 = random.nextInt(3) + 1;
         int n = dificultad * 5 + random.nextInt(5);
         int sn = a * n + (n - 1) * n * r1 / 2 + (n - 2) * (n - 1) * n * r2 / 6 + (n - 3) * (n - 2) * (n - 1) * n * r3 / 24;
-        String serie = a + ", " + (a + r1) + ", " + (a + 2 * r1 + r2) + ", " + (a + 3 * r1 + 3 * r2 + r3) + ", ...";
-        enunciado = getStatementSeries(enunciado, n, serie);
-        solucion = getSolutionSerieNth3(solucion, serie, a, r1, r2, r3, n, sn);
+        String sucesion = a + ", " + (a + r1) + ", " + (a + 2 * r1 + r2) + ", " + (a + 3 * r1 + 3 * r2 + r3) + ", ...";
+        enunciado = getStatementSeries(enunciado, n, sucesion);
+        solucion = getSolutionSerieNth3(solucion, sucesion, a, r1, r2, r3, n, sn);
         List<String> alternativas = getAlternatives(Integer.toString(sn));
         int clave = alternativas.indexOf(Integer.toString(sn));
         return new Problema(enunciado, alternativas, clave, solucion);
@@ -173,6 +173,8 @@ public class ProblemSucesionesSeriesFactory {
                 .replace("_a_", Integer.toString(a))
                 .replace("_r_", Integer.toString(r))
                 .replace("_n_", Integer.toString(n))
+                .replace("_n-1_", Integer.toString(n-1))
+                .replace("_(n-1)*r_", Integer.toString((n-1)*r))
                 .replace("_an_", Integer.toString(an));
     }
 
@@ -181,6 +183,9 @@ public class ProblemSucesionesSeriesFactory {
                 .replace("_a_", Integer.toString(a))
                 .replace("_r_", Integer.toString(r))
                 .replace("_n_", Integer.toString(n))
+                .replace("_n-1_", Integer.toString(n-1))
+                .replace("_a*n_", Integer.toString(a*n))
+                .replace("_[(n-1)*n*r]/2_", Integer.toString(((n-1)*n*r)/2))
                 .replace("_sn_", Integer.toString(sn));
     }
 
@@ -190,6 +195,10 @@ public class ProblemSucesionesSeriesFactory {
                 .replace("_r1_", Integer.toString(r1))
                 .replace("_r2_", Integer.toString(r2))
                 .replace("_n_", Integer.toString(n))
+                .replace("_n-1_", Integer.toString(n-1))
+                .replace("_n-2_", Integer.toString(n-2))
+                .replace("_(n-1)*r1_", Integer.toString((n-1)*r1))
+                .replace("_[(n-1)*(n-2)*r2]/2_", Integer.toString(((n-1)*(n-2)*r2)/2))
                 .replace("_an_", Integer.toString(an));
     }
 
@@ -199,6 +208,11 @@ public class ProblemSucesionesSeriesFactory {
                 .replace("_r1_", Integer.toString(r1))
                 .replace("_r2_", Integer.toString(r2))
                 .replace("_n_", Integer.toString(n))
+                .replace("_n-1_", Integer.toString(n-1))
+                .replace("_n-2_", Integer.toString(n-2))
+                .replace("_a*n_", Integer.toString(a*n))
+                .replace("_[(n-1)*n*r1]/2_", Integer.toString(((n-1)*n*r1)/2))
+                .replace("_[(n-2)*(n-1)*n*r2]/6_", Integer.toString(((n-2)*(n-1)*n*r2)/6))
                 .replace("_sn_", Integer.toString(sn));
     }
 
@@ -209,6 +223,12 @@ public class ProblemSucesionesSeriesFactory {
                 .replace("_r2_", Integer.toString(r2))
                 .replace("_r3_", Integer.toString(r3))
                 .replace("_n_", Integer.toString(n))
+                .replace("_n-1_", Integer.toString(n-1))
+                .replace("_n-2_", Integer.toString(n-2))
+                .replace("_n-3_", Integer.toString(n-3))
+                .replace("_(n-1)*r1_", Integer.toString((n-1)*r1))
+                .replace("_[(n-1)*(n-2)*r2]/2_", Integer.toString(((n-1)*(n-2)*r2)/2))
+                .replace("_[(n-1)*(n-2)*(n-3)*r3]/6_", Integer.toString(((n-1)*(n-2)*(n-3)*r3)/6))
                 .replace("_an_", Integer.toString(an));
     }
 
@@ -219,6 +239,13 @@ public class ProblemSucesionesSeriesFactory {
                 .replace("_r2_", Integer.toString(r2))
                 .replace("_r3_", Integer.toString(r3))
                 .replace("_n_", Integer.toString(n))
+                .replace("_n-1_", Integer.toString(n-1))
+                .replace("_n-2_", Integer.toString(n-2))
+                .replace("_n-3_", Integer.toString(n-3))
+                .replace("_a*n_", Integer.toString(a*n))
+                .replace("_[(n-1)*n*r1]/2_", Integer.toString(((n-1)*n*r1)/2))
+                .replace("_[(n-2)*(n-1)*n*r2]/6_", Integer.toString(((n-2)*(n-1)*n*r2)/6))
+                .replace("_[(n-3)*(n-2)*(n-1)*n*r3]/24_", Integer.toString(((n-3)*(n-2)*(n-1)*n*r3)/24))
                 .replace("_sn_", Integer.toString(sn));
     }
 
@@ -251,4 +278,3 @@ public class ProblemSucesionesSeriesFactory {
     }
 
 }
-
