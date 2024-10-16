@@ -18,7 +18,7 @@ public class ProblemSucesionesSeriesFactory {
         // Determinar el tipo de problema basado en la dificultad
         switch (dificultad) {
             case 1:
-                tipo = 1;
+                tipo = random.nextInt(2) + 1;
                 break;
             case 2:
                 tipo = random.nextInt(4) + 1;

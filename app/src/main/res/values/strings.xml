@@ -16,4 +16,10 @@
     <string name="button_opciones">Opciones</string>
     <string name="button_premium">Premium</string>
     <string name="button_compartir">Compartir</string>
+    <string name="solution">SOLUCIÓN</string>
+    <string name="back">ATRÁS</string>
+    <string name="solution_icon">Icono de solución</string>
+    <string name="back_icon">Icono de atrás</string>
+    <string name="ver_solucion">VER SOLUCIÓN</string>
+    <string name="selecciona_opcion">Por favor, selecciona una opción.</string>
 </resources>

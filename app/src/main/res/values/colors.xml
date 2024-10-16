@@ -5,6 +5,6 @@
     <color name="buttonComprobarColor">#1a8081</color>
     <color name="buttonNuevoColor">#0e7cea</color>
     <color name="buttonFiltroColor">#006400</color>
-    <color name="buttonBombillaColor">#FFC107</color>
+    <color name="buttonBombillaColor">#EFB406</color>
     <color name="radioButtonSelected">#6D056D</color>
 </resources>

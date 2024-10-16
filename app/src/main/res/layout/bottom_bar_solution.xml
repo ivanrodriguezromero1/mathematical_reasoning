@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+    <!-- Fondo de color #0B429E -->
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0B429E" />
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image_bottom_bar"
+            android:scaleType="centerCrop"
+            android:alpha="0.5"
+            android:contentDescription="@null" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:paddingTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="goBackToProblem">
+
+        <ImageView
+                android:id="@+id/backIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/symbols_arrow_back"
+                app:tint="@android:color/white"
+                android:contentDescription="@string/back_icon" />
+
+        <TextView
+                android:id="@+id/backText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/back"
+                android:textSize="20sp"
+                android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -93,7 +93,7 @@ public class ProblemasActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Acción para abrir la actividad de OptionsActivity
                 Intent intent = new Intent(ProblemasActivity.this, OptionsActivity.class);
-                intent.putExtra("fromActivity", "TeoriaActivity");  // Pasar información de qué actividad proviene
+                intent.putExtra("fromActivity", "ProblemasActivity");  // Pasar información de qué actividad proviene
                 intent.putExtra("iconResource", getIntent().getIntExtra("iconResource", 0)); // Pasar el ícono correspondiente
                 intent.putExtra("title", getIntent().getStringExtra("title")); // Pasar el título correspondiente
                 startActivity(intent);
@@ -105,6 +105,8 @@ public class ProblemasActivity extends AppCompatActivity {
         btnFilter.setOnClickListener(v -> {
             int correctAnswerIndex = problema.getClave();  // Índice de la respuesta correcta
             RadioButtonManager.disableTwoIncorrectOptions(answersRadioGroup, problema.getAlternativas(), correctAnswerIndex);
+            btnFilter.setEnabled(false);
+            btnFilter.setAlpha(0.5f);
         });
         // Acción tips
         btnTips.setOnClickListener(v -> {
@@ -121,7 +123,7 @@ public class ProblemasActivity extends AppCompatActivity {
 
                 if (selectedId == -1) {
                     // Si no se ha seleccionado ninguna opción
-                    Toast.makeText(this, "Por favor, selecciona una opción.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.selecciona_opcion), Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -144,22 +146,44 @@ public class ProblemasActivity extends AppCompatActivity {
 
                 // Cambiar el texto dentro del LinearLayout "btnComprobar"
                 TextView btnComprobarText = btnComprobar.findViewById(R.id.comprobarText); // Aquí debes asegurarte de tener el ID correcto del TextView
-                btnComprobarText.setText("Ver solución");
+                btnComprobarText.setText(getString(R.string.ver_solucion));
+
+                // Deshabilitar los botones de filtro y tips
+                btnFilter.setEnabled(false);
+                btnTips.setEnabled(false);
+
+                // Cambiar apariencia para indicar que están inhabilitados (opcional)
+                btnFilter.setAlpha(0.5f); // Reducir opacidad
+                btnTips.setAlpha(0.5f); // Reducir opacidad
+
+                // Deshabilitar los RadioButtons en el RadioGroup
+                for (int i = 0; i < answersRadioGroup.getChildCount(); i++) {
+                    View radioButton = answersRadioGroup.getChildAt(i);
+                    radioButton.setEnabled(false);  // Deshabilitar el RadioButton
+                    radioButton.setAlpha(0.9f);
+                }
+
                 isCheckMode = false;  // Cambiar a modo "Ver solución"
+
 
             } else {
                 // Estado "Ver solución"
-                // Aquí puedes mostrar la solución del problema
-                // Ejemplo: Mostrar la explicación completa de la solución en un TextView
-
-                // Muestra la solución completa
-                Toast.makeText(this, problema.getSolucion(), Toast.LENGTH_LONG).show();
+                Intent solutionIntent = new Intent(ProblemasActivity.this, SolutionActivity.class);
+                solutionIntent.putExtra("solucion", problema.getSolucion());
+                solutionIntent.putExtra("esCorrecta", problema.getClave() == answersRadioGroup.getCheckedRadioButtonId());
+                startActivity(solutionIntent);
+                overridePendingTransition(R.anim.slide_in_top, R.anim.slide_out_bottom);
             }
         });
 
         // Acción de nuevo problema
         btnNuevo.setOnClickListener(v -> {
-            // Lógica para cargar un nuevo problema
+            Intent renovarIntent = new Intent(ProblemasActivity.this, ProblemasActivity.class);
+            renovarIntent.putExtra("iconResource", iconResource);  // Pasar el ícono correspondiente
+            renovarIntent.putExtra("title", title);
+            renovarIntent.putExtra("currentPosition", currentPosition);
+            startActivity(renovarIntent);
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         });
 
 
