@@ -8,8 +8,6 @@
     <string name="options_easy">Fácil</string>
     <string name="options_normal">Normal</string>
     <string name="options_hard">Difícil</string>
-    <string name="filtrar_button_description">Filtrar</string>
-    <string name="hint_button_description">Mostrar pista</string>
     <string name="button_comprobar">COMPROBAR</string>
     <string name="button_nuevo">NUEVO</string>
     <string name="button_inicio">Inicio</string>
@@ -24,7 +22,8 @@
     <string name="tip_title">Consejo</string>
     <string name="close">Cerrar</string>
     <string name="selecciona_opcion">Por favor, selecciona una opción.</string>
-    <string name="filter_text">Tachar</string>
+    <string name="tachar_text">Tachar</string>
     <string name="tip_text">Consejo</string>
-    <string name="pre_calculate_text">Pre calcular</string>
+    <string name="precalculate_text">Precalcular</string>
+    <string name="send_problem_text">Enviar</string>
 </resources>

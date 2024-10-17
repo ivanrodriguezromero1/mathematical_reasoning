@@ -65,7 +65,7 @@ public class ProblemasActivity extends AppCompatActivity {
         LinearLayout btnOptions = findViewById(R.id.btn_options);
 
         // Button filter and button tips
-        ImageButton btnFilter = findViewById(R.id.btnFilter);
+        ImageButton btnTachar = findViewById(R.id.btnTachar);
         ImageButton btnTips = findViewById(R.id.btnTips);
 
         // Cambiar color de los íconos y textos a blanco
@@ -105,11 +105,11 @@ public class ProblemasActivity extends AppCompatActivity {
         });
 
         // Acción filtro
-        btnFilter.setOnClickListener(v -> {
+        btnTachar.setOnClickListener(v -> {
             int correctAnswerIndex = problema.getClave();  // Índice de la respuesta correcta
             RadioButtonManager.disableTwoIncorrectOptions(answersRadioGroup, problema.getAlternativas(), correctAnswerIndex);
-            btnFilter.setEnabled(false);
-            btnFilter.setAlpha(0.5f);
+            btnTachar.setEnabled(false);
+            btnTachar.setAlpha(0.5f);
         });
         // Acción tips
         btnTips.setOnClickListener(v -> {
@@ -152,10 +152,10 @@ public class ProblemasActivity extends AppCompatActivity {
                 btnComprobarText.setText(getString(R.string.ver_solucion));
 
                 // Deshabilitar los botones de filtro y tips
-                btnFilter.setEnabled(false);
+                btnTachar.setEnabled(false);
                 btnTips.setEnabled(false);
                 // Cambiar apariencia para indicar que están inhabilitados (opcional)
-                btnFilter.setAlpha(0.5f); // Reducir opacidad
+                btnTachar.setAlpha(0.5f); // Reducir opacidad
                 btnTips.setAlpha(0.5f); // Reducir opacidad
 
                 // Deshabilitar los RadioButtons en el RadioGroup
@@ -198,8 +198,8 @@ public class ProblemasActivity extends AppCompatActivity {
                     // Generar un nuevo problema (nueva página)
                     problema = ProblemSucesionesSeriesFactory.createProblemSucesionesSeries(ProblemasActivity.this, dificultad);
                     problemStatement.setText(problema.getEnunciado());
-                    btnFilter.setEnabled(true);
-                    btnFilter.setAlpha(1f);
+                    btnTachar.setEnabled(true);
+                    btnTachar.setAlpha(1f);
                     btnTips.setEnabled(true);
                     btnTips.setAlpha(1f);
                     isCheckMode = true;

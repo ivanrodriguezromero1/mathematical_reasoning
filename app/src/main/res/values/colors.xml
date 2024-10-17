@@ -5,12 +5,14 @@
     <color name="azulPersonalizado">#1D30B3</color>
     <color name="buttonComprobarColor">#1a8081</color>
     <color name="buttonNuevoColor">#0e7cea</color>
-    <color name="buttonFiltroColor">#666565</color>
-    <color name="buttonFiltroSeleccionadoColor">#CCCCCC</color>
+    <color name="buttonTacharColor">#666565</color>
+    <color name="buttonTacharSeleccionadoColor">#CCCCCC</color>
     <color name="buttonBombillaColor">#EFB406</color>
     <color name="buttonBombillaSeleccionadoColor">#33FFC107</color>
-    <color name="buttonPreCalcularColor">#673AB7</color>
-    <color name="buttonPreCalcularSeleccionadoColor">#AA7DFB</color>
+    <color name="buttonPrecalcularColor">#673AB7</color>
+    <color name="buttonPrecalcularSeleccionadoColor">#C8AAFF</color>
+    <color name="buttonEnviarProblemaColor">#038A9B</color>
+    <color name="buttonEnviarProblemaSeleccionadoColor">#83F1FF</color>
     <color name="radioButtonSelected">#6D056D</color>
     <color name="colorScrollbar">#079DD9</color>
 </resources>
