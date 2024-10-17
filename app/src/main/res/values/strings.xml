@@ -24,4 +24,6 @@
     <string name="tip_title">Consejo</string>
     <string name="close">Cerrar</string>
     <string name="selecciona_opcion">Por favor, selecciona una opción.</string>
+    <string name="filter_text">Reducir</string>
+    <string name="tip_text">Consejo</string>
 </resources>

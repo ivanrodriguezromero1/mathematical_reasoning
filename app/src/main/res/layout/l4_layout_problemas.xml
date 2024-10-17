@@ -34,6 +34,7 @@
                     android:id="@+id/contentBlock"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
                     android:orientation="vertical">
                 <!-- Contenido del problema -->
                 <TextView
@@ -55,35 +56,73 @@
                         android:paddingStart="16dp"
                         android:gravity="start|center_vertical">
 
-                    <ImageButton
-                            android:id="@+id/btnFilter"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:src="@drawable/ic_filter"
-                            android:scaleType="fitCenter"
-                            android:adjustViewBounds="true"
-                            android:padding="4dp"
-                            android:background="@drawable/ripple_effect_filtro"
-                            android:clickable="true"
-                            android:focusable="true"
-                            app:tint="@color/buttonFiltroColor"
-                            android:layout_marginEnd="8dp"
-                            android:contentDescription="@string/filtrar_button_description"/>
+                    <!-- Botón Filtro -->
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal">
 
-                    <ImageButton
-                            android:id="@+id/btnTips"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:src="@drawable/ic_lightbulb"
-                            android:scaleType="fitCenter"
-                            android:adjustViewBounds="true"
-                            android:padding="4dp"
-                            android:background="@drawable/ripple_effect_tips"
-                            android:clickable="true"
-                            android:focusable="true"
-                            app:tint="@color/buttonBombillaColor"
-                            android:layout_marginEnd="16dp"
-                            android:contentDescription="@string/hint_button_description"/>
+                        <ImageButton
+                                android:id="@+id/btnFilter"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_filter"
+                                android:scaleType="fitCenter"
+                                android:adjustViewBounds="true"
+                                android:padding="4dp"
+                                android:background="@drawable/ripple_effect_filtro"
+                                android:clickable="true"
+                                android:focusable="true"
+                                app:tint="@color/buttonFiltroColor"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:contentDescription="@string/filtrar_button_description"/>
+
+                        <!-- Texto debajo del botón Filtro -->
+                        <TextView
+                                android:id="@+id/filterText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/filter_text"
+                                android:textSize="12sp"
+                                android:textColor="@android:color/black"
+                                android:gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- Botón Tips -->
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal">
+
+                        <ImageButton
+                                android:id="@+id/btnTips"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_lightbulb"
+                                android:scaleType="fitCenter"
+                                android:adjustViewBounds="true"
+                                android:padding="4dp"
+                                android:background="@drawable/ripple_effect_tips"
+                                android:clickable="true"
+                                android:focusable="true"
+                                app:tint="@color/buttonBombillaColor"
+                                android:layout_marginStart="14dp"
+                                android:layout_marginEnd="16dp"
+                                android:contentDescription="@string/hint_button_description"/>
+
+                        <!-- Texto debajo del botón Tips -->
+                        <TextView
+                                android:id="@+id/tipText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tip_text"
+                                android:textSize="12sp"
+                                android:textColor="@android:color/black"
+                                android:gravity="center"/>
+                    </LinearLayout>
                 </LinearLayout>
                 <LinearLayout
                         android:layout_width="match_parent"
