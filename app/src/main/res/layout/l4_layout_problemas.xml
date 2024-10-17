@@ -26,94 +26,101 @@
             android:scrollbarFadeDuration="0"
             style="@style/CustomRecyclerViewScroll">
 
-        <!-- Envuelve todo el contenido en un LinearLayout -->
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-            <!-- Contenido del problema -->
-            <TextView
-                    android:id="@+id/problemStatement"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="8dp"
-                    android:paddingStart="16dp"
-                    android:paddingBottom="8dp"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/black" />
-
-            <!-- Botones de opciones de problemas (filtro y pista) -->
             <LinearLayout
+                    android:id="@+id/contentBlock"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="8dp"
-                    android:paddingStart="16dp"
-                    android:gravity="start|center_vertical">
-
-                <ImageButton
-                        android:id="@+id/btnFilter"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/ic_filter"
-                        android:scaleType="fitCenter"
-                        android:adjustViewBounds="true"
-                        android:padding="4dp"
-                        android:background="@drawable/ripple_effect_filtro"
-                        android:clickable="true"
-                        android:focusable="true"
-                        app:tint="@color/buttonFiltroColor"
-                        android:layout_marginEnd="8dp"
-                        android:contentDescription="@string/filtrar_button_description"/>
-
-                <ImageButton
-                        android:id="@+id/btnTips"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/ic_lightbulb"
-                        android:scaleType="fitCenter"
-                        android:adjustViewBounds="true"
-                        android:padding="4dp"
-                        android:background="@drawable/ripple_effect_tips"
-                        android:clickable="true"
-                        android:focusable="true"
-                        app:tint="@color/buttonBombillaColor"
-                        android:layout_marginEnd="16dp"
-                        android:contentDescription="@string/hint_button_description"/>
-            </LinearLayout>
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                <!-- RadioGroup con las opciones de respuesta -->
-                <include
-                        layout="@layout/l4_layout_problemas_radio_group"
-                        android:layout_width="0dp"
+                    android:orientation="vertical">
+                <!-- Contenido del problema -->
+                <TextView
+                        android:id="@+id/problemStatement"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
-                <ImageView
-                        android:id="@+id/answerResultImage"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:padding="20dp"
-                        android:src="@drawable/image_correct"
-                        android:visibility="gone"
-                        android:layout_weight="2"/>
-            </LinearLayout>
-            <!-- Botones de Comprobar y Nuevo -->
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginTop="30dp">
-                <include layout="@layout/l4_layout_problemas_comprobar_button"/>
-                <include layout="@layout/l4_layout_problemas_nuevo_button"/>
+                        android:paddingTop="8dp"
+                        android:paddingStart="16dp"
+                        android:paddingBottom="8dp"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black" />
+
+                <!-- Botones de opciones de problemas (filtro y pista) -->
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp"
+                        android:paddingStart="16dp"
+                        android:gravity="start|center_vertical">
+
+                    <ImageButton
+                            android:id="@+id/btnFilter"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_filter"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"
+                            android:padding="4dp"
+                            android:background="@drawable/ripple_effect_filtro"
+                            android:clickable="true"
+                            android:focusable="true"
+                            app:tint="@color/buttonFiltroColor"
+                            android:layout_marginEnd="8dp"
+                            android:contentDescription="@string/filtrar_button_description"/>
+
+                    <ImageButton
+                            android:id="@+id/btnTips"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_lightbulb"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"
+                            android:padding="4dp"
+                            android:background="@drawable/ripple_effect_tips"
+                            android:clickable="true"
+                            android:focusable="true"
+                            app:tint="@color/buttonBombillaColor"
+                            android:layout_marginEnd="16dp"
+                            android:contentDescription="@string/hint_button_description"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="50dp">
+                    <!-- RadioGroup con las opciones de respuesta -->
+                    <include
+                            layout="@layout/l4_layout_problemas_radio_group"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    <ImageView
+                            android:id="@+id/answerResultImage"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="20dp"
+                            android:src="@drawable/image_correct"
+                            android:visibility="gone"
+                            android:layout_weight="2"/>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+    <!-- Botones de Comprobar y Nuevo -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
 
+        <include layout="@layout/l4_layout_problemas_comprobar_button"/>
+        <include layout="@layout/l4_layout_problemas_nuevo_button"/>
+    </LinearLayout>
     <!-- Bottom Navigation Bar -->
     <include layout="@layout/bottom_bar"/>
 

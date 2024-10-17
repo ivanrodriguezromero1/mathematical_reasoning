@@ -67,6 +67,7 @@ public class RadioButtonManager {
             RadioButton radioButton = (RadioButton) radioGroup.getChildAt(index);
             if (radioButton.isChecked()) {
                 radioButton.setChecked(false);
+                radioGroup.clearCheck();
             }
             radioButton.setEnabled(false);  // Deshabilitar el RadioButton
             radioButton.setTextColor(radioButton.getContext().getResources().getColor(android.R.color.darker_gray));  // Cambiar color a gris

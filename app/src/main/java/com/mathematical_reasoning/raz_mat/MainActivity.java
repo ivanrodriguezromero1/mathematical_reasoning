@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 // Acción cuando se presiona "Inicio"
                 Intent intent = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(intent);
-                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right); // Aplicar animación
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left); // Aplicar animación
             }
         });
 
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 // Acción para abrir la actividad de opciones
                 Intent intent = new Intent(MainActivity.this, OptionsActivity.class);
                 startActivity(intent);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left); // Aplicar animación
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
     }

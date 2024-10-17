@@ -1,5 +1,6 @@
 package com.mathematical_reasoning.raz_mat;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -67,6 +68,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                     intent.putExtra("iconResource", mIconsLeft.get(currentPosition)); // Pasar el ícono correspondiente
                     intent.putExtra("title", mTitles.get(currentPosition)); // Pasar el título correspondiente
                     mContext.startActivity(intent); // Iniciar TeoriaActivity
+                    if (mContext instanceof Activity) {
+                        ((Activity) mContext).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                    }
                 }
             }
         });
@@ -86,6 +90,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
                     // Iniciar la actividad de problemas
                     mContext.startActivity(intent);
+                    if (mContext instanceof Activity) {
+                        ((Activity) mContext).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                    }
                 }
             }
         });

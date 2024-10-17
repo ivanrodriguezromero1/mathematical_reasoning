@@ -9,8 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import com.mathematical_reasoning.raz_mat.models.Problema;
 import com.mathematical_reasoning.raz_mat.utils.RadioButtonManager;
-import com.mathematical_reasoning.raz_mat.utils.RadioButtonUtils;
-import java.util.List;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+
 
 import static com.mathematical_reasoning.raz_mat.utils.DialogAlert.showTipDialog;
 
@@ -153,7 +154,6 @@ public class ProblemasActivity extends AppCompatActivity {
                 // Deshabilitar los botones de filtro y tips
                 btnFilter.setEnabled(false);
                 btnTips.setEnabled(false);
-
                 // Cambiar apariencia para indicar que están inhabilitados (opcional)
                 btnFilter.setAlpha(0.5f); // Reducir opacidad
                 btnTips.setAlpha(0.5f); // Reducir opacidad
@@ -180,12 +180,45 @@ public class ProblemasActivity extends AppCompatActivity {
 
         // Acción de nuevo problema
         btnNuevo.setOnClickListener(v -> {
-            Intent renovarIntent = new Intent(ProblemasActivity.this, ProblemasActivity.class);
-            renovarIntent.putExtra("iconResource", iconResource);  // Pasar el ícono correspondiente
-            renovarIntent.putExtra("title", title);
-            renovarIntent.putExtra("currentPosition", currentPosition);
-            startActivity(renovarIntent);
-            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+            // Obtener la referencia al bloque de contenido (incluyendo el enunciado y opciones)
+            final View contentBlock = findViewById(R.id.contentBlock);  // Asumiendo que todo el contenido está dentro de este contenedor
+
+            // Animación de salida (girar la página)
+            Animation rotateOut = AnimationUtils.loadAnimation(ProblemasActivity.this, R.anim.rotate_page);
+            contentBlock.startAnimation(rotateOut);
+
+            // Después de que la animación de salida termine, cambia el contenido
+            rotateOut.setAnimationListener(new Animation.AnimationListener() {
+                @Override
+                public void onAnimationStart(Animation animation) {
+                }
+
+                @Override
+                public void onAnimationEnd(Animation animation) {
+                    // Generar un nuevo problema (nueva página)
+                    problema = ProblemSucesionesSeriesFactory.createProblemSucesionesSeries(ProblemasActivity.this, dificultad);
+                    problemStatement.setText(problema.getEnunciado());
+                    btnFilter.setEnabled(true);
+                    btnFilter.setAlpha(1f);
+                    btnTips.setEnabled(true);
+                    btnTips.setAlpha(1f);
+                    isCheckMode = true;
+                    answersRadioGroup.clearCheck();
+                    ImageView resultIcon = findViewById(R.id.answerResultImage);
+                    resultIcon.setVisibility(View.INVISIBLE);
+                    TextView btnComprobarText = btnComprobar.findViewById(R.id.comprobarText);
+                    btnComprobarText.setText(getString(R.string.button_comprobar));
+                    RadioButtonManager.setupRadioButtons(ProblemasActivity.this, answersRadioGroup, problema.getAlternativas());
+
+                    // Animación de entrada (nueva página)
+                    Animation rotateIn = AnimationUtils.loadAnimation(ProblemasActivity.this, R.anim.rotate_page_in);
+                    contentBlock.startAnimation(rotateIn);
+                }
+
+                @Override
+                public void onAnimationRepeat(Animation animation) {
+                }
+            });
         });
 
     }
