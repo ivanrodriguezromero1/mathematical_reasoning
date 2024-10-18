@@ -30,6 +30,7 @@ public class ProblemasActivity extends AppCompatActivity {
         ImageView iconImageView = findViewById(R.id.iconImageView);
         TextView titleTextView = findViewById(R.id.appBarTitle);
         TextView problemStatement = findViewById(R.id.problemStatement);  // Referencia al TextView del enunciado
+        TextView precalculate = findViewById(R.id.precalculate);
 
         // Encuentra el RadioGroup en el layout
         RadioGroup answersRadioGroup = findViewById(R.id.answersRadioGroup);
@@ -53,7 +54,9 @@ public class ProblemasActivity extends AppCompatActivity {
         if (currentPosition == 0) {
             problema = ProblemSucesionesSeriesFactory.createProblemSucesionesSeries(this, dificultad);
             problemStatement.setText(problema.getEnunciado());
+            precalculate.setText(problema.getPrecalculate());
             RadioButtonManager.setupRadioButtons(this, answersRadioGroup, problema.getAlternativas());
+
         }
 
         // Referencias a los botones
@@ -67,6 +70,10 @@ public class ProblemasActivity extends AppCompatActivity {
         // Button filter and button tips
         ImageButton btnTachar = findViewById(R.id.btnTachar);
         ImageButton btnTips = findViewById(R.id.btnTips);
+        ImageButton btnPrecalculate = findViewById(R.id.btnPrecalculate);
+        ImageButton btnSendProblem = findViewById(R.id.btnSendProblem);
+
+        TextView textViewPrecalculate = findViewById(R.id.precalculate);
 
         // Cambiar color de los íconos y textos a blanco
         ImageView iconHome = btnHome.findViewById(R.id.btn_home_icon);
@@ -150,13 +157,14 @@ public class ProblemasActivity extends AppCompatActivity {
                 // Cambiar el texto dentro del LinearLayout "btnComprobar"
                 TextView btnComprobarText = btnComprobar.findViewById(R.id.comprobarText); // Aquí debes asegurarte de tener el ID correcto del TextView
                 btnComprobarText.setText(getString(R.string.ver_solucion));
-
-                // Deshabilitar los botones de filtro y tips
                 btnTachar.setEnabled(false);
+                btnTachar.setAlpha(0.5f);
                 btnTips.setEnabled(false);
-                // Cambiar apariencia para indicar que están inhabilitados (opcional)
-                btnTachar.setAlpha(0.5f); // Reducir opacidad
-                btnTips.setAlpha(0.5f); // Reducir opacidad
+                btnTips.setAlpha(0.5f);
+                btnPrecalculate.setEnabled(false);
+                btnPrecalculate.setAlpha(0.5f);
+                btnSendProblem.setEnabled(false);
+                btnSendProblem.setAlpha(0.5f);
 
                 // Deshabilitar los RadioButtons en el RadioGroup
                 for (int i = 0; i < answersRadioGroup.getChildCount(); i++) {
@@ -172,7 +180,6 @@ public class ProblemasActivity extends AppCompatActivity {
                 // Estado "Ver solución"
                 Intent solutionIntent = new Intent(ProblemasActivity.this, SolutionActivity.class);
                 solutionIntent.putExtra("solucion", problema.getSolucion());
-                solutionIntent.putExtra("esCorrecta", problema.getClave() == answersRadioGroup.getCheckedRadioButtonId());
                 startActivity(solutionIntent);
                 overridePendingTransition(R.anim.slide_in_top, R.anim.slide_out_bottom);
             }
@@ -198,10 +205,17 @@ public class ProblemasActivity extends AppCompatActivity {
                     // Generar un nuevo problema (nueva página)
                     problema = ProblemSucesionesSeriesFactory.createProblemSucesionesSeries(ProblemasActivity.this, dificultad);
                     problemStatement.setText(problema.getEnunciado());
+                    textViewPrecalculate.setText(problema.getPrecalculate());
+                    textViewPrecalculate.setVisibility(View.GONE);
                     btnTachar.setEnabled(true);
                     btnTachar.setAlpha(1f);
                     btnTips.setEnabled(true);
                     btnTips.setAlpha(1f);
+                    btnPrecalculate.setEnabled(true);
+                    btnPrecalculate.setAlpha(1f);
+                    btnSendProblem.setEnabled(true);
+                    btnSendProblem.setAlpha(1f);
+
                     isCheckMode = true;
                     answersRadioGroup.clearCheck();
                     ImageView resultIcon = findViewById(R.id.answerResultImage);
@@ -219,6 +233,16 @@ public class ProblemasActivity extends AppCompatActivity {
                 public void onAnimationRepeat(Animation animation) {
                 }
             });
+        });
+
+        btnPrecalculate.setOnClickListener(v -> {
+            textViewPrecalculate.setVisibility(View.VISIBLE);
+            btnPrecalculate.setEnabled(false);
+            btnPrecalculate.setAlpha(0.5f);
+        });
+
+        btnSendProblem.setOnClickListener(v -> {
+
         });
 
     }

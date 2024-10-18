@@ -14,17 +14,19 @@ public class FileUtils {
         InputStream inputStream = context.getResources().openRawResource(resourceId);
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
         String line;
-
         try {
             while ((line = reader.readLine()) != null) {
-                text.append(line).append("\n");
+                text.append(line);
+                if (reader.ready()) {
+                    text.append("\n"); // Solo agrega salto de línea si hay más líneas
+                }
             }
             reader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return text.toString();
     }
+
 }
 

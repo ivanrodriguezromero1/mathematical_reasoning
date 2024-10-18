@@ -3,7 +3,10 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="60dp">
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="goBackToProblem">
 
     <!-- Fondo de color #0B429E -->
     <View
@@ -24,10 +27,7 @@
             android:orientation="horizontal"
             android:gravity="center"
             android:layout_centerInParent="true"
-            android:paddingTop="10dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="goBackToProblem">
+            android:paddingTop="10dp">
 
         <ImageView
                 android:id="@+id/backIcon"

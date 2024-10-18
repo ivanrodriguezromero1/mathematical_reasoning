@@ -13,6 +13,7 @@ public class Problema {
     private String enunciado;
     private List<String> alternativas;
     private int clave;
+    private String precalculate;
     private String solucion;
     private String tip;
 }

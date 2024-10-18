@@ -51,7 +51,8 @@
             android:scrollbarStyle="outsideOverlay"
             android:padding="20dp"
             android:fadeScrollbars="false"
-            android:scrollbarFadeDuration="0">
+            android:scrollbarFadeDuration="0"
+            style="@style/CustomRecyclerViewScroll">
 
         <TextView
                 android:id="@+id/solutionContent"

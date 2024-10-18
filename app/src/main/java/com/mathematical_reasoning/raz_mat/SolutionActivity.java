@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class SolutionActivity extends AppCompatActivity {
 
     private TextView solutionContent;
-    private ImageView answerResultImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
