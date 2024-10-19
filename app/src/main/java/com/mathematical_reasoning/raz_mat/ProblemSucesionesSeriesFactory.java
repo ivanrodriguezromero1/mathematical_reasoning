@@ -93,6 +93,7 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSucesionNth1(solucion, sucesion, a, r, n, an);
         List<String> alternativas = getAlternatives(Integer.toString(an));
         int clave = alternativas.indexOf(Integer.toString(an));
+        alternativas = addLettersToAlternatives(alternativas);
         return new Problema(enunciado, alternativas, clave, precalculo, solucion, tip);
     }
 
@@ -108,6 +109,7 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSerieNth1(solucion, sucesion, a, r, n, sn);
         List<String> alternativas = getAlternatives(Integer.toString(sn));
         int clave = alternativas.indexOf(Integer.toString(sn));
+        alternativas = addLettersToAlternatives(alternativas);
         return new Problema(enunciado, alternativas, clave, precalculo, solucion, tip);
     }
 
@@ -125,6 +127,7 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSucesionNth2(solucion, sucesion, a, r1, r2, n, an);
         List<String> alternativas = getAlternatives(Integer.toString(an));
         int clave = alternativas.indexOf(Integer.toString(an));
+        alternativas = addLettersToAlternatives(alternativas);
         return new Problema(enunciado, alternativas, clave, precalculo, solucion, tip);
     }
 
@@ -141,6 +144,7 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSerieNth2(solucion, sucesion, a, r1, r2, n, sn);
         List<String> alternativas = getAlternatives(Integer.toString(sn));
         int clave = alternativas.indexOf(Integer.toString(sn));
+        alternativas = addLettersToAlternatives(alternativas);
         return new Problema(enunciado, alternativas, clave, precalculo, solucion, tip);
     }
 
@@ -159,6 +163,7 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSucesionNth3(solucion, sucesion, a, r1, r2, r3, n, an);
         List<String> alternativas = getAlternatives(Integer.toString(an));
         int clave = alternativas.indexOf(Integer.toString(an));
+        alternativas = addLettersToAlternatives(alternativas);
         return new Problema(enunciado, alternativas, clave, precalculo, solucion, tip);
     }
 
@@ -176,6 +181,7 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSerieNth3(solucion, sucesion, a, r1, r2, r3, n, sn);
         List<String> alternativas = getAlternatives(Integer.toString(sn));
         int clave = alternativas.indexOf(Integer.toString(sn));
+        alternativas = addLettersToAlternatives(alternativas);
         return new Problema(enunciado, alternativas, clave, precalculo, solucion, tip);
     }
 
@@ -334,11 +340,15 @@ public class ProblemSucesionesSeriesFactory {
 
         // Mezclar las alternativas para que la respuesta correcta no esté siempre en la misma posición
         Collections.shuffle(alternativas);
+        return  alternativas;
+    }
+    private static List<String> addLettersToAlternatives(List<String> alternativas){
         String[] letters = {"A", "B", "C", "D"};
+        List<String> alternativesWithLetters = new ArrayList<>();
         for(int i = 0; i<alternativas.size() ;i++){
-            String.format("%s) %s", letters[i], alternativas.get(i));
+            alternativesWithLetters.add(String.format("%s) %s", letters[i], alternativas.get(i)));
         }
-        return alternativas;
+        return alternativesWithLetters;
     }
 
 }
