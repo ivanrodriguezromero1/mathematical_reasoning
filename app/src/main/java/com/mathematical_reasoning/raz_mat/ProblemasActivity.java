@@ -22,6 +22,7 @@ public class ProblemasActivity extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     Problema problema = new Problema();
     boolean isCheckMode = true;
+    int[] dificultad = {0};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,11 +31,25 @@ public class ProblemasActivity extends AppCompatActivity {
         // Referencias a los componentes del layout
         ImageView iconImageView = findViewById(R.id.iconImageView);
         TextView titleTextView = findViewById(R.id.appBarTitle);
-        TextView problemStatement = findViewById(R.id.problemStatement);  // Referencia al TextView del enunciado
+        TextView problemStatement = findViewById(R.id.problemStatement);
         TextView precalculate = findViewById(R.id.precalculate);
-
-        // Encuentra el RadioGroup en el layout
         RadioGroup answersRadioGroup = findViewById(R.id.answersRadioGroup);
+        LinearLayout btnComprobar = findViewById(R.id.comprobarLayout);
+        LinearLayout btnNuevo = findViewById(R.id.nuevoLayout);
+        LinearLayout btnHome = findViewById(R.id.btn_home);
+        LinearLayout btnOptions = findViewById(R.id.btn_options);
+        ImageButton btnTachar = findViewById(R.id.btnTachar);
+        ImageButton btnTips = findViewById(R.id.btnTips);
+        ImageButton btnPrecalculate = findViewById(R.id.btnPrecalculate);
+        ImageButton btnSendProblem = findViewById(R.id.btnSendProblem);
+        ImageView iconHome = btnHome.findViewById(R.id.btn_home_icon);
+        TextView textHome = btnHome.findViewById(R.id.btn_home_text);
+        ImageView iconOptions = btnOptions.findViewById(R.id.btn_options_icon);
+        TextView textOptions = btnOptions.findViewById(R.id.btn_options_text);
+        LinearLayout btnSelectDificultad = findViewById(R.id.btn_select_dificultad);
+        LinearLayout btnSelectTipoProblema = findViewById(R.id.btn_select_tipo_problema);
+        TextView textViewSelectDificultad = findViewById(R.id.text_view_select_dificultad);
+        TextView textViewSelectTipoProblema = findViewById(R.id.text_view_select_tipo_problema);
 
         // Obtener los datos del Intent
         Intent intent = getIntent();
@@ -46,10 +61,6 @@ public class ProblemasActivity extends AppCompatActivity {
         iconImageView.setImageResource(iconResource);
         titleTextView.setText(title);
 
-        // Obtener SharedPreferences para la dificultad
-        sharedPreferences = getSharedPreferences("OptionsPrefs", MODE_PRIVATE);
-        int dificultad = sharedPreferences.getInt("selected_difficulty", 1); // 1: Fácil, 2: Normal, 3: Difícil
-
         // Generar y mostrar el enunciado dinámico de series
 
         if (currentPosition == 0) {
@@ -60,30 +71,11 @@ public class ProblemasActivity extends AppCompatActivity {
 
         }
 
-        // Referencias a los botones
-        LinearLayout btnComprobar = findViewById(R.id.comprobarLayout);
-        LinearLayout btnNuevo = findViewById(R.id.nuevoLayout);
+        iconHome.setColorFilter(Color.WHITE);
+        textHome.setTextColor(Color.WHITE);
 
-        // Configurar Bottom Navigation
-        LinearLayout btnHome = findViewById(R.id.btn_home);
-        LinearLayout btnOptions = findViewById(R.id.btn_options);
-
-        // Button filter and button tips
-        ImageButton btnTachar = findViewById(R.id.btnTachar);
-        ImageButton btnTips = findViewById(R.id.btnTips);
-        ImageButton btnPrecalculate = findViewById(R.id.btnPrecalculate);
-        ImageButton btnSendProblem = findViewById(R.id.btnSendProblem);
-
-        // Cambiar color de los íconos y textos a blanco
-        ImageView iconHome = btnHome.findViewById(R.id.btn_home_icon);
-        TextView textHome = btnHome.findViewById(R.id.btn_home_text);
-        iconHome.setColorFilter(Color.WHITE);  // Cambia el color del ícono
-        textHome.setTextColor(Color.WHITE);    // Cambia el color del texto
-
-        ImageView iconOptions = btnOptions.findViewById(R.id.btn_options_icon);
-        TextView textOptions = btnOptions.findViewById(R.id.btn_options_text);
-        iconOptions.setColorFilter(Color.WHITE);  // Cambia el color del ícono
-        textOptions.setTextColor(Color.WHITE);    // Cambia el color del texto
+        iconOptions.setColorFilter(Color.WHITE);
+        textOptions.setTextColor(Color.WHITE);
 
         // Configurar listener para el botón de Inicio
         btnHome.setOnClickListener(new View.OnClickListener() {
@@ -174,7 +166,6 @@ public class ProblemasActivity extends AppCompatActivity {
 
                 isCheckMode = false;  // Cambiar a modo "Ver solución"
 
-
             } else {
                 // Estado "Ver solución"
                 Intent solutionIntent = new Intent(ProblemasActivity.this, SolutionActivity.class);
@@ -244,11 +235,6 @@ public class ProblemasActivity extends AppCompatActivity {
 
         });
 
-        // Referencia a los botones de dificultad y tipo de problema
-        LinearLayout btnSelectDificultad = findViewById(R.id.btn_select_dificultad);
-        LinearLayout btnSelectTipoProblema = findViewById(R.id.btn_select_tipo_problema);
-        TextView textViewSelectDificultad = findViewById(R.id.text_view_select_dificultad);
-        TextView textViewSelectTipoProblema = findViewById(R.id.text_view_select_tipo_problema);
         String labelDifficulty = getString(R.string.label_difficulty);
         String labelTipoProblema = getString(R.string.label_tipo_problema);
         // Opciones de dificultad
@@ -264,12 +250,12 @@ public class ProblemasActivity extends AppCompatActivity {
 
         // Listener para el botón de dificultad
         btnSelectDificultad.setOnClickListener(v -> {
-            showSelectorDialog(this,labelDifficulty, opcionesDificultad, textViewSelectDificultad, 0);
+            showSelectorDialog(this,labelDifficulty, opcionesDificultad, textViewSelectDificultad, 0, dificultad);
         });
 
         // Listener para el botón de tipo de problema
         btnSelectTipoProblema.setOnClickListener(v -> {
-            showSelectorDialog(this, labelTipoProblema, opcionesTipoProblema, textViewSelectTipoProblema, 1);
+            showSelectorDialog(this, labelTipoProblema, opcionesTipoProblema, textViewSelectTipoProblema, 1, dificultad);
         });
     }
 

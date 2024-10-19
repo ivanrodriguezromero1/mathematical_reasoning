@@ -4,7 +4,6 @@ import android.content.Context;
 import com.mathematical_reasoning.raz_mat.models.Problema;
 import com.mathematical_reasoning.raz_mat.utils.FileUtils;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -12,19 +11,18 @@ import java.util.Random;
 
 public class ProblemSucesionesSeriesFactory {
 
-    public static Problema createProblemSucesionesSeries(Context context, int dificultad) {
+    public static Problema createProblemSucesionesSeries(Context context, int[] dificultad) {
         Random random = new Random();
-        int tipo;
-
+        int tipo = 1;
         // Determinar el tipo de problema basado en la dificultad
-        switch (dificultad) {
-            case 1:
+        switch (dificultad[0]) {
+            case 0:
                 tipo = random.nextInt(2) + 1;
                 break;
-            case 2:
+            case 1:
                 tipo = random.nextInt(2) + 3;
                 break;
-            default:
+            case 2:
                 tipo = random.nextInt(2) + 5;
                 break;
         }
@@ -41,42 +39,42 @@ public class ProblemSucesionesSeriesFactory {
                 precalculo = FileUtils.getTextFromRaw(context, R.raw.precalculate_sucesiones_nth1);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_sucesiones_nth1);
                 tip = FileUtils.getTextFromRaw(context, R.raw.tip_sucesiones_nth1);
-                problema = createProblemSucesionesNth1(enunciado, precalculo, solucion, dificultad, tip);
+                problema = createProblemSucesionesNth1(enunciado, precalculo, solucion, dificultad[0]+1, tip);
                 break;
             case 2:
                 enunciado = FileUtils.getTextFromRaw(context, R.raw.series_enunciado);
                 precalculo = FileUtils.getTextFromRaw(context, R.raw.precalculate_series_nth1);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_series_nth1);
                 tip = FileUtils.getTextFromRaw(context, R.raw.tip_series_nth1);
-                problema = createProblemSeriesNth1(enunciado, precalculo, solucion, dificultad, tip);
+                problema = createProblemSeriesNth1(enunciado, precalculo, solucion, dificultad[0]+1, tip);
                 break;
             case 3:
                 enunciado = FileUtils.getTextFromRaw(context, R.raw.sucesiones_enunciado);
                 precalculo = FileUtils.getTextFromRaw(context, R.raw.precalculate_sucesiones_nth2);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_sucesiones_nth2);
                 tip = FileUtils.getTextFromRaw(context, R.raw.tip_sucesiones_nth2);
-                problema = createProblemSucesionesNth2(enunciado, precalculo, solucion, dificultad, tip);
+                problema = createProblemSucesionesNth2(enunciado, precalculo, solucion, dificultad[0]+1, tip);
                 break;
             case 4:
                 enunciado = FileUtils.getTextFromRaw(context, R.raw.series_enunciado);
                 precalculo = FileUtils.getTextFromRaw(context, R.raw.precalculate_series_nth2);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_series_nth2);
                 tip = FileUtils.getTextFromRaw(context, R.raw.tip_series_nth2);
-                problema = createProblemSeriesNth2(enunciado, precalculo, solucion, dificultad, tip);
+                problema = createProblemSeriesNth2(enunciado, precalculo, solucion, dificultad[0]+1, tip);
                 break;
             case 5:
                 enunciado = FileUtils.getTextFromRaw(context, R.raw.sucesiones_enunciado);
                 precalculo = FileUtils.getTextFromRaw(context, R.raw.precalculate_sucesiones_nth3);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_sucesiones_nth3);
                 tip = FileUtils.getTextFromRaw(context, R.raw.tip_sucesiones_nth3);
-                problema = createProblemSucesionesNth3(enunciado, precalculo, solucion, dificultad, tip);
+                problema = createProblemSucesionesNth3(enunciado, precalculo, solucion, dificultad[0]+1, tip);
                 break;
             default:
                 enunciado = FileUtils.getTextFromRaw(context, R.raw.series_enunciado);
                 precalculo = FileUtils.getTextFromRaw(context, R.raw.precalculate_series_nth3);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_series_nth3);
                 tip = FileUtils.getTextFromRaw(context, R.raw.tip_series_nth3);
-                problema = createProblemSeriesNth3(enunciado, precalculo, solucion, dificultad, tip);
+                problema = createProblemSeriesNth3(enunciado, precalculo, solucion, dificultad[0]+1, tip);
                 break;
         }
         return problema;

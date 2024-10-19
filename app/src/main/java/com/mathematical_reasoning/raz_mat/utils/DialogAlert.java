@@ -44,7 +44,7 @@ public class DialogAlert {
     }
 
     private static final int[] selectedOptionIndex = {0,0};
-    public static void showSelectorDialog(Context context, String title, String[] opciones, TextView textView, int index) {
+    public static void showSelectorDialog(Context context, String title, String[] opciones, TextView textView, int index, int[] dificultad) {
         // Inflar el layout personalizado del diálogo
         View dialogView = LayoutInflater.from(context).inflate(R.layout.selector_dialog, null);
 
@@ -58,7 +58,7 @@ public class DialogAlert {
         selectorTitle.setText(title);
 
         // Crear los RadioButtons de las opciones programáticamente
-        createRadioButtons(context, selectorRadioGroup, opciones, textView, index);
+        createRadioButtons(context, selectorRadioGroup, opciones, textView, index, dificultad);
 
         // Marcar el RadioButton previamente seleccionado
         ((RadioButton) selectorRadioGroup.getChildAt(selectedOptionIndex[index])).setChecked(true);
@@ -109,7 +109,7 @@ public class DialogAlert {
     }
 
     // Método para crear los RadioButtons de las opciones
-    private static void createRadioButtons(Context context, RadioGroup radioGroup, String[] opciones, TextView textView, int index) {
+    private static void createRadioButtons(Context context, RadioGroup radioGroup, String[] opciones, TextView textView, int index, int[] dificultad) {
         for (int i = 0; i < opciones.length; i++) {
             RadioButton radioButton = new RadioButton(context);
             radioButton.setText(opciones[i]);
@@ -122,7 +122,8 @@ public class DialogAlert {
             RadioButton selectedRadioButton = group.findViewById(checkedId);
             if (selectedRadioButton != null) {
                 selectedOptionIndex[index] = checkedId;
-                textView.setText(opciones[checkedId]);  // Cambiar el texto del botón según la opción seleccionada
+                textView.setText(opciones[checkedId]);
+                dificultad[0] = checkedId;
             }
         });
     }
