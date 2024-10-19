@@ -43,7 +43,8 @@ public class DialogAlert {
         dialog.show();
     }
 
-    public static void showSelectorDialog(Context context, String title, String[] opciones, TextView textView) {
+    private static final int[] selectedOptionIndex = {0,0};
+    public static void showSelectorDialog(Context context, String title, String[] opciones, TextView textView, int index) {
         // Inflar el layout personalizado del diálogo
         View dialogView = LayoutInflater.from(context).inflate(R.layout.selector_dialog, null);
 
@@ -57,7 +58,10 @@ public class DialogAlert {
         selectorTitle.setText(title);
 
         // Crear los RadioButtons de las opciones programáticamente
-        createRadioButtons(context, selectorRadioGroup, opciones, textView);
+        createRadioButtons(context, selectorRadioGroup, opciones, textView, index);
+
+        // Marcar el RadioButton previamente seleccionado
+        ((RadioButton) selectorRadioGroup.getChildAt(selectedOptionIndex[index])).setChecked(true);
 
         // Crear y mostrar el diálogo
         AlertDialog dialog = new AlertDialog.Builder(context)
@@ -105,7 +109,7 @@ public class DialogAlert {
     }
 
     // Método para crear los RadioButtons de las opciones
-    private static void createRadioButtons(Context context, RadioGroup radioGroup, String[] opciones, TextView textView) {
+    private static void createRadioButtons(Context context, RadioGroup radioGroup, String[] opciones, TextView textView, int index) {
         for (int i = 0; i < opciones.length; i++) {
             RadioButton radioButton = new RadioButton(context);
             radioButton.setText(opciones[i]);
@@ -117,6 +121,7 @@ public class DialogAlert {
         radioGroup.setOnCheckedChangeListener((group, checkedId) -> {
             RadioButton selectedRadioButton = group.findViewById(checkedId);
             if (selectedRadioButton != null) {
+                selectedOptionIndex[index] = checkedId;
                 textView.setText(opciones[checkedId]);  // Cambiar el texto del botón según la opción seleccionada
             }
         });

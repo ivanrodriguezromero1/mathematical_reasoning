@@ -336,7 +336,10 @@ public class ProblemSucesionesSeriesFactory {
 
         // Mezclar las alternativas para que la respuesta correcta no esté siempre en la misma posición
         Collections.shuffle(alternativas);
-
+        String[] letters = {"A", "B", "C", "D"};
+        for(int i = 0; i<alternativas.size() ;i++){
+            String.format("%s) %s", letters[i], alternativas.get(i));
+        }
         return alternativas;
     }
 

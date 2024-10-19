@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         itemMap.put("Distribuciones numéricas", R.drawable.symbols_pin);
         itemMap.put("Ordenamiento de información", R.drawable.symbols_sort);
         itemMap.put("Lógica proposicional", R.drawable.symbols_arrow_forward);
-        itemMap.put("Lógica inferencial", R.drawable.symbols_manage_search);
+        itemMap.put("Lógica inferencial", R.drawable.symbols_quick_reference_all);
         itemMap.put("Razonamiento inductivo", R.drawable.symbols_trending_up);
         itemMap.put("Razonamiento deductivo", R.drawable.symbols_fact_check);
         itemMap.put("Planteo de ecuaciones", R.drawable.symbols_cancel_presentation);

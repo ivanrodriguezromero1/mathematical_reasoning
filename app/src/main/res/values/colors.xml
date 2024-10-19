@@ -8,8 +8,8 @@
     <color name="textoPrecalculo">#051583</color>
     <color name="buttonDificultadColor">#0B6589</color>
     <color name="buttonDificultadSeleccionadoColor">#113856</color>
-    <color name="buttonTipoProblemaColor">#134083</color>
-    <color name="buttonTipoProblemaSeleccionadoColor">#112A56</color>
+    <color name="buttonTipoProblemaColor">#0B6589</color>
+    <color name="buttonTipoProblemaSeleccionadoColor">#113856</color>
     <color name="buttonComprobarColor">#1a8081</color>
     <color name="buttonComprobarSeleccionadoColor">#145555</color>
     <color name="buttonNuevoColor">#0e7cea</color>

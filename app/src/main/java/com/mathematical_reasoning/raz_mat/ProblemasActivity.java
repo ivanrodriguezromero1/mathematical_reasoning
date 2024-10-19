@@ -1,6 +1,5 @@
 package com.mathematical_reasoning.raz_mat;
 
-import android.app.AlertDialog;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -74,8 +73,6 @@ public class ProblemasActivity extends AppCompatActivity {
         ImageButton btnTips = findViewById(R.id.btnTips);
         ImageButton btnPrecalculate = findViewById(R.id.btnPrecalculate);
         ImageButton btnSendProblem = findViewById(R.id.btnSendProblem);
-
-        TextView textViewPrecalculate = findViewById(R.id.precalculate);
 
         // Cambiar color de los íconos y textos a blanco
         ImageView iconHome = btnHome.findViewById(R.id.btn_home_icon);
@@ -207,8 +204,8 @@ public class ProblemasActivity extends AppCompatActivity {
                     // Generar un nuevo problema (nueva página)
                     problema = ProblemSucesionesSeriesFactory.createProblemSucesionesSeries(ProblemasActivity.this, dificultad);
                     problemStatement.setText(problema.getEnunciado());
-                    textViewPrecalculate.setText(problema.getPrecalculate());
-                    textViewPrecalculate.setVisibility(View.GONE);
+                    precalculate.setText(problema.getPrecalculate());
+                    precalculate.setVisibility(View.GONE);
                     btnTachar.setEnabled(true);
                     btnTachar.setAlpha(1f);
                     btnTips.setEnabled(true);
@@ -221,7 +218,7 @@ public class ProblemasActivity extends AppCompatActivity {
                     isCheckMode = true;
                     answersRadioGroup.clearCheck();
                     ImageView resultIcon = findViewById(R.id.answerResultImage);
-                    resultIcon.setVisibility(View.INVISIBLE);
+                    resultIcon.setVisibility(View.GONE);
                     TextView btnComprobarText = btnComprobar.findViewById(R.id.comprobarText);
                     btnComprobarText.setText(getString(R.string.button_comprobar));
                     RadioButtonManager.setupRadioButtons(ProblemasActivity.this, answersRadioGroup, problema.getAlternativas());
@@ -238,7 +235,7 @@ public class ProblemasActivity extends AppCompatActivity {
         });
 
         btnPrecalculate.setOnClickListener(v -> {
-            textViewPrecalculate.setVisibility(View.VISIBLE);
+            precalculate.setVisibility(View.VISIBLE);
             btnPrecalculate.setEnabled(false);
             btnPrecalculate.setAlpha(0.5f);
         });
@@ -267,12 +264,12 @@ public class ProblemasActivity extends AppCompatActivity {
 
         // Listener para el botón de dificultad
         btnSelectDificultad.setOnClickListener(v -> {
-            showSelectorDialog(this,labelDifficulty, opcionesDificultad, textViewSelectDificultad);
+            showSelectorDialog(this,labelDifficulty, opcionesDificultad, textViewSelectDificultad, 0);
         });
 
         // Listener para el botón de tipo de problema
         btnSelectTipoProblema.setOnClickListener(v -> {
-            showSelectorDialog(this, labelTipoProblema, opcionesTipoProblema, textViewSelectTipoProblema);
+            showSelectorDialog(this, labelTipoProblema, opcionesTipoProblema, textViewSelectTipoProblema, 1);
         });
     }
 

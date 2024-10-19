@@ -6,37 +6,33 @@
             android:padding="16dp">
 
     <RadioButton
-            android:id="@+id/answerA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textColor="@color/radio_button_selector"
             android:buttonTint="@color/radio_button_selector"
             android:layout_marginBottom="5dp" />
 
     <RadioButton
-            android:id="@+id/answerB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textColor="@color/radio_button_selector"
             android:buttonTint="@color/radio_button_selector"
             android:layout_marginBottom="5dp" />
 
     <RadioButton
-            android:id="@+id/answerC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textColor="@color/radio_button_selector"
             android:buttonTint="@color/radio_button_selector"
             android:layout_marginBottom="5dp" />
 
     <RadioButton
-            android:id="@+id/answerD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textColor="@color/radio_button_selector"
             android:buttonTint="@color/radio_button_selector"
             android:layout_marginBottom="5dp" />

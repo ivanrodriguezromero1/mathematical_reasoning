@@ -24,17 +24,18 @@ public class RadioButtonManager {
                 RadioGroup.LayoutParams.WRAP_CONTENT,
                 RadioGroup.LayoutParams.WRAP_CONTENT
         );
-        layoutParams.setMargins(0, 0, 0, 16);  // Añadir margen inferior de 16dp
+        layoutParams.setMargins(0, 0, 0, 8);  // Añadir margen inferior de 16dp
 
         // Generar dinámicamente los RadioButtons con estilo
         for (int i = 0; i < alternativas.size(); i++) {
             // Crear un nuevo RadioButton
             RadioButton radioButton = new RadioButton(context);
+
             radioButton.setText(alternativas.get(i));  // Establecer el texto de la alternativa
             radioButton.setId(View.generateViewId());  // Generar un ID único automáticamente
 
             // Aplicar estilos al RadioButton
-            radioButton.setTextSize(18);  // Texto de 18sp
+            radioButton.setTextSize(15);
             radioButton.setTextColor(ContextCompat.getColorStateList(context, R.color.radio_button_selector));  // Color del texto
             radioButton.setButtonTintList(ContextCompat.getColorStateList(context, R.color.radio_button_selector));  // Color del botón
             radioButton.setLayoutParams(layoutParams);  // Aplicar los parámetros de diseño (márgenes)
