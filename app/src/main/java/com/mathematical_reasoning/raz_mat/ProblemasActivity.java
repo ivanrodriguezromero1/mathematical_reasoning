@@ -22,12 +22,13 @@ public class ProblemasActivity extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     Problema problema = new Problema();
     boolean isCheckMode = true;
-    int[] dificultad = {0};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.l4_layout_problemas);
-
+        int[] dificultad = {0};
+        int[] selectedOptionIndex = {0,0};
         // Referencias a los componentes del layout
         ImageView iconImageView = findViewById(R.id.iconImageView);
         TextView titleTextView = findViewById(R.id.appBarTitle);
@@ -250,12 +251,12 @@ public class ProblemasActivity extends AppCompatActivity {
 
         // Listener para el botón de dificultad
         btnSelectDificultad.setOnClickListener(v -> {
-            showSelectorDialog(this,labelDifficulty, opcionesDificultad, textViewSelectDificultad, 0, dificultad);
+            showSelectorDialog(this,labelDifficulty, opcionesDificultad, textViewSelectDificultad, 0, dificultad, selectedOptionIndex);
         });
 
         // Listener para el botón de tipo de problema
         btnSelectTipoProblema.setOnClickListener(v -> {
-            showSelectorDialog(this, labelTipoProblema, opcionesTipoProblema, textViewSelectTipoProblema, 1, dificultad);
+            showSelectorDialog(this, labelTipoProblema, opcionesTipoProblema, textViewSelectTipoProblema, 1, dificultad, selectedOptionIndex);
         });
     }
 
