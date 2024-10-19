@@ -1,5 +1,6 @@
 package com.mathematical_reasoning.raz_mat;
 
+import android.app.AlertDialog;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
 
+import static com.mathematical_reasoning.raz_mat.utils.DialogAlert.showSelectorDialog;
 import static com.mathematical_reasoning.raz_mat.utils.DialogAlert.showTipDialog;
 
 
@@ -245,6 +247,33 @@ public class ProblemasActivity extends AppCompatActivity {
 
         });
 
+        // Referencia a los botones de dificultad y tipo de problema
+        LinearLayout btnSelectDificultad = findViewById(R.id.btn_select_dificultad);
+        LinearLayout btnSelectTipoProblema = findViewById(R.id.btn_select_tipo_problema);
+        TextView textViewSelectDificultad = findViewById(R.id.text_view_select_dificultad);
+        TextView textViewSelectTipoProblema = findViewById(R.id.text_view_select_tipo_problema);
+        String labelDifficulty = getString(R.string.label_difficulty);
+        String labelTipoProblema = getString(R.string.label_tipo_problema);
+        // Opciones de dificultad
+        String[] opcionesDificultad = {getString(R.string.options_easy), getString(R.string.options_normal), getString(R.string.options_hard)};
+        // Opciones de tipo de problema
+        String[] opcionesTipoProblema = {"Sucesiones", "Series", "Ecuaciones", "Progresiones", "Matrices", "Sucesiones 2", "Series 2", "Ecuaciones 2", "Progresiones 2", "Matrices 2","Sucesiones", "Series", "Ecuaciones", "Progresiones", "Matrices", "Sucesiones 2", "Series 2", "Ecuaciones 2", "Progresiones 2", "Matrices 2"};
+
+        // Asignar el valor por defecto para el botón de dificultad (Fácil)
+        textViewSelectDificultad.setText(opcionesDificultad[0]);
+
+        // Asignar el valor por defecto para el botón de tipo de problema (el primer elemento de la lista)
+        textViewSelectTipoProblema.setText(opcionesTipoProblema[0]);
+
+        // Listener para el botón de dificultad
+        btnSelectDificultad.setOnClickListener(v -> {
+            showSelectorDialog(this,labelDifficulty, opcionesDificultad, textViewSelectDificultad);
+        });
+
+        // Listener para el botón de tipo de problema
+        btnSelectTipoProblema.setOnClickListener(v -> {
+            showSelectorDialog(this, labelTipoProblema, opcionesTipoProblema, textViewSelectTipoProblema);
+        });
     }
 
 }

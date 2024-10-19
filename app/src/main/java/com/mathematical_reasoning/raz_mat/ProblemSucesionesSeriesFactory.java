@@ -22,10 +22,10 @@ public class ProblemSucesionesSeriesFactory {
                 tipo = random.nextInt(2) + 1;
                 break;
             case 2:
-                tipo = random.nextInt(4) + 1;
+                tipo = random.nextInt(2) + 3;
                 break;
             default:
-                tipo = random.nextInt(6) + 1;
+                tipo = random.nextInt(2) + 5;
                 break;
         }
 

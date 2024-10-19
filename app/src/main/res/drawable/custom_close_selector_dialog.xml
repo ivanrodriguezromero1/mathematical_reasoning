@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/colorCerrarTip"/>  <!-- Color de fondo del botón -->
+    <solid android:color="@color/colorCerrarSelectorDialog"/>  <!-- Color de fondo del botón -->
     <corners android:radius="16dp"/>  <!-- Bordes redondeados con un radio de 16dp -->
     <padding
             android:left="5dp"

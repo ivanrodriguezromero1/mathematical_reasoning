@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="CustomRecyclerViewScroll">
+    <style name="custom_recycler_view_scroll">
         <!-- Color y grosor de la barra de desplazamiento vertical -->
         <item name="android:scrollbarThumbVertical">@drawable/custom_scrollbar_thumb</item>
         <item name="android:scrollbarSize">10dp</item> <!-- Ajusta el grosor aquí -->

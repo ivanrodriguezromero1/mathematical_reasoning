@@ -1,0 +1,112 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal">
+
+    <!-- Layout para el tipo de problema -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+        <!-- Label Tipo de Problema -->
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_tipo_problema"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="8dp"/>
+
+        <!-- Botón para seleccionar Tipo de Problema -->
+        <LinearLayout
+                android:id="@+id/btn_select_tipo_problema"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/ripple_effect_tipo_problema"
+                android:padding="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="8dp">
+
+            <ImageView
+                    android:id="@+id/tipo_problema_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_options"
+                    app:tint="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/text_view_select_tipo_problema"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_tipo_problema"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Layout para la dificultad -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+        <!-- Label Dificultad -->
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_difficulty"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="8dp"/>
+
+        <!-- Botón para seleccionar Dificultad -->
+        <LinearLayout
+                android:id="@+id/btn_select_dificultad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/ripple_effect_dificultad"
+                android:padding="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="8dp">
+
+            <ImageView
+                    android:id="@+id/dificultad_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_options"
+                    app:tint="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/text_view_select_dificultad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_difficulty"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

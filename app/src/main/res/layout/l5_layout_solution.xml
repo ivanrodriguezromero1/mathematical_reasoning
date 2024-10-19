@@ -52,7 +52,7 @@
             android:padding="20dp"
             android:fadeScrollbars="false"
             android:scrollbarFadeDuration="0"
-            style="@style/CustomRecyclerViewScroll">
+            style="@style/custom_recycler_view_scroll">
 
         <TextView
                 android:id="@+id/solutionContent"

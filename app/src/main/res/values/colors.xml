@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorTip">#CDEBFA</color>
-    <color name="colorCerrarTip">#0084C3</color>
+    <color name="colorFondoSelectorDialog">#F2FBFF</color>
+    <color name="colorCerrarSelectorDialog">#009EE9</color>
+    <color name="colorFondoTipDialog">#CDEBFA</color>
+    <color name="colorCerrarTipDialog">#0084C3</color>
     <color name="azulPersonalizado">#1D30B3</color>
     <color name="textoPrecalculo">#051583</color>
+    <color name="buttonDificultadColor">#0B6589</color>
+    <color name="buttonDificultadSeleccionadoColor">#113856</color>
+    <color name="buttonTipoProblemaColor">#134083</color>
+    <color name="buttonTipoProblemaSeleccionadoColor">#112A56</color>
     <color name="buttonComprobarColor">#1a8081</color>
+    <color name="buttonComprobarSeleccionadoColor">#145555</color>
     <color name="buttonNuevoColor">#0e7cea</color>
+    <color name="buttonNuevoSeleccionadoColor">#0b62b8</color>
     <color name="buttonTacharColor">#666565</color>
     <color name="buttonTacharSeleccionadoColor">#CCCCCC</color>
     <color name="buttonBombillaColor">#EFB406</color>

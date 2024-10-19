@@ -4,43 +4,42 @@
               android:layout_height="wrap_content"
               android:orientation="vertical"
               android:padding="30dp"
-              android:background="@drawable/custom_dialog_background">
+              android:background="@drawable/custom_selector_dialog_background">
 
     <TextView
-            android:id="@+id/tipTitle"
+            android:id="@+id/selector_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tip_title"
             android:textSize="20sp"
             android:textColor="@android:color/black"
             android:textStyle="bold"
             android:layout_gravity="center"/>
 
     <ScrollView
-            android:id="@+id/tipScrollView"
+            android:id="@+id/selector_scroll_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxHeight="300dp"
             android:scrollbars="vertical"
             android:paddingTop="16dp"
-            style="@style/CustomRecyclerViewScroll">
+            style="@style/custom_recycler_view_scroll">
 
-        <TextView
-                android:id="@+id/tipMessage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:textColor="@android:color/black"
-                android:padding="10dp"/>
+            <RadioGroup
+                    android:id="@+id/selector_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"/>
+
     </ScrollView>
 
     <Button
-            android:id="@+id/closeButton"
+            android:id="@+id/close_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/close"
             android:textColor="@android:color/white"
-            android:background="@drawable/custom_close_tip"
+            android:background="@drawable/custom_close_selector_dialog"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"/>
 </LinearLayout>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-        android:color="@color/buttonNuevoSeleccionadoColor"> <!-- 20% del color #0e7cea -->
+        android:color="@color/buttonDificultadSeleccionadoColor">
 
     <!-- Fondo principal del botón -->
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@color/buttonNuevoColor" />
+            <solid android:color="@color/buttonDificultadColor" />
             <corners android:radius="20dp" />
         </shape>
     </item>

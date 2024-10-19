@@ -4,10 +4,17 @@
     <string name="see_theory">Ver Teoría</string>
     <string name="solve_problem">Resolver Problema</string>
     <string name="options_title">Opciones</string>
-    <string name="options_difficulty">Dificultad</string>
+    <string name="label_difficulty">Dificultad del Problema:</string>
+    <string-array name="dificultad_opciones">
+        <item>@string/options_easy</item>
+        <item>@string/options_normal</item>
+        <item>@string/options_hard</item>
+    </string-array>
     <string name="options_easy">Fácil</string>
     <string name="options_normal">Normal</string>
     <string name="options_hard">Difícil</string>
+    <string name="label_tipo_problema">Tipo de Problema:</string>
+    <string name="close">Cerrar</string>
     <string name="button_comprobar">COMPROBAR</string>
     <string name="button_nuevo">NUEVO</string>
     <string name="button_inicio">Inicio</string>
@@ -20,7 +27,7 @@
     <string name="back_icon">Icono de atrás</string>
     <string name="ver_solucion">VER SOLUCIÓN</string>
     <string name="tip_title">Consejo</string>
-    <string name="close">Cerrar</string>
+
     <string name="selecciona_opcion">Por favor, selecciona una opción.</string>
     <string name="tachar_text">Tachar</string>
     <string name="tip_text">Consejo</string>

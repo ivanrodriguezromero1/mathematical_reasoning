@@ -6,74 +6,121 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.WindowManager;
-import android.widget.Button;
-import android.widget.ScrollView;
-import android.widget.TextView;
+import android.widget.*;
 import com.mathematical_reasoning.raz_mat.R;
 
 public class DialogAlert {
 
     public static void showTipDialog(Context context, String tipContent) {
-        // Crear el diálogo
-        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        // Inflar el layout personalizado del diálogo
+        View dialogView = LayoutInflater.from(context).inflate(R.layout.tip_dialog, null);
 
-        // Usar un LayoutInflater para inflar el layout personalizado del diálogo
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View dialogView = inflater.inflate(R.layout.dialog_tip, null);  // Usar un layout personalizado
-        builder.setView(dialogView);
-
-        // Obtener referencias de los componentes dentro del layout del diálogo
-        TextView tipTitle = dialogView.findViewById(R.id.tipTitle);  // El título del modal
-        TextView tipMessage = dialogView.findViewById(R.id.tipMessage);  // El contenido del tip
-        Button closeButton = dialogView.findViewById(R.id.closeButton);  // Botón de cerrar
+        // Obtener referencias a los componentes del layout
+        TextView tipTitle = dialogView.findViewById(R.id.tipTitle);
+        TextView tipMessage = dialogView.findViewById(R.id.tipMessage);
+        ScrollView tipScrollView = dialogView.findViewById(R.id.tipScrollView);
+        Button closeButton = dialogView.findViewById(R.id.closeButton);
 
         // Configurar el contenido del diálogo
-        tipTitle.setText(context.getString(R.string.tip_title));  // El título lo puedes definir en strings.xml como "Consejo"
-        tipMessage.setText(tipContent);  // Mostrar el tip pasado como parámetro
+        tipTitle.setText(R.string.tip_title);
+        tipMessage.setText(tipContent);
 
-        // Utilizar el ViewTreeObserver para asegurarse de que el ScrollView ya esté completamente inflado
-        ScrollView tipScrollView = dialogView.findViewById(R.id.tipScrollView);
-        ViewTreeObserver viewTreeObserver = tipScrollView.getViewTreeObserver();
-        viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+        // Crear y mostrar el diálogo
+        AlertDialog dialog = new AlertDialog.Builder(context)
+                .setView(dialogView)
+                .create();
+
+        // Ajustar el fondo y tamaño del diálogo
+        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+        adjustDialogWidth(dialog, context);
+
+        // Ajustar la altura del ScrollView si es necesario
+        limitScrollViewHeight(tipScrollView, 600);
+
+        // Configurar el botón de cerrar
+        closeButton.setOnClickListener(v -> dialog.dismiss());
+
+        dialog.show();
+    }
+
+    public static void showSelectorDialog(Context context, String title, String[] opciones, TextView textView) {
+        // Inflar el layout personalizado del diálogo
+        View dialogView = LayoutInflater.from(context).inflate(R.layout.selector_dialog, null);
+
+        // Obtener referencias a los componentes del layout
+        TextView selectorTitle = dialogView.findViewById(R.id.selector_title);
+        RadioGroup selectorRadioGroup = dialogView.findViewById(R.id.selector_radio_group);
+        ScrollView selectorScrollView = dialogView.findViewById(R.id.selector_scroll_view);
+        Button closeButton = dialogView.findViewById(R.id.close_button);
+
+        // Configurar el título del selector
+        selectorTitle.setText(title);
+
+        // Crear los RadioButtons de las opciones programáticamente
+        createRadioButtons(context, selectorRadioGroup, opciones, textView);
+
+        // Crear y mostrar el diálogo
+        AlertDialog dialog = new AlertDialog.Builder(context)
+                .setView(dialogView)
+                .create();
+
+        // Ajustar el fondo y tamaño del diálogo
+        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+        adjustDialogWidth(dialog, context);
+
+        // Limitar la altura del ScrollView si es necesario
+        limitScrollViewHeight(selectorScrollView, 600);
+
+        // Configurar el botón de cerrar
+        closeButton.setOnClickListener(v -> dialog.dismiss());
+
+        dialog.show();
+    }
+
+    // Método para limitar la altura del ScrollView
+    private static void limitScrollViewHeight(ScrollView scrollView, int maxHeight) {
+        scrollView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
             public void onGlobalLayout() {
-                // Obtener la altura real del contenido del ScrollView
-                int height = tipScrollView.getChildAt(0).getHeight();
-
-                // Si el contenido es mayor que 300dp, limitar la altura a 300dp
-                if (height > 600) {
-                    tipScrollView.getLayoutParams().height = 600;
-                    tipScrollView.requestLayout();  // Actualizar el layout después del cambio
+                int height = scrollView.getChildAt(0).getHeight();
+                if (height > maxHeight) {
+                    scrollView.getLayoutParams().height = maxHeight;
+                    scrollView.requestLayout();
                 }
-
-                // Remover el listener para evitar que se llame varias veces
-                tipScrollView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                scrollView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
             }
         });
-
-        // Crear el diálogo antes de cerrar en el botón de cerrar
-        AlertDialog dialog = builder.create();
-        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-        dialog.show();
-        // Configurar el botón de cerrar
-        closeButton.setOnClickListener(v -> {
-            // Cerrar el diálogo
-            dialog.dismiss();
-        });
-        // Ajustar el tamaño del diálogo para que no ocupe todo el ancho y tenga margen
-        WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
-
-        // Obtener el ancho de la pantalla
-        int width = context.getResources().getDisplayMetrics().widthPixels;
-
-        // Configurar el ancho del diálogo restando los márgenes (30dp en cada lado)
-        int margin = (int) (30 * context.getResources().getDisplayMetrics().density); // Convertir 20dp a píxeles
-        layoutParams.copyFrom(dialog.getWindow().getAttributes()); // Copiar los parámetros del diálogo actual
-        layoutParams.width = width - (2 * margin); // Restar los márgenes al ancho total
-
-        // Aplicar los nuevos parámetros al diálogo
-        dialog.getWindow().setAttributes(layoutParams);
-
-
     }
+
+    // Método para ajustar el ancho del diálogo
+    private static void adjustDialogWidth(AlertDialog dialog, Context context) {
+        int screenWidth = context.getResources().getDisplayMetrics().widthPixels;
+        int margin = (int) (30 * context.getResources().getDisplayMetrics().density); // Convertir 30dp a píxeles
+
+        WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
+        layoutParams.copyFrom(dialog.getWindow().getAttributes());
+        layoutParams.width = screenWidth - (2 * margin);
+
+        dialog.getWindow().setAttributes(layoutParams);
+    }
+
+    // Método para crear los RadioButtons de las opciones
+    private static void createRadioButtons(Context context, RadioGroup radioGroup, String[] opciones, TextView textView) {
+        for (int i = 0; i < opciones.length; i++) {
+            RadioButton radioButton = new RadioButton(context);
+            radioButton.setText(opciones[i]);
+            radioButton.setId(i);
+            radioGroup.addView(radioButton);
+        }
+
+        // Manejar la selección de una opción
+        radioGroup.setOnCheckedChangeListener((group, checkedId) -> {
+            RadioButton selectedRadioButton = group.findViewById(checkedId);
+            if (selectedRadioButton != null) {
+                textView.setText(opciones[checkedId]);  // Cambiar el texto del botón según la opción seleccionada
+            }
+        });
+    }
+
 }
+
