@@ -39,49 +39,49 @@ public class ProblemSucesionesSeriesFactory {
                 precalculo = FileUtils.getTextFromRaw(context, R.raw.precalculate_sucesiones_nth1);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_sucesiones_nth1);
                 tip = FileUtils.getTextFromRaw(context, R.raw.tip_sucesiones_nth1);
-                problema = createProblemSucesionesNth1(enunciado, precalculo, solucion, dificultad[0]+1, tip);
+                problema = createProblemSucesionesNth1(context, enunciado, precalculo, solucion, dificultad[0]+1, tip);
                 break;
             case 2:
                 enunciado = FileUtils.getTextFromRaw(context, R.raw.series_enunciado);
                 precalculo = FileUtils.getTextFromRaw(context, R.raw.precalculate_series_nth1);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_series_nth1);
                 tip = FileUtils.getTextFromRaw(context, R.raw.tip_series_nth1);
-                problema = createProblemSeriesNth1(enunciado, precalculo, solucion, dificultad[0]+1, tip);
+                problema = createProblemSeriesNth1(context, enunciado, precalculo, solucion, dificultad[0]+1, tip);
                 break;
             case 3:
                 enunciado = FileUtils.getTextFromRaw(context, R.raw.sucesiones_enunciado);
                 precalculo = FileUtils.getTextFromRaw(context, R.raw.precalculate_sucesiones_nth2);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_sucesiones_nth2);
                 tip = FileUtils.getTextFromRaw(context, R.raw.tip_sucesiones_nth2);
-                problema = createProblemSucesionesNth2(enunciado, precalculo, solucion, dificultad[0]+1, tip);
+                problema = createProblemSucesionesNth2(context, enunciado, precalculo, solucion, dificultad[0]+1, tip);
                 break;
             case 4:
                 enunciado = FileUtils.getTextFromRaw(context, R.raw.series_enunciado);
                 precalculo = FileUtils.getTextFromRaw(context, R.raw.precalculate_series_nth2);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_series_nth2);
                 tip = FileUtils.getTextFromRaw(context, R.raw.tip_series_nth2);
-                problema = createProblemSeriesNth2(enunciado, precalculo, solucion, dificultad[0]+1, tip);
+                problema = createProblemSeriesNth2(context, enunciado, precalculo, solucion, dificultad[0]+1, tip);
                 break;
             case 5:
                 enunciado = FileUtils.getTextFromRaw(context, R.raw.sucesiones_enunciado);
                 precalculo = FileUtils.getTextFromRaw(context, R.raw.precalculate_sucesiones_nth3);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_sucesiones_nth3);
                 tip = FileUtils.getTextFromRaw(context, R.raw.tip_sucesiones_nth3);
-                problema = createProblemSucesionesNth3(enunciado, precalculo, solucion, dificultad[0]+1, tip);
+                problema = createProblemSucesionesNth3(context, enunciado, precalculo, solucion, dificultad[0]+1, tip);
                 break;
             default:
                 enunciado = FileUtils.getTextFromRaw(context, R.raw.series_enunciado);
                 precalculo = FileUtils.getTextFromRaw(context, R.raw.precalculate_series_nth3);
                 solucion = FileUtils.getTextFromRaw(context, R.raw.solucion_series_nth3);
                 tip = FileUtils.getTextFromRaw(context, R.raw.tip_series_nth3);
-                problema = createProblemSeriesNth3(enunciado, precalculo, solucion, dificultad[0]+1, tip);
+                problema = createProblemSeriesNth3(context, enunciado, precalculo, solucion, dificultad[0]+1, tip);
                 break;
         }
         return problema;
     }
 
     // Métodos para crear problemas de series de primer grado (término n-ésimo y suma)
-    public static Problema createProblemSucesionesNth1(String enunciado, String precalculo, String solucion, int dificultad, String tip) {
+    public static Problema createProblemSucesionesNth1(Context context, String enunciado, String precalculo, String solucion, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(5) + 1;
         int r = random.nextInt(5) + 2;
@@ -93,11 +93,11 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSucesionNth1(solucion, sucesion, a, r, n, an);
         List<String> alternativas = getAlternatives(Integer.toString(an));
         int clave = alternativas.indexOf(Integer.toString(an));
-        alternativas = addLettersToAlternatives(alternativas);
+        alternativas = addLettersToAlternatives(context, alternativas);
         return new Problema(enunciado, alternativas, clave, precalculo, solucion, tip);
     }
 
-    public static Problema createProblemSeriesNth1(String enunciado, String precalculo, String solucion, int dificultad, String tip) {
+    public static Problema createProblemSeriesNth1(Context context, String enunciado, String precalculo, String solucion, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(5) + 1;
         int r = random.nextInt(5) + 2;
@@ -109,12 +109,12 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSerieNth1(solucion, sucesion, a, r, n, sn);
         List<String> alternativas = getAlternatives(Integer.toString(sn));
         int clave = alternativas.indexOf(Integer.toString(sn));
-        alternativas = addLettersToAlternatives(alternativas);
+        alternativas = addLettersToAlternatives(context, alternativas);
         return new Problema(enunciado, alternativas, clave, precalculo, solucion, tip);
     }
 
     // Métodos para crear problemas de series de segundo grado (término n-ésimo y suma)
-    public static Problema createProblemSucesionesNth2(String enunciado, String precalculo, String solucion, int dificultad, String tip) {
+    public static Problema createProblemSucesionesNth2(Context context, String enunciado, String precalculo, String solucion, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(6) + 1;
         int r1 = random.nextInt(6) + 2;
@@ -127,11 +127,11 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSucesionNth2(solucion, sucesion, a, r1, r2, n, an);
         List<String> alternativas = getAlternatives(Integer.toString(an));
         int clave = alternativas.indexOf(Integer.toString(an));
-        alternativas = addLettersToAlternatives(alternativas);
+        alternativas = addLettersToAlternatives(context, alternativas);
         return new Problema(enunciado, alternativas, clave, precalculo, solucion, tip);
     }
 
-    public static Problema createProblemSeriesNth2(String enunciado, String precalculo, String solucion, int dificultad, String tip) {
+    public static Problema createProblemSeriesNth2(Context context, String enunciado, String precalculo, String solucion, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(6) + 1;
         int r1 = random.nextInt(6) + 2;
@@ -144,12 +144,12 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSerieNth2(solucion, sucesion, a, r1, r2, n, sn);
         List<String> alternativas = getAlternatives(Integer.toString(sn));
         int clave = alternativas.indexOf(Integer.toString(sn));
-        alternativas = addLettersToAlternatives(alternativas);
+        alternativas = addLettersToAlternatives(context, alternativas);
         return new Problema(enunciado, alternativas, clave, precalculo, solucion, tip);
     }
 
     // Métodos para crear problemas de series de tercer grado (término n-ésimo y suma)
-    public static Problema createProblemSucesionesNth3(String enunciado, String precalculo, String solucion, int dificultad, String tip) {
+    public static Problema createProblemSucesionesNth3(Context context, String enunciado, String precalculo, String solucion, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(7) + 1;
         int r1 = random.nextInt(6) + 2;
@@ -163,11 +163,11 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSucesionNth3(solucion, sucesion, a, r1, r2, r3, n, an);
         List<String> alternativas = getAlternatives(Integer.toString(an));
         int clave = alternativas.indexOf(Integer.toString(an));
-        alternativas = addLettersToAlternatives(alternativas);
+        alternativas = addLettersToAlternatives(context, alternativas);
         return new Problema(enunciado, alternativas, clave, precalculo, solucion, tip);
     }
 
-    public static Problema createProblemSeriesNth3(String enunciado, String precalculo, String solucion, int dificultad, String tip) {
+    public static Problema createProblemSeriesNth3(Context context, String enunciado, String precalculo, String solucion, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(7) + 1;
         int r1 = random.nextInt(6) + 2;
@@ -181,7 +181,7 @@ public class ProblemSucesionesSeriesFactory {
         solucion = getSolutionSerieNth3(solucion, sucesion, a, r1, r2, r3, n, sn);
         List<String> alternativas = getAlternatives(Integer.toString(sn));
         int clave = alternativas.indexOf(Integer.toString(sn));
-        alternativas = addLettersToAlternatives(alternativas);
+        alternativas = addLettersToAlternatives(context, alternativas);
         return new Problema(enunciado, alternativas, clave, precalculo, solucion, tip);
     }
 
@@ -342,8 +342,11 @@ public class ProblemSucesionesSeriesFactory {
         Collections.shuffle(alternativas);
         return  alternativas;
     }
-    private static List<String> addLettersToAlternatives(List<String> alternativas){
-        String[] letters = {"A", "B", "C", "D"};
+    private static List<String> addLettersToAlternatives(Context context, List<String> alternativas){
+        String[] letters = {context.getString(R.string.letter_a),
+                context.getString(R.string.letter_b),
+                context.getString(R.string.letter_c),
+                context.getString(R.string.letter_d)};
         List<String> alternativesWithLetters = new ArrayList<>();
         for(int i = 0; i<alternativas.size() ;i++){
             alternativesWithLetters.add(String.format("%s) %s", letters[i], alternativas.get(i)));
