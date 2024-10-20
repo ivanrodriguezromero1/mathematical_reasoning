@@ -9,6 +9,8 @@ import android.view.WindowManager;
 import android.widget.*;
 import com.mathematical_reasoning.raz_mat.R;
 
+import java.util.List;
+
 public class DialogAlert {
 
     public static void showTipDialog(Context context, String tipContent) {
@@ -20,6 +22,10 @@ public class DialogAlert {
         TextView tipMessage = dialogView.findViewById(R.id.tipMessage);
         ScrollView tipScrollView = dialogView.findViewById(R.id.tipScrollView);
         Button closeButton = dialogView.findViewById(R.id.closeButton);
+
+        // Habilitar scroll vertical y evitar que se desvanezca
+        tipScrollView.setVerticalScrollBarEnabled(true);
+        tipScrollView.setScrollBarFadeDuration(0);
 
         // Configurar el contenido del diálogo
         tipTitle.setText(R.string.tip_title);
@@ -43,7 +49,7 @@ public class DialogAlert {
         dialog.show();
     }
 
-    public static void showSelectorDialog(Context context, String title, String[] opciones, TextView textView, int index, int[] dificultad, int[] selectedOptionIndex) {
+    public static void showSelectorDialog(Context context, String title, List<String> opciones, TextView textView, int index, int[] dificultad, int[] selectedOptionIndex) {
         // Inflar el layout personalizado del diálogo
         View dialogView = LayoutInflater.from(context).inflate(R.layout.selector_dialog, null);
 
@@ -52,6 +58,10 @@ public class DialogAlert {
         RadioGroup selectorRadioGroup = dialogView.findViewById(R.id.selector_radio_group);
         ScrollView selectorScrollView = dialogView.findViewById(R.id.selector_scroll_view);
         Button closeButton = dialogView.findViewById(R.id.close_button);
+
+        // Habilitar scroll vertical y evitar que se desvanezca
+        selectorScrollView.setVerticalScrollBarEnabled(true);
+        selectorScrollView.setScrollBarFadeDuration(0);
 
         // Configurar el título del selector
         selectorTitle.setText(title);
@@ -108,10 +118,16 @@ public class DialogAlert {
     }
 
     // Método para crear los RadioButtons de las opciones
-    private static void createRadioButtons(Context context, RadioGroup radioGroup, String[] opciones, TextView textView, int index, int[] dificultad, int[] selectedOptionIndex) {
-        for (int i = 0; i < opciones.length; i++) {
+    private static void createRadioButtons(Context context, RadioGroup radioGroup, List<String> opciones, TextView textView, int index, int[] dificultad, int[] selectedOptionIndex) {
+        for (int i = 0; i < opciones.size(); i++) {
             RadioButton radioButton = new RadioButton(context);
-            radioButton.setText(opciones[i]);
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+            );
+            layoutParams.setMargins(0, 0, 0, 40);
+            radioButton.setLayoutParams(layoutParams);
+            radioButton.setText(opciones.get(i));
             radioButton.setId(i);
             radioGroup.addView(radioButton);
         }
@@ -121,7 +137,7 @@ public class DialogAlert {
             RadioButton selectedRadioButton = group.findViewById(checkedId);
             if (selectedRadioButton != null) {
                 selectedOptionIndex[index] = checkedId;
-                textView.setText(opciones[checkedId]);
+                textView.setText(opciones.get(checkedId));
                 dificultad[0] = checkedId;
             }
         });

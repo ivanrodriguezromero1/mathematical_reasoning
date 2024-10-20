@@ -15,7 +15,7 @@ import java.util.List;
 public class RadioButtonManager {
 
     // Método estático para configurar los RadioButtons dinámicamente
-    public static void setupRadioButtons(Context context, RadioGroup radioGroup, List<String> alternativas) {
+    public static void setupRadioButtons(Context context, RadioGroup radioGroup, List<String> alternatives) {
         // Limpiar el RadioGroup antes de añadir nuevas opciones
         radioGroup.removeAllViews();
 
@@ -27,11 +27,11 @@ public class RadioButtonManager {
         layoutParams.setMargins(0, 0, 0, 8);  // Añadir margen inferior de 16dp
 
         // Generar dinámicamente los RadioButtons con estilo
-        for (int i = 0; i < alternativas.size(); i++) {
+        for (int i = 0; i < alternatives.size(); i++) {
             // Crear un nuevo RadioButton
             RadioButton radioButton = new RadioButton(context);
 
-            radioButton.setText(alternativas.get(i));  // Establecer el texto de la alternativa
+            radioButton.setText(alternatives.get(i));  // Establecer el texto de la alternativa
             radioButton.setId(View.generateViewId());  // Generar un ID único automáticamente
 
             // Aplicar estilos al RadioButton
@@ -49,11 +49,11 @@ public class RadioButtonManager {
     }
 
     // Método para inhabilitar dos alternativas incorrectas
-    public static void disableTwoIncorrectOptions(RadioGroup radioGroup, List<String> alternativas, int correctAnswerIndex) {
+    public static void disableTwoIncorrectOptions(RadioGroup radioGroup, List<String> alternatives, int correctAnswerIndex) {
         List<Integer> incorrectIndexes = new ArrayList<>();
 
         // Recoger los índices de las alternativas incorrectas
-        for (int i = 0; i < alternativas.size(); i++) {
+        for (int i = 0; i < alternatives.size(); i++) {
             if (i != correctAnswerIndex) {
                 incorrectIndexes.add(i);
             }

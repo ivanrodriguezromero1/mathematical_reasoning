@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setScrollBarFadeDuration(0);
 
         // Map para los títulos y los íconos de la izquierda
-        Map<String, Integer> itemMap = new HashMap<>();
-        itemMap.put("Sucesiones y Series", R.drawable.symbols_123);
+        Map<String, Integer> itemMap = new LinkedHashMap<>();  // Cambiado a LinkedHashMap
+        itemMap.put("Sucesiones", R.drawable.symbols_123);
         itemMap.put("Problemas sobre edades", R.drawable.symbols_face_4);
         itemMap.put("Problemas sobre móviles", R.drawable.symbols_directions_car);
         itemMap.put("Cronometría", R.drawable.symbols_timer);

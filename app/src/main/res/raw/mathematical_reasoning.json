@@ -1,0 +1,197 @@
+{
+  "topics": [
+    {
+      "title": "Sucesiones",
+      "theory": "Las sucesiones en matemáticas son conjuntos ordenados de números que siguen un patrón definido. Estas se pueden clasificar principalmente en dos tipos: aritméticas y geométricas. Una sucesión aritmética es aquella donde cada término se obtiene sumando una constante (llamada diferencia común) al término anterior, mientras que en una sucesión geométrica, cada término se obtiene multiplicando el término anterior por una constante (razón común). Se pueden utilizar fórmulas para determinar cualquier término específico en ambas sucesiones, así como para calcular sumas de términos finitos. Las sucesiones también pueden tener límites, lo que significa que pueden converger a un valor finito conforme se incrementa el número de términos. Comprender cómo se comportan las sucesiones, especialmente las infinitas, es esencial en diversos campos de las matemáticas, incluyendo el análisis y la teoría de series.",
+      "types_of_problems": [
+        {
+          "type": "Encontrar el término n-ésimo de una sucesión aritmética",
+          "problems": [
+            {
+              "statement": "Calcula el ${n_ord} término de una sucesión aritmética de primer orden, cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0,
+              "variables": [
+                {
+                  "name": "a1",
+                  "variable_type": "int",
+                  "range": {
+                    "min": 1,
+                    "max": 100
+                  }
+                },
+                {
+                  "name": "d",
+                  "variable_type": "int",
+                  "range": {
+                    "min": 1,
+                    "max": 20
+                  }
+                },
+                {
+                  "name": "n_ord",
+                  "variable_type": "string"
+                },
+                {
+                  "name": "n_num",
+                  "variable_type": "int",
+                  "range": {
+                    "min": 5,
+                    "max": 30
+                  }
+                }
+              ],
+              "tip": "Para encontrar el término n-ésimo de una sucesión aritmética, utiliza la fórmula: aₙ = a₁ + (n - 1) * d.",
+              "precalculate": "aₙ = a₁ + (${n_num} - 1) * ${d}",
+              "answer": "${a1} + (${n_num} - 1) * ${d}",
+              "step_by_step_solution": [
+                "Paso 1: Identifica el primer término (a₁), que es ${a1}.",
+                "Paso 2: Identifica la diferencia común (d), que es ${d}.",
+                "Paso 3: Aplica la fórmula aₙ = a₁ + (n - 1) * d para encontrar el ${n_ord} término.",
+                "Paso 4: Sustituye los valores: aₙ = ${a1} + (${n_num} - 1) * ${d}.",
+                "Paso 5: Realiza el cálculo final: aₙ = ${a1} + (${n_num} - 1) * ${d}."
+              ]
+            },
+            {
+              "statement": "Determina el término ${n_num} de una sucesión aritmética, comenzando en ${a1} y aumentando en ${d} por cada término.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el ${n_ord} término en una sucesión aritmética de segundo orden, donde ${a1} es el primer término, la primera diferencia común es ${d}, y la segunda diferencia es constante.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Dada una sucesión aritmética con primer término ${a1} y diferencia común ${d}, halla el término ${n_num} de la misma.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el ${n_ord} término en una sucesión aritmética de tercer orden, donde el primer término es ${a1}, la diferencia inicial es ${d}, y las diferencias de segundo y tercer orden son constantes.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n_num} de una sucesión aritmética con primer término ${a1} y diferencia común de ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Determina el término ${n_num} en una sucesión aritmética de segundo orden, con ${a1} como primer término y una diferencia de primer orden igual a ${d}, y una diferencia de segundo orden constante.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el ${n_ord} término de una sucesión aritmética, donde el primer término es ${a1}, la diferencia de primer orden es ${d}, y las diferencias superiores son cero.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Dada una sucesión aritmética de primer orden con ${a1} como primer término y una diferencia común ${d}, halla el término número ${n_num}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el ${n_ord} término de una sucesión aritmética de segundo orden, cuyo primer término es ${a1} y la primera y segunda diferencias son ${d1} y ${d2}, respectivamente.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término en la posición ${n_num} en una sucesión aritmética de tercer orden, comenzando en ${a1}, con diferencias ${d1}, ${d2} y ${d3}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Halla el valor del ${n_ord} término en una sucesión aritmética que comienza en ${a1} y tiene una diferencia constante de ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el término ${n_num} en una sucesión aritmética, con primer término igual a ${a1} y diferencias constantes de primer orden igual a ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Dada una sucesión aritmética con primer término ${a1} y diferencias de primer y segundo orden iguales a ${d1} y ${d2}, halla el término ${n_num}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Determina el ${n_ord} término de una sucesión aritmética que comienza en ${a1}, con diferencia de primer orden ${d1} y diferencia de segundo orden ${d2}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término número ${n_num} en una sucesión aritmética de tercer orden, cuyo primer término es ${a1} y diferencias de primer, segundo y tercer orden son ${d1}, ${d2}, y ${d3}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el ${n_ord} término de una sucesión aritmética de primer orden, donde ${a1} es el primer término y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Dada una sucesión aritmética de segundo orden, cuyo primer término es ${a1}, la diferencia de primer orden es ${d1}, y la diferencia de segundo orden es ${d2}, calcula el término ${n_num}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Halla el término en la posición ${n_num} de una sucesión aritmética de tercer orden, comenzando con ${a1} y con diferencias ${d1}, ${d2} y ${d3}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el valor del término ${n_num} en una sucesión aritmética de segundo orden, donde el primer término es ${a1}, y las diferencias de primer y segundo orden son ${d1} y ${d2}.",
+              "difficulty": 1
+            }
+          ]
+        },
+        {
+          "type": "Encontrar el término n-ésimo de una sucesión geométrica"
+        },
+        {
+          "type": "Encontrar la diferencia común en una sucesión aritmética"
+        },
+        {
+          "type": "Encontrar la razón común en una sucesión geométrica"
+        },
+        {
+          "type": "Calcular el término central en una sucesión aritmética"
+        },
+        {
+          "type": "Identificar la fórmula general de una sucesión dada"
+        },
+        {
+          "type": "Determinar si una sucesión converge o diverge"
+        },
+        {
+          "type": "Analizar la periodicidad de una sucesión"
+        },
+        {
+          "type": "Calcular el término n-ésimo de una sucesión alternante"
+        },
+        {
+          "type": "Determinar el límite de una sucesión"
+        },
+        {
+          "type": "Identificar subsucesiones en una sucesión dada"
+        },
+        {
+          "type": "Encontrar términos comunes en dos sucesiones distintas"
+        },
+        {
+          "type": "Encontrar el primer término de una sucesión dada la suma total"
+        },
+        {
+          "type": "Encontrar el orden de una sucesión aritmética"
+        },
+        {
+          "type": "Encontrar el orden de una sucesión geométrica"
+        },
+        {
+          "type": "Analizar sucesiones definidas de forma recursiva"
+        },
+        {
+          "type": "Encontrar la mayor cota inferior y el supremo de una sucesión"
+        },
+        {
+          "type": "Calcular el término n-ésimo en una sucesión telescópica"
+        },
+        {
+          "type": "Evaluar la divergencia de una sucesión alternante"
+        },
+        {
+          "type": "Encontrar los puntos de acumulación de una sucesión"
+        }
+      ],
+      "references": [
+        "https://www.math.columbia.edu",
+        "https://math.ou.edu",
+        "https://math.mit.edu"
+      ]
+    }
+  ]
+}

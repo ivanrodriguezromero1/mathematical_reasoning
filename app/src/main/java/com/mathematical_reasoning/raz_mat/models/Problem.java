@@ -9,11 +9,11 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Problema {
-    private String enunciado;
-    private List<String> alternativas;
-    private int clave;
+public class Problem {
+    private String statement;
+    private List<String> alternatives;
+    private int correctKeyIndex;
     private String precalculate;
-    private String solucion;
+    private String solution;
     private String tip;
 }

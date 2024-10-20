@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class TeoriaActivity extends AppCompatActivity {
+public class TheoryActivity extends AppCompatActivity {
 
     private ImageView iconImageView;
     private TextView titleTextView, contentTextView;
@@ -39,7 +39,7 @@ public class TeoriaActivity extends AppCompatActivity {
         titleTextView.setText(title);
 
         // Configurar el contenido de la teoría según el título
-        if (title.equals("Sucesiones y Series")) {
+        if (title.equals("Sucesiones")) {
             contentTextView.setText(getTeoriaFromFile(R.raw.sucesiones_teoria));  // Contenido para "Series"
         } else if (title.equals("Problemas sobre edades")) {
             contentTextView.setText(getTeoriaFromFile(R.raw.edades_teoria));  // Contenido para "Edades"
@@ -71,7 +71,7 @@ public class TeoriaActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Acción para abrir la actividad de MainActivity
-                Intent intent = new Intent(TeoriaActivity.this, MainActivity.class);
+                Intent intent = new Intent(TheoryActivity.this, MainActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
             }
@@ -82,7 +82,7 @@ public class TeoriaActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Acción para abrir la actividad de OptionsActivity
-                Intent intent = new Intent(TeoriaActivity.this, OptionsActivity.class);
+                Intent intent = new Intent(TheoryActivity.this, OptionsActivity.class);
                 intent.putExtra("fromActivity", "TeoriaActivity");  // Pasar información de qué actividad proviene
                 intent.putExtra("iconResource", getIntent().getIntExtra("iconResource", 0)); // Pasar el ícono correspondiente
                 intent.putExtra("title", getIntent().getStringExtra("title")); // Pasar el título correspondiente

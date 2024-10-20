@@ -64,7 +64,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 // Usa holder.getAdapterPosition() en lugar de "position"
                 int currentPosition = holder.getAdapterPosition();
                 if (currentPosition != RecyclerView.NO_POSITION) {
-                    Intent intent = new Intent(mContext, TeoriaActivity.class);
+                    Intent intent = new Intent(mContext, TheoryActivity.class);
                     intent.putExtra("iconResource", mIconsLeft.get(currentPosition)); // Pasar el ícono correspondiente
                     intent.putExtra("title", mTitles.get(currentPosition)); // Pasar el título correspondiente
                     mContext.startActivity(intent); // Iniciar TeoriaActivity
@@ -81,7 +81,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 int currentPosition = holder.getAdapterPosition();
                 if (currentPosition != RecyclerView.NO_POSITION) {
                     // Crear un Intent para ir a ProblemasActivity
-                    Intent intent = new Intent(mContext, ProblemasActivity.class);
+                    Intent intent = new Intent(mContext, ProblemsActivity.class);
 
                     // Pasar el título y el ícono del ítem seleccionado si es necesario
                     intent.putExtra("iconResource", mIconsLeft.get(currentPosition));  // Pasar el ícono correspondiente

@@ -21,10 +21,10 @@
                   android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         />
         <activity
-                android:name=".TeoriaActivity"
+                android:name=".TheoryActivity"
                 android:exported="true"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".ProblemasActivity"
+        <activity android:name=".ProblemsActivity"
                   android:exported="true"
                   android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".SolutionActivity"
