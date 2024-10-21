@@ -1,7 +1,7 @@
 package com.mathematical_reasoning.raz_mat;
 
 import android.content.Context;
-import com.mathematical_reasoning.raz_mat.models.Problem;
+import com.mathematical_reasoning.raz_mat.models.output.ProblemGenerated;
 import com.mathematical_reasoning.raz_mat.utils.FileUtils;
 
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class ProblemSucesionesFactory {
 
-    public static Problem createProblemSucesionesSeries(Context context, int[] dificultad) {
+    public static ProblemGenerated createProblemSucesionesSeries(Context context, int[] dificultad) {
         Random random = new Random();
         int tipo = 1;
         // Determinar el tipo de problema basado en la dificultad
@@ -27,7 +27,7 @@ public class ProblemSucesionesFactory {
                 break;
         }
 
-        Problem problema;
+        ProblemGenerated problema;
         String statement;
         String solution;
         String precalculo;
@@ -81,7 +81,7 @@ public class ProblemSucesionesFactory {
     }
 
     // Métodos para crear problemas de series de primer grado (término n-ésimo y suma)
-    public static Problem createProblemSucesionesNth1(Context context, String statement, String precalculo, String solution, int dificultad, String tip) {
+    public static ProblemGenerated createProblemSucesionesNth1(Context context, String statement, String precalculo, String solution, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(5) + 1;
         int r = random.nextInt(5) + 2;
@@ -94,10 +94,10 @@ public class ProblemSucesionesFactory {
         List<String> alternatives = getAlternatives(Integer.toString(an));
         int correctKeyIndex = alternatives.indexOf(Integer.toString(an));
         alternatives = addLettersToAlternatives(context, alternatives);
-        return new Problem(statement, alternatives, correctKeyIndex, precalculo, solution, tip);
+        return new ProblemGenerated(statement, alternatives, correctKeyIndex, precalculo, solution, tip);
     }
 
-    public static Problem createProblemSeriesNth1(Context context, String statement, String precalculo, String solution, int dificultad, String tip) {
+    public static ProblemGenerated createProblemSeriesNth1(Context context, String statement, String precalculo, String solution, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(5) + 1;
         int r = random.nextInt(5) + 2;
@@ -110,11 +110,11 @@ public class ProblemSucesionesFactory {
         List<String> alternatives = getAlternatives(Integer.toString(sn));
         int correctKeyIndex = alternatives.indexOf(Integer.toString(sn));
         alternatives = addLettersToAlternatives(context, alternatives);
-        return new Problem(statement, alternatives, correctKeyIndex, precalculo, solution, tip);
+        return new ProblemGenerated(statement, alternatives, correctKeyIndex, precalculo, solution, tip);
     }
 
     // Métodos para crear problemas de series de segundo grado (término n-ésimo y suma)
-    public static Problem createProblemSucesionesNth2(Context context, String statement, String precalculo, String solution, int dificultad, String tip) {
+    public static ProblemGenerated createProblemSucesionesNth2(Context context, String statement, String precalculo, String solution, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(6) + 1;
         int r1 = random.nextInt(6) + 2;
@@ -128,10 +128,10 @@ public class ProblemSucesionesFactory {
         List<String> alternatives = getAlternatives(Integer.toString(an));
         int correctKeyIndex = alternatives.indexOf(Integer.toString(an));
         alternatives = addLettersToAlternatives(context, alternatives);
-        return new Problem(statement, alternatives, correctKeyIndex, precalculo, solution, tip);
+        return new ProblemGenerated(statement, alternatives, correctKeyIndex, precalculo, solution, tip);
     }
 
-    public static Problem createProblemSeriesNth2(Context context, String statement, String precalculo, String solution, int dificultad, String tip) {
+    public static ProblemGenerated createProblemSeriesNth2(Context context, String statement, String precalculo, String solution, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(6) + 1;
         int r1 = random.nextInt(6) + 2;
@@ -145,11 +145,11 @@ public class ProblemSucesionesFactory {
         List<String> alternatives = getAlternatives(Integer.toString(sn));
         int correctKeyIndex = alternatives.indexOf(Integer.toString(sn));
         alternatives = addLettersToAlternatives(context, alternatives);
-        return new Problem(statement, alternatives, correctKeyIndex, precalculo, solution, tip);
+        return new ProblemGenerated(statement, alternatives, correctKeyIndex, precalculo, solution, tip);
     }
 
     // Métodos para crear problemas de series de tercer grado (término n-ésimo y suma)
-    public static Problem createProblemSucesionesNth3(Context context, String statement, String precalculo, String solution, int dificultad, String tip) {
+    public static ProblemGenerated createProblemSucesionesNth3(Context context, String statement, String precalculo, String solution, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(7) + 1;
         int r1 = random.nextInt(6) + 2;
@@ -164,10 +164,10 @@ public class ProblemSucesionesFactory {
         List<String> alternatives = getAlternatives(Integer.toString(an));
         int correctKeyIndex = alternatives.indexOf(Integer.toString(an));
         alternatives = addLettersToAlternatives(context, alternatives);
-        return new Problem(statement, alternatives, correctKeyIndex, precalculo, solution, tip);
+        return new ProblemGenerated(statement, alternatives, correctKeyIndex, precalculo, solution, tip);
     }
 
-    public static Problem createProblemSeriesNth3(Context context, String statement, String precalculo, String solution, int dificultad, String tip) {
+    public static ProblemGenerated createProblemSeriesNth3(Context context, String statement, String precalculo, String solution, int dificultad, String tip) {
         Random random = new Random();
         int a = random.nextInt(7) + 1;
         int r1 = random.nextInt(6) + 2;
@@ -182,7 +182,7 @@ public class ProblemSucesionesFactory {
         List<String> alternatives = getAlternatives(Integer.toString(sn));
         int correctKeyIndex = alternatives.indexOf(Integer.toString(sn));
         alternatives = addLettersToAlternatives(context, alternatives);
-        return new Problem(statement, alternatives, correctKeyIndex, precalculo, solution, tip);
+        return new ProblemGenerated(statement, alternatives, correctKeyIndex, precalculo, solution, tip);
     }
 
     // Métodos auxiliares

@@ -3,10 +3,13 @@ package com.mathematical_reasoning.raz_mat;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.widget.LinearLayout;
+import com.mathematical_reasoning.raz_mat.models.input.MathematicalReasoning;
+import com.mathematical_reasoning.raz_mat.utils.FileUtils;
 
 import java.util.*;
 
@@ -25,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.l1_layout_main);
+
 
         // Configurar RecyclerView
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
@@ -84,10 +88,13 @@ public class MainActivity extends AppCompatActivity {
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Acción cuando se presiona "Inicio"
-                Intent intent = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(intent);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left); // Aplicar animación
+                MathematicalReasoning reasoning = FileUtils.readJsonFromRaw(MainActivity.this, R.raw.mathematical_reasoning);
+                if (reasoning != null && !reasoning.getTopics().isEmpty()) {
+                    String firstTopicTitle = reasoning.getTopics().get(0).getTitle();
+                    Toast.makeText(MainActivity.this, "Topic: " + firstTopicTitle, Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(MainActivity.this, "Error reading JSON", Toast.LENGTH_LONG).show();
+                }
             }
         });
 

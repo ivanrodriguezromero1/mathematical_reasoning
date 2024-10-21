@@ -1,4 +1,4 @@
-package com.mathematical_reasoning.raz_mat.models;
+package com.mathematical_reasoning.raz_mat.models.output;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +9,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Problem {
+public class ProblemGenerated {
     private String statement;
     private List<String> alternatives;
     private int correctKeyIndex;

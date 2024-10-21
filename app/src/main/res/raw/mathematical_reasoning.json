@@ -29,7 +29,11 @@
                 },
                 {
                   "name": "n_ord",
-                  "variable_type": "string"
+                  "variable_type": "string",
+                  "range": {
+                    "min": 5,
+                    "max": 30
+                  }
                 },
                 {
                   "name": "n_num",

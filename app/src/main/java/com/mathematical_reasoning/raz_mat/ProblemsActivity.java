@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
-import com.mathematical_reasoning.raz_mat.models.Problem;
+import com.mathematical_reasoning.raz_mat.models.output.ProblemGenerated;
 import com.mathematical_reasoning.raz_mat.utils.RadioButtonManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -23,7 +23,7 @@ import static com.mathematical_reasoning.raz_mat.utils.DialogAlert.showTipDialog
 public class ProblemsActivity extends AppCompatActivity {
 
     private SharedPreferences sharedPreferences;
-    Problem problema = new Problem();
+    ProblemGenerated problema = new ProblemGenerated();
     boolean isCheckMode = true;
 
     @Override
