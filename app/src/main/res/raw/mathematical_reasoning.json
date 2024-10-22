@@ -8,7 +8,7 @@
           "type": "Encontrar el término n-ésimo de una sucesión aritmética",
           "problems": [
             {
-              "statement": "Calcula el ${n_ord} término de una sucesión aritmética de primer orden, cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "statement": "Calcula el término en la posición ${n} de una sucesión aritmética de primer orden, cuyo primer término es ${a1} y la diferencia común es ${d}.",
               "difficulty": 0,
               "variables": [
                 {
@@ -28,15 +28,7 @@
                   }
                 },
                 {
-                  "name": "n_ord",
-                  "variable_type": "string",
-                  "range": {
-                    "min": 5,
-                    "max": 30
-                  }
-                },
-                {
-                  "name": "n_num",
+                  "name": "n",
                   "variable_type": "int",
                   "range": {
                     "min": 5,
@@ -45,90 +37,90 @@
                 }
               ],
               "tip": "Para encontrar el término n-ésimo de una sucesión aritmética, utiliza la fórmula: aₙ = a₁ + (n - 1) * d.",
-              "precalculate": "aₙ = a₁ + (${n_num} - 1) * ${d}",
-              "answer": "${a1} + (${n_num} - 1) * ${d}",
+              "precalculate": "aₙ = a₁ + (${n} - 1) * ${d}",
+              "answer": "${a1} + (${n} - 1) * ${d}",
               "step_by_step_solution": [
                 "Paso 1: Identifica el primer término (a₁), que es ${a1}.",
                 "Paso 2: Identifica la diferencia común (d), que es ${d}.",
-                "Paso 3: Aplica la fórmula aₙ = a₁ + (n - 1) * d para encontrar el ${n_ord} término.",
-                "Paso 4: Sustituye los valores: aₙ = ${a1} + (${n_num} - 1) * ${d}.",
-                "Paso 5: Realiza el cálculo final: aₙ = ${a1} + (${n_num} - 1) * ${d}."
+                "Paso 3: Aplica la fórmula aₙ = a₁ + (n - 1) * d para encontrar el término ${n}.",
+                "Paso 4: Sustituye los valores: aₙ = ${a1} + (${n} - 1) * ${d}.",
+                "Paso 5: Realiza el cálculo final: aₙ = ${a1} + (${n} - 1) * ${d}."
               ]
             },
             {
-              "statement": "Determina el término ${n_num} de una sucesión aritmética, comenzando en ${a1} y aumentando en ${d} por cada término.",
+              "statement": "Determina el término en la posición ${n} de una sucesión aritmética, comenzando en ${a1} y aumentando en ${d} por cada término.",
               "difficulty": 0
             },
             {
-              "statement": "Encuentra el ${n_ord} término en una sucesión aritmética de segundo orden, donde ${a1} es el primer término, la primera diferencia común es ${d}, y la segunda diferencia es constante.",
+              "statement": "Encuentra el término en la posición ${n} en una sucesión aritmética de segundo orden, donde ${a1} es el primer término, la primera diferencia común es ${d}, y la segunda diferencia es constante.",
               "difficulty": 1
             },
             {
-              "statement": "Dada una sucesión aritmética con primer término ${a1} y diferencia común ${d}, halla el término ${n_num} de la misma.",
+              "statement": "Dada una sucesión aritmética con primer término ${a1} y diferencia común ${d}, halla el término en la posición ${n} de la misma.",
               "difficulty": 0
             },
             {
-              "statement": "Calcula el ${n_ord} término en una sucesión aritmética de tercer orden, donde el primer término es ${a1}, la diferencia inicial es ${d}, y las diferencias de segundo y tercer orden son constantes.",
+              "statement": "Calcula el término en la posición ${n} en una sucesión aritmética de tercer orden, donde el primer término es ${a1}, la diferencia inicial es ${d}, y las diferencias de segundo y tercer orden son constantes.",
               "difficulty": 2
             },
             {
-              "statement": "Encuentra el término en la posición ${n_num} de una sucesión aritmética con primer término ${a1} y diferencia común de ${d}.",
+              "statement": "Encuentra el término en la posición ${n} de una sucesión aritmética con primer término ${a1} y diferencia común de ${d}.",
               "difficulty": 0
             },
             {
-              "statement": "Determina el término ${n_num} en una sucesión aritmética de segundo orden, con ${a1} como primer término y una diferencia de primer orden igual a ${d}, y una diferencia de segundo orden constante.",
+              "statement": "Determina el término en la posición ${n} en una sucesión aritmética de segundo orden, con ${a1} como primer término y una diferencia de primer orden igual a ${d}, y una diferencia de segundo orden constante.",
               "difficulty": 1
             },
             {
-              "statement": "Calcula el ${n_ord} término de una sucesión aritmética, donde el primer término es ${a1}, la diferencia de primer orden es ${d}, y las diferencias superiores son cero.",
+              "statement": "Calcula el término en la posición ${n} de una sucesión aritmética, donde el primer término es ${a1}, la diferencia de primer orden es ${d}, y las diferencias superiores son cero.",
               "difficulty": 0
             },
             {
-              "statement": "Dada una sucesión aritmética de primer orden con ${a1} como primer término y una diferencia común ${d}, halla el término número ${n_num}.",
+              "statement": "Dada una sucesión aritmética de primer orden con ${a1} como primer término y una diferencia común ${d}, halla el término número ${n}.",
               "difficulty": 0
             },
             {
-              "statement": "Encuentra el ${n_ord} término de una sucesión aritmética de segundo orden, cuyo primer término es ${a1} y la primera y segunda diferencias son ${d1} y ${d2}, respectivamente.",
+              "statement": "Encuentra el término en la posición ${n} de una sucesión aritmética de segundo orden, cuyo primer término es ${a1} y la primera y segunda diferencias son ${d1} y ${d2}, respectivamente.",
               "difficulty": 1
             },
             {
-              "statement": "Calcula el término en la posición ${n_num} en una sucesión aritmética de tercer orden, comenzando en ${a1}, con diferencias ${d1}, ${d2} y ${d3}.",
+              "statement": "Calcula el término en la posición ${n} en una sucesión aritmética de tercer orden, comenzando en ${a1}, con diferencias ${d1}, ${d2} y ${d3}.",
               "difficulty": 2
             },
             {
-              "statement": "Halla el valor del ${n_ord} término en una sucesión aritmética que comienza en ${a1} y tiene una diferencia constante de ${d}.",
+              "statement": "Halla el valor del término ${n} en una sucesión aritmética que comienza en ${a1} y tiene una diferencia constante de ${d}.",
               "difficulty": 0
             },
             {
-              "statement": "Encuentra el término ${n_num} en una sucesión aritmética, con primer término igual a ${a1} y diferencias constantes de primer orden igual a ${d}.",
+              "statement": "Encuentra el término en la posición ${n} en una sucesión aritmética, con primer término igual a ${a1} y diferencias constantes de primer orden igual a ${d}.",
               "difficulty": 0
             },
             {
-              "statement": "Dada una sucesión aritmética con primer término ${a1} y diferencias de primer y segundo orden iguales a ${d1} y ${d2}, halla el término ${n_num}.",
+              "statement": "Dada una sucesión aritmética con primer término ${a1} y diferencias de primer y segundo orden iguales a ${d1} y ${d2}, halla el término en la posición ${n}.",
               "difficulty": 1
             },
             {
-              "statement": "Determina el ${n_ord} término de una sucesión aritmética que comienza en ${a1}, con diferencia de primer orden ${d1} y diferencia de segundo orden ${d2}.",
+              "statement": "Determina el término en la posición ${n} de una sucesión aritmética que comienza en ${a1}, con diferencia de primer orden ${d1} y diferencia de segundo orden ${d2}.",
               "difficulty": 1
             },
             {
-              "statement": "Calcula el término número ${n_num} en una sucesión aritmética de tercer orden, cuyo primer término es ${a1} y diferencias de primer, segundo y tercer orden son ${d1}, ${d2}, y ${d3}.",
+              "statement": "Calcula el término número ${n} en una sucesión aritmética de tercer orden, cuyo primer término es ${a1} y diferencias de primer, segundo y tercer orden son ${d1}, ${d2}, y ${d3}.",
               "difficulty": 2
             },
             {
-              "statement": "Encuentra el ${n_ord} término de una sucesión aritmética de primer orden, donde ${a1} es el primer término y la diferencia común es ${d}.",
+              "statement": "Encuentra el término en la posición ${n} de una sucesión aritmética de primer orden, donde ${a1} es el primer término y la diferencia común es ${d}.",
               "difficulty": 0
             },
             {
-              "statement": "Dada una sucesión aritmética de segundo orden, cuyo primer término es ${a1}, la diferencia de primer orden es ${d1}, y la diferencia de segundo orden es ${d2}, calcula el término ${n_num}.",
+              "statement": "Dada una sucesión aritmética de segundo orden, cuyo primer término es ${a1}, la diferencia de primer orden es ${d1}, y la diferencia de segundo orden es ${d2}, calcula el término en la posición ${n}.",
               "difficulty": 1
             },
             {
-              "statement": "Halla el término en la posición ${n_num} de una sucesión aritmética de tercer orden, comenzando con ${a1} y con diferencias ${d1}, ${d2} y ${d3}.",
+              "statement": "Halla el término en la posición ${n} de una sucesión aritmética de tercer orden, comenzando con ${a1} y con diferencias ${d1}, ${d2} y ${d3}.",
               "difficulty": 2
             },
             {
-              "statement": "Encuentra el valor del término ${n_num} en una sucesión aritmética de segundo orden, donde el primer término es ${a1}, y las diferencias de primer y segundo orden son ${d1} y ${d2}.",
+              "statement": "Encuentra el valor del término en la posición ${n} en una sucesión aritmética de segundo orden, donde el primer término es ${a1}, y las diferencias de primer y segundo orden son ${d1} y ${d2}.",
               "difficulty": 1
             }
           ]

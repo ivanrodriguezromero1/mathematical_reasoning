@@ -1,5 +1,6 @@
 package com.mathematical_reasoning.raz_mat;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +10,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.widget.LinearLayout;
 import com.mathematical_reasoning.raz_mat.models.input.MathematicalReasoning;
+import com.mathematical_reasoning.raz_mat.models.output.ProblemGenerated;
 import com.mathematical_reasoning.raz_mat.utils.FileUtils;
+import com.mathematical_reasoning.raz_mat.utils.ProblemGenerator;
 
 import java.util.*;
 
@@ -89,12 +92,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 MathematicalReasoning reasoning = FileUtils.readJsonFromRaw(MainActivity.this, R.raw.mathematical_reasoning);
-                if (reasoning != null && !reasoning.getTopics().isEmpty()) {
-                    String firstTopicTitle = reasoning.getTopics().get(0).getTitle();
-                    Toast.makeText(MainActivity.this, "Topic: " + firstTopicTitle, Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(MainActivity.this, "Error reading JSON", Toast.LENGTH_LONG).show();
-                }
+
+                // Supongamos que estamos generando un problema del primer tipo de problemas
+                ProblemGenerated generatedProblem = ProblemGenerator.generateProblem(reasoning.getTopics().get(0).getProblemTypes().get(0).getProblems().get(0));
+
+                // Crear un AlertDialog para mostrar el enunciado
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("Problema Generado");
+                builder.setMessage(generatedProblem.getStatement());
+
+                // Agregar botón de cerrar
+                builder.setPositiveButton("Cerrar", (dialog, which) -> dialog.dismiss());
+
+                // Mostrar el AlertDialog
+                AlertDialog dialog = builder.create();
+                dialog.show();
             }
         });
 
