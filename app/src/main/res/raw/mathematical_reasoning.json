@@ -475,7 +475,126 @@
         "https://matematicasypunto.com"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular la distancia recorrida por un móvil dado el tiempo y la velocidad",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Encontrar el tiempo necesario para que un móvil recorra una distancia dada a una velocidad constante",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la velocidad de un móvil dado el tiempo y la distancia recorrida",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la distancia total recorrida por dos móviles que viajan en la misma dirección",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el tiempo de encuentro de dos móviles que se desplazan en direcciones opuestas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la velocidad media de un móvil que cambia de velocidad a mitad del recorrido",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el tiempo de alcance entre dos móviles que parten del mismo punto con diferentes velocidades",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la distancia entre dos móviles que parten del mismo punto en direcciones opuestas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la velocidad de un móvil si se conoce su velocidad relativa respecto a otro",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la distancia recorrida por un móvil si su velocidad aumenta en un tramo del recorrido",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el tiempo de cruce de dos móviles que se mueven en direcciones perpendiculares",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la velocidad de un móvil si se conoce la suma de las velocidades de dos móviles",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la distancia restante para alcanzar un destino si se conoce el tiempo restante y la velocidad",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la velocidad de un móvil si su distancia recorrida es una fracción de otra distancia conocida",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la distancia recorrida en un tiempo dado por un móvil que acelera uniformemente",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el tiempo total de un móvil que viaja a diferentes velocidades en tramos sucesivos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la velocidad de un móvil si se conoce el tiempo total para recorrer una distancia fija",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la velocidad relativa entre dos móviles que se mueven en el mismo sentido",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la velocidad de un móvil si su distancia recorrida es un múltiplo de la distancia de otro",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el tiempo de llegada de un móvil a un destino si la velocidad cambia en diferentes tramos del trayecto",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -487,7 +606,126 @@
         "https://www.cienciaviva.pt"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular el tiempo transcurrido entre dos eventos dados en horas y minutos",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Encontrar la hora de finalización si se conoce la hora de inicio y la duración",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la hora de inicio si se conoce la hora de finalización y la duración",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el tiempo restante hasta un evento futuro conocido",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el tiempo total en un intervalo con varios tramos consecutivos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la duración de un evento que ocurre en diferentes etapas del día",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la diferencia de tiempo entre dos relojes desincronizados",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el tiempo medio entre dos horarios dados",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el tiempo que falta para un evento si se conoce la duración restante",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el tiempo que tarda un ciclo en completarse dado un período fijo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el tiempo transcurrido en segundos dado un intervalo en horas, minutos y segundos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de ciclos completos en un intervalo de tiempo dado",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el tiempo de descanso si se conoce el tiempo total y el tiempo de trabajo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el tiempo necesario para sincronizar dos ciclos con diferentes frecuencias",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la duración total de un evento que se repite diariamente",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el tiempo acumulado en un ciclo que ocurre varias veces al día",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el tiempo de espera para el próximo ciclo si se conoce la frecuencia",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la duración de un evento que se alarga progresivamente",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el tiempo restante de un evento en progreso dado su porcentaje de avance",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el tiempo necesario para completar un evento si la velocidad se incrementa",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -499,7 +737,126 @@
         "https://www.mathematicsmonkey.com"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular la probabilidad de un evento simple en un experimento aleatorio",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Encontrar la probabilidad de dos eventos independientes que ocurren simultáneamente",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la probabilidad de al menos un evento en un experimento con varios resultados posibles",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la probabilidad de que un evento no ocurra",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la probabilidad de la intersección de dos eventos dependientes",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la probabilidad de un evento dado que otro evento ya ocurrió",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la probabilidad de sacar una carta específica de una baraja",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la probabilidad de un resultado favorable en un juego de dados",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la probabilidad de obtener al menos un éxito en una serie de ensayos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la probabilidad de un evento que se repite varias veces",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la probabilidad de un evento compuesto en un experimento con múltiples etapas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la probabilidad de un evento exclusivo en un conjunto de resultados",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la probabilidad condicional de un evento basado en información previa",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la probabilidad de obtener una suma específica al lanzar dos dados",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la probabilidad de éxito en un experimento binomial",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la probabilidad de seleccionar un objeto específico de una urna",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la probabilidad de elegir un elemento de un conjunto con reemplazo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la probabilidad de obtener una secuencia específica de resultados en lanzamientos de moneda",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la probabilidad de obtener un número primo en un sorteo de números",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la probabilidad de obtener un resultado impar al lanzar un dado",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -511,7 +868,126 @@
         "https://www.philosophybasics.com"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular la cantidad de enunciados verdaderos en un conjunto de proposiciones",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Encontrar el número de conclusiones válidas a partir de un conjunto de premisas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la cantidad de casos posibles que cumplen una condición lógica dada",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de combinaciones posibles que satisfacen un conjunto de reglas lógicas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número de resultados posibles de un problema de verdad y mentira",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de proposiciones verdaderas en una serie de afirmaciones encadenadas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar cuántas hipótesis pueden ser verdaderas en un conjunto de afirmaciones",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de soluciones posibles para un problema de clasificación lógica",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número de combinaciones correctas en un problema de deducción lógica",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de conclusiones posibles en un problema de silogismos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la cantidad de combinaciones de verdad en un problema de tablas de verdad",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número de proposiciones que deben ser verdaderas para satisfacer una condición dada",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de resultados posibles en un problema de lógica condicional",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número de combinaciones lógicas correctas en un problema de razonamiento deductivo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la cantidad de posibles soluciones en un problema de eliminación lógica",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de respuestas válidas en un problema de razonamiento inferencial",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número de proposiciones verdaderas en una cadena de razonamiento lógico",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de conclusiones lógicas válidas en un problema de análisis lógico",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar cuántas proposiciones son verdaderas en un problema de razonamiento proposicional",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de combinaciones válidas en un problema de lógica de conjuntos",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -523,19 +999,126 @@
         "https://www.criticalthinking.org"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular la cantidad de enunciados verdaderos en un conjunto de declaraciones",
+          "problems": [
 
-      ]
-    },
-    {
-      "title": "Distribuciones numéricas",
-      "theory": "Las distribuciones numéricas se refieren a la forma en que se organizan y relacionan los números en una secuencia o conjunto. Estos problemas implican identificar patrones, diferencias, proporciones, y otras relaciones numéricas entre los elementos de la distribución. Comprender cómo se estructuran los números en diferentes formatos, como secuencias crecientes, decrecientes o cíclicas, es clave para resolver correctamente este tipo de problemas, que a menudo requieren identificar el siguiente número de una secuencia o la suma de un conjunto de términos.",
-      "references": [
-        "https://www.mathsisfun.com",
-        "https://www.intmath.com",
-        "https://www.khanacademy.org"
-      ],
-      "types_of_problems":[
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de mentiras en una serie de afirmaciones dadas",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Determinar cuántas afirmaciones son verdaderas si se sabe que al menos una es falsa",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de proposiciones verdaderas en un grupo de personas que se contradicen entre sí",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número de mentiras necesarias para invalidar un argumento",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de personas que mienten en un grupo con una mezcla de verdades y mentiras",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar cuántos enunciados deben ser verdaderos para que una declaración sea coherente",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de verdades necesarias para probar una afirmación",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de mentiras en un problema con proposiciones contradictorias",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número de proposiciones verdaderas que cumplen una condición específica de verdades y mentiras",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar cuántas personas dicen la verdad en un grupo donde solo una declaración es falsa",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de verdades en un conjunto de afirmaciones con algunas mentiras conocidas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar cuántas afirmaciones deben ser mentiras para cumplir una condición dada",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de verdades en un problema de razonamiento donde algunas declaraciones son ambiguas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar cuántas proposiciones verdaderas hay en un conjunto con mentiras incluidas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de mentiras necesarias para cambiar la veracidad de una conclusión",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de enunciados verdaderos necesarios para validar un argumento",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de mentiras en un problema con declaraciones conflictivas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar cuántas afirmaciones verdaderas hay en un problema de verdades parciales",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de enunciados falsos en un problema con condiciones de verdad variables",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -547,7 +1130,126 @@
         "https://www.mathsisfun.com"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular la cantidad de elementos correctamente ordenados en una secuencia dada",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Determinar el número de pasos necesarios para ordenar una lista de elementos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la posición final de un elemento después de un proceso de ordenamiento",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de intercambios necesarios para ordenar una secuencia",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar cuántos elementos están en orden inverso en una lista",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número de elementos que deben moverse para lograr el orden correcto",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de comparaciones necesarias para ordenar una lista de elementos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de elementos fuera de posición en una secuencia desordenada",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar cuántos elementos deben ser intercambiados para obtener un orden específico",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de subgrupos ordenados en una lista más grande",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número de pasos requeridos para reorganizar elementos en orden creciente",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de elementos que permanecen en su posición original después de un ordenamiento",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la cantidad de pasos para ordenar una secuencia de elementos en orden decreciente",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de pares de elementos fuera de orden en una lista desordenada",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número de pasos para ordenar una secuencia utilizando un algoritmo dado",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de elementos que deben ser agregados para completar un orden parcial",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de movimientos mínimos para ordenar una secuencia",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de elementos que cumplen un criterio específico de orden",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de elementos mal ubicados en un ordenamiento casi correcto",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de pasos para ordenar una secuencia de elementos alternantes",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -559,7 +1261,126 @@
         "https://www.logicmatters.net"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular la cantidad de proposiciones verdaderas en una serie de enunciados",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Determinar el número de combinaciones posibles de verdad en una tabla de verdad",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de proposiciones que cumplen una fórmula lógica dada",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de proposiciones falsas en un conjunto de enunciados",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de conectivos lógicos necesarios para una proposición compuesta",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de combinaciones de verdad en una proposición con tres variables",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número de proposiciones verdaderas en una implicación lógica",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de proposiciones verdaderas en una disyunción lógica",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de combinaciones posibles en una conjunción de proposiciones",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número de proposiciones que satisfacen una equivalencia lógica",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de proposiciones verdaderas en una negación múltiple",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de casos donde una proposición bicondicional es verdadera",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de combinaciones lógicas que satisfacen un conjunto de premisas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de proposiciones verdaderas en un conjunto con disyunciones exclusivas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número de combinaciones de verdad en un problema de implicación múltiple",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de proposiciones verdaderas en una proposición compleja",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de casos donde una conjunción y una disyunción son verdaderas simultáneamente",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de proposiciones verdaderas en un problema de equivalencias lógicas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número de combinaciones de verdad que cumplen una proposición con implicación doble",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de proposiciones verdaderas en una combinación de negaciones y conjunciones",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -571,7 +1392,126 @@
         "https://www.philosophybasics.com"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular la cantidad de inferencias válidas a partir de un conjunto de premisas",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Determinar el número de conclusiones posibles en un argumento deductivo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de conclusiones correctas en un problema de razonamiento inductivo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de premisas necesarias para validar una conclusión",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de casos en los que una inferencia es verdadera",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de combinaciones de premisas que llevan a una conclusión específica",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de inferencias válidas en un problema de razonamiento condicional",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de conclusiones posibles en un problema de razonamiento por eliminación",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de combinaciones de premisas que cumplen con una inferencia lógica",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de conclusiones válidas en un problema de razonamiento abductivo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de premisas verdaderas necesarias para que una inferencia sea correcta",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de inferencias falsas en un conjunto de premisas dadas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de combinaciones posibles en un argumento con múltiples inferencias",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de casos donde una inferencia se sigue de dos premisas contradictorias",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número de conclusiones correctas en un problema de razonamiento circular",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de inferencias correctas en un problema de razonamiento paralelo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de conclusiones válidas en un problema de razonamiento hipotético",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de inferencias verdaderas en un problema de razonamiento transductivo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de premisas necesarias para que una inferencia inductiva sea válida",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de conclusiones válidas en un problema de inferencia lógica múltiple",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -583,7 +1523,126 @@
         "https://www.mindtools.com"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular la cantidad de observaciones necesarias para establecer un patrón inductivo",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Determinar el número de casos que confirman una hipótesis basada en observaciones",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de ejemplos requeridos para validar una generalización",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de conclusiones válidas a partir de una serie de observaciones",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de pruebas necesarias para confirmar un patrón repetitivo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de observaciones contradictorias que refutan una hipótesis",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de datos requeridos para hacer una inferencia inductiva confiable",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de ejemplos necesarios para generalizar una propiedad",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de observaciones necesarias para justificar una predicción inductiva",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de observaciones positivas necesarias para confirmar una regla general",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de datos consistentes con un patrón observado",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número de observaciones adicionales necesarias para refinar una hipótesis",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la cantidad de pruebas positivas que apoyan una teoría inductiva",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de datos necesarios para hacer una conclusión inductiva válida",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de casos en los que una regla general se cumple",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número de observaciones necesarias para confirmar una hipótesis provisional",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la cantidad de pruebas que respaldan una conclusión inductiva fuerte",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de ejemplos que coinciden con un patrón inductivo observado",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de pruebas necesarias para consolidar una inferencia inductiva",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de observaciones requeridas para establecer una conclusión inductiva sólida",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -595,7 +1654,126 @@
         "https://www.criticalthinking.org"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular la cantidad de conclusiones lógicas válidas a partir de un conjunto de premisas",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Determinar el número de inferencias correctas en un argumento deductivo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de proposiciones verdaderas necesarias para deducir una conclusión",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de premisas requeridas para una conclusión deductiva válida",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de casos en los que una deducción es verdadera",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de conclusiones posibles en un problema de silogismos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número de pasos deductivos necesarios para probar una afirmación",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de conclusiones válidas en un problema de razonamiento deductivo complejo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de premisas necesarias para una conclusión lógica",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de combinaciones posibles de premisas que llevan a una deducción",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de proposiciones verdaderas en un problema de deducción múltiple",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de pasos lógicos necesarios para validar una deducción",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de conclusiones correctas en un argumento deductivo compuesto",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de premisas verdaderas en un problema de razonamiento deductivo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número de combinaciones lógicas que cumplen con una deducción",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de inferencias verdaderas en un problema de deducción condicional",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la cantidad de conclusiones válidas en un problema de razonamiento hipotético",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de pasos necesarios para probar una afirmación lógica",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de conclusiones verdaderas en un problema de deducción directa",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de premisas necesarias para validar una deducción completa",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -607,7 +1785,126 @@
         "https://www.universidadperu.edu"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular el valor de la incógnita en una ecuación lineal de una variable",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Determinar el valor de x en una ecuación cuadrática",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la solución de una ecuación con dos variables",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor de x en una ecuación exponencial",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el valor de la incógnita en una ecuación con fracciones",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor de x en una ecuación de segundo grado completa",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la solución de una ecuación lineal con coeficientes enteros",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor de x en una ecuación racional",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la solución de un sistema de ecuaciones lineales",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor de la incógnita en una ecuación logarítmica",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la solución de una ecuación cuadrática incompleta",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor de x en una ecuación polinómica de tercer grado",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el valor de x en una ecuación irracional",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor de x en una ecuación que involucra raíces cuadradas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la solución de una ecuación con valor absoluto",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor de la incógnita en una ecuación con coeficientes decimales",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la solución de una ecuación trigonométrica básica",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor de x en una ecuación con parámetros conocidos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la solución de un sistema de ecuaciones no lineales",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor de x en una ecuación de variación directa o inversa",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -619,7 +1916,126 @@
         "https://www.mathworld.wolfram.com"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular el valor entero de x en una ecuación diofántica lineal simple",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Encontrar el valor entero de x en una ecuación diofántica cuadrática con una sola solución",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el valor entero de x en una ecuación diofántica de la forma ax + b = c",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor entero de x en una ecuación diofántica donde x es impar",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el valor entero de x en una ecuación diofántica homogénea con restricciones",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor entero de x en una ecuación diofántica con coeficientes primos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el valor entero de x en una ecuación diofántica con coeficientes positivos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor entero de x en una ecuación diofántica no homogénea",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el valor entero de x en una ecuación diofántica con coeficientes negativos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor entero de x en una ecuación diofántica cuadrática",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el valor entero de x en una ecuación diofántica con coeficientes mixtos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor entero de x en una ecuación diofántica con coeficientes consecutivos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el valor entero de x en una ecuación diofántica con restricción de paridad",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor entero de x en una ecuación diofántica lineal con solución única",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el valor entero de x en una ecuación diofántica con múltiplos conocidos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor entero de x en una ecuación diofántica donde x es un número primo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el valor entero de x en una ecuación diofántica con múltiplos de un número dado",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor entero de x en una ecuación diofántica con suma de coeficientes",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el valor entero de x en una ecuación diofántica con signo definido",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor entero de x en una ecuación diofántica con divisor conocido",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -631,7 +2047,126 @@
         "https://www.matematicasonline.com"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular el resultado de una operación combinada que incluye suma, resta, multiplicación y división entre varios números enteros",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Calcular la diferencia entre el cuadrado de un número y el doble de otro número",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el producto de tres números primos consecutivos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Dividir la suma de dos números por la diferencia de otros dos números enteros",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor de una potencia con base decimal y exponente entero negativo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la raíz cuadrada de la suma de dos cuadrados perfectos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la suma de los primeros n múltiplos de un número dado",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la diferencia entre la suma y el producto de dos números enteros",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Multiplicar un número decimal por el cuadrado de un número natural",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Dividir el producto de dos números primos por el valor absoluto de un número negativo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el residuo de una división entre la suma de dos números enteros y un número dado",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la raíz cúbica de un número multiplicado por un factor primo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Sumar una serie de fracciones con denominadores consecutivos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Restar el producto de dos números decimales del cuadrado de un entero",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el producto de cuatro números enteros consecutivos y hallar su raíz cuadrada entera más cercana",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Dividir la suma de dos números decimales por un número entero y redondear al entero más cercano",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el cuadrado de un número multiplicado por su inverso aditivo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Multiplicar un número por la suma de sus dígitos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor de una potencia con exponente fraccionario",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la media armónica de tres números diferentes",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -643,7 +2178,126 @@
         "https://www.intmath.com"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular cuántas veces una magnitud es mayor que otra",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Determinar la diferencia porcentual entre varias magnitudes dadas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el porcentaje que representa una magnitud respecto a la suma de varias",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el factor de aumento necesario para igualar la magnitud más baja con la más alta de un conjunto",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular cuántas veces una magnitud es menor que la suma de otras dos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el incremento porcentual necesario para que una magnitud alcance el promedio de otras tres",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la diferencia absoluta entre la magnitud mayor y la menor de un conjunto",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la relación de magnitudes en términos de una proporción común",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la suma total de varias magnitudes para obtener una magnitud objetivo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Comparar varias magnitudes y encontrar la mayor diferencia relativa entre ellas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la proporción de una magnitud respecto a la suma total de tres magnitudes diferentes",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la relación inversa entre la suma de dos magnitudes y una tercera",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la magnitud media aritmética de un conjunto de cuatro magnitudes",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el doble de la diferencia entre la magnitud más grande y la más pequeña de un conjunto",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la relación porcentual entre la magnitud más baja y la suma de otras dos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la magnitud mínima necesaria para que el promedio de tres magnitudes sea igual a un valor dado",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el incremento total necesario para igualar la suma de tres magnitudes con una cuarta",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el factor común que relaciona cuatro magnitudes proporcionales",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular cuántas veces la suma de dos magnitudes es mayor que una tercera magnitud",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la suma acumulada de varias magnitudes con incrementos consecutivos",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -655,7 +2309,126 @@
         "https://www.matematicasonline.com"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular la suma de tres fracciones con denominadores diferentes y simplificar el resultado",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Restar una fracción mixta de otra, ambas con diferentes denominadores",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Multiplicar dos fracciones complejas y convertir el resultado en un número mixto",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Dividir una fracción impropia por una fracción propia y simplificar el resultado",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la fracción que representa una parte de un número mixto dado",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Convertir la suma de dos fracciones en su porcentaje equivalente",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la suma de fracciones con numeradores consecutivos y denominadores iguales",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Restar una fracción de un número entero convertido en fracción y simplificar",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Multiplicar una fracción por el inverso de otra fracción",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el cociente de una fracción y un número mixto, simplificando el resultado",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Sumar una serie de fracciones con denominadores en progresión aritmética",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la diferencia porcentual entre dos fracciones",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Multiplicar tres fracciones y encontrar el valor decimal aproximado del resultado",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el promedio de cinco fracciones con denominadores diferentes",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Dividir una fracción por el doble de otra fracción y simplificar",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la fracción equivalente a un número decimal periódico",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Sumar dos fracciones y convertir el resultado en una fracción irreducible",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Multiplicar una fracción por el cuadrado de otra fracción",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el resultado de una operación combinada de suma, resta y multiplicación de fracciones",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar cuántas veces una fracción cabe en otra fracción más grande",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -667,7 +2440,126 @@
         "https://www.matematicasonline.com"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular el valor de x en una proporción directa entre dos magnitudes",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Determinar la magnitud resultante en una relación inversa entre tres magnitudes",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la proporción necesaria para convertir una cantidad en otra mayor o menor",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el porcentaje de cambio requerido para ajustar una magnitud a otra dada",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor que representa un porcentaje específico de una magnitud total",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la relación porcentual entre varias cantidades en un conjunto",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la magnitud que resulta de aplicar un porcentaje de incremento sucesivo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el valor inicial de una magnitud después de aplicar un descuento porcentual",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el porcentaje necesario para que una magnitud aumente hasta igualar otra",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la cantidad de veces que una magnitud debe incrementarse para alcanzar una meta",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor final después de aplicar un porcentaje de aumento y luego uno de disminución",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la relación entre dos magnitudes en una proporción compuesta",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el valor que representa una fracción del total expresado en porcentaje",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el porcentaje necesario para ajustar una cantidad a un valor objetivo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el incremento total después de aplicar dos porcentajes consecutivos de aumento",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la magnitud final tras aplicar un porcentaje de reducción y luego un incremento",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el porcentaje de disminución necesario para reducir una magnitud a la mitad",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la proporción inversa entre dos magnitudes con diferentes aumentos porcentuales",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la magnitud intermedia en una relación de proporciones sucesivas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el valor de una magnitud después de aplicar un porcentaje compuesto anual",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -679,7 +2571,126 @@
         "https://www.geometriafacil.com"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular la cantidad total de triángulos formados en una figura compuesta",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Determinar el número de cuadrados en una cuadrícula de nxn",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Contar la cantidad de rectángulos posibles en una figura con líneas paralelas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de diagonales en un polígono de n lados",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de figuras simétricas en una disposición dada",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Contar la cantidad de triángulos equiláteros en una figura con subdivisiones",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número de intersecciones en un conjunto de líneas cruzadas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Contar la cantidad de figuras idénticas en un patrón repetitivo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de pentágonos en una figura compuesta por polígonos regulares",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de cuadriláteros en una figura dada",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Contar la cantidad de hexágonos en una figura formada por hexágonos más pequeños",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número de líneas paralelas y perpendiculares en un conjunto",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de ángulos agudos formados en una figura geométrica",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Contar la cantidad de círculos concéntricos en una figura dada",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de figuras semejantes en un diseño fractal",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de triángulos rectángulos en una figura con varias divisiones",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Contar la cantidad de polígonos convexos en una red de polígonos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número de figuras obtenidas tras rotar un polígono regular",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la cantidad de figuras menores dentro de un hexágono subdividido",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Contar el número de segmentos de línea en una figura compuesta por múltiples polígonos",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -691,7 +2702,126 @@
         "https://www.mathsisfun.com"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular el número mínimo de pasos necesarios para que dos personas se encuentren en un punto intermedio",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Determinar el número mínimo de movimientos para resolver un problema de intercambio de posiciones en una fila",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número mínimo de cambios requeridos para convertir una secuencia en otra",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número mínimo de operaciones para reducir una cantidad a cero",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número mínimo de cortes necesarios para dividir una figura en partes iguales",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número mínimo de vueltas necesarias para cerrar un ciclo completo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número mínimo de elementos necesarios para formar un conjunto dado",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número mínimo de pasos para alcanzar una meta en un juego de tablero",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número mínimo de conexiones necesarias para que todos los nodos de una red estén interconectados",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número mínimo de intentos para adivinar un número en un rango dado",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número mínimo de repeticiones requeridas para alcanzar una frecuencia deseada",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número mínimo de intercambios para ordenar una secuencia de números",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número mínimo de pasos necesarios para resolver un problema de laberinto",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número mínimo de veces que se debe ejecutar un proceso para lograr un objetivo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número mínimo de elementos a seleccionar para garantizar una cierta condición",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número mínimo de movimientos para alinear todas las piezas en un tablero",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número mínimo de iteraciones para encontrar una solución en un problema de optimización",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número mínimo de particiones necesarias para dividir un conjunto de datos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número mínimo de acciones para resolver un problema de clasificación de objetos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número mínimo de pasos para resolver un problema de distribución equitativa",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -703,7 +2833,126 @@
         "https://www.matematicasonline.com"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular el número de permutaciones de n elementos distintos",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Determinar la cantidad de combinaciones posibles al seleccionar r elementos de un conjunto de n elementos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número de formas de ordenar k elementos repetidos en una secuencia de n elementos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número de arreglos circulares de n objetos distintos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número de maneras de dividir n elementos en dos grupos iguales",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar cuántas formas hay de elegir r elementos con repetición de un conjunto de n elementos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número de permutaciones de n elementos cuando algunos se repiten",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de combinaciones posibles en un problema de selección múltiple",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de maneras de distribuir n objetos idénticos en k recipientes diferentes",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de subconjuntos posibles de un conjunto de n elementos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de formas de seleccionar al menos un elemento de un conjunto de n elementos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el número de arreglos posibles de n letras con ciertas restricciones",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número de combinaciones posibles en un problema de agrupamiento",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la cantidad de formas de seleccionar r elementos de un conjunto infinito de n tipos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número de permutaciones circulares con restricciones en la secuencia",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de formas de organizar objetos en capas o niveles",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la cantidad de combinaciones posibles con restricciones de exclusión mutua",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el número de maneras de asignar n tareas a k personas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el número de arreglos posibles de elementos en una tabla de n filas y m columnas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la cantidad de formas de organizar objetos en filas con restricciones de posición",
+          "problems": [
+
+          ]
+        }
       ]
     },
     {
@@ -715,7 +2964,126 @@
         "https://www.geometriafacil.com"
       ],
       "types_of_problems":[
+        {
+          "type": "Calcular el área de una región sombreada dentro de un círculo que contiene un sector circular",
+          "problems": [
 
+          ]
+        },
+        {
+          "type": "Determinar el área de la región sombreada entre dos círculos concéntricos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el área de una región sombreada formada por la intersección de dos círculos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el área de una región sombreada dentro de un triángulo con un círculo inscrito",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el área de una región sombreada dentro de un cuadrado con un círculo inscrito",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el área de la región sombreada en una figura formada por polígonos superpuestos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el área de una región sombreada en un rectángulo con un círculo circunscrito",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el área de una región sombreada dentro de un trapecio con una línea paralela a su base",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el área de una región sombreada en un polígono regular con diagonales trazadas",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el área de la región sombreada en un triángulo con una altura marcada y sombreada",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el perímetro de la región sombreada en una figura compuesta por dos triángulos adyacentes",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el perímetro de la región sombreada en un círculo con un segmento sombreado",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el perímetro de una región sombreada dentro de un rectángulo con un triángulo inscrito",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el perímetro de la región sombreada en un cuadrado con una franja sombreada",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el perímetro de la región sombreada formada por dos círculos tangentes",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el área de una región sombreada en una elipse con un rectángulo inscrito",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el área de una región sombreada dentro de un hexágono con triángulos equiláteros inscritos",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar el área de la región sombreada en un triángulo equilátero con un círculo inscrito",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular el perímetro de una región sombreada en una figura formada por múltiples círculos tangentes",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar el área de una región sombreada dentro de un pentágono con un círculo circunscrito",
+          "problems": [
+
+          ]
+        }
       ]
     }
   ]
