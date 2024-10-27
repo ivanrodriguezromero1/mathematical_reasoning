@@ -175,163 +175,1694 @@
             },
             {
               "statement": "Calcula el término en la posición ${n} de la siguiente sucesión aritmética de primer orden: ${a1}, ${a2}, ${a3} ...",
-              "difficulty": 0,
-              "variables": [
-                {
-                  "name": "a1",
-                  "variable_type": "int",
-                  "range": {
-                    "min": 1,
-                    "max": 100
-                  }
-                },
-                {
-                  "name": "d",
-                  "variable_type": "int",
-                  "range": {
-                    "min": 1,
-                    "max": 20
-                  }
-                },
-                {
-                  "name": "n",
-                  "variable_type": "int",
-                  "range": {
-                    "min": 5,
-                    "max": 30
-                  }
-                }
-              ],
-              "tip": "Para encontrar el término n-ésimo de una sucesión aritmética, utiliza la fórmula: aₙ = a₁ + (n - 1) * d.",
-              "preview": ["aₙ = a₁ + (${n} - 1) * ${d}", "aₙ = a₁ + (#{n- 1}) * ${d}"],
-              "answer": "${a1} + (${n} - 1) * ${d}",
-              "step_by_step_solution": [
-                "Paso 1: Identifica el primer término (a₁), que es ${a1}.",
-                "Paso 2: Identifica la diferencia común (d), que es ${d}.",
-                "Paso 3: Identifica el término a encontrar (n), que es ${n}.",
-                "Paso 4: Aplica la fórmula aₙ = a₁ + (n - 1) * d para encontrar el término ${n}.",
-                "Paso 5: Sustituye los valores: aₙ = ${a1} + (${n} - 1) * ${d}",
-                "Paso 6: Calculando aₙ = ${a1} + (#{n - 1}) * ${d}",
-                "Paso 7: Calculando aₙ = ${a1} + #{(n - 1)* d}",
-                "Paso 8: Respuesta: aₙ = #{a1 + (n - 1) * d}."
-              ]
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de la siguiente sucesión aritmética de segundo orden: ${a1}, ${a2}, ${a3}, ${a4} ...",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de la siguiente sucesión aritmética de tercer orden: ${a1}, ${a2}, ${a3}, ${a4}, ${a5} ...",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} para una sucesión aritmética donde el primer término es ${a1} y la suma de los primeros ${n} términos es ${sum}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} en una sucesión aritmética con términos negativos, empezando con ${a1} y diferencia ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión aritmética de primer orden donde el término en la posición ${n-1} es ${an_1}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} en una sucesión aritmética de segundo orden, dado que la suma de los primeros ${m} términos es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} para una sucesión aritmética con término inicial ${a1} y diferencia común igual a la mitad de ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} en una sucesión aritmética donde el término inicial es ${a1} y el término en la posición ${n+1} es ${an+1}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} para una sucesión aritmética definida por los términos ${a1}, ${a2}, ${a3}, ..., en una progresión decreciente.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} en una sucesión aritmética donde el primer término es igual a ${a1} y la diferencia es un múltiplo de ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} para una sucesión aritmética donde el primer término es ${a1} y la diferencia común se duplica después de cada ${m} términos.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión aritmética en la que la diferencia común se reduce a la mitad después de cada ${p} términos.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} en una sucesión aritmética de primer orden, donde el término inicial es negativo y la diferencia es positiva.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} en una sucesión aritmética donde el término en la posición ${m} es ${am} y la diferencia es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} para una sucesión aritmética en la que el término inicial y la diferencia común son fracciones.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} en una sucesión aritmética donde los términos siguen una progresión alternada, con el primer término igual a ${a1} y diferencia común ${d}.",
+              "difficulty": 1
             }
           ]
         },
         {
           "type": "Encontrar el término n-ésimo de una sucesión geométrica",
           "problems": [
-
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión geométrica cuyo primer término es ${a1} y la razón común es ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión geométrica donde el primer término es ${a1} y la suma de los primeros ${m} términos es ${sum}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica donde el primer término es ${a1} y el término en la posición ${m} es ${am}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión geométrica en la que el primer término es ${a1} y la razón se duplica después de cada ${p} términos.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} en una sucesión geométrica definida por los términos ${a1}, ${a2}, ${a3}, ....",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} en una sucesión geométrica donde el primer término es una fracción ${a1} y la razón es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica donde la razón es el cuadrado de ${r} y el primer término es ${a1}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} para una sucesión geométrica con término inicial ${a1} y razón común irracional ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica cuyo término inicial es ${a1} y la razón es ${r2} después de ${m} términos.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} para una sucesión geométrica en la que el primer término es ${a1} y la razón es el triple de ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica donde el primer término es ${a1} y la razón cambia a ${r3} después de ${q} términos.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión geométrica con razón que se reduce a la mitad después de cada ${m} términos.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} en una sucesión geométrica cuyo primer término es ${a1} y la razón es un número primo ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión geométrica alternada con primer término ${a1} y razón ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} en una sucesión geométrica donde el producto de los primeros ${m} términos es ${product}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica donde la suma de los primeros ${p} términos es igual a ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión geométrica en la que el primer término es ${a1} y la razón es una fracción ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica donde la razón es ${r} y la suma de los términos hasta la posición ${m} es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión geométrica cuyo primer término es ${a1} y la razón es el doble de ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica alternada con signos opuestos, comenzando con ${a1} y razón ${r}.",
+              "difficulty": 1
+            }
           ]
         },
         {
           "type": "Encontrar la diferencia común en una sucesión aritmética",
           "problems": [
-
+            {
+              "statement": "Calcula la diferencia común de una sucesión aritmética cuyo primer término es ${a1} y el segundo término es ${a2}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la diferencia común en una sucesión aritmética definida por los términos ${a1}, ${a2}, ${a3}, ....",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la diferencia común en una sucesión aritmética donde el primer término es ${a1} y el término en la posición ${n} es ${an}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la diferencia común de una sucesión aritmética en la que el primer término es ${a1} y la suma de los primeros ${m} términos es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la diferencia común en una sucesión aritmética decreciente donde el primer término es ${a1} y el término en la posición ${m} es ${am}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la diferencia común en una sucesión aritmética definida por los primeros tres términos: ${a1}, ${a2}, ${a3}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la diferencia común de una sucesión aritmética donde la suma de los términos en las posiciones ${m} y ${n} es igual a ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la diferencia común en una sucesión aritmética cuyo término en la posición ${m} es ${am} y el término en la posición ${n} es ${an}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la diferencia común de una sucesión aritmética en la que el primer término es ${a1} y el último término es ${al}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la diferencia común en una sucesión aritmética alternada con términos ${a1}, ${a2}, ${a3}, ....",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la diferencia común en una sucesión aritmética donde el término en la posición ${n} es el doble del término en la posición ${m}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la diferencia común en una sucesión aritmética definida por el término inicial ${a1} y el término en la posición ${p} igual a ${ap}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la diferencia común en una sucesión aritmética donde la suma de los primeros ${p} términos es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la diferencia común en una sucesión aritmética donde el primer término es ${a1} y la suma de los términos en posiciones ${p} y ${q} es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la diferencia común en una sucesión aritmética creciente donde el primer término es ${a1} y el término en la posición ${n} es ${an}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la diferencia común en una sucesión aritmética donde la suma de los términos en posiciones impares es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la diferencia común en una sucesión aritmética cuyo término en la posición ${q} es ${aq} y el término inicial es ${a1}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la diferencia común en una sucesión aritmética donde el segundo término es ${a2} y el término en la posición ${n} es ${an}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la diferencia común en una sucesión aritmética con términos alternados positivos y negativos, comenzando con ${a1}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la diferencia común en una sucesión aritmética en la que el producto de los términos en las posiciones ${m} y ${n} es ${product}.",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Encontrar la razón común en una sucesión geométrica",
           "problems": [
-
+            {
+              "statement": "Calcula la razón común de una sucesión geométrica cuyo primer término es ${a1} y el segundo término es ${a2}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la razón común en una sucesión geométrica definida por los términos ${a1}, ${a2}, ${a3}, ....",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la razón común en una sucesión geométrica donde el primer término es ${a1} y el término en la posición ${n} es ${an}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la razón común de una sucesión geométrica en la que el primer término es ${a1} y el producto de los primeros ${m} términos es ${product}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la razón común en una sucesión geométrica decreciente donde el primer término es ${a1} y el término en la posición ${m} es ${am}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la razón común en una sucesión geométrica definida por los primeros tres términos: ${a1}, ${a2}, ${a3}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la razón común de una sucesión geométrica donde la suma de los términos en las posiciones ${m} y ${n} es igual a ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la razón común en una sucesión geométrica cuyo término en la posición ${m} es ${am} y el término en la posición ${n} es ${an}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la razón común de una sucesión geométrica en la que el primer término es ${a1} y el último término es ${al}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la razón común en una sucesión geométrica alternada con términos ${a1}, ${a2}, ${a3}, ....",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la razón común en una sucesión geométrica donde el término en la posición ${n} es el cuadrado del término en la posición ${m}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la razón común en una sucesión geométrica definida por el término inicial ${a1} y el término en la posición ${p} igual a ${ap}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la razón común en una sucesión geométrica donde la suma de los primeros ${p} términos es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la razón común en una sucesión geométrica donde el primer término es ${a1} y la suma de los términos en posiciones ${p} y ${q} es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la razón común en una sucesión geométrica creciente donde el primer término es ${a1} y el término en la posición ${n} es ${an}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la razón común en una sucesión geométrica donde la suma de los términos en posiciones impares es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la razón común en una sucesión geométrica cuyo término en la posición ${q} es ${aq} y el término inicial es ${a1}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la razón común en una sucesión geométrica donde el segundo término es ${a2} y el término en la posición ${n} es ${an}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la razón común en una sucesión geométrica con términos alternados positivos y negativos, comenzando con ${a1}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la razón común en una sucesión geométrica en la que el producto de los términos en las posiciones ${m} y ${n} es ${product}.",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Encontrar el primer término de una sucesión aritmética",
           "problems": [
-
+            {
+              "statement": "Calcula el primer término de una sucesión aritmética donde el segundo término es ${a2} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el primer término en una sucesión aritmética definida por los términos ${a2}, ${a3}, ${a4}, ....",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión aritmética donde el término en la posición ${n} es ${an} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión aritmética en la que la suma de los primeros ${m} términos es ${sum} y la diferencia común es ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión aritmética decreciente donde el término en la posición ${m} es ${am} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión aritmética definida por los términos ${a3}, ${a4}, ${a5}, .... y la diferencia común ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión aritmética donde la suma de los términos en las posiciones ${m} y ${n} es igual a ${sum} y la diferencia común es ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión aritmética cuyo término en la posición ${m} es ${am} y el término en la posición ${n} es ${an} con diferencia común ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión aritmética en la que el último término es ${al} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión aritmética alternada con términos ${a2}, ${a3}, ${a4}, .... y diferencia común ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión aritmética donde el término en la posición ${n} es el doble del término en la posición ${m} y la diferencia común es ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión aritmética definida por el término en la posición ${p} igual a ${ap} y la diferencia común ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión aritmética donde la suma de los primeros ${p} términos es ${sum} y la diferencia común es ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión aritmética donde la suma de los términos en posiciones ${p} y ${q} es ${sum} y la diferencia común es ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión aritmética creciente donde el término en la posición ${n} es ${an} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión aritmética donde la suma de los términos en posiciones impares es ${sum} y la diferencia común es ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión aritmética cuyo término en la posición ${q} es ${aq} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión aritmética donde el segundo término es ${a2} y el término en la posición ${n} es ${an}, con diferencia común ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión aritmética con términos alternados positivos y negativos, y diferencia común ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión aritmética en la que el producto de los términos en las posiciones ${m} y ${n} es ${product}, con diferencia común ${d}.",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Encontrar el primer término de una sucesión geométrica",
           "problems": [
-
+            {
+              "statement": "Calcula el primer término de una sucesión geométrica donde el segundo término es ${a2} y la razón común es ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el primer término en una sucesión geométrica definida por los términos ${a2}, ${a3}, ${a4}, ....",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión geométrica donde el término en la posición ${n} es ${an} y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión geométrica en la que el producto de los primeros ${m} términos es ${product} y la razón común es ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión geométrica decreciente donde el término en la posición ${m} es ${am} y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión geométrica definida por los términos ${a3}, ${a4}, ${a5}, .... y la razón común ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión geométrica donde la suma de los términos en las posiciones ${m} y ${n} es igual a ${sum} y la razón común es ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión geométrica cuyo término en la posición ${m} es ${am} y el término en la posición ${n} es ${an} con razón común ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión geométrica en la que el último término es ${al} y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión geométrica alternada con términos ${a2}, ${a3}, ${a4}, .... y razón común ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión geométrica donde el término en la posición ${n} es el doble del término en la posición ${m} y la razón común es ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión geométrica definida por el término en la posición ${p} igual a ${ap} y la razón común ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión geométrica donde la suma de los primeros ${p} términos es ${sum} y la razón común es ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión geométrica donde la suma de los términos en posiciones ${p} y ${q} es ${sum} y la razón común es ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión geométrica creciente donde el término en la posición ${n} es ${an} y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión geométrica donde la suma de los términos en posiciones impares es ${sum} y la razón común es ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión geométrica cuyo término en la posición ${q} es ${aq} y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión geométrica donde el segundo término es ${a2} y el término en la posición ${n} es ${an}, con razón común ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el primer término de una sucesión geométrica con términos alternados positivos y negativos, y razón común ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el primer término de una sucesión geométrica en la que el producto de los términos en las posiciones ${m} y ${n} es ${product}, con razón común ${r}.",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Calcular la suma de los primeros n términos de una sucesión aritmética",
           "problems": [
-
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión aritmética cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión aritmética definida por los términos ${a1}, ${a2}, ${a3}, ....",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión aritmética donde el término en la posición ${m} es ${am} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión aritmética en la que el último término es ${al} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión aritmética decreciente cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión aritmética definida por los términos ${a2}, ${a3}, ${a4}, .... y la diferencia común ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión aritmética cuyo término inicial es ${a1} y el término en la posición ${m} es ${am}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión aritmética donde la suma de los términos en las posiciones ${p} y ${q} es ${sum}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión aritmética alternada cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión aritmética donde el término en la posición ${p} es ${ap} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión aritmética creciente cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión aritmética en la que el término en la posición ${n} es el doble del término en la posición ${m}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión aritmética cuyo término inicial es ${a1} y el término final es ${al}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión aritmética donde la suma de los términos en posiciones impares es ${sum}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión aritmética cuyo primer término es ${a1} y la diferencia común es una fracción ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión aritmética donde el segundo término es ${a2} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión aritmética cuyo primer término es negativo ${a1} y la diferencia común es positiva ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión aritmética donde el término en la posición ${m} es ${am} y la suma total es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión aritmética cuyo primer término es ${a1} y la suma de los términos en posiciones ${p} y ${q} es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión aritmética alternada con signos opuestos, empezando con ${a1} y diferencia común ${d}.",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Calcular la suma de los primeros n términos de una sucesión geométrica",
           "problems": [
-
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión geométrica cuyo primer término es ${a1} y la razón común es ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión geométrica definida por los términos ${a1}, ${a2}, ${a3}, ....",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión geométrica donde el término en la posición ${m} es ${am} y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión geométrica en la que el último término es ${al} y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión geométrica decreciente cuyo primer término es ${a1} y la razón común es ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión geométrica definida por los términos ${a2}, ${a3}, ${a4}, .... y la razón común ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión geométrica cuyo término inicial es ${a1} y el término en la posición ${m} es ${am}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión geométrica donde la suma de los términos en las posiciones ${p} y ${q} es ${sum}, con razón común ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión geométrica alternada cuyo primer término es ${a1} y la razón común es ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión geométrica donde el término en la posición ${p} es ${ap} y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión geométrica creciente cuyo primer término es ${a1} y la razón común es ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión geométrica en la que el término en la posición ${n} es el doble del término en la posición ${m}, con razón común ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión geométrica cuyo término inicial es ${a1} y el término final es ${al}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión geométrica donde la suma de los términos en posiciones impares es ${sum}, con razón común ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión geométrica cuyo primer término es ${a1} y la razón común es una fracción ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión geométrica donde el segundo término es ${a2} y la razón común es ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión geométrica cuyo primer término es negativo ${a1} y la razón común es positiva ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión geométrica donde el término en la posición ${m} es ${am} y la suma total es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión geométrica cuyo primer término es ${a1} y la suma de los términos en posiciones ${p} y ${q} es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión geométrica alternada con signos opuestos, empezando con ${a1} y razón común ${r}.",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Calcular la suma infinita de una sucesión geométrica convergente",
           "problems": [
-
+            {
+              "statement": "Calcula la suma infinita de una sucesión geométrica convergente cuyo primer término es ${a1} y la razón común es ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma infinita de una sucesión geométrica convergente definida por los términos ${a1}, ${a2}, ${a3}, ....",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma infinita de una sucesión geométrica convergente donde el segundo término es ${a2} y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma infinita de una sucesión geométrica convergente cuyo término en la posición ${m} es ${am} y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma infinita de una sucesión geométrica convergente decreciente cuyo primer término es ${a1} y la razón común es ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma infinita de una sucesión geométrica convergente definida por los términos ${a2}, ${a3}, ${a4}, .... y la razón común ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma infinita de una sucesión geométrica convergente donde el primer término es ${a1} y el término en la posición ${n} es ${an}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma infinita de una sucesión geométrica convergente donde la razón común es una fracción ${r} y el primer término es ${a1}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma infinita de una sucesión geométrica convergente cuyo término inicial es ${a1} y el término en la posición ${p} es ${ap}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma infinita de una sucesión geométrica convergente donde la razón común es el cuadrado de ${r} y el primer término es ${a1}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma infinita de una sucesión geométrica convergente con términos alternados en signo, empezando con ${a1} y razón común ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma infinita de una sucesión geométrica convergente cuyo primer término es ${a1} y la razón común es negativa ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma infinita de una sucesión geométrica convergente donde el segundo término es ${a2} y la razón común es una fracción ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma infinita de una sucesión geométrica convergente donde la suma de los primeros ${m} términos es ${sum} y la razón común es ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma infinita de una sucesión geométrica convergente cuyo primer término es una fracción ${a1} y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma infinita de una sucesión geométrica convergente donde el primer término es ${a1} y la suma infinita esperada es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma infinita de una sucesión geométrica convergente donde el segundo término es ${a2} y la suma infinita es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la suma infinita de una sucesión geométrica convergente con primer término ${a1} y razón común igual a la raíz cuadrada de ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma infinita de una sucesión geométrica convergente alternada, cuyo primer término es ${a1} y razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma infinita de una sucesión geométrica convergente donde el primer término es negativo ${a1} y la razón común es positiva ${r}.",
+              "difficulty": 0
+            }
           ]
         },
         {
           "type": "Encontrar el término faltante en una sucesión aritmética incompleta",
           "problems": [
-
+            {
+              "statement": "Encuentra el término faltante en la sucesión aritmética: ${a1}, __, ${a3}, ${a4}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión aritmética: ${a1}, ${a2}, __, ${a4}, ${a5}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el término faltante en la sucesión aritmética donde el primer término es ${a1}, el tercer término es ${a3} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión aritmética: ${a1}, ${a2}, __, ${a4}, con diferencia común ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término faltante en una sucesión aritmética decreciente: ${a1}, __, ${a3}, ${a4}, donde la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión aritmética: ${a1}, ${a2}, __, ${a5}, donde el término final es ${a5}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el término faltante en la sucesión aritmética donde el segundo término es ${a2}, el cuarto término es ${a4}, y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión aritmética: ${a1}, __, ${a3}, __, ${a5}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término faltante en la sucesión aritmética: ${a1}, __, ${a4}, ${a5}, donde la suma de todos los términos es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión aritmética: __, ${a2}, ${a3}, ${a4}, con diferencia común ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término faltante en la sucesión aritmética: ${a1}, __, __, ${a4}, donde la diferencia común es ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término faltante en una sucesión aritmética alternada: ${a1}, __, ${a3}, ${a4}, con diferencia común ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término faltante en la sucesión aritmética: ${a1}, ${a2}, __, __, ${a5}, donde el término inicial es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión aritmética: ${a1}, __, ${a3}, ${a4}, con el término en la posición ${n} igual a ${an}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término faltante en la sucesión aritmética: __, ${a2}, ${a3}, __, donde el término final es ${a4} y la diferencia común es ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión aritmética donde el primer término es ${a1}, el quinto término es ${a5}, y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término faltante en la sucesión aritmética: ${a1}, __, __, ${a5}, donde la suma de todos los términos es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión aritmética: ${a1}, __, ${a3}, ${a4}, donde el segundo término es el doble del primer término.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término faltante en una sucesión aritmética alternada: ${a1}, __, __, ${a4}, donde la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión aritmética: ${a1}, __, __, __, ${a5}, donde el término en la posición ${n} es ${an}.",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Encontrar el término faltante en una sucesión geométrica incompleta",
           "problems": [
-
+            {
+              "statement": "Encuentra el término faltante en la sucesión geométrica: ${a1}, __, ${a3}, ${a4}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión geométrica: ${a1}, ${a2}, __, ${a4}, ${a5}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el término faltante en la sucesión geométrica donde el primer término es ${a1}, el tercer término es ${a3} y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión geométrica: ${a1}, ${a2}, __, ${a4}, con razón común ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término faltante en una sucesión geométrica decreciente: ${a1}, __, ${a3}, ${a4}, donde la razón común es ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión geométrica: ${a1}, ${a2}, __, ${a5}, donde el término final es ${a5}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el término faltante en la sucesión geométrica donde el segundo término es ${a2}, el cuarto término es ${a4}, y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión geométrica: ${a1}, __, ${a3}, __, ${a5}, con razón común ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término faltante en la sucesión geométrica: ${a1}, __, ${a4}, ${a5}, donde la suma de todos los términos es ${sum}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión geométrica: __, ${a2}, ${a3}, ${a4}, con razón común ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término faltante en la sucesión geométrica: ${a1}, __, __, ${a4}, donde la razón común es ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término faltante en una sucesión geométrica alternada: ${a1}, __, ${a3}, ${a4}, con razón común ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término faltante en la sucesión geométrica: ${a1}, ${a2}, __, __, ${a5}, donde el término inicial es ${a1} y la razón común es ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión geométrica: ${a1}, __, ${a3}, ${a4}, con el término en la posición ${n} igual a ${an}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término faltante en la sucesión geométrica: __, ${a2}, ${a3}, __, donde el término final es ${a4} y la razón común es ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión geométrica donde el primer término es ${a1}, el quinto término es ${a5}, y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término faltante en la sucesión geométrica: ${a1}, __, __, ${a5}, donde el producto de todos los términos es ${product}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión geométrica: ${a1}, __, ${a3}, ${a4}, donde el segundo término es el doble del primer término.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término faltante en una sucesión geométrica alternada: ${a1}, __, __, ${a4}, donde la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término faltante en la sucesión geométrica: ${a1}, __, __, __, ${a5}, donde el término en la posición ${n} es ${an}.",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Calcular el término n-ésimo de una sucesión definida por recurrencia",
           "problems": [
-
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión definida por la relación de recurrencia: ${an} = ${an-1} + ${d}, con ${a1} como primer término.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión definida por la recurrencia: ${an} = ${an-1} * ${r}, con ${a1} como primer término.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión definida por la recurrencia: ${an} = ${an-1} + ${an-2}, con ${a1} y ${a2} dados.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión definida por la relación de recurrencia: ${an} = ${an-1} - ${d}, comenzando con ${a1}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión donde la relación de recurrencia es ${an} = 2 * ${an-1} + ${d}, con ${a1} como primer término.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión definida por la recurrencia: ${an} = ${an-1} / 2, con ${a1} como primer término.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión definida por la recurrencia: ${an} = ${an-1} + ${m}, con ${a1} y ${m} dados.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión donde ${an} = ${an-1} + ${an-2} + ${d}, con ${a1} y ${a2} dados.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión definida por la recurrencia: ${an} = ${r} * ${an-1} + ${m}, con ${a1} conocido.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión donde ${an} = ${an-1} - ${d} * ${an-2}, con términos iniciales ${a1} y ${a2}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión definida por la relación: ${an} = ${an-1} * ${d} + ${c}, comenzando con ${a1}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión donde ${an} = 2 * ${an-1} - ${m}, con ${a1} como término inicial.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión definida por la recurrencia: ${an} = ${an-1}^2 - ${d}, con ${a1} como primer término.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión donde ${an} = ${an-1} / ${m}, comenzando con ${a1}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión definida por la recurrencia: ${an} = ${r} * ${an-1} + ${an-2}, con ${a1} y ${a2} dados.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión donde ${an} = ${an-1} + ${c}, con ${a1} conocido.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión definida por la relación: ${an} = ${an-1} * ${r} - ${d}, comenzando con ${a1}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión definida por la recurrencia: ${an} = ${an-1} + 2 * ${an-2}, con términos iniciales ${a1} y ${a2}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión donde ${an} = ${d} * ${an-1} + ${c}, con ${a1} dado.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión definida por la recurrencia: ${an} = ${an-1} / 2 + ${d}, comenzando con ${a1}.",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Encontrar la suma de los términos pares en una sucesión aritmética",
           "problems": [
-
+            {
+              "statement": "Calcula la suma de los términos pares en una sucesión aritmética cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los términos pares en una sucesión aritmética definida por los términos ${a1}, ${a2}, ${a3}, ....",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los términos pares en una sucesión aritmética donde el término en la posición ${m} es ${am} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los términos pares en una sucesión aritmética cuyo primer término es ${a1} y el último término es ${al}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma de los términos pares en una sucesión aritmética decreciente cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los términos pares en una sucesión aritmética definida por los términos ${a2}, ${a3}, ${a4}, .... y la diferencia común ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los términos pares en una sucesión aritmética donde el primer término es ${a1} y el término en la posición ${p} es ${ap}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los términos pares en una sucesión aritmética donde la suma de todos los términos es ${sum}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los términos pares en una sucesión aritmética alternada cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los términos pares en una sucesión aritmética donde el término en la posición ${p} es ${ap} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma de los términos pares en una sucesión aritmética creciente cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los términos pares en una sucesión aritmética en la que el término en la posición ${n} es el doble del término en la posición ${m}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los términos pares en una sucesión aritmética donde el primer término es negativo ${a1} y la diferencia común es positiva ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los términos pares en una sucesión aritmética donde el segundo término es ${a2} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los términos pares en una sucesión aritmética cuyo primer término es ${a1} y el término en la posición ${m} es ${am}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los términos pares en una sucesión aritmética donde la suma de los primeros ${n} términos es ${sum}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los términos pares en una sucesión aritmética donde la suma de los términos en posiciones impares es ${sum}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la suma de los términos pares en una sucesión aritmética donde el término inicial es una fracción ${a1} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma de los términos pares en una sucesión aritmética alternada con signos opuestos, empezando con ${a1} y diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la suma de los términos pares en una sucesión aritmética cuyo primer término es ${a1} y la suma de los términos pares es ${sum}.",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Encontrar la suma de los términos impares en una sucesión aritmética",
           "problems": [
-
+            {
+              "statement": "Calcula la suma de los términos impares en una sucesión aritmética cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los términos impares en una sucesión aritmética definida por los términos ${a1}, ${a2}, ${a3}, ....",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los términos impares en una sucesión aritmética donde el término en la posición ${m} es ${am} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los términos impares en una sucesión aritmética cuyo primer término es ${a1} y el último término es ${al}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma de los términos impares en una sucesión aritmética decreciente cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los términos impares en una sucesión aritmética definida por los términos ${a2}, ${a3}, ${a4}, .... y la diferencia común ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los términos impares en una sucesión aritmética donde el primer término es ${a1} y el término en la posición ${p} es ${ap}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los términos impares en una sucesión aritmética donde la suma de todos los términos es ${sum}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los términos impares en una sucesión aritmética alternada cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los términos impares en una sucesión aritmética donde el término en la posición ${p} es ${ap} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma de los términos impares en una sucesión aritmética creciente cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los términos impares en una sucesión aritmética en la que el término en la posición ${n} es el doble del término en la posición ${m}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los términos impares en una sucesión aritmética donde el primer término es negativo ${a1} y la diferencia común es positiva ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los términos impares en una sucesión aritmética donde el segundo término es ${a2} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los términos impares en una sucesión aritmética cuyo primer término es ${a1} y el término en la posición ${m} es ${am}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los términos impares en una sucesión aritmética donde la suma de los primeros ${n} términos es ${sum}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los términos impares en una sucesión aritmética donde la suma de los términos en posiciones pares es ${sum}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la suma de los términos impares en una sucesión aritmética donde el término inicial es una fracción ${a1} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma de los términos impares en una sucesión aritmética alternada con signos opuestos, empezando con ${a1} y diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la suma de los términos impares en una sucesión aritmética cuyo primer término es ${a1} y la suma de los términos impares es ${sum}.",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Calcular el producto de los primeros n términos de una sucesión geométrica",
           "problems": [
-
+            {
+              "statement": "Calcula el producto de los primeros ${n} términos de una sucesión geométrica cuyo primer término es ${a1} y la razón común es ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el producto de los primeros ${n} términos de una sucesión geométrica definida por los términos ${a1}, ${a2}, ${a3}, ....",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el producto de los primeros ${n} términos de una sucesión geométrica donde el segundo término es ${a2} y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el producto de los primeros ${n} términos de una sucesión geométrica donde el término en la posición ${m} es ${am} y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el producto de los primeros ${n} términos de una sucesión geométrica decreciente cuyo primer término es ${a1} y la razón común es ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el producto de los primeros ${n} términos de una sucesión geométrica definida por los términos ${a2}, ${a3}, ${a4}, .... y la razón común ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el producto de los primeros ${n} términos de una sucesión geométrica cuyo término inicial es ${a1} y el término en la posición ${p} es ${ap}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el producto de los primeros ${n} términos de una sucesión geométrica donde la suma de los primeros ${m} términos es ${sum} y la razón común es ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el producto de los primeros ${n} términos de una sucesión geométrica alternada cuyo primer término es ${a1} y la razón común es ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el producto de los primeros ${n} términos de una sucesión geométrica donde el término en la posición ${p} es ${ap} y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el producto de los primeros ${n} términos de una sucesión geométrica creciente cuyo primer término es ${a1} y la razón común es ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el producto de los primeros ${n} términos de una sucesión geométrica en la que el término en la posición ${n} es el doble del término en la posición ${m}, con razón común ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el producto de los primeros ${n} términos de una sucesión geométrica donde el primer término es negativo ${a1} y la razón común es positiva ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el producto de los primeros ${n} términos de una sucesión geométrica donde el segundo término es ${a2} y la razón común es ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el producto de los primeros ${n} términos de una sucesión geométrica cuyo primer término es ${a1} y el término en la posición ${m} es ${am}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el producto de los primeros ${n} términos de una sucesión geométrica donde la suma de los primeros ${n} términos es ${sum}, con razón común ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el producto de los primeros ${n} términos de una sucesión geométrica donde la razón común es una fracción ${r}, comenzando con ${a1}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el producto de los primeros ${n} términos de una sucesión geométrica alternada con signos opuestos, comenzando con ${a1} y razón común ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el producto de los primeros ${n} términos de una sucesión geométrica cuyo primer término es una fracción ${a1} y la razón común es ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el producto de los primeros ${n} términos de una sucesión geométrica donde el primer término es ${a1} y el producto total esperado es ${product}.",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Encontrar la suma de los términos de una sucesión aritmética entre dos índices dados",
           "problems": [
-
+            {
+              "statement": "Calcula la suma de los términos de una sucesión aritmética entre las posiciones ${i} y ${j}, donde el primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética definida por los términos ${a1}, ${a2}, ${a3}, ....",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética donde el término en la posición ${m} es ${am} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los términos de una sucesión aritmética entre las posiciones ${i} y ${j}, donde el primer término es ${a1} y el último término es ${al}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética decreciente cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética definida por los términos ${a2}, ${a3}, ${a4}, .... y la diferencia común ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética donde el primer término es ${a1} y el término en la posición ${p} es ${ap}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética donde la suma de todos los términos es ${sum}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética alternada cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética donde el término en la posición ${p} es ${ap} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética creciente cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética en la que el término en la posición ${n} es el doble del término en la posición ${m}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética donde el primer término es negativo ${a1} y la diferencia común es positiva ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética donde el segundo término es ${a2} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética cuyo primer término es ${a1} y el término en la posición ${m} es ${am}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética donde la suma de los primeros ${n} términos es ${sum}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética donde la suma de los términos en posiciones pares es ${sum}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética donde el término inicial es una fracción ${a1} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética alternada con signos opuestos, empezando con ${a1} y diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la suma de los términos entre las posiciones ${i} y ${j} en una sucesión aritmética cuyo primer término es ${a1} y la suma esperada es ${sum}.",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Calcular el enésimo término de una sucesión mixta (aritmética y geométrica)",
           "problems": [
-
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión mixta donde los primeros términos siguen una progresión aritmética con primer término ${a1} y diferencia común ${d}, y luego continúan como una progresión geométrica con razón ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión que comienza como aritmética con términos ${a1}, ${a2}, ${a3}, y se convierte en geométrica con razón ${r} después del término ${a4}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el enésimo término de una sucesión que es aritmética hasta el término ${m}, con diferencia ${d}, y luego geométrica con razón ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión que comienza con ${a1} y sigue una progresión aritmética hasta el término ${m}, luego continúa geométricamente con razón ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión mixta donde el primer término es ${a1}, la diferencia aritmética es ${d}, y la razón geométrica es ${r}, cambiando de aritmética a geométrica después de ${m} términos.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión mixta que alterna entre términos aritméticos con diferencia ${d} y términos geométricos con razón ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión que comienza aritméticamente con diferencia ${d}, pero cambia a geométrica con razón ${r} en el término ${m}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión mixta donde los términos aritméticos tienen diferencia ${d}, y los términos geométricos tienen razón ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión mixta donde los primeros ${p} términos son aritméticos con diferencia ${d}, y los siguientes son geométricos con razón ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión que comienza con ${a1} y alterna entre una progresión aritmética y una geométrica cada ${m} términos.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión mixta con término inicial ${a1}, diferencia aritmética ${d}, y razón geométrica ${r}, alternando cada dos términos.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el enésimo término de una sucesión mixta donde la progresión aritmética tiene ${a1} como primer término y diferencia ${d}, cambiando a geométrica con razón ${r} después de ${m} términos.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión mixta que comienza como aritmética hasta el término ${m} con diferencia ${d}, y luego se convierte en geométrica con razón negativa ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión donde los primeros ${p} términos son aritméticos con diferencia ${d}, y luego se alternan con términos geométricos con razón ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión mixta con término inicial ${a1}, que es aritmética hasta ${a3} con diferencia ${d}, y luego geométrica con razón ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión mixta que sigue una progresión aritmética por ${p} términos y luego cambia a geométrica por ${q} términos.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el enésimo término de una sucesión mixta donde el primer término es ${a1}, la diferencia es ${d}, y la razón geométrica ${r} se aplica a partir del término ${m}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión que alterna entre progresión aritmética con diferencia ${d} y progresión geométrica con razón ${r}, empezando con ${a1}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el enésimo término de una sucesión mixta en la que los términos aritméticos tienen diferencia ${d}, y los términos geométricos tienen razón cuadrática ${r}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión mixta donde la progresión geométrica empieza después de ${p} términos aritméticos con diferencia ${d} y razón ${r}.",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Calcular la suma de los primeros n términos de una sucesión alternante",
           "problems": [
-
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión alternante cuyo primer término es ${a1} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión alternante definida por los términos ${a1}, ${a2}, ${a3}, ....",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión alternante donde el primer término es ${a1} y el segundo término es negativo, con diferencia ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión alternante cuyo término inicial es ${a1}, con razón negativa ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión alternante decreciente cuyo primer término es ${a1} y la razón es ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión alternante definida por los términos ${a2}, ${a3}, ${a4}, .... y diferencia común ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión alternante donde el término en la posición ${p} es ${ap} y la diferencia común es ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión alternante en la que el término en la posición ${n} es el opuesto del término en la posición ${m}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión alternante con signo alternado, comenzando con ${a1} y razón ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión alternante donde el término inicial es ${a1}, seguido por un término negativo, con diferencia común ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión alternante creciente cuyo primer término es ${a1} y la razón común es negativa ${r}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión alternante donde el término en la posición ${p} es positivo y el siguiente es negativo, con diferencia ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión alternante cuyo primer término es negativo ${a1}, con razón común ${r}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión alternante donde el segundo término es negativo ${a2} y la diferencia común es ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión alternante con razón ${r}, donde el término inicial es positivo ${a1}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión alternante cuyo primer término es ${a1} y el último término es ${an}, con diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión alternante donde la suma de los términos positivos es ${sum} y la diferencia común es ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión alternante donde el primer término es una fracción ${a1}, con diferencia común ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula la suma de los primeros ${n} términos de una sucesión alternante con signos alternados, comenzando con ${a1} y diferencia común ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra la suma de los primeros ${n} términos de una sucesión alternante cuyo primer término es positivo ${a1} y la suma esperada es ${sum}.",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Encontrar el término n-ésimo de una sucesión aritmética con fracción como diferencia común",
           "problems": [
-
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión aritmética cuyo primer término es ${a1} y la diferencia común es ${d}, donde ${d} es una fracción.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión aritmética definida por los términos ${a1}, ${a2}, ${a3}, ...., donde la diferencia común es ${d}, una fracción.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión aritmética donde el término inicial es ${a1} y la diferencia común es ${d}, siendo ${d} una fracción negativa.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión aritmética decreciente con primer término ${a1} y diferencia común ${d}, donde ${d} es una fracción.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión aritmética cuyo primer término es ${a1} y la diferencia común es una fracción ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión aritmética alternada con diferencia común ${d}, donde ${d} es una fracción.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión aritmética donde el segundo término es ${a2} y la diferencia común es ${d}, siendo ${d} una fracción.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión aritmética con primer término ${a1} y diferencia común ${d}, donde ${d} es una fracción positiva.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión aritmética cuyo término en la posición ${m} es ${am} y la diferencia común es ${d}, donde ${d} es una fracción.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión aritmética donde la diferencia común es ${d} y el primer término es ${a1}, con ${d} como una fracción negativa.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión aritmética cuyo término inicial es ${a1} y la diferencia común es una fracción ${d}, decreciente.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión aritmética definida por los términos ${a1}, ${a2}, ${a3}, ...., con diferencia común ${d}, donde ${d} es una fracción negativa.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión aritmética alternada cuyo primer término es ${a1} y la diferencia común es ${d}, siendo ${d} una fracción.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión aritmética donde el segundo término es ${a2} y la diferencia común es una fracción ${d}.",
+              "difficulty": 0
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión aritmética cuyo primer término es negativo ${a1} y la diferencia común es una fracción ${d}.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión aritmética con primer término ${a1} y diferencia común ${d}, donde ${d} es una fracción positiva.",
+              "difficulty": 1
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión aritmética cuyo primer término es una fracción ${a1} y la diferencia común es ${d}.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión aritmética definida por el término inicial ${a1} y la diferencia común ${d}, siendo ${d} una fracción alternante.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Calcula el término en la posición ${n} de una sucesión aritmética donde la suma de los primeros ${m} términos es ${sum}, con diferencia común ${d}, una fracción.",
+              "difficulty": 2
+            },
+            {
+              "statement": "Encuentra el término en la posición ${n} de una sucesión aritmética cuyo primer término es ${a1} y la diferencia común es ${d}, siendo ${d} una fracción alternada en signo.",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Calcular el término n-ésimo de una sucesión geométrica con razón fraccionaria",
           "problems": [
-
+            {
+              "type": "Calcular el término n-ésimo de una sucesión geométrica con razón fraccionaria",
+              "problems": [
+                {
+                  "statement": "Calcula el término en la posición ${n} de una sucesión geométrica cuyo primer término es ${a1} y la razón es ${r}, donde ${r} es una fracción.",
+                  "difficulty": 0
+                },
+                {
+                  "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica definida por los términos ${a1}, ${a2}, ${a3}, ...., con razón ${r}, siendo ${r} una fracción.",
+                  "difficulty": 0
+                },
+                {
+                  "statement": "Calcula el término en la posición ${n} de una sucesión geométrica donde el término inicial es ${a1} y la razón es ${r}, con ${r} como fracción negativa.",
+                  "difficulty": 1
+                },
+                {
+                  "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica decreciente cuyo primer término es ${a1} y la razón es ${r}, donde ${r} es una fracción.",
+                  "difficulty": 0
+                },
+                {
+                  "statement": "Calcula el término en la posición ${n} de una sucesión geométrica donde el primer término es ${a1} y la razón común es una fracción ${r}.",
+                  "difficulty": 1
+                },
+                {
+                  "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica alternante con razón ${r}, donde ${r} es una fracción.",
+                  "difficulty": 2
+                },
+                {
+                  "statement": "Calcula el término en la posición ${n} de una sucesión geométrica donde el segundo término es ${a2} y la razón es ${r}, siendo ${r} una fracción.",
+                  "difficulty": 1
+                },
+                {
+                  "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica con primer término ${a1} y razón ${r}, donde ${r} es una fracción positiva.",
+                  "difficulty": 0
+                },
+                {
+                  "statement": "Calcula el término en la posición ${n} de una sucesión geométrica cuyo término en la posición ${m} es ${am} y la razón es ${r}, donde ${r} es una fracción.",
+                  "difficulty": 1
+                },
+                {
+                  "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica donde la razón es ${r} y el primer término es ${a1}, con ${r} como una fracción negativa.",
+                  "difficulty": 1
+                },
+                {
+                  "statement": "Calcula el término en la posición ${n} de una sucesión geométrica cuyo término inicial es ${a1} y la razón es una fracción ${r}, decreciente.",
+                  "difficulty": 0
+                },
+                {
+                  "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica definida por los términos ${a1}, ${a2}, ${a3}, ...., con razón ${r}, donde ${r} es una fracción negativa.",
+                  "difficulty": 2
+                },
+                {
+                  "statement": "Calcula el término en la posición ${n} de una sucesión geométrica alternante cuyo primer término es ${a1} y la razón es ${r}, siendo ${r} una fracción.",
+                  "difficulty": 1
+                },
+                {
+                  "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica donde el segundo término es ${a2} y la razón es una fracción ${r}.",
+                  "difficulty": 0
+                },
+                {
+                  "statement": "Calcula el término en la posición ${n} de una sucesión geométrica cuyo primer término es negativo ${a1} y la razón es una fracción ${r}.",
+                  "difficulty": 1
+                },
+                {
+                  "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica con primer término ${a1} y razón ${r}, donde ${r} es una fracción positiva.",
+                  "difficulty": 1
+                },
+                {
+                  "statement": "Calcula el término en la posición ${n} de una sucesión geométrica cuyo primer término es una fracción ${a1} y la razón es ${r}.",
+                  "difficulty": 2
+                },
+                {
+                  "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica definida por el término inicial ${a1} y la razón ${r}, siendo ${r} una fracción alternante.",
+                  "difficulty": 2
+                },
+                {
+                  "statement": "Calcula el término en la posición ${n} de una sucesión geométrica donde la suma de los primeros ${m} términos es ${sum}, con razón ${r}, una fracción.",
+                  "difficulty": 2
+                },
+                {
+                  "statement": "Encuentra el término en la posición ${n} de una sucesión geométrica cuyo primer término es ${a1} y la razón es ${r}, siendo ${r} una fracción alternada en signo.",
+                  "difficulty": 2
+                }
           ]
         }
+      ]
+    }
       ]
     },
     {
@@ -464,7 +1995,6 @@
           ]
         }
       ]
-
     },
     {
       "title": "Problemas sobre móviles",
