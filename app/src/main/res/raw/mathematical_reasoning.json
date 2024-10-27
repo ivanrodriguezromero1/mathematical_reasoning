@@ -3,6 +3,11 @@
     {
       "title": "Sucesiones",
       "theory": "Las sucesiones en matemáticas son conjuntos ordenados de números que siguen un patrón definido. Estas se pueden clasificar principalmente en dos tipos: aritméticas y geométricas. Una sucesión aritmética es aquella donde cada término se obtiene sumando una constante (llamada diferencia común) al término anterior, mientras que en una sucesión geométrica, cada término se obtiene multiplicando el término anterior por una constante (razón común). Se pueden utilizar fórmulas para determinar cualquier término específico en ambas sucesiones, así como para calcular sumas de términos finitos. Las sucesiones también pueden tener límites, lo que significa que pueden converger a un valor finito conforme se incrementa el número de términos. Comprender cómo se comportan las sucesiones, especialmente las infinitas, es esencial en diversos campos de las matemáticas, incluyendo el análisis y la teoría de series.",
+      "references": [
+        "https://www.math.columbia.edu",
+        "https://math.ou.edu",
+        "https://math.mit.edu"
+      ],
       "types_of_problems": [
         {
           "type": "Encontrar el término n-ésimo de una sucesión aritmética",
@@ -37,156 +42,680 @@
                 }
               ],
               "tip": "Para encontrar el término n-ésimo de una sucesión aritmética, utiliza la fórmula: aₙ = a₁ + (n - 1) * d.",
-              "precalculate": "aₙ = a₁ + (${n} - 1) * ${d}",
+              "preview": ["aₙ = a₁ + (${n} - 1) * ${d}", "aₙ = a₁ + (#{n- 1}) * ${d}"],
               "answer": "${a1} + (${n} - 1) * ${d}",
               "step_by_step_solution": [
                 "Paso 1: Identifica el primer término (a₁), que es ${a1}.",
                 "Paso 2: Identifica la diferencia común (d), que es ${d}.",
-                "Paso 3: Aplica la fórmula aₙ = a₁ + (n - 1) * d para encontrar el término ${n}.",
-                "Paso 4: Sustituye los valores: aₙ = ${a1} + (${n} - 1) * ${d}.",
-                "Paso 5: Realiza el cálculo final: aₙ = ${a1} + (${n} - 1) * ${d}."
+                "Paso 3: Identifica el término a encontrar (n), que es ${n}.",
+                "Paso 4: Aplica la fórmula aₙ = a₁ + (n - 1) * d para encontrar el término ${n}.",
+                "Paso 5: Sustituye los valores: aₙ = ${a1} + (${n} - 1) * ${d}.",
+                "Paso 6: Calculando aₙ = ${a1} + (#{n - 1}) * ${d}.",
+                "Paso 7: Calculando aₙ = ${a1} + #{(n - 1)* d}.",
+                "Paso 8: Respuesta: aₙ = #{a1 + (n - 1) * d}."
               ]
             },
             {
-              "statement": "Determina el término en la posición ${n} de una sucesión aritmética, comenzando en ${a1} y aumentando en ${d} por cada término.",
-              "difficulty": 0
+              "statement": "Encuentra el término en la posición ${n} en una sucesión aritmética de segundo orden, donde ${a1} es el primer término, la primera diferencia es ${d}, y la segunda diferencia es ${d2}.",
+              "difficulty": 1,
+              "variables": [
+                {
+                  "name": "a1",
+                  "variable_type": "int",
+                  "range": {
+                    "min": 1,
+                    "max": 100
+                  }
+                },
+                {
+                  "name": "d",
+                  "variable_type": "int",
+                  "range": {
+                    "min": 1,
+                    "max": 20
+                  }
+                },
+                {
+                  "name": "d2",
+                  "variable_type": "int",
+                  "range": {
+                    "min": 1,
+                    "max": 10
+                  }
+                },
+                {
+                  "name": "n",
+                  "variable_type": "int",
+                  "range": {
+                    "min": 5,
+                    "max": 30
+                  }
+                }
+              ],
+              "tip": "Para encontrar el término n-ésimo en una sucesión aritmética de segundo orden, aplica la fórmula: aₙ = a₁ + (n - 1) * d + (n - 1) * (n - 2) / 2 * d₂.",
+              "preview": ["aₙ = a₁ + (${n} - 1) * ${d} + ((${n} - 1) * (${n} - 2) / 2) * ${d2}", "aₙ = a₁ + (#{n- 1}) * ${d} + ((#{n- 1}) * (#{n- 2}) / 2) * ${d2}"],
+              "answer": "${a1} + (${n} - 1) * ${d} + ((${n} - 1) * (${n} - 2) / 2) * ${d2}",
+              "step_by_step_solution": [
+                "Paso 1: Identifica el primer término (a₁), que es ${a1}.",
+                "Paso 2: Identifica la primera diferencia común (d), que es ${d}.",
+                "Paso 3: Identifica la segunda diferencia (d₂), que es ${d2}.",
+                "Paso 4: Aplica la fórmula aₙ = a₁ + (n - 1) * d + (n - 1) * (n - 2) / 2 * d₂ para encontrar el término en la posición ${n}.",
+                "Paso 5: Sustituye los valores en la fórmula: aₙ = ${a1} + (${n} - 1) * ${d} + ((${n} - 1) * (${n} - 2) / 2) * ${d2}.",
+                "Paso 6: Calculando aₙ = ${a1} + (${n} - 1) * ${d} + ((${n} - 1) * (${n} - 2) / 2) * ${d2}.",
+                "Paso 7: Calculando aₙ = ${a1} + (#{n- 1}) * ${d} + ((#{n- 1}) * (#{n- 2}) / 2) * ${d2}.",
+                "Paso 8: Calculando aₙ = ${a1} + #{(n- 1) * d} + (#{(n- 1) * (n - 2)} / 2) * ${d2}.",
+                "Paso 9: Calculando aₙ = ${a1} + #{(n- 1) * d} + #{((n- 1) * (n - 2)/ 2)} * ${d2}.",
+                "Paso 10: Calculando aₙ = #{a1 + (n- 1) * d} + #{((n- 1) * (n - 2)/ 2)} * ${d2}.",
+                "Paso 11: Calculando aₙ = #{a1 + (n- 1) * d} + #{(((n- 1) * (n - 2)/ 2)) * d2}.",
+                "Paso 12: Respuesta aₙ = #{a1 + (n- 1) * d + (((n- 1) * (n - 2)/ 2)) * d2}."
+              ]
             },
             {
-              "statement": "Encuentra el término en la posición ${n} en una sucesión aritmética de segundo orden, donde ${a1} es el primer término, la primera diferencia común es ${d}, y la segunda diferencia es constante.",
-              "difficulty": 1
+              "statement": "Calcula el término en la posición ${n} en una sucesión aritmética de tercer orden, donde el primer término es ${a1}, la primera diferencia es ${d}, la segunda diferencia es ${d2}, y la tercera diferencia es ${d3}.",
+              "difficulty": 2,
+              "variables": [
+                {
+                  "name": "a1",
+                  "variable_type": "int",
+                  "range": {
+                    "min": 1,
+                    "max": 100
+                  }
+                },
+                {
+                  "name": "d",
+                  "variable_type": "int",
+                  "range": {
+                    "min": 1,
+                    "max": 20
+                  }
+                },
+                {
+                  "name": "d2",
+                  "variable_type": "int",
+                  "range": {
+                    "min": 1,
+                    "max": 10
+                  }
+                },
+                {
+                  "name": "d3",
+                  "variable_type": "int",
+                  "range": {
+                    "min": 1,
+                    "max": 5
+                  }
+                },
+                {
+                  "name": "n",
+                  "variable_type": "int",
+                  "range": {
+                    "min": 5,
+                    "max": 30
+                  }
+                }
+              ],
+              "tip": "Para encontrar el término n-ésimo en una sucesión aritmética de tercer orden, utiliza la fórmula: aₙ = a₁ + (n - 1) * d + (n - 1) * (n - 2) / 2 * d₂ + (n - 1) * (n - 2) * (n - 3) / 6 * d₃.",
+              "preview": [
+                "aₙ = a₁ + (${n} - 1) * ${d} + ((${n} - 1) * (${n} - 2) / 2) * ${d2} + ((${n} - 1) * (${n} - 2) * (${n} - 3) / 6) * ${d3}",
+                "aₙ = a₁ + (#{n- 1}) * ${d} + ((#{n- 1}) * (#{n- 2}) / 2) * ${d2} + ((#{n- 1}) * (#{n- 2}) * (#{n- 3}) / 6) * ${d3}"
+              ],
+              "answer": "${a1} + (${n} - 1) * ${d} + ((${n} - 1) * (${n} - 2) / 2) * ${d2} + ((${n} - 1) * (${n} - 2) * (${n} - 3) / 6) * ${d3}",
+              "step_by_step_solution": [
+                "Paso 1: Identifica el primer término (a₁), que es ${a1}.",
+                "Paso 2: Identifica la primera diferencia común (d), que es ${d}.",
+                "Paso 3: Identifica la segunda diferencia (d₂), que es ${d2}.",
+                "Paso 4: Identifica la tercera diferencia (d₃), que es ${d3}.",
+                "Paso 5: Aplica la fórmula aₙ = a₁ + (n - 1) * d + (n - 1) * (n - 2) / 2 * d₂ + (n - 1) * (n - 2) * (n - 3) / 6 * d₃ para encontrar el término en la posición ${n}.",
+                "Paso 6: Sustituye los valores en la fórmula: aₙ = ${a1} + (${n} - 1) * ${d} + ((${n} - 1) * (${n} - 2) / 2) * ${d2} + ((${n} - 1) * (${n} - 2) * (${n} - 3) / 6) * ${d3}.",
+                "Paso 7: Calculando aₙ = ${a1} + (#{n- 1}) * ${d} + ((#{n- 1}) * (#{n- 2}) / 2) * ${d2} + ((#{n- 1}) * (#{n- 2}) * (#{n- 3}) / 6) * ${d3}.",
+                "Paso 8: Calculando aₙ = ${a1} + #{(n- 1) * d} + (#{(n- 1) * (n - 2) / 2}) * ${d2} + (#{(n- 1) * (n - 2) * (n - 3) / 6}) * ${d3}.",
+                "Paso 9: Respuesta: aₙ = #{a1 + (n- 1) * d + ((n- 1) * (n - 2) / 2) * d2 + ((n- 1) * (n - 2) * (n - 3) / 6) * d3}."
+              ]
             },
             {
-              "statement": "Dada una sucesión aritmética con primer término ${a1} y diferencia común ${d}, halla el término en la posición ${n} de la misma.",
-              "difficulty": 0
-            },
-            {
-              "statement": "Calcula el término en la posición ${n} en una sucesión aritmética de tercer orden, donde el primer término es ${a1}, la diferencia inicial es ${d}, y las diferencias de segundo y tercer orden son constantes.",
-              "difficulty": 2
-            },
-            {
-              "statement": "Encuentra el término en la posición ${n} de una sucesión aritmética con primer término ${a1} y diferencia común de ${d}.",
-              "difficulty": 0
-            },
-            {
-              "statement": "Determina el término en la posición ${n} en una sucesión aritmética de segundo orden, con ${a1} como primer término y una diferencia de primer orden igual a ${d}, y una diferencia de segundo orden constante.",
-              "difficulty": 1
-            },
-            {
-              "statement": "Calcula el término en la posición ${n} de una sucesión aritmética, donde el primer término es ${a1}, la diferencia de primer orden es ${d}, y las diferencias superiores son cero.",
-              "difficulty": 0
-            },
-            {
-              "statement": "Dada una sucesión aritmética de primer orden con ${a1} como primer término y una diferencia común ${d}, halla el término número ${n}.",
-              "difficulty": 0
-            },
-            {
-              "statement": "Encuentra el término en la posición ${n} de una sucesión aritmética de segundo orden, cuyo primer término es ${a1} y la primera y segunda diferencias son ${d1} y ${d2}, respectivamente.",
-              "difficulty": 1
-            },
-            {
-              "statement": "Calcula el término en la posición ${n} en una sucesión aritmética de tercer orden, comenzando en ${a1}, con diferencias ${d1}, ${d2} y ${d3}.",
-              "difficulty": 2
-            },
-            {
-              "statement": "Halla el valor del término ${n} en una sucesión aritmética que comienza en ${a1} y tiene una diferencia constante de ${d}.",
-              "difficulty": 0
-            },
-            {
-              "statement": "Encuentra el término en la posición ${n} en una sucesión aritmética, con primer término igual a ${a1} y diferencias constantes de primer orden igual a ${d}.",
-              "difficulty": 0
-            },
-            {
-              "statement": "Dada una sucesión aritmética con primer término ${a1} y diferencias de primer y segundo orden iguales a ${d1} y ${d2}, halla el término en la posición ${n}.",
-              "difficulty": 1
-            },
-            {
-              "statement": "Determina el término en la posición ${n} de una sucesión aritmética que comienza en ${a1}, con diferencia de primer orden ${d1} y diferencia de segundo orden ${d2}.",
-              "difficulty": 1
-            },
-            {
-              "statement": "Calcula el término número ${n} en una sucesión aritmética de tercer orden, cuyo primer término es ${a1} y diferencias de primer, segundo y tercer orden son ${d1}, ${d2}, y ${d3}.",
-              "difficulty": 2
-            },
-            {
-              "statement": "Encuentra el término en la posición ${n} de una sucesión aritmética de primer orden, donde ${a1} es el primer término y la diferencia común es ${d}.",
-              "difficulty": 0
-            },
-            {
-              "statement": "Dada una sucesión aritmética de segundo orden, cuyo primer término es ${a1}, la diferencia de primer orden es ${d1}, y la diferencia de segundo orden es ${d2}, calcula el término en la posición ${n}.",
-              "difficulty": 1
-            },
-            {
-              "statement": "Halla el término en la posición ${n} de una sucesión aritmética de tercer orden, comenzando con ${a1} y con diferencias ${d1}, ${d2} y ${d3}.",
-              "difficulty": 2
-            },
-            {
-              "statement": "Encuentra el valor del término en la posición ${n} en una sucesión aritmética de segundo orden, donde el primer término es ${a1}, y las diferencias de primer y segundo orden son ${d1} y ${d2}.",
-              "difficulty": 1
+              "statement": "Calcula el término en la posición ${n} de la siguiente sucesión aritmética de primer orden: ${a1}, ${a2}, ${a3} ...",
+              "difficulty": 0,
+              "variables": [
+                {
+                  "name": "a1",
+                  "variable_type": "int",
+                  "range": {
+                    "min": 1,
+                    "max": 100
+                  }
+                },
+                {
+                  "name": "d",
+                  "variable_type": "int",
+                  "range": {
+                    "min": 1,
+                    "max": 20
+                  }
+                },
+                {
+                  "name": "n",
+                  "variable_type": "int",
+                  "range": {
+                    "min": 5,
+                    "max": 30
+                  }
+                }
+              ],
+              "tip": "Para encontrar el término n-ésimo de una sucesión aritmética, utiliza la fórmula: aₙ = a₁ + (n - 1) * d.",
+              "preview": ["aₙ = a₁ + (${n} - 1) * ${d}", "aₙ = a₁ + (#{n- 1}) * ${d}"],
+              "answer": "${a1} + (${n} - 1) * ${d}",
+              "step_by_step_solution": [
+                "Paso 1: Identifica el primer término (a₁), que es ${a1}.",
+                "Paso 2: Identifica la diferencia común (d), que es ${d}.",
+                "Paso 3: Identifica el término a encontrar (n), que es ${n}.",
+                "Paso 4: Aplica la fórmula aₙ = a₁ + (n - 1) * d para encontrar el término ${n}.",
+                "Paso 5: Sustituye los valores: aₙ = ${a1} + (${n} - 1) * ${d}",
+                "Paso 6: Calculando aₙ = ${a1} + (#{n - 1}) * ${d}",
+                "Paso 7: Calculando aₙ = ${a1} + #{(n - 1)* d}",
+                "Paso 8: Respuesta: aₙ = #{a1 + (n - 1) * d}."
+              ]
             }
           ]
         },
         {
-          "type": "Encontrar el término n-ésimo de una sucesión geométrica"
+          "type": "Encontrar el término n-ésimo de una sucesión geométrica",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Encontrar la diferencia común en una sucesión aritmética"
+          "type": "Encontrar la diferencia común en una sucesión aritmética",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Encontrar la razón común en una sucesión geométrica"
+          "type": "Encontrar la razón común en una sucesión geométrica",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Calcular el término central en una sucesión aritmética"
+          "type": "Encontrar el primer término de una sucesión aritmética",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Identificar la fórmula general de una sucesión dada"
+          "type": "Encontrar el primer término de una sucesión geométrica",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Determinar si una sucesión converge o diverge"
+          "type": "Calcular la suma de los primeros n términos de una sucesión aritmética",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Analizar la periodicidad de una sucesión"
+          "type": "Calcular la suma de los primeros n términos de una sucesión geométrica",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Calcular el término n-ésimo de una sucesión alternante"
+          "type": "Calcular la suma infinita de una sucesión geométrica convergente",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Determinar el límite de una sucesión"
+          "type": "Encontrar el término faltante en una sucesión aritmética incompleta",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Identificar subsucesiones en una sucesión dada"
+          "type": "Encontrar el término faltante en una sucesión geométrica incompleta",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Encontrar términos comunes en dos sucesiones distintas"
+          "type": "Calcular el término n-ésimo de una sucesión definida por recurrencia",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Encontrar el primer término de una sucesión dada la suma total"
+          "type": "Encontrar la suma de los términos pares en una sucesión aritmética",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Encontrar el orden de una sucesión aritmética"
+          "type": "Encontrar la suma de los términos impares en una sucesión aritmética",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Encontrar el orden de una sucesión geométrica"
+          "type": "Calcular el producto de los primeros n términos de una sucesión geométrica",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Analizar sucesiones definidas de forma recursiva"
+          "type": "Encontrar la suma de los términos de una sucesión aritmética entre dos índices dados",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Encontrar la mayor cota inferior y el supremo de una sucesión"
+          "type": "Calcular el enésimo término de una sucesión mixta (aritmética y geométrica)",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Calcular el término n-ésimo en una sucesión telescópica"
+          "type": "Calcular la suma de los primeros n términos de una sucesión alternante",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Evaluar la divergencia de una sucesión alternante"
+          "type": "Encontrar el término n-ésimo de una sucesión aritmética con fracción como diferencia común",
+          "problems": [
+
+          ]
         },
         {
-          "type": "Encontrar los puntos de acumulación de una sucesión"
+          "type": "Calcular el término n-ésimo de una sucesión geométrica con razón fraccionaria",
+          "problems": [
+
+          ]
         }
-      ],
+      ]
+    },
+    {
+      "title": "Problemas sobre edades",
+      "theory": "Los problemas sobre edades son ejercicios matemáticos en los que se requiere determinar la edad actual o futura de una o más personas. Se utilizan ecuaciones para representar las relaciones entre las edades en diferentes momentos, como en el pasado, presente o futuro. Generalmente, estos problemas incluyen información sobre la diferencia de edades, la suma de edades, o las edades en ciertos momentos específicos. Comprender cómo establecer y resolver estas ecuaciones es clave para resolver problemas de este tipo de manera eficiente.",
       "references": [
-        "https://www.math.columbia.edu",
-        "https://math.ou.edu",
-        "https://math.mit.edu"
+        "https://www.universidadperu.edu",
+        "https://es.mathpedia.org",
+        "https://matematicasonline.com"
+      ],
+      "types_of_problems":[
+        {
+          "type": "Calcular la edad actual de una persona a partir de la diferencia de edades",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la edad de una persona en el futuro dado un número de años",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la edad de una persona en el pasado dado un número de años",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la edad de una persona cuando la relación de edades entre dos personas cambia en el tiempo",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la edad actual de una persona si se conoce su edad en el pasado y en el futuro",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la edad de una persona si en x años será una fracción de la edad actual de otra",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la edad de una persona cuando el producto de sus edades futuras y pasadas es conocido",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la edad de una persona si la suma de las edades actuales y futuras de dos personas es conocida",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la edad de una persona cuando la suma de las edades de tres personas se conoce",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la edad de una persona si la diferencia entre su edad actual y la mitad de la edad de otra es conocida",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la edad de una persona cuando la razón entre su edad futura y la de otra persona es conocida",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la edad de una persona cuando se conoce la proporción de edades con otra persona",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la edad de una persona cuando la suma de las edades futuras de dos personas sigue una proporción",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Determinar la edad de una persona cuando se conocen múltiplos de su edad actual",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la edad de una persona a partir de la suma de edades en diferentes etapas de la vida",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la edad de una persona usando la suma de edades futuras",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la edad de una persona cuando se conoce el doble de la edad actual de otra persona",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la edad actual de una persona basada en un incremento proporcional",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Calcular la edad de una persona cuando su edad en el futuro es un múltiplo de la actual",
+          "problems": [
+
+          ]
+        },
+        {
+          "type": "Encontrar la edad de una persona si la suma de su edad en el pasado y en el futuro es conocida",
+          "problems": [
+
+          ]
+        }
+      ]
+
+    },
+    {
+      "title": "Problemas sobre móviles",
+      "theory": "Los problemas sobre móviles en matemáticas se refieren a situaciones en las que se deben calcular distancias, velocidades o tiempos de desplazamiento de uno o más objetos en movimiento. Estos problemas se basan en la relación fundamental de la fórmula: Distancia = Velocidad x Tiempo. Pueden incluir casos de movimiento en la misma dirección, en direcciones opuestas, o en escenarios de alcance y encuentro. Comprender cómo plantear las ecuaciones adecuadas y analizar el movimiento relativo es esencial para resolver correctamente este tipo de problemas.",
+      "references": [
+        "https://www.fisicanet.com",
+        "https://matematicalibre.com",
+        "https://matematicasypunto.com"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Cronometría",
+      "theory": "La cronometría en matemáticas se enfoca en problemas relacionados con la medición y el cálculo del tiempo. Estos problemas pueden incluir conversiones entre unidades de tiempo, cálculos de duraciones, intervalos de tiempo y análisis de eventos que ocurren de manera simultánea o secuencial. Es fundamental comprender cómo manejar diferentes formatos de tiempo (horas, minutos, segundos) y utilizar operaciones aritméticas para resolver situaciones prácticas, como determinar el tiempo transcurrido entre dos eventos o la hora exacta en que ocurrirá un evento dado un inicio y una duración.",
+      "references": [
+        "https://www.matematicasvisuales.com",
+        "https://educaciontrespuntocero.com",
+        "https://www.cienciaviva.pt"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Probabilidades",
+      "theory": "La probabilidad es una rama de las matemáticas que estudia la medida de la incertidumbre y se utiliza para cuantificar la posibilidad de que ocurra un evento. Se expresa como un número entre 0 y 1, donde 0 indica que el evento es imposible y 1 que es seguro. Los problemas de probabilidad incluyen la identificación de eventos simples, la aplicación de la regla de adición para eventos mutuamente excluyentes y la regla de multiplicación para eventos independientes. También se exploran conceptos como la probabilidad condicional, eventos dependientes e independientes, así como el uso de diagramas y tablas para visualizar los resultados posibles.",
+      "references": [
+        "https://www.khanacademy.org",
+        "https://probabilidadyestadistica.net",
+        "https://www.mathematicsmonkey.com"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Razonamiento lógico",
+      "theory": "El razonamiento lógico es la habilidad de analizar información de manera estructurada para llegar a una conclusión válida. Se utiliza para evaluar la consistencia de argumentos, identificar patrones, y deducir la verdad o falsedad de afirmaciones. En matemáticas, se abordan problemas de razonamiento lógico a través de proposiciones, conectivos lógicos, tablas de verdad, y pruebas por deducción e inducción. Este tipo de razonamiento es fundamental no solo para resolver problemas matemáticos, sino también para tomar decisiones basadas en evidencia y lógica estructurada.",
+      "references": [
+        "https://www.logicalthinking.org",
+        "https://www.mindtools.com",
+        "https://www.philosophybasics.com"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Verdades y mentiras",
+      "theory": "El tema de 'Verdades y mentiras' en el razonamiento lógico aborda problemas donde se debe determinar la veracidad de afirmaciones hechas por diferentes personas, considerando que algunas pueden ser verdaderas y otras falsas. Estos problemas requieren habilidades de deducción para analizar las declaraciones y las posibles combinaciones de verdad o mentira. La clave está en identificar patrones de consistencia o contradicción entre las afirmaciones, lo que permite deducir cuáles son verdaderas y cuáles son falsas, llegando así a una conclusión lógica.",
+      "references": [
+        "https://www.brainzilla.com",
+        "https://www.logicallyfallacious.com",
+        "https://www.criticalthinking.org"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Distribuciones numéricas",
+      "theory": "Las distribuciones numéricas se refieren a la forma en que se organizan y relacionan los números en una secuencia o conjunto. Estos problemas implican identificar patrones, diferencias, proporciones, y otras relaciones numéricas entre los elementos de la distribución. Comprender cómo se estructuran los números en diferentes formatos, como secuencias crecientes, decrecientes o cíclicas, es clave para resolver correctamente este tipo de problemas, que a menudo requieren identificar el siguiente número de una secuencia o la suma de un conjunto de términos.",
+      "references": [
+        "https://www.mathsisfun.com",
+        "https://www.intmath.com",
+        "https://www.khanacademy.org"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Ordenamiento de información",
+      "theory": "El ordenamiento de información se centra en organizar datos de manera lógica y coherente para facilitar su análisis y comprensión. En problemas de este tipo, se deben aplicar criterios específicos para clasificar y secuenciar información, como cronología, jerarquía, tamaño, o cualquier otro atributo relevante. Estos problemas pueden involucrar tablas, diagramas, y listas, y requieren habilidades para identificar relaciones y establecer una secuencia adecuada según las reglas dadas.",
+      "references": [
+        "https://www.skillsyouneed.com",
+        "https://www.mindtools.com",
+        "https://www.mathsisfun.com"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Lógica proposicional",
+      "theory": "La lógica proposicional es una rama de la lógica que se enfoca en las proposiciones y sus relaciones a través de conectivos lógicos como 'y', 'o', 'no', 'si... entonces', entre otros. Una proposición es una afirmación que puede ser verdadera o falsa, y la lógica proposicional permite construir argumentos más complejos a partir de proposiciones simples. Se utilizan tablas de verdad para analizar la validez de las proposiciones compuestas, y se aplican reglas de inferencia para deducir conclusiones válidas a partir de premisas dadas.",
+      "references": [
+        "https://www.philosophybasics.com",
+        "https://www.khanacademy.org",
+        "https://www.logicmatters.net"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Lógica inferencial",
+      "theory": "La lógica inferencial se centra en el proceso de derivar conclusiones a partir de premisas dadas utilizando reglas de inferencia. Es fundamental para la toma de decisiones y la resolución de problemas, ya que permite evaluar la validez de los argumentos y determinar si las conclusiones se siguen lógicamente de las premisas. La lógica inferencial incluye el uso de silogismos, razonamientos deductivos e inductivos, y otras formas de argumentación estructurada para llegar a conclusiones coherentes y válidas.",
+      "references": [
+        "https://www.criticalthinking.org",
+        "https://www.logicmatters.net",
+        "https://www.philosophybasics.com"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Razonamiento inductivo",
+      "theory": "El razonamiento inductivo es un tipo de lógica que se utiliza para llegar a conclusiones generales a partir de observaciones específicas. A diferencia del razonamiento deductivo, que parte de premisas generales para llegar a una conclusión específica, el razonamiento inductivo busca identificar patrones, tendencias o regularidades en los datos para formular hipótesis o principios generales. Este tipo de razonamiento es común en investigaciones científicas, donde las observaciones repetidas permiten hacer predicciones sobre situaciones futuras.",
+      "references": [
+        "https://www.khanacademy.org",
+        "https://www.skillsyouneed.com",
+        "https://www.mindtools.com"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Razonamiento deductivo",
+      "theory": "El razonamiento deductivo es un tipo de lógica que parte de premisas generales para llegar a conclusiones específicas y necesariamente verdaderas, siempre que las premisas sean verdaderas. Es un proceso lógico donde la verdad de las conclusiones está garantizada por la verdad de las premisas. Se utiliza comúnmente en matemáticas y filosofía, y su estructura básica se basa en reglas formales de inferencia, como los silogismos. Este tipo de razonamiento es esencial para la demostración de teoremas y para el análisis de argumentos formales.",
+      "references": [
+        "https://www.philosophybasics.com",
+        "https://www.khanacademy.org",
+        "https://www.criticalthinking.org"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Planteo de ecuaciones",
+      "theory": "El planteo de ecuaciones es una técnica matemática utilizada para representar y resolver problemas mediante ecuaciones algebraicas. Consiste en traducir la información proporcionada en un enunciado a una o más ecuaciones, donde las incógnitas representan las cantidades desconocidas. Este proceso es fundamental para la resolución de problemas en diferentes áreas, como la geometría, la aritmética y la física, ya que permite encontrar soluciones precisas al establecer relaciones claras entre las variables involucradas.",
+      "references": [
+        "https://www.algebrahelp.com",
+        "https://www.khanacademy.org",
+        "https://www.universidadperu.edu"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Ecuaciones diofánticas",
+      "theory": "Las ecuaciones diofánticas son ecuaciones polinómicas con coeficientes enteros que buscan soluciones enteras o racionales. Estas ecuaciones reciben su nombre de Diofanto de Alejandría, un matemático de la antigüedad que las estudió en detalle. Se dividen en diferentes tipos, como lineales, cuadráticas y más complejas, dependiendo del grado del polinomio. Las ecuaciones diofánticas se utilizan en teoría de números y en problemas donde solo se aceptan soluciones enteras, como en problemas de conteo, divisibilidad y geometría discreta.",
+      "references": [
+        "https://www.khanacademy.org",
+        "https://www.numbertheory.org",
+        "https://www.mathworld.wolfram.com"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Operaciones matemáticas",
+      "theory": "Las operaciones matemáticas son acciones básicas que se realizan con números para obtener resultados. Las operaciones fundamentales incluyen la adición, sustracción, multiplicación y división, que se utilizan para manipular valores numéricos de manera lógica y consistente. Además, existen operaciones más avanzadas como la potenciación, radicación y el uso de funciones algebraicas. Comprender cómo aplicar estas operaciones y sus propiedades es esencial para resolver problemas en aritmética, álgebra y otras ramas de las matemáticas.",
+      "references": [
+        "https://www.mathsisfun.com",
+        "https://www.khanacademy.org",
+        "https://www.matematicasonline.com"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Comparación de magnitudes",
+      "theory": "La comparación de magnitudes es un proceso matemático utilizado para evaluar y establecer relaciones entre diferentes cantidades o medidas. Puede involucrar operaciones como identificar cuál de dos o más cantidades es mayor, menor o igual, así como trabajar con proporciones, tasas y razones para comprender la relación entre magnitudes de diferente naturaleza. Este concepto es fundamental en la aritmética, la geometría y la física, ya que permite analizar escalas, unidades y variaciones proporcionales entre los valores comparados.",
+      "references": [
+        "https://www.khanacademy.org",
+        "https://www.matematicasonline.com",
+        "https://www.intmath.com"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Fracciones",
+      "theory": "Las fracciones representan partes de un todo y se utilizan para expresar números no enteros. Una fracción consta de un numerador, que indica cuántas partes se toman, y un denominador, que muestra en cuántas partes se divide el total. Las fracciones pueden ser propias, impropias o mixtas, y se pueden simplificar, sumar, restar, multiplicar y dividir. Comprender las operaciones con fracciones es esencial para la aritmética, el álgebra y otras áreas de las matemáticas, ya que permiten manejar proporciones y realizar cálculos más precisos.",
+      "references": [
+        "https://www.mathsisfun.com",
+        "https://www.khanacademy.org",
+        "https://www.matematicasonline.com"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Tanto por cuanto",
+      "theory": "El 'tanto por cuanto' es una forma de expresar relaciones proporcionales entre dos cantidades, y es un concepto fundamental en la resolución de problemas de porcentajes, proporciones y tasas. Este método permite comparar la relación entre un total y una parte del mismo, facilitando el cálculo de incrementos, descuentos y cambios relativos en diversos contextos. Se utiliza frecuentemente para resolver problemas de escalas, proporciones y análisis financiero, entre otros, proporcionando una herramienta versátil para el manejo de porcentajes y variaciones proporcionales.",
+      "references": [
+        "https://www.khanacademy.org",
+        "https://www.universidadperu.edu",
+        "https://www.matematicasonline.com"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Conteo de figuras",
+      "theory": "El conteo de figuras es una técnica utilizada para identificar y enumerar las figuras geométricas dentro de una estructura más compleja. Este tipo de problemas requiere observar detenidamente las intersecciones y combinaciones de líneas, áreas y formas para contar figuras individuales, como triángulos, cuadrados o círculos. Es fundamental para desarrollar habilidades de visualización, análisis espacial y organización lógica, lo cual es clave en la geometría y en la resolución de problemas más amplios de razonamiento matemático.",
+      "references": [
+        "https://www.khanacademy.org",
+        "https://www.mathsisfun.com",
+        "https://www.geometriafacil.com"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Sucesos mínimos",
+      "theory": "Los sucesos mínimos se refieren a la identificación del número mínimo de acciones, movimientos o cambios necesarios para alcanzar un objetivo específico en un problema determinado. Este concepto se utiliza en problemas de optimización, lógica y teoría de grafos, donde se busca la solución más eficiente posible. La clave para resolver problemas de sucesos mínimos es analizar todas las alternativas disponibles y seleccionar la que minimice el número total de pasos o cambios requeridos.",
+      "references": [
+        "https://www.khanacademy.org",
+        "https://www.geometriafacil.com",
+        "https://www.mathsisfun.com"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Introducción al análisis combinatorio",
+      "theory": "El análisis combinatorio es una rama de las matemáticas que se ocupa de contar, enumerar y organizar conjuntos de elementos de acuerdo con ciertas reglas. Es fundamental para resolver problemas relacionados con combinaciones, permutaciones y arreglos de elementos. Se utiliza para determinar de cuántas formas se puede elegir, ordenar o agrupar un conjunto de objetos, considerando o no la repetición y el orden. Este análisis es esencial en la probabilidad, la estadística y otras áreas de la matemática aplicada.",
+      "references": [
+        "https://www.khanacademy.org",
+        "https://www.mathsisfun.com",
+        "https://www.matematicasonline.com"
+      ],
+      "types_of_problems":[
+
+      ]
+    },
+    {
+      "title": "Áreas y perímetros de regiones sombreadas",
+      "theory": "El cálculo de áreas y perímetros de regiones sombreadas implica encontrar la medida de la superficie y el contorno de partes específicas dentro de una figura geométrica, que generalmente resultan de la superposición o la resta de áreas. Para resolver estos problemas, se requiere identificar claramente las áreas que deben sumarse o restarse, aplicando fórmulas para áreas y perímetros de figuras básicas como triángulos, rectángulos, círculos, y otras formas más complejas. Este tipo de problemas desarrolla habilidades en la visualización y análisis geométrico.",
+      "references": [
+        "https://www.khanacademy.org",
+        "https://www.mathsisfun.com",
+        "https://www.geometriafacil.com"
+      ],
+      "types_of_problems":[
+
       ]
     }
   ]
