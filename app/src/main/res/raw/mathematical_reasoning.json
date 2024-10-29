@@ -7095,61 +7095,851 @@
         {
           "type": "Encontrar la probabilidad de dos eventos independientes que ocurren simultáneamente",
           "problems": [
-
+            {
+              "statement": "Al lanzar una moneda y un dado, ¿cuál es la probabilidad de obtener cara en la moneda y un 6 en el dado?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas y una urna con ${total_marbles} canicas (de las cuales ${red_marbles} son rojas), ¿cuál es la probabilidad de sacar un rey de la baraja y una canica roja?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Se lanzan dos monedas. ¿Cuál es la probabilidad de que ambas caigan en cara?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Al lanzar un dado y seleccionar una carta de una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de obtener un número par en el dado y una carta de corazones?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas y una urna con ${blue_balls} bolas azules y ${green_balls} verdes, ¿cuál es la probabilidad de sacar una carta de tréboles y una bola verde?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Al lanzar dos dados, ¿cuál es la probabilidad de que el primer dado muestre un número impar y el segundo dado muestre un número mayor a 4?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Se lanzan dos monedas y se extrae una carta de una baraja de ${total_cards} cartas. ¿Cuál es la probabilidad de obtener cara en ambas monedas y un as en la carta?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una bolsa con ${red_marbles} bolas rojas y ${blue_marbles} azules, y en otra con ${yellow_marbles} amarillas y ${black_marbles} negras, ¿cuál es la probabilidad de sacar una bola roja de la primera y una bola negra de la segunda?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Se lanza una moneda y se extrae una carta de una baraja de ${total_cards} cartas. ¿Cuál es la probabilidad de obtener cara en la moneda y un rey en la carta?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Al lanzar un dado de seis caras y una moneda, ¿cuál es la probabilidad de obtener un número mayor a 4 en el dado y cruz en la moneda?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En un sorteo, una persona elige un número entre 1 y ${total_numbers} y lanza un dado de seis caras. ¿Cuál es la probabilidad de que elija el número 3 y obtenga un 5 en el dado?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Se lanzan dos dados de colores diferentes. ¿Cuál es la probabilidad de que uno de ellos muestre un 6 y el otro un número par?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas y una urna con ${total_marbles} canicas (de las cuales ${yellow_marbles} son amarillas), ¿cuál es la probabilidad de sacar una carta de espadas y una canica amarilla?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En un juego, se lanzan tres monedas. ¿Cuál es la probabilidad de que exactamente dos monedas caigan en cara?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Al lanzar dos dados de seis caras, ¿cuál es la probabilidad de obtener un 3 en el primer dado y un número menor que 5 en el segundo?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En un sorteo de números del 1 al ${total_numbers} y al lanzar una moneda, ¿cuál es la probabilidad de elegir el número 7 y obtener cruz?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Se lanzan dos dados. ¿Cuál es la probabilidad de que ambos muestren un número impar?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Al extraer una carta de una baraja de ${total_cards} cartas y lanzar una moneda, ¿cuál es la probabilidad de obtener una carta de picas y cruz en la moneda?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una urna con ${total_marbles} canicas (de las cuales ${blue_marbles} son azules) y en una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de sacar una canica azul y un as?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Se lanzan dos dados y se extrae una carta de una baraja de ${total_cards} cartas. ¿Cuál es la probabilidad de obtener un 4 en el primer dado, un número par en el segundo, y un rey en la carta?",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Calcular la probabilidad de al menos un evento en un experimento con varios resultados posibles",
           "problems": [
-
+            {
+              "statement": "Al lanzar una moneda tres veces, ¿cuál es la probabilidad de obtener al menos una cara?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de sacar al menos un rey en tres extracciones consecutivas sin reemplazo?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Al lanzar un dado, ¿cuál es la probabilidad de obtener al menos un número par en dos lanzamientos?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Se extraen tres canicas de una urna con ${total_marbles} canicas (de las cuales ${red_marbles} son rojas). ¿Cuál es la probabilidad de sacar al menos una canica roja?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Al lanzar dos dados de seis caras, ¿cuál es la probabilidad de que al menos uno de ellos muestre un número mayor que 4?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Se lanzan cuatro monedas. ¿Cuál es la probabilidad de obtener al menos una cruz?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de obtener al menos una carta de corazones en tres extracciones con reemplazo?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Al lanzar tres dados, ¿cuál es la probabilidad de obtener al menos un número impar en los resultados?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una urna con ${green_marbles} canicas verdes y ${blue_marbles} azules, se extraen dos canicas sin reemplazo. ¿Cuál es la probabilidad de que al menos una sea verde?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Se lanzan dos dados y se extrae una carta de una baraja de ${total_cards} cartas. ¿Cuál es la probabilidad de obtener al menos un 5 en los dados o una carta de tréboles?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de obtener al menos un as en dos extracciones consecutivas sin reemplazo?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Al lanzar cinco monedas, ¿cuál es la probabilidad de obtener al menos una cara en todos los lanzamientos?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una bolsa con ${total_marbles} canicas (de las cuales ${red_marbles} son rojas y ${blue_marbles} azules), ¿cuál es la probabilidad de extraer al menos una canica roja en tres intentos con reemplazo?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Se lanzan tres dados de colores distintos. ¿Cuál es la probabilidad de obtener al menos un 6 entre los resultados de los tres dados?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una urna con ${total_marbles} canicas (de las cuales ${yellow_marbles} son amarillas), ¿cuál es la probabilidad de obtener al menos una canica amarilla en cuatro extracciones consecutivas con reemplazo?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Al lanzar cuatro monedas y un dado, ¿cuál es la probabilidad de obtener al menos una cruz en las monedas o un número mayor a 4 en el dado?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, se extraen tres cartas sin reemplazo. ¿Cuál es la probabilidad de obtener al menos una carta de espadas?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Al lanzar dos dados y una moneda, ¿cuál es la probabilidad de obtener al menos un número impar en los dados o cruz en la moneda?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una serie de tres lanzamientos de un dado, ¿cuál es la probabilidad de obtener al menos un número primo?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Al lanzar tres monedas y dos dados, ¿cuál es la probabilidad de obtener al menos una cara o un número par en cualquiera de los dados?",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Determinar la probabilidad de que un evento no ocurra",
           "problems": [
-
+            {
+              "statement": "Al lanzar una moneda una vez, ¿cuál es la probabilidad de que no salga cara?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de que al sacar una carta no sea un as?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Al lanzar un dado de seis caras, ¿cuál es la probabilidad de que no salga un número mayor a 4?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En una urna con ${total_marbles} canicas, de las cuales ${red_marbles} son rojas, ¿cuál es la probabilidad de que al extraer una canica no sea roja?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Al lanzar dos dados, ¿cuál es la probabilidad de que no salga un número par en ambos dados?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En una urna con ${total_marbles} canicas, de las cuales ${green_marbles} son verdes, se extrae una canica. ¿Cuál es la probabilidad de que no sea verde?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Al lanzar tres monedas, ¿cuál es la probabilidad de que no salgan tres caras?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de que al sacar una carta no sea de tréboles?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Al lanzar un dado dos veces, ¿cuál es la probabilidad de que no salga un 6 en ambos lanzamientos?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una urna con ${total_marbles} canicas (de las cuales ${blue_marbles} son azules), ¿cuál es la probabilidad de que al extraer una canica no sea azul?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Se lanzan cuatro monedas. ¿Cuál es la probabilidad de que al menos una de las monedas no salga cara?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, se extraen dos cartas sin reemplazo. ¿Cuál es la probabilidad de que ninguna de las cartas sea un rey?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Al lanzar tres dados, ¿cuál es la probabilidad de que no salga un número mayor a 4 en ninguno de ellos?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una urna con ${total_marbles} canicas (de las cuales ${yellow_marbles} son amarillas), ¿cuál es la probabilidad de que, en dos extracciones consecutivas sin reemplazo, ninguna de las canicas sea amarilla?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Al lanzar dos dados de seis caras, ¿cuál es la probabilidad de que ninguno muestre un número impar?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una bolsa con ${green_marbles} canicas verdes y ${red_marbles} rojas, se extraen tres canicas sin reemplazo. ¿Cuál es la probabilidad de que ninguna de las canicas extraídas sea verde?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Se lanzan cinco monedas. ¿Cuál es la probabilidad de que al menos una moneda no muestre cara?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de que al sacar tres cartas ninguna sea de corazones?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Al lanzar un dado cuatro veces, ¿cuál es la probabilidad de que no salga un número mayor a 4 en ninguno de los lanzamientos?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una urna con ${total_marbles} canicas (de las cuales ${purple_marbles} son moradas), se extraen dos canicas consecutivamente sin reemplazo. ¿Cuál es la probabilidad de que ninguna de las dos sea morada?",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Calcular la probabilidad de la intersección de dos eventos dependientes",
           "problems": [
-
+            {
+              "statement": "En una urna con ${total_marbles} canicas, de las cuales ${red_marbles} son rojas y ${blue_marbles} son azules, se extraen dos canicas sin reemplazo. ¿Cuál es la probabilidad de que ambas canicas sean rojas?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de que al extraer dos cartas sin reemplazo ambas sean ases?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En una bolsa con ${total_balls} bolas, ${white_balls} son blancas y el resto negras. Si se extraen dos bolas sin reemplazo, ¿cuál es la probabilidad de que ambas sean blancas?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En un grupo de ${total_people} personas, ${females} son mujeres y el resto hombres. Si se eligen dos personas sin reemplazo, ¿cuál es la probabilidad de que ambas sean mujeres?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En una urna con ${total_marbles} canicas (de las cuales ${yellow_marbles} son amarillas), se extraen dos canicas sin reemplazo. ¿Cuál es la probabilidad de que ambas canicas extraídas sean amarillas?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En un grupo de ${total_students} estudiantes, ${honor_students} son estudiantes de honor. ¿Cuál es la probabilidad de que al seleccionar dos estudiantes sin reemplazo, ambos sean estudiantes de honor?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de que al extraer dos cartas sin reemplazo la primera sea un rey y la segunda una reina?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una urna con ${total_balls} bolas, ${blue_balls} son azules y ${green_balls} son verdes. Si se extraen dos bolas sin reemplazo, ¿cuál es la probabilidad de que la primera bola sea azul y la segunda verde?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una caja con ${total_items} artículos, ${defective_items} son defectuosos. ¿Cuál es la probabilidad de que, al extraer dos artículos sin reemplazo, ambos sean defectuosos?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En un estante con ${total_books} libros, ${fiction_books} son de ficción. ¿Cuál es la probabilidad de que al seleccionar dos libros sin reemplazo, ambos sean de ficción?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una bolsa con ${red_balls} bolas rojas y ${blue_balls} bolas azules, se extraen tres bolas sin reemplazo. ¿Cuál es la probabilidad de que la primera sea roja, la segunda azul y la tercera roja?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, se extraen tres cartas sin reemplazo. ¿Cuál es la probabilidad de que la primera sea un as, la segunda un rey y la tercera una reina?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una caja con ${total_pieces} piezas, ${defective_pieces} son defectuosas. ¿Cuál es la probabilidad de que al extraer tres piezas sin reemplazo, todas sean defectuosas?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En un conjunto de ${total_tickets} boletos, ${winning_tickets} son ganadores. Si se extraen dos boletos sin reemplazo, ¿cuál es la probabilidad de que ambos sean ganadores?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En un grupo de ${total_students} estudiantes, ${boys} son chicos. Si se seleccionan dos estudiantes sin reemplazo, ¿cuál es la probabilidad de que el primero sea chico y el segundo chica?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de que al extraer dos cartas sin reemplazo, ambas sean del mismo palo?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una caja con ${total_objects} objetos, ${green_objects} son verdes y el resto azules. ¿Cuál es la probabilidad de que al extraer tres objetos sin reemplazo, dos sean verdes y uno azul?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En un conjunto de ${total_numbers} números (de los cuales ${odd_numbers} son impares), se extraen dos números sin reemplazo. ¿Cuál es la probabilidad de que ambos sean impares?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una urna con ${total_marbles} canicas, de las cuales ${green_marbles} son verdes y ${yellow_marbles} son amarillas, se extraen dos canicas sin reemplazo. ¿Cuál es la probabilidad de que la primera sea verde y la segunda amarilla?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de que al extraer dos cartas sin reemplazo la primera sea un corazón y la segunda también?",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Encontrar la probabilidad de un evento dado que otro evento ya ocurrió",
           "problems": [
-
+            {
+              "statement": "En una urna con ${total_balls} bolas, ${red_balls} son rojas y ${blue_balls} son azules. Se ha extraído una bola azul. ¿Cuál es la probabilidad de que la siguiente bola extraída también sea azul?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ${ace_cards} son ases. Si se extrae un as en la primera extracción, ¿cuál es la probabilidad de que al sacar una segunda carta también sea un as?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En un grupo de ${total_people} personas, ${females} son mujeres y el resto hombres. Si se selecciona a una mujer primero, ¿cuál es la probabilidad de que al seleccionar otra persona también sea mujer?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En una bolsa con ${total_balls} bolas, ${green_balls} son verdes y ${yellow_balls} son amarillas. Si se extrae una bola verde primero, ¿cuál es la probabilidad de que la siguiente bola extraída sea amarilla?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En una urna con ${total_marbles} canicas, ${black_marbles} son negras y ${white_marbles} son blancas. Si una canica blanca fue extraída, ¿cuál es la probabilidad de que la siguiente también sea blanca?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En una caja con ${total_items} artículos, ${defective_items} son defectuosos. Si ya se ha extraído un artículo defectuoso, ¿cuál es la probabilidad de que el siguiente también lo sea?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una bolsa de ${total_candies} caramelos, ${red_candies} son rojos y ${green_candies} son verdes. Si se extrajo un caramelo verde, ¿cuál es la probabilidad de que al extraer otro también sea verde?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En un grupo de ${total_students} estudiantes, ${athletes} son atletas. Si ya se seleccionó a un atleta, ¿cuál es la probabilidad de que al seleccionar otro también sea atleta?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En un estante con ${total_books} libros, ${fiction_books} son de ficción. Si se seleccionó un libro de ficción primero, ¿cuál es la probabilidad de que el segundo libro también sea de ficción?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En un grupo de ${total_members} miembros, ${committee_members} pertenecen a un comité. Si ya se seleccionó a un miembro del comité, ¿cuál es la probabilidad de que otro miembro seleccionado también pertenezca al comité?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una urna con ${total_marbles} canicas de diferentes colores, ${blue_marbles} son azules y ${red_marbles} son rojas. Si la primera canica extraída fue azul, ¿cuál es la probabilidad de que la siguiente sea roja?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En un dado justo de ${total_faces} caras numeradas, si ya ha salido el número 3, ¿cuál es la probabilidad de que al lanzar el dado otra vez salga un número par?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una clase de ${total_students} estudiantes, ${honor_students} son de honor y el resto no. Si un estudiante de honor fue seleccionado, ¿cuál es la probabilidad de que el siguiente también sea de honor?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una caja con ${total_tickets} boletos, ${winning_tickets} son ganadores. Si un boleto ganador fue extraído, ¿cuál es la probabilidad de que el próximo también sea ganador?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ${face_cards} son figuras. Si ya se ha extraído una figura, ¿cuál es la probabilidad de que el siguiente también sea una figura?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una urna con ${total_marbles} canicas, de las cuales ${red_marbles} son rojas y el resto verdes, si una canica roja fue extraída primero, ¿cuál es la probabilidad de que la siguiente también sea roja?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En un conjunto de ${total_numbers} números donde ${even_numbers} son pares, si ya ha salido un número par, ¿cuál es la probabilidad de que el siguiente número también sea par?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una caja con ${total_items} artículos, ${electronic_items} son electrónicos y el resto manuales. Si el primer artículo extraído es electrónico, ¿cuál es la probabilidad de que el segundo también lo sea?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En un torneo con ${total_players} jugadores, ${seeded_players} están sembrados. Si el primer jugador elegido es un jugador sembrado, ¿cuál es la probabilidad de que el próximo también sea sembrado?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una bolsa con ${total_marbles} canicas de las cuales ${yellow_marbles} son amarillas, si se ha extraído una amarilla, ¿cuál es la probabilidad de que la siguiente también sea amarilla?",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Calcular la probabilidad de sacar una carta específica de una baraja",
           "problems": [
-
+            {
+              "statement": "En una baraja estándar de ${total_cards} cartas, ¿cuál es la probabilidad de sacar un As de Corazones en la primera extracción?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Si tienes una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de sacar una carta de tréboles?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de sacar un rey de cualquier palo en una sola extracción?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Dado que tienes una baraja completa de ${total_cards} cartas, ¿cuál es la probabilidad de que al extraer una carta, esta sea un corazón?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de sacar una carta de diamantes en una sola extracción?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de sacar un 10 de Picas en la primera extracción?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Si tienes una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de sacar un As en una sola extracción?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de sacar un 7 de corazones?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Dado que tienes una baraja estándar de ${total_cards} cartas, ¿cuál es la probabilidad de sacar una carta de figura (Rey, Reina o Jota) de tréboles?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de sacar una carta de corazones de cualquier número?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Si tienes una baraja completa de ${total_cards} cartas, ¿cuál es la probabilidad de sacar una carta negra en una sola extracción?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Dado que tienes una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de sacar un 2 de cualquier palo?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de sacar una Jota de tréboles o una Jota de picas?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una baraja estándar de ${total_cards} cartas, ¿cuál es la probabilidad de sacar una carta roja de figura (Rey, Reina o Jota)?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de sacar una carta de diamantes numerada entre 2 y 10?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una baraja estándar de ${total_cards} cartas, ¿cuál es la probabilidad de sacar una carta que no sea ni As ni Rey?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Si tienes una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de que al sacar una carta, esta sea un número impar entre 3 y 9?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una baraja estándar de ${total_cards} cartas, ¿cuál es la probabilidad de sacar un número par de tréboles?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Dado que tienes una baraja de ${total_cards} cartas, ¿cuál es la probabilidad de sacar una carta de corazones mayor a 5?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una baraja estándar de ${total_cards} cartas, ¿cuál es la probabilidad de sacar una Reina o un 10 de cualquier palo?",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Calcular la probabilidad de un resultado favorable en un juego de dados",
           "problems": [
-
+            {
+              "statement": "Lanzas un dado de 6 caras. ¿Cuál es la probabilidad de que salga un número par?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Si lanzas un dado de 6 caras, ¿cuál es la probabilidad de que salga un 3?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En un lanzamiento de dado de 6 caras, ¿cuál es la probabilidad de obtener un número menor a 5?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Lanzas un dado de 6 caras. ¿Cuál es la probabilidad de obtener un 1 o un 6?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Si lanzas un dado de 6 caras, ¿cuál es la probabilidad de que salga un número impar?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Lanzas un dado de 6 caras dos veces. ¿Cuál es la probabilidad de obtener un 4 en el primer lanzamiento?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En un juego de dados de 6 caras, ¿cuál es la probabilidad de que en un solo lanzamiento obtengas un número mayor a 4?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Lanzas dos dados de 6 caras. ¿Cuál es la probabilidad de que ambos muestren un número par?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Si lanzas un dado de 6 caras, ¿cuál es la probabilidad de obtener un número que sea múltiplo de 3?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Lanzas un dado de 6 caras dos veces. ¿Cuál es la probabilidad de que en al menos uno de los lanzamientos obtengas un 2?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Lanzas un dado de 6 caras tres veces. ¿Cuál es la probabilidad de obtener un 6 en al menos uno de los lanzamientos?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En un lanzamiento de dos dados de 6 caras, ¿cuál es la probabilidad de que la suma de ambos sea 7?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas dos dados de 6 caras. ¿Cuál es la probabilidad de que la diferencia entre ambos resultados sea 2?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Si lanzas un dado de 6 caras, ¿cuál es la probabilidad de obtener un número mayor a 2 pero menor a 6?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas tres dados de 6 caras. ¿Cuál es la probabilidad de que todos muestren el mismo número?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas un dado de 6 caras. ¿Cuál es la probabilidad de que salga un número primo?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En un juego con dos dados de 6 caras, ¿cuál es la probabilidad de que ambos muestren un número mayor a 3?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas un dado de 6 caras dos veces. ¿Cuál es la probabilidad de que la suma de los dos resultados sea mayor a 8?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas un dado de 6 caras tres veces. ¿Cuál es la probabilidad de obtener un número impar en todos los lanzamientos?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En un lanzamiento de dos dados de 6 caras, ¿cuál es la probabilidad de que la suma sea un número par?",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Determinar la probabilidad de obtener al menos un éxito en una serie de ensayos",
           "problems": [
-
+            {
+              "statement": "Lanzas una moneda 3 veces. ¿Cuál es la probabilidad de obtener al menos una cara?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Lanzas un dado de 6 caras dos veces. ¿Cuál es la probabilidad de obtener al menos un 5?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En un conjunto de 4 lanzamientos de una moneda, ¿cuál es la probabilidad de obtener al menos una cruz?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Lanzas un dado de 6 caras tres veces. ¿Cuál es la probabilidad de obtener al menos un número par?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Realizas 5 lanzamientos de una moneda. ¿Cuál es la probabilidad de obtener al menos una cara?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Lanzas un dado de 6 caras cinco veces. ¿Cuál es la probabilidad de obtener al menos un número mayor que 4?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En un experimento con 4 lanzamientos de un dado de 10 caras, ¿cuál es la probabilidad de obtener al menos un 3?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En 6 lanzamientos de una moneda, ¿cuál es la probabilidad de obtener al menos una cruz?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Lanzas un dado de 8 caras tres veces. ¿Cuál es la probabilidad de obtener al menos un número impar?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Si lanzas una moneda cinco veces, ¿cuál es la probabilidad de obtener al menos una cruz en todos los lanzamientos?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una serie de 8 lanzamientos de una moneda, ¿cuál es la probabilidad de obtener al menos una cara?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas un dado de 12 caras tres veces. ¿Cuál es la probabilidad de obtener al menos un número mayor a 8?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En 5 lanzamientos de un dado de 10 caras, ¿cuál es la probabilidad de obtener al menos un múltiplo de 3?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas un dado de 6 caras siete veces. ¿Cuál es la probabilidad de obtener al menos un 1 o un 6?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Realizas 4 lanzamientos de una moneda sesgada con probabilidad de obtener cara igual a 0.7. ¿Cuál es la probabilidad de obtener al menos una cruz?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas un dado de 8 caras seis veces. ¿Cuál es la probabilidad de obtener al menos un número menor a 3?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En 10 lanzamientos de una moneda, ¿cuál es la probabilidad de obtener al menos una cara?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas un dado de 20 caras cinco veces. ¿Cuál es la probabilidad de obtener al menos un número par?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Realizas 7 lanzamientos de una moneda. ¿Cuál es la probabilidad de obtener al menos una cruz en los lanzamientos?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas un dado de 10 caras ocho veces. ¿Cuál es la probabilidad de obtener al menos un número que sea múltiplo de 5?",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Calcular la probabilidad de un evento que se repite varias veces",
           "problems": [
-
+            {
+              "statement": "Lanzas una moneda 4 veces. ¿Cuál es la probabilidad de que obtengas cara en cada lanzamiento?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Lanzas un dado de 6 caras dos veces. ¿Cuál es la probabilidad de obtener un 3 en ambos lanzamientos?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Lanzas una moneda 3 veces. ¿Cuál es la probabilidad de que todos los lanzamientos resulten en cruz?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Lanzas un dado de 6 caras cuatro veces. ¿Cuál es la probabilidad de que salga un número par en cada lanzamiento?",
+              "difficulty": 0
+            },
+            {
+              "statement": "En 5 lanzamientos de una moneda, ¿cuál es la probabilidad de obtener cara en todos los lanzamientos?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Lanzas un dado de 8 caras tres veces. ¿Cuál es la probabilidad de que salga un 5 en cada uno de los lanzamientos?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En un experimento de 4 lanzamientos de una moneda, ¿cuál es la probabilidad de obtener cruz en cada lanzamiento?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Lanzas un dado de 6 caras cinco veces. ¿Cuál es la probabilidad de obtener un 1 en cada lanzamiento?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Lanzas una moneda 6 veces. ¿Cuál es la probabilidad de obtener cruz en cada lanzamiento?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Lanzas un dado de 4 caras cuatro veces. ¿Cuál es la probabilidad de obtener el número 3 en todos los lanzamientos?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En 7 lanzamientos de una moneda, ¿cuál es la probabilidad de obtener cara en cada uno de los lanzamientos?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas un dado de 10 caras tres veces. ¿Cuál es la probabilidad de obtener el número 8 en cada lanzamiento?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Realizas 8 lanzamientos de una moneda sesgada con probabilidad de cara igual a 0.4. ¿Cuál es la probabilidad de obtener cara en todos los lanzamientos?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas un dado de 12 caras cuatro veces. ¿Cuál es la probabilidad de obtener un número mayor a 10 en todos los lanzamientos?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En 5 lanzamientos de un dado de 20 caras, ¿cuál es la probabilidad de obtener el número 1 en cada lanzamiento?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas una moneda 10 veces. ¿Cuál es la probabilidad de que en cada lanzamiento salga cruz?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En un experimento con 6 lanzamientos de un dado de 6 caras, ¿cuál es la probabilidad de obtener el número 2 en cada lanzamiento?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas un dado de 6 caras cuatro veces. ¿Cuál es la probabilidad de obtener un número impar en cada lanzamiento?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Realizas 6 lanzamientos de una moneda sesgada con probabilidad de cruz igual a 0.3. ¿Cuál es la probabilidad de obtener cruz en todos los lanzamientos?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En un experimento de 5 lanzamientos de un dado de 8 caras, ¿cuál es la probabilidad de que salga un número par en cada lanzamiento?",
+              "difficulty": 2
+            }
           ]
         },
         {
           "type": "Calcular la probabilidad de un evento compuesto en un experimento con múltiples etapas",
           "problems": [
-
+            {
+              "statement": "En una bolsa hay 5 bolas rojas y 3 azules. Tomas una bola al azar, la devuelves y vuelves a tomar otra. ¿Cuál es la probabilidad de obtener una bola roja en ambos intentos?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Lanzas una moneda y luego un dado de 6 caras. ¿Cuál es la probabilidad de obtener cara en la moneda y un número par en el dado?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Una caja contiene 4 caramelos de menta y 6 de chocolate. Tomas un caramelo, lo devuelves y luego tomas otro. ¿Cuál es la probabilidad de que ambos caramelos sean de chocolate?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Lanzas una moneda dos veces. ¿Cuál es la probabilidad de obtener cara en el primer lanzamiento y cruz en el segundo?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Tiras un dado de 4 caras y luego uno de 8 caras. ¿Cuál es la probabilidad de obtener un 3 en ambos lanzamientos?",
+              "difficulty": 0
+            },
+            {
+              "statement": "Lanzas una moneda y luego sacas una carta de una baraja de 52 cartas. ¿Cuál es la probabilidad de obtener cara en la moneda y una carta de corazones?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una urna hay 5 bolas rojas y 7 azules. Tomas dos bolas sin reemplazo. ¿Cuál es la probabilidad de que la primera sea roja y la segunda azul?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Lanzas un dado y luego sacas una carta de una baraja de 52 cartas. ¿Cuál es la probabilidad de obtener un número par en el dado y una carta negra?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Un experimento consiste en lanzar una moneda y un dado. ¿Cuál es la probabilidad de obtener cruz en la moneda y un número mayor a 4 en el dado?",
+              "difficulty": 1
+            },
+            {
+              "statement": "En una caja hay 3 bolas verdes, 2 rojas y 5 azules. Tomas dos bolas sin devolverlas. ¿Cuál es la probabilidad de que ambas sean verdes?",
+              "difficulty": 1
+            },
+            {
+              "statement": "Tiras un dado de 6 caras y luego un dado de 10 caras. ¿Cuál es la probabilidad de obtener un número impar en ambos dados?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una urna hay 6 bolas negras, 4 blancas y 3 rojas. Tomas tres bolas sin reemplazo. ¿Cuál es la probabilidad de obtener una bola de cada color?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas una moneda tres veces. ¿Cuál es la probabilidad de obtener cara en el primer y segundo lanzamiento, y cruz en el tercero?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Sacas una carta de una baraja de 52 cartas, la devuelves y luego lanzas un dado de 8 caras. ¿Cuál es la probabilidad de obtener un as y un número mayor a 5?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una caja hay 8 caramelos de fresa y 5 de menta. Tomas tres caramelos sin reemplazo. ¿Cuál es la probabilidad de que al menos dos sean de fresa?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas un dado de 6 caras dos veces. ¿Cuál es la probabilidad de obtener un 5 en el primer lanzamiento y un número menor a 3 en el segundo?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una urna con 4 bolas rojas, 3 verdes y 5 azules, se extraen tres bolas sin reemplazo. ¿Cuál es la probabilidad de obtener primero una bola roja, luego verde, y finalmente azul?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Lanzas una moneda y luego tiras dos dados de 4 caras. ¿Cuál es la probabilidad de obtener cara en la moneda y un número impar en ambos dados?",
+              "difficulty": 2
+            },
+            {
+              "statement": "Sacas una carta de una baraja de 52 cartas y luego lanzas un dado de 12 caras. ¿Cuál es la probabilidad de obtener un rey y un número menor a 4?",
+              "difficulty": 2
+            },
+            {
+              "statement": "En una caja con 5 bolas rojas, 7 negras y 2 verdes, se extraen dos bolas sin reemplazo. ¿Cuál es la probabilidad de obtener una bola negra y luego una roja?",
+              "difficulty": 2
+            }
           ]
         },
         {
