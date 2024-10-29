@@ -24,4 +24,5 @@
     <color name="buttonEnviarProblemaSeleccionadoColor">#83F1FF</color>
     <color name="radioButtonSelected">#6D056D</color>
     <color name="colorScrollbar">#079DD9</color>
+    <color name="splashBackgroundColor">#050926</color>
 </resources>

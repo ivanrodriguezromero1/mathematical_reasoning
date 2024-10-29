@@ -7,7 +7,11 @@ import android.view.View;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import com.mathematical_reasoning.raz_mat.models.input.MathematicalReasoning;
+import com.mathematical_reasoning.raz_mat.models.input.ProblemType;
 import com.mathematical_reasoning.raz_mat.models.output.ProblemGenerated;
+import com.mathematical_reasoning.raz_mat.utils.FileUtils;
+import com.mathematical_reasoning.raz_mat.utils.ProblemGenerator;
 import com.mathematical_reasoning.raz_mat.utils.RadioButtonManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -23,7 +27,7 @@ import static com.mathematical_reasoning.raz_mat.utils.DialogAlert.showTipDialog
 public class ProblemsActivity extends AppCompatActivity {
 
     private SharedPreferences sharedPreferences;
-    ProblemGenerated problema = new ProblemGenerated();
+    ProblemGenerated problemGenerated;
     boolean isCheckMode = true;
 
     @Override
@@ -65,15 +69,26 @@ public class ProblemsActivity extends AppCompatActivity {
         iconImageView.setImageResource(iconResource);
         titleTextView.setText(title);
 
+        MathematicalReasoning reasoning = FileUtils.readJsonFromRaw(this, R.raw.mathematical_reasoning);
+
         // Generar y mostrar el enunciado dinámico de series
+        problemGenerated = ProblemGenerator.generateProblem(reasoning.getTopics().get(currentPosition).getProblemTypes().get(0).getProblems().get(0));
+        List<String> problemTypeList = new ArrayList<>();
+        List<ProblemType> problemTypes = reasoning.getTopics().get(currentPosition).getProblemTypes();
 
-        if (currentPosition == 0) {
-            problema = ProblemSucesionesFactory.createProblemSucesionesSeries(this, dificultad);
-            problemStatement.setText(problema.getStatement());
-            precalculate.setText(problema.getPrecalculate());
-            RadioButtonManager.setupRadioButtons(this, answersRadioGroup, problema.getAlternatives());
+        int maxProblems = Math.min(20, problemTypes.size());
 
+        for (int i = 0; i < maxProblems; i++) {
+            problemTypeList.add(problemTypes.get(i).getType());
         }
+
+
+        // Asignar el valor por defecto para el botón de tipo de problema (el primer elemento de la lista)
+        textViewSelectTipoProblema.setText(problemTypeList.get(0));
+        problemStatement.setText(problemGenerated.getStatement());
+        precalculate.setText(problemGenerated.getPrecalculate());
+
+//        RadioButtonManager.setupRadioButtons(this, answersRadioGroup, problemGenerated.getAlternatives());
 
         iconHome.setColorFilter(Color.WHITE);
         textHome.setTextColor(Color.WHITE);
@@ -108,14 +123,14 @@ public class ProblemsActivity extends AppCompatActivity {
 
         // Acción filtro
         btnTachar.setOnClickListener(v -> {
-            int correctAnswerIndex = problema.getCorrectKeyIndex();  // Índice de la respuesta correcta
-            RadioButtonManager.disableTwoIncorrectOptions(answersRadioGroup, problema.getAlternatives(), correctAnswerIndex);
+            int correctAnswerIndex = problemGenerated.getCorrectKeyIndex();  // Índice de la respuesta correcta
+            RadioButtonManager.disableTwoIncorrectOptions(answersRadioGroup, problemGenerated.getAlternatives(), correctAnswerIndex);
             btnTachar.setEnabled(false);
             btnTachar.setAlpha(0.5f);
         });
         // Acción tips
         btnTips.setOnClickListener(v -> {
-            showTipDialog(this, problema.getTip());
+            showTipDialog(this, problemGenerated.getTip());
         });
 
         // Acción de comprobar respuesta
@@ -137,7 +152,7 @@ public class ProblemsActivity extends AppCompatActivity {
                 String selectedText = selectedRadioButton.getText().toString();
 
                 // Comprobar si la respuesta es correcta
-                if (selectedText.equals(problema.getAlternatives().get(problema.getCorrectKeyIndex()))) {
+                if (selectedText.equals(problemGenerated.getAlternatives().get(problemGenerated.getCorrectKeyIndex()))) {
                     // Mostrar imagen de correcto
                     ImageView resultIcon = findViewById(R.id.answerResultImage);
                     resultIcon.setImageResource(R.drawable.image_correct);
@@ -173,7 +188,7 @@ public class ProblemsActivity extends AppCompatActivity {
             } else {
                 // Estado "Ver solución"
                 Intent solutionIntent = new Intent(ProblemsActivity.this, SolutionActivity.class);
-                solutionIntent.putExtra("solution", problema.getSolution());
+                solutionIntent.putExtra("solution", problemGenerated.getSolution());
                 startActivity(solutionIntent);
                 overridePendingTransition(R.anim.slide_in_top, R.anim.slide_out_bottom);
             }
@@ -197,9 +212,9 @@ public class ProblemsActivity extends AppCompatActivity {
                 @Override
                 public void onAnimationEnd(Animation animation) {
                     // Generar un nuevo problema (nueva página)
-                    problema = ProblemSucesionesFactory.createProblemSucesionesSeries(ProblemsActivity.this, dificultad);
-                    problemStatement.setText(problema.getStatement());
-                    precalculate.setText(problema.getPrecalculate());
+                    problemGenerated = ProblemSucesionesFactory.createProblemSucesionesSeries(ProblemsActivity.this, dificultad);
+                    problemStatement.setText(problemGenerated.getStatement());
+                    precalculate.setText(problemGenerated.getPrecalculate());
                     precalculate.setVisibility(View.GONE);
                     btnTachar.setEnabled(true);
                     btnTachar.setAlpha(1f);
@@ -216,7 +231,7 @@ public class ProblemsActivity extends AppCompatActivity {
                     resultIcon.setVisibility(View.GONE);
                     TextView btnComprobarText = btnComprobar.findViewById(R.id.comprobarText);
                     btnComprobarText.setText(getString(R.string.button_comprobar));
-                    RadioButtonManager.setupRadioButtons(ProblemsActivity.this, answersRadioGroup, problema.getAlternatives());
+                    RadioButtonManager.setupRadioButtons(ProblemsActivity.this, answersRadioGroup, problemGenerated.getAlternatives());
 
                     // Animación de entrada (nueva página)
                     Animation rotateIn = AnimationUtils.loadAnimation(ProblemsActivity.this, R.anim.rotate_page_in);
@@ -247,19 +262,9 @@ public class ProblemsActivity extends AppCompatActivity {
         opcionesDificultad.add(getString(R.string.options_normal));
         opcionesDificultad.add(getString(R.string.options_hard));
         // Opciones de tipo de problema
-        List<String> opcionesTipoProblema = new ArrayList<>();
-        opcionesTipoProblema.add("Encontrar el término enésimo para una sucesión aritmética de primer grado");
-        opcionesTipoProblema.add("Encontrar el término enésimo para una sucesión aritmética de segundo grado");
-        opcionesTipoProblema.add("Encontrar el término enésimo para una sucesión aritmética de tercer grado");
-        opcionesTipoProblema.add("Encontrar la suma de los primeros n términos de una sucesión aritmética de primer grado");
-        opcionesTipoProblema.add("Encontrar la suma de los primeros n términos de una sucesión aritmética de segundo grado");
-        opcionesTipoProblema.add("Encontrar la suma de los primeros n términos de una sucesión aritmética de tercer grado");
 
         // Asignar el valor por defecto para el botón de dificultad (Fácil)
         textViewSelectDificultad.setText(opcionesDificultad.get(0));
-
-        // Asignar el valor por defecto para el botón de tipo de problema (el primer elemento de la lista)
-        textViewSelectTipoProblema.setText(opcionesTipoProblema.get(0));
 
         // Listener para el botón de dificultad
         btnSelectDificultad.setOnClickListener(v -> {
@@ -268,7 +273,7 @@ public class ProblemsActivity extends AppCompatActivity {
 
         // Listener para el botón de tipo de problema
         btnSelectTipoProblema.setOnClickListener(v -> {
-            showSelectorDialog(this, labelTipoProblema, opcionesTipoProblema, textViewSelectTipoProblema, 1, dificultad, selectedOptionIndex);
+            showSelectorDialog(this, labelTipoProblema, problemTypeList, textViewSelectTipoProblema, 1, dificultad, selectedOptionIndex);
         });
     }
 

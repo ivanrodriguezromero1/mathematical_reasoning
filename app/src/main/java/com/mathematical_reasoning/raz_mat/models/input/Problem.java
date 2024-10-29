@@ -10,7 +10,7 @@ public class Problem {
     private int difficulty;
     private List<Variable> variables;
     private String tip;
-    private String precalculate;
+    private List<String> preview;
     private String answer;
     @JsonProperty("step_by_step_solution")
     private List<String> stepByStepSolution;

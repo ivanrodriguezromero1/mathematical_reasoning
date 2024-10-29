@@ -7,6 +7,8 @@ import java.util.List;
 @Data
 public class Topic {
     private String title;
+    @JsonProperty("icon_name")
+    private String iconName;
     private String theory;
     @JsonProperty("types_of_problems")
     private List<ProblemType> problemTypes;

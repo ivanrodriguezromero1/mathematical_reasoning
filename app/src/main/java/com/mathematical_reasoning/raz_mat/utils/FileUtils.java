@@ -37,8 +37,8 @@ public class FileUtils {
         try {
             InputStream inputStream = context.getResources().openRawResource(resourceId);
             reasoning = objectMapper.readValue(inputStream, MathematicalReasoning.class);
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
 
         return reasoning;

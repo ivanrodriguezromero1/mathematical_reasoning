@@ -41,5 +41,5 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.28'
     implementation 'com.fasterxml.jackson.core:jackson-core:2.13.5'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.5'
-
+    implementation 'net.objecthunter:exp4j:0.4.8'
 }

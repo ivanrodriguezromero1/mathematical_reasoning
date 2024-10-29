@@ -35,6 +35,7 @@
     <string name="selecciona_opcion">Por favor, selecciona una opción.</string>
     <string name="tachar_text">Tachar</string>
     <string name="tip_text">Consejo</string>
-    <string name="precalculate_text">Precalcular</string>
+    <string name="precalculate_text">Avance</string>
     <string name="send_problem_text">Enviar</string>
+    <string name="logo_description">Logo de Razona</string>
 </resources>
