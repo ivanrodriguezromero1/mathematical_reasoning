@@ -2,10 +2,12 @@ package com.mathematical_reasoning.raz_mat.models.input;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
+
+import java.io.Serializable;
 import java.util.List;
 
 @Data
-public class Problem {
+public class Problem implements Serializable {
     private String statement;
     private int difficulty;
     private List<Variable> variables;
