@@ -12482,97 +12482,1361 @@
         {
           "type": "Determinar cuántos elementos están en orden inverso en una lista",
           "problems": [
-
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos están en orden inverso?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos de ellos están en orden inverso?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos se encuentran en orden inverso?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, ¿cuántos de ellos están en un orden completamente inverso?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si se tiene una lista de ${n} elementos, ¿cuántos de ellos están dispuestos en orden inverso?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos de ellos están correctamente en orden inverso?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos se encuentran en el orden opuesto al esperado?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, si al menos ${m} de ellos deben estar en orden inverso, ¿cuántos realmente lo están?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos están en orden inverso si al menos ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos de ellos están en orden inverso si al menos ${m} deben estarlo?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, si al menos ${m} deben estar en orden inverso, ¿cuántos lo están realmente?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos de ellos están en orden inverso si al menos ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos están en orden inverso si al menos ${m} deben estarlo para cumplir la condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos están en orden inverso si más de ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos de ellos están en orden inverso tras eliminar ${removed_elements} elementos no invertidos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos están en orden inverso tras eliminar ${removed_elements} elementos incorrectamente ordenados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos están en orden inverso tras eliminar ${removed_elements} elementos no invertidos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos están en orden inverso si se eliminan ${removed_elements} elementos no correctamente ordenados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos de ellos están en orden inverso tras eliminar la mitad de los elementos no invertidos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos están en orden inverso tras eliminar la mitad de los elementos no correctamente ordenados?",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular el número de elementos que deben moverse para lograr el orden correcto",
           "problems": [
-
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos deben moverse para lograr el orden correcto?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos deben moverse para ordenarla completamente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos elementos deben moverse para que quede bien ordenada?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, ¿cuántos deben moverse para lograr un orden correcto?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si se tiene una lista de ${n} elementos, ¿cuántos elementos deben moverse para ordenarla correctamente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos deben moverse para que la lista esté completamente ordenada?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos deben moverse para alcanzar el orden correcto?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, si al menos ${m} deben moverse para lograr el orden correcto, ¿cuántos movimientos en total son necesarios?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos deben moverse para ordenarla si al menos ${m} movimientos son requeridos?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos deben moverse para ordenarla si al menos ${m} deben cumplirse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, si al menos ${m} deben moverse para ordenarla, ¿cuántos movimientos en total se requieren?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos deben moverse para ordenarla si al menos ${m} movimientos deben realizarse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos movimientos son necesarios para ordenarla si al menos ${m} deben realizarse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos movimientos se requieren si más de ${m} elementos deben moverse para el orden correcto?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos deben moverse para ordenarla tras eliminar ${removed_moves} movimientos innecesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos deben moverse para lograr el orden correcto tras eliminar ${removed_moves} movimientos incorrectos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos deben moverse para ordenarla tras eliminar ${removed_moves} movimientos innecesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos deben moverse para lograr el orden correcto si se eliminan ${removed_moves} movimientos incorrectos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos deben moverse para ordenarla tras eliminar la mitad de los movimientos innecesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos deben moverse para lograr el orden correcto tras eliminar la mitad de los movimientos incorrectos?",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Encontrar la cantidad de comparaciones necesarias para ordenar una lista de elementos",
           "problems": [
-
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántas comparaciones son necesarias para ordenarla completamente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos desordenados, ¿cuántas comparaciones se necesitan para ordenarla?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántas comparaciones se requieren para ordenarla por completo?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, ¿cuántas comparaciones son necesarias para ordenarla de forma ascendente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si se tiene una lista de ${n} elementos, ¿cuántas comparaciones se necesitan para lograr el orden correcto?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos desordenados, ¿cuántas comparaciones son necesarias para ordenarla de manera ascendente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántas comparaciones se requieren para que quede completamente ordenada?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, si al menos ${m} comparaciones son obligatorias para ordenarla, ¿cuántas comparaciones en total se necesitan?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántas comparaciones son necesarias para ordenarla si al menos ${m} comparaciones son requeridas?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántas comparaciones se requieren para ordenarla si al menos ${m} deben cumplirse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, si al menos ${m} comparaciones son necesarias para ordenarla, ¿cuántas en total se necesitan?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántas comparaciones son necesarias para ordenarla si al menos ${m} deben realizarse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántas comparaciones son necesarias para ordenarla si al menos ${m} deben cumplirse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántas comparaciones se requieren si más de ${m} deben realizarse para el orden correcto?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántas comparaciones son necesarias para ordenarla tras eliminar ${removed_comparisons} comparaciones redundantes?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántas comparaciones se necesitan para ordenarla tras eliminar ${removed_comparisons} comparaciones no necesarias?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántas comparaciones son necesarias para ordenarla tras eliminar ${removed_comparisons} comparaciones redundantes?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántas comparaciones se requieren para ordenarla si se eliminan ${removed_comparisons} comparaciones innecesarias?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántas comparaciones son necesarias para ordenarla tras eliminar la mitad de las comparaciones no necesarias?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántas comparaciones son necesarias para ordenarla tras eliminar la mitad de las comparaciones redundantes?",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular la cantidad de elementos fuera de posición en una secuencia desordenada",
           "problems": [
-
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos están fuera de posición?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos de ellos no están en la posición correcta?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos están desordenados?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia con ${n} elementos, ¿cuántos se encuentran fuera de la posición correcta?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si se tiene una secuencia de ${n} elementos, ¿cuántos de ellos están desordenados?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos están fuera de su posición original?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos no están en el lugar correcto?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, si al menos ${m} deben estar fuera de posición, ¿cuántos realmente lo están?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos de ellos están desordenados si al menos ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos están fuera de posición si al menos ${m} deben estarlo?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una secuencia con ${n} elementos, si al menos ${m} deben estar fuera de posición, ¿cuántos realmente lo están?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos están fuera de posición si al menos ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos están desordenados si al menos ${m} deben estarlo para cumplir la condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos están fuera de posición si más de ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos están fuera de posición tras eliminar ${removed_elements} elementos correctamente ordenados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos están fuera de posición tras eliminar ${removed_elements} elementos en el lugar correcto?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos están fuera de posición tras eliminar ${removed_elements} elementos correctamente ordenados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos están desordenados si se eliminan ${removed_elements} elementos en el lugar correcto?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos están fuera de posición tras eliminar la mitad de los elementos correctamente ordenados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos están desordenados tras eliminar la mitad de los elementos en el lugar correcto?",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Determinar cuántos elementos deben ser intercambiados para obtener un orden específico",
           "problems": [
-
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos intercambios son necesarios para obtener el orden específico?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos desordenados, ¿cuántos intercambios se necesitan para llegar al orden específico?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos intercambios son necesarios para alcanzar el orden específico?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, ¿cuántos intercambios se requieren para obtener el orden requerido?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si se tiene una lista de ${n} elementos, ¿cuántos intercambios son necesarios para lograr el orden deseado?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos intercambios se necesitan para obtener el orden específico requerido?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos intercambios son necesarios para que esté completamente en el orden específico?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, si al menos ${m} intercambios son obligatorios para lograr el orden específico, ¿cuántos intercambios en total son necesarios?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos intercambios son necesarios para obtener el orden requerido si al menos ${m} intercambios son requeridos?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos intercambios se necesitan para obtener el orden específico si al menos ${m} deben realizarse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, si al menos ${m} intercambios son necesarios para lograr el orden específico, ¿cuántos intercambios en total se requieren?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos intercambios son necesarios para obtener el orden deseado si al menos ${m} deben realizarse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos intercambios son necesarios para obtener el orden requerido si al menos ${m} deben cumplirse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos intercambios son necesarios si más de ${m} deben realizarse para obtener el orden específico?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos intercambios son necesarios para lograr el orden requerido tras eliminar ${removed_swaps} intercambios innecesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos intercambios son necesarios para obtener el orden específico tras eliminar ${removed_swaps} intercambios no necesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos intercambios son necesarios para obtener el orden requerido tras eliminar ${removed_swaps} intercambios innecesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos intercambios son necesarios para lograr el orden específico si se eliminan ${removed_swaps} intercambios incorrectos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos intercambios son necesarios para lograr el orden requerido tras eliminar la mitad de los intercambios no necesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos intercambios son necesarios para obtener el orden específico tras eliminar la mitad de los intercambios innecesarios?",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular la cantidad de subgrupos ordenados en una lista más grande",
           "problems": [
-
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos subgrupos ordenados hay?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos subgrupos están completamente ordenados?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos subgrupos de la lista están ordenados?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, ¿cuántos subgrupos ordenados pueden identificarse?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si se tiene una lista de ${n} elementos, ¿cuántos subgrupos están correctamente ordenados?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos subgrupos ordenados hay en total?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos subgrupos están en orden ascendente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, si al menos ${m} subgrupos deben estar ordenados, ¿cuántos realmente lo están?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos subgrupos están ordenados si al menos ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos subgrupos están en orden si al menos ${m} deben estarlo?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, si al menos ${m} subgrupos deben estar ordenados, ¿cuántos realmente lo están?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos subgrupos ordenados hay si al menos ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos subgrupos están en orden si al menos ${m} deben estarlo para cumplir la condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos subgrupos están ordenados si más de ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos subgrupos ordenados hay tras eliminar ${removed_subgroups} subgrupos desordenados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos subgrupos están ordenados tras eliminar ${removed_subgroups} subgrupos incorrectos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos subgrupos ordenados hay tras eliminar ${removed_subgroups} subgrupos desordenados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos subgrupos están ordenados si se eliminan ${removed_subgroups} subgrupos desordenados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos subgrupos ordenados hay tras eliminar la mitad de los subgrupos desordenados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos subgrupos ordenados hay tras eliminar la mitad de los subgrupos incorrectos?",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Encontrar el número de pasos requeridos para reorganizar elementos en orden creciente",
           "problems": [
-
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos pasos se requieren para reorganizarla en orden creciente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos desordenados, ¿cuántos pasos son necesarios para ordenarla de manera ascendente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos pasos se requieren para reorganizarla completamente en orden creciente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, ¿cuántos pasos son necesarios para ordenarla en orden creciente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si se tiene una lista de ${n} elementos, ¿cuántos pasos se necesitan para lograr el orden ascendente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos desordenados, ¿cuántos pasos son necesarios para obtener un orden creciente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos pasos se requieren para alcanzar un orden completamente creciente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, si al menos ${m} pasos son necesarios para lograr un orden creciente, ¿cuántos pasos en total se requieren?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos pasos se necesitan para ordenarla en orden creciente si al menos ${m} deben realizarse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos pasos son necesarios para reorganizarla en orden creciente si al menos ${m} deben cumplirse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, si al menos ${m} pasos son obligatorios para ordenarla en forma ascendente, ¿cuántos pasos en total se necesitan?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos pasos son necesarios para obtener un orden creciente si al menos ${m} deben realizarse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos pasos son necesarios para ordenarla en orden creciente si al menos ${m} deben cumplirse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos pasos se requieren si más de ${m} deben realizarse para obtener un orden completamente creciente?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos pasos son necesarios para lograr el orden ascendente tras eliminar ${removed_steps} pasos innecesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos pasos se necesitan para lograr un orden creciente tras eliminar ${removed_steps} pasos no requeridos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos pasos son necesarios para obtener un orden ascendente tras eliminar ${removed_steps} pasos innecesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos pasos se requieren para obtener un orden creciente si se eliminan ${removed_steps} pasos incorrectos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos pasos son necesarios para lograr el orden ascendente tras eliminar la mitad de los pasos no necesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos pasos son necesarios para obtener un orden creciente tras eliminar la mitad de los pasos innecesarios?",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular la cantidad de elementos que permanecen en su posición original después de un ordenamiento",
           "problems": [
-
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos permanecen en su posición original después de un ordenamiento?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos desordenados, ¿cuántos se mantienen en su posición original después del ordenamiento?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos no cambian de posición tras ordenarla completamente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, ¿cuántos permanecen en su lugar original después del ordenamiento?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si se tiene una lista de ${n} elementos, ¿cuántos de ellos permanecen en su posición original después de ser ordenados?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos desordenados, ¿cuántos mantienen su posición tras el ordenamiento?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos están en su lugar original después de un ordenamiento?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, si al menos ${m} deben permanecer en su posición original después de un ordenamiento, ¿cuántos realmente lo hacen?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos se mantienen en su lugar tras el ordenamiento si al menos ${m} deben hacerlo?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos permanecen en su posición original si al menos ${m} deben hacerlo?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, si al menos ${m} deben permanecer en su lugar original, ¿cuántos realmente lo hacen después del ordenamiento?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos permanecen en su lugar tras el ordenamiento si al menos ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos mantienen su posición original si al menos ${m} deben hacerlo para cumplir la condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos permanecen en su lugar original si más de ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos se mantienen en su lugar original tras eliminar ${removed_elements} elementos que no lo cumplen?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos permanecen en su posición tras eliminar ${removed_elements} elementos desordenados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos se mantienen en su posición original tras eliminar ${removed_elements} elementos que no lo cumplen?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos permanecen en su lugar original si se eliminan ${removed_elements} elementos incorrectamente posicionados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos permanecen en su lugar tras eliminar la mitad de los elementos desordenados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos se mantienen en su posición original tras eliminar la mitad de los elementos incorrectamente posicionados?",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Determinar la cantidad de pasos para ordenar una secuencia de elementos en orden decreciente",
           "problems": [
-
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos pasos se requieren para ordenarla en orden decreciente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos desordenados, ¿cuántos pasos son necesarios para ordenarla de manera decreciente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos pasos se requieren para reorganizarla completamente en orden decreciente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia con ${n} elementos, ¿cuántos pasos son necesarios para obtener un orden completamente decreciente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si se tiene una secuencia de ${n} elementos, ¿cuántos pasos se necesitan para lograr el orden decreciente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos desordenados, ¿cuántos pasos son necesarios para obtener un orden decreciente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos pasos se requieren para alcanzar un orden completamente decreciente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, si al menos ${m} pasos son necesarios para lograr un orden decreciente, ¿cuántos pasos en total se requieren?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos pasos se necesitan para ordenarla en orden decreciente si al menos ${m} deben realizarse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para reorganizarla en orden decreciente si al menos ${m} deben cumplirse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una secuencia con ${n} elementos, si al menos ${m} pasos son obligatorios para ordenarla en forma decreciente, ¿cuántos pasos en total se necesitan?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para obtener un orden decreciente si al menos ${m} deben realizarse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para ordenarla en orden decreciente si al menos ${m} deben cumplirse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos pasos se requieren si más de ${m} deben realizarse para obtener un orden completamente decreciente?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para lograr el orden decreciente tras eliminar ${removed_steps} pasos innecesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos pasos se necesitan para lograr un orden decreciente tras eliminar ${removed_steps} pasos no requeridos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para obtener un orden decreciente tras eliminar ${removed_steps} pasos innecesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos pasos se requieren para obtener un orden decreciente si se eliminan ${removed_steps} pasos incorrectos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para lograr el orden decreciente tras eliminar la mitad de los pasos no necesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para obtener un orden decreciente tras eliminar la mitad de los pasos innecesarios?",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular la cantidad de pares de elementos fuera de orden en una lista desordenada",
           "problems": [
-
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos pares de elementos están fuera de orden?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos desordenados, ¿cuántos pares de elementos están en orden incorrecto?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos pares de elementos no están en el orden correcto?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, ¿cuántos pares se encuentran fuera de orden?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si se tiene una lista de ${n} elementos, ¿cuántos pares de elementos están desordenados?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos desordenados, ¿cuántos pares de elementos no siguen el orden correcto?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos pares están fuera de orden?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, si al menos ${m} pares deben estar fuera de orden, ¿cuántos realmente lo están?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos pares están desordenados si al menos ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos pares están fuera de orden si al menos ${m} deben estarlo?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, si al menos ${m} pares deben estar desordenados, ¿cuántos realmente lo están?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos pares están fuera de orden si al menos ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos pares están desordenados si al menos ${m} deben estarlo para cumplir la condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos pares están fuera de orden si más de ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos pares están fuera de orden tras eliminar ${removed_pairs} pares correctamente ordenados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos pares están fuera de orden tras eliminar ${removed_pairs} pares en el lugar correcto?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos pares están fuera de orden tras eliminar ${removed_pairs} pares correctamente ordenados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos pares están desordenados si se eliminan ${removed_pairs} pares en el lugar correcto?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos pares están fuera de orden tras eliminar la mitad de los pares correctamente ordenados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos pares están desordenados tras eliminar la mitad de los pares en el lugar correcto?",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Encontrar el número de pasos para ordenar una secuencia utilizando un algoritmo dado",
           "problems": [
-
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos pasos se requieren para ordenarla utilizando el algoritmo de selección?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para ordenarla utilizando el algoritmo de burbuja?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos pasos se requieren para ordenarla con el algoritmo de inserción?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia con ${n} elementos, ¿cuántos pasos se necesitan para ordenarla utilizando el algoritmo de mezcla?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para ordenarla utilizando el algoritmo rápido?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si se tiene una secuencia de ${n} elementos, ¿cuántos pasos se requieren para ordenarla utilizando el algoritmo de burbuja optimizada?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para ordenarla utilizando el algoritmo de inserción directa?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, si al menos ${m} pasos son necesarios para ordenarla con el algoritmo de selección, ¿cuántos pasos en total se requieren?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos pasos se necesitan para ordenarla con el algoritmo de mezcla si al menos ${m} deben realizarse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para ordenarla utilizando el algoritmo de inserción si al menos ${m} deben cumplirse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una secuencia con ${n} elementos, si al menos ${m} pasos son necesarios para ordenarla con el algoritmo rápido, ¿cuántos pasos en total se requieren?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para ordenarla con el algoritmo de burbuja si al menos ${m} deben realizarse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para ordenarla utilizando el algoritmo de selección si al menos ${m} deben cumplirse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos pasos se requieren si más de ${m} deben realizarse para ordenarla con el algoritmo de inserción?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para ordenarla utilizando el algoritmo rápido tras eliminar ${removed_steps} pasos innecesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos pasos se necesitan para ordenarla con el algoritmo de mezcla tras eliminar ${removed_steps} pasos no requeridos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para ordenarla utilizando el algoritmo de inserción tras eliminar ${removed_steps} pasos innecesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos pasos se requieren para ordenarla utilizando el algoritmo de burbuja si se eliminan ${removed_steps} pasos incorrectos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para ordenarla con el algoritmo de selección tras eliminar la mitad de los pasos no necesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos pasos son necesarios para ordenarla utilizando el algoritmo rápido tras eliminar la mitad de los pasos innecesarios?",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular la cantidad de elementos que deben ser agregados para completar un orden parcial",
           "problems": [
-
+            {
+              "statement": "En una secuencia de ${n} elementos parcialmente ordenada, ¿cuántos elementos deben ser agregados para completar el orden?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos con orden parcial, ¿cuántos elementos adicionales se necesitan para completarlo?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos que no está completamente ordenada, ¿cuántos elementos deben ser agregados para lograr el orden total?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia con ${n} elementos parcialmente ordenada, ¿cuántos elementos nuevos deben añadirse para completar el orden?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si se tiene una lista de ${n} elementos con un orden parcial, ¿cuántos elementos más se necesitan para completarlo?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos elementos adicionales deben agregarse para obtener un orden completo?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos con orden parcial, ¿cuántos elementos faltantes deben añadirse para completar el orden?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, si al menos ${m} elementos deben agregarse para completar el orden, ¿cuántos elementos en total se necesitan?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos con un orden parcial, ¿cuántos elementos deben agregarse si al menos ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos elementos faltantes deben añadirse si al menos ${m} deben agregarse para completar el orden?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una secuencia con ${n} elementos, si al menos ${m} elementos deben añadirse para completar el orden, ¿cuántos elementos faltantes hay en total?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos elementos deben agregarse para completar el orden si al menos ${m} deben añadirse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos con un orden parcial, ¿cuántos elementos más deben añadirse si al menos ${m} deben agregarse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista de ${n} elementos con orden parcial, ¿cuántos elementos deben añadirse si más de ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos elementos deben añadirse para completar el orden tras eliminar ${removed_elements} elementos adicionales?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos elementos más deben añadirse tras eliminar ${removed_elements} elementos incorrectos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos elementos faltantes deben agregarse tras eliminar ${removed_elements} elementos no requeridos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos con orden parcial, ¿cuántos elementos deben añadirse si se eliminan ${removed_elements} elementos innecesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos elementos deben añadirse para completar el orden tras eliminar la mitad de los elementos adicionales?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos con un orden parcial, ¿cuántos elementos faltantes deben añadirse tras eliminar la mitad de los elementos no requeridos?",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Determinar el número de movimientos mínimos para ordenar una secuencia",
           "problems": [
-
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos movimientos mínimos se requieren para ordenarla completamente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos desordenados, ¿cuántos movimientos mínimos son necesarios para obtener un orden completo?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos movimientos mínimos se necesitan para ordenarla de forma ascendente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, ¿cuántos movimientos mínimos son requeridos para lograr un orden correcto?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si se tiene una secuencia de ${n} elementos, ¿cuántos movimientos mínimos se requieren para alcanzar un orden completamente ascendente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos desordenados, ¿cuántos movimientos mínimos son necesarios para lograr un orden ascendente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos movimientos mínimos se necesitan para alcanzar un orden creciente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, si al menos ${m} movimientos deben realizarse para lograr el orden, ¿cuántos movimientos mínimos se requieren?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos movimientos mínimos se necesitan si al menos ${m} deben cumplirse para lograr el orden?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos movimientos mínimos son necesarios si al menos ${m} movimientos deben realizarse para alcanzar el orden correcto?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, si al menos ${m} movimientos son necesarios para el orden completo, ¿cuántos movimientos mínimos en total se requieren?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos movimientos mínimos son requeridos para ordenarla si al menos ${m} deben realizarse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos movimientos mínimos son necesarios si al menos ${m} deben cumplirse para alcanzar el orden completo?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos movimientos mínimos se requieren si más de ${m} deben realizarse para lograr el orden correcto?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos movimientos mínimos se requieren tras eliminar ${removed_moves} movimientos innecesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos movimientos mínimos se necesitan tras eliminar ${removed_moves} movimientos no requeridos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos movimientos mínimos son necesarios tras eliminar ${removed_moves} movimientos innecesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos movimientos mínimos se requieren si se eliminan ${removed_moves} movimientos incorrectos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos movimientos mínimos se requieren tras eliminar la mitad de los movimientos no necesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos movimientos mínimos son necesarios tras eliminar la mitad de los movimientos innecesarios?",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular la cantidad de elementos que cumplen un criterio específico de orden",
           "problems": [
-
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos cumplen con el criterio de estar en orden ascendente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos de ellos cumplen el criterio de estar en la primera mitad de un orden ascendente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos cumplen el criterio de estar en las primeras posiciones de un orden decreciente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia con ${n} elementos, ¿cuántos cumplen el criterio de ser múltiplos de un número dado en un orden ascendente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si se tiene una lista de ${n} elementos, ¿cuántos cumplen el criterio de ser números pares en un orden ascendente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos cumplen el criterio de estar en la última mitad de un orden ascendente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos cumplen con el criterio de ser números impares en un orden decreciente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, si al menos ${m} deben cumplir el criterio de ser números primos en un orden ascendente, ¿cuántos lo hacen en total?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos cumplen el criterio de ser números mayores que ${threshold} en un orden decreciente?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos cumplen el criterio de estar en posiciones pares en un orden ascendente?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, ¿cuántos cumplen el criterio de ser múltiplos de ${multiplier} en un orden decreciente?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos cumplen el criterio de ser mayores que ${threshold} en un orden ascendente?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una lista de ${n} elementos, ¿cuántos cumplen el criterio de estar en la última posición de un orden ascendente?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos cumplen el criterio de ser menores que ${threshold} en un orden decreciente?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos cumplen el criterio tras eliminar ${removed_elements} elementos que no lo cumplen?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos cumplen el criterio tras eliminar ${removed_elements} elementos incorrectos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos cumplen el criterio tras eliminar ${removed_elements} elementos no requeridos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos cumplen el criterio si se eliminan ${removed_elements} elementos que no lo cumplen?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos cumplen el criterio tras eliminar la mitad de los elementos incorrectos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos cumplen el criterio tras eliminar la mitad de los elementos que no lo cumplen?",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Encontrar la cantidad de elementos mal ubicados en un ordenamiento casi correcto",
           "problems": [
-
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos están mal ubicados en un ordenamiento casi correcto?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos que está casi ordenada, ¿cuántos elementos están en la posición incorrecta?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos con un orden casi completo, ¿cuántos están mal ubicados?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, ¿cuántos no están en su posición correcta en un ordenamiento casi correcto?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si se tiene una secuencia de ${n} elementos casi ordenada, ¿cuántos de ellos están en la posición incorrecta?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos están mal ubicados en un orden casi completo?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos están fuera de lugar en un orden casi correcto?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, si al menos ${m} elementos están mal ubicados en un ordenamiento casi correcto, ¿cuántos lo están en total?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos casi ordenada, ¿cuántos están mal ubicados si al menos ${m} deben cumplir esta condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos con un orden casi completo, ¿cuántos elementos están mal ubicados si al menos ${m} deben cumplir la condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista con ${n} elementos, si al menos ${m} están en la posición incorrecta en un orden casi completo, ¿cuántos lo están realmente?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos están mal ubicados si al menos ${m} deben cumplir la condición?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos casi ordenada, ¿cuántos están mal ubicados si al menos ${m} deben estar en posición incorrecta?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos están fuera de lugar si más de ${m} deben estar mal ubicados en un orden casi completo?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos, ¿cuántos están mal ubicados tras eliminar ${removed_elements} que estaban en la posición correcta?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos, ¿cuántos están mal ubicados tras eliminar ${removed_elements} que estaban correctamente ordenados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos están mal ubicados tras eliminar ${removed_elements} elementos en la posición correcta?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos, ¿cuántos están fuera de lugar si se eliminan ${removed_elements} elementos correctamente ubicados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos, ¿cuántos están mal ubicados tras eliminar la mitad de los elementos correctamente ubicados?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos, ¿cuántos están mal ubicados tras eliminar la mitad de los elementos en la posición correcta?",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular la cantidad de pasos para ordenar una secuencia de elementos alternantes",
           "problems": [
-
+            {
+              "statement": "En una secuencia de ${n} elementos alternantes, ¿cuántos pasos se requieren para ordenarla completamente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos alternantes, ¿cuántos pasos son necesarios para lograr un orden correcto?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos alternantes, ¿cuántos pasos se necesitan para ordenarla en forma ascendente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista con ${n} elementos alternantes, ¿cuántos pasos mínimos son necesarios para alcanzar un orden creciente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si se tiene una secuencia de ${n} elementos alternantes, ¿cuántos pasos se requieren para obtener un orden completamente ascendente?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos alternantes desordenada, ¿cuántos pasos son necesarios para lograr un orden correcto?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una lista de ${n} elementos alternantes, ¿cuántos pasos se necesitan para obtener un orden ascendente completo?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos alternantes, si al menos ${m} pasos deben realizarse para alcanzar el orden, ¿cuántos pasos en total se requieren?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos alternantes, ¿cuántos pasos se necesitan si al menos ${m} deben realizarse para ordenarla completamente?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos alternantes, ¿cuántos pasos son necesarios si al menos ${m} pasos deben realizarse para alcanzar el orden correcto?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista con ${n} elementos alternantes, si al menos ${m} pasos son necesarios para un orden completo, ¿cuántos pasos en total se requieren?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos alternantes, ¿cuántos pasos son requeridos para ordenarla si al menos ${m} deben cumplirse?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos alternantes, ¿cuántos pasos son necesarios si al menos ${m} deben realizarse para lograr el orden completo?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "En una lista de ${n} elementos alternantes, ¿cuántos pasos se requieren si más de ${m} deben realizarse para alcanzar el orden correcto?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si hay una secuencia de ${n} elementos alternantes, ¿cuántos pasos se requieren tras eliminar ${removed_steps} pasos innecesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una lista de ${n} elementos alternantes, ¿cuántos pasos se necesitan tras eliminar ${removed_steps} pasos no requeridos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos alternantes, ¿cuántos pasos son necesarios tras eliminar ${removed_steps} pasos innecesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "En una secuencia de ${n} elementos alternantes, ¿cuántos pasos se requieren si se eliminan ${removed_steps} pasos incorrectos?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si hay una lista de ${n} elementos alternantes, ¿cuántos pasos se requieren tras eliminar la mitad de los pasos no necesarios?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Dada una secuencia de ${n} elementos alternantes, ¿cuántos pasos son necesarios tras eliminar la mitad de los pasos innecesarios?",
+              "difficulty": "2"
+            }
           ]
         }
       ]
