@@ -10432,123 +10432,1703 @@
       ],
       "types_of_problems":[
         {
+          "type": "Determinar el valor entero de x en una ecuación diofántica lineal simple de la forma ax + b = c",
+          "problems": [
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación ${a}x + ${b} = ${c}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} para la ecuación ${p}x + ${q} = ${r}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor de ${x} en la ecuación diofántica ${m}x + ${n} = ${o}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${k}x + ${l} = ${m}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w}, ¿cuál es el valor entero de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación diofántica ${f}x + ${g} = ${h}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en la ecuación ${j}x + ${k} = ${l}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación ${a}x + ${b} = ${c}, determina ${x} cuando se sabe que existe una solución entera.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula ${x} en la ecuación ${p}x + ${q} = ${r}, si ${x} es un número entero.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor de ${x} en ${m}x + ${n} = ${o}, sabiendo que ${x} es entero.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra el valor de ${x} en la ecuación diofántica ${k}x + ${l} = ${m} si ${x} es entero.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w} y ${x} es un número entero, ¿cuál es ${x}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g} = ${h}, donde ${x} es entero.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en la ecuación ${j}x + ${k} = ${l} si ${x} debe ser entero.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve ${x} en la ecuación ${a}x + ${b} = -${c} considerando que ${x} es un entero.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor de ${x} en ${p}x + ${q} = -${r} bajo la condición de que ${x} es entero.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en ${m}x + ${n} = -${o} si ${x} es un número entero.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula ${x} en la ecuación ${k}x + ${l} = -${m} sabiendo que ${x} es entero.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = -${w} y ${x} es entero, ¿cuál es el valor de ${x}?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g} = -${h} cuando ${x} debe ser un número entero.",
+              "difficulty": "2"
+            }
+          ]
+        },
+        {
           "type": "Calcular el valor entero de x en una ecuación diofántica lineal simple",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación ${a}x + ${b}y = ${c}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en la ecuación diofántica ${p}x - ${q}y = ${r}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en la ecuación ${m}x + ${n}y = ${o}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para el valor entero de ${x} en ${k}x - ${l}y = ${m}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x + ${v}y = ${w}, ¿cuál es el valor entero de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación diofántica ${f}x + ${g}y = ${h}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en la ecuación ${j}x - ${k}y = ${l}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra el valor de ${x} en la ecuación diofántica ${a}x + ${b}y = ${c} con solución entera para ${y} = ${d}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${p}x - ${q}y = ${r}, si ${y} = ${s}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en la ecuación ${m}x + ${n}y = ${o}, con ${y} = ${t}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para ${x} en ${k}x - ${l}y = ${m}, cuando ${y} = ${u}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x + ${v}y = ${w} y ${y} es igual a ${x}, ¿cuál es el valor entero de ${x}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g}y = ${h}, si ${y} es entero y ${y} = ${v}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula ${x} en ${j}x - ${k}y = ${l}, dado que ${y} es ${n}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra el valor de ${x} si ${a}x + ${b}y = -${c} y ${y} = ${d}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${p}x - ${q}y = -${r} con ${y} = ${s}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} cuando ${m}x + ${n}y = -${o}, si ${y} = ${t}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula ${x} en ${k}x + ${l}y = -${m}, dado ${y} = ${u}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x + ${v}y = -${w} y ${y} es igual a ${z}, ¿cuál es el valor entero de ${x}?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x - ${g}y = -${h}, con ${y} entero y ${y} = ${v}.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Encontrar el valor entero de x en una ecuación diofántica cuadrática con una sola solución",
           "problems": [
-
-          ]
-        },
-        {
-          "type": "Determinar el valor entero de x en una ecuación diofántica de la forma ax + b = c",
-          "problems": [
-
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación cuadrática ${a}x^2 + ${b}x = ${c}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en la ecuación ${p}x^2 - ${q}x = ${r}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor de ${x} en la ecuación cuadrática ${m}x^2 + ${n}x = ${o}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${k}x^2 - ${l}x = ${m}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x^2 + ${v}x = ${w}, ¿cuál es el valor de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación cuadrática ${f}x^2 + ${g}x = ${h}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en la ecuación ${j}x^2 - ${k}x = ${l}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación cuadrática ${a}x^2 + ${b}x = ${c}, encuentra el valor de ${x} cuando se conoce que existe una única solución entera.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula ${x} en la ecuación cuadrática ${p}x^2 - ${q}x = ${r}, sabiendo que solo existe una solución entera.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor de ${x} en ${m}x^2 + ${n}x = ${o}, dado que solo hay una solución entera.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación cuadrática ${k}x^2 + ${l}x = ${m}, cuando existe una sola solución entera.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x^2 - ${v}x = ${w} y la ecuación tiene una única solución entera, ¿cuál es ${x}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación cuadrática ${f}x^2 + ${g}x = ${h}, con una única solución entera.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en la ecuación ${j}x^2 - ${k}x = ${l} cuando se sabe que solo hay una solución entera.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve ${x} en la ecuación ${a}x^2 + ${b}x = -${c}, sabiendo que solo existe una solución entera para ${x}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${p}x^2 - ${q}x = -${r} con la condición de que solo haya una solución entera.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${m}x^2 + ${n}x = -${o}, donde existe una única solución entera.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${k}x^2 + ${l}x = -${m}, sabiendo que la solución entera es única.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x^2 + ${v}x = -${w} y la ecuación tiene una única solución entera, ¿cuál es ${x}?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x^2 - ${g}x = -${h} cuando solo existe una solución entera.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular el valor entero de x en una ecuación diofántica donde x es impar",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor impar de ${x} en la ecuación ${a}x + ${b} = ${c}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor impar de ${x} en ${p}x - ${q} = ${r}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor entero impar de ${x} en la ecuación ${m}x + ${n} = ${o}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para el valor impar de ${x} en la ecuación ${k}x - ${l} = ${m}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w} y ${x} es impar, ¿cuál es el valor de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra el valor impar de ${x} en la ecuación ${f}x + ${g} = ${h}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor impar de ${x} en la ecuación ${j}x - ${k} = ${l}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación ${a}x + ${b} = ${c}, encuentra el valor impar de ${x} cuando existe una única solución.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor impar de ${x} en ${p}x - ${q} = ${r}, si ${x} es impar.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor impar de ${x} en ${m}x + ${n} = ${o}, sabiendo que ${x} es impar.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra el valor impar de ${x} en la ecuación ${k}x + ${l} = ${m}, si ${x} es impar.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w} y ${x} debe ser impar, ¿cuál es ${x}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra el valor impar de ${x} en la ecuación ${f}x + ${g} = ${h}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor impar de ${x} en ${j}x - ${k} = ${l}, donde ${x} debe ser impar.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para ${x} impar en ${a}x + ${b} = -${c}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor impar de ${x} en ${p}x + ${q} = -${r}, si ${x} es impar.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} impar en la ecuación ${m}x + ${n} = -${o}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula el valor impar de ${x} en la ecuación ${k}x - ${l} = -${m}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = -${w} y ${x} debe ser impar, ¿cuál es el valor de ${x}?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra el valor impar de ${x} en ${f}x + ${g} = -${h}, si ${x} es impar.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Encontrar el valor entero de x en una ecuación diofántica homogénea con restricciones",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación homogénea ${a}x + ${b}y = 0, donde ${x} es positivo.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en ${p}x - ${q}y = 0, con ${x} negativo.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${m}x + ${n}y = 0, donde ${x} es mayor que ${k}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para el valor entero de ${x} en ${k}x + ${l}y = 0, con ${x} menor que ${h}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x + ${v}y = 0 y ${x} es múltiplo de ${d}, ¿cuál es el valor de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación homogénea ${f}x - ${g}y = 0, donde ${x} es par.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en la ecuación ${j}x + ${k}y = 0, con ${x} impar.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación homogénea ${a}x + ${b}y = 0, encuentra el valor de ${x} si ${x} es mayor que ${z}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en la ecuación ${p}x - ${q}y = 0, con la restricción de que ${x} es menor que ${r}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${m}x + ${n}y = 0, donde ${x} es un múltiplo de ${s}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra el valor de ${x} en la ecuación ${k}x + ${l}y = 0, sabiendo que ${x} es positivo.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x + ${v}y = 0 y ${x} es menor que ${t}, ¿cuál es el valor entero de ${x}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g}y = 0, donde ${x} es par.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${j}x - ${k}y = 0, con ${x} impar.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para el valor entero de ${x} en ${a}x + ${b}y = 0, si ${x} es mayor que ${c}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor de ${x} en la ecuación ${p}x + ${q}y = 0, con ${x} menor que ${r}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en ${m}x - ${n}y = 0, donde ${x} es múltiplo de ${d}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${k}x + ${l}y = 0, dado que ${x} es positivo.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x - ${v}y = 0 y ${x} es par, ¿cuál es el valor entero de ${x}?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g}y = 0, si ${x} es impar.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular el valor entero de x en una ecuación diofántica con coeficientes primos",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación ${p1}x + ${p2} = ${p3}, donde ${p1}, ${p2} y ${p3} son números primos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en la ecuación ${p4}x - ${p5} = ${p6}, siendo ${p4}, ${p5} y ${p6} números primos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${p7}x + ${p8} = ${p9}, donde todos los coeficientes son primos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${p10}x - ${p11} = ${p12}, donde ${p10}, ${p11} y ${p12} son primos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${p13}x + ${p14} = ${p15} y ${p13}, ${p14}, ${p15} son primos, ¿cuál es el valor de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${p16}x + ${p17} = ${p18}, siendo todos los coeficientes números primos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en la ecuación ${p19}x - ${p20} = ${p21}, donde ${p19}, ${p20}, y ${p21} son primos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación ${p1}x + ${p2} = ${p3}, determina el valor entero de ${x} sabiendo que todos los coeficientes son primos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p4}x - ${p5} = ${p6}, siendo ${p4}, ${p5}, y ${p6} números primos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en la ecuación ${p7}x + ${p8} = ${p9} con coeficientes primos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${p10}x + ${p11} = ${p12} considerando que ${p10}, ${p11}, y ${p12} son primos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${p13}x + ${p14} = ${p15}, donde ${p13}, ${p14}, y ${p15} son primos, ¿cuál es el valor entero de ${x}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra el valor entero de ${x} en ${p16}x + ${p17} = ${p18} considerando los coeficientes primos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en la ecuación ${p19}x - ${p20} = ${p21}, donde ${p19}, ${p20}, y ${p21} son números primos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${p22}x + ${p23} = -${p24}, siendo ${p22}, ${p23}, y ${p24} primos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${p25}x - ${p26} = -${p27}, donde ${p25}, ${p26}, y ${p27} son primos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${p28}x + ${p29} = -${p30} con coeficientes primos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en ${p31}x - ${p32} = -${p33}, con todos los coeficientes siendo primos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${p34}x + ${p35} = -${p36}, y ${p34}, ${p35}, y ${p36} son primos, ¿cuál es el valor de ${x}?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${p37}x + ${p38} = -${p39} considerando todos los coeficientes primos.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Determinar el valor entero de x en una ecuación diofántica con coeficientes positivos",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación ${a}x + ${b} = ${c}, donde todos los coeficientes son positivos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en la ecuación ${p}x - ${q} = ${r}, con ${p}, ${q} y ${r} siendo positivos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${m}x + ${n} = ${o}, donde todos los términos son positivos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${k}x + ${l} = ${m}, con coeficientes positivos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w} y todos los valores son positivos, ¿cuál es el valor de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g} = ${h}, siendo todos los coeficientes positivos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en la ecuación ${j}x - ${k} = ${l}, con términos positivos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación ${a}x + ${b} = ${c}, encuentra el valor de ${x} cuando todos los coeficientes son positivos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en ${p}x + ${q} = ${r}, si todos los valores son positivos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor de ${x} en la ecuación ${m}x - ${n} = ${o}, con ${m}, ${n}, y ${o} positivos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${k}x + ${l} = ${m}, siendo todos los coeficientes positivos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w} y todos los coeficientes son positivos, ¿cuál es el valor entero de ${x}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x - ${g} = ${h}, donde todos los términos son positivos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${j}x + ${k} = ${l}, con ${j}, ${k} y ${l} positivos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${a}x + ${b} = ${c}, dado que todos los términos son positivos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${p}x - ${q} = ${r}, con coeficientes positivos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${m}x + ${n} = ${o}, todos valores positivos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula ${x} en la ecuación ${k}x - ${l} = ${m}, considerando todos los coeficientes positivos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w} y ${u}, ${v} y ${w} son positivos, ¿cuál es el valor de ${x}?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x - ${g} = ${h}, con todos los términos positivos.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular el valor entero de x en una ecuación diofántica no homogénea",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación ${a}x + ${b}y = ${c}, siendo ${a}, ${b} y ${c} diferentes de cero.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en ${p}x - ${q}y = ${r}, donde ${p}, ${q} y ${r} son enteros no nulos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${m}x + ${n}y = ${o}, considerando ${m}, ${n} y ${o} como enteros no nulos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${k}x - ${l}y = ${m}, donde ${k}, ${l} y ${m} son valores no nulos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x + ${v}y = ${w} y ${u}, ${v}, ${w} son enteros distintos de cero, ¿cuál es el valor de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación ${f}x + ${g}y = ${h}, con ${f}, ${g} y ${h} como enteros no nulos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula ${x} en la ecuación ${j}x - ${k}y = ${l}, siendo ${j}, ${k}, ${l} distintos de cero.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación ${a}x + ${b}y = ${c}, encuentra el valor entero de ${x} bajo la condición de que ${a}, ${b} y ${c} son no nulos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en ${p}x - ${q}y = ${r}, sabiendo que ${p}, ${q}, y ${r} no son cero.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${m}x + ${n}y = ${o}, donde ${m}, ${n} y ${o} son diferentes de cero.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${k}x - ${l}y = ${m}, con valores de ${k}, ${l} y ${m} no nulos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x + ${v}y = ${w} con ${u}, ${v} y ${w} no nulos, ¿cuál es el valor de ${x}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra el valor entero de ${x} en ${f}x + ${g}y = ${h}, sabiendo que ${f}, ${g}, y ${h} son no nulos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en la ecuación ${j}x - ${k}y = ${l}, donde ${j}, ${k}, ${l} son diferentes de cero.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para ${x} en ${a}x + ${b}y = -${c}, sabiendo que ${a}, ${b} y ${c} no son cero.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor de ${x} en la ecuación ${p}x - ${q}y = -${r}, donde ${p}, ${q}, y ${r} son no nulos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${m}x + ${n}y = -${o}, siendo ${m}, ${n} y ${o} distintos de cero.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${k}x - ${l}y = -${m}, donde ${k}, ${l}, y ${m} son no nulos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x + ${v}y = -${w} y todos los coeficientes son no nulos, ¿cuál es el valor de ${x}?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra el valor de ${x} en ${f}x + ${g}y = -${h}, siendo ${f}, ${g} y ${h} no nulos.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Encontrar el valor entero de x en una ecuación diofántica con coeficientes negativos",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación ${a}x - ${b} = -${c}, donde ${a}, ${b} y ${c} son negativos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en ${p}x - ${q} = -${r}, siendo ${p}, ${q}, y ${r} negativos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${m}x - ${n} = -${o}, con todos los coeficientes negativos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${k}x - ${l} = -${m}, donde ${k}, ${l}, y ${m} son negativos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x - ${v} = -${w} y ${u}, ${v}, ${w} son negativos, ¿cuál es el valor de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x - ${g} = -${h}, siendo todos los coeficientes negativos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en la ecuación ${j}x - ${k} = -${l}, donde ${j}, ${k}, ${l} son negativos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación ${a}x - ${b} = -${c}, encuentra el valor entero de ${x} sabiendo que ${a}, ${b} y ${c} son negativos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p}x - ${q} = -${r}, donde todos los coeficientes son negativos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${m}x - ${n} = -${o}, con ${m}, ${n} y ${o} negativos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${k}x - ${l} = -${m}, donde ${k}, ${l} y ${m} son negativos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x - ${v} = -${w} y todos los valores son negativos, ¿cuál es el valor de ${x}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x - ${g} = -${h}, donde todos los coeficientes son negativos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${j}x - ${k} = -${l}, con ${j}, ${k} y ${l} negativos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${a}x - ${b} = -${c}, donde todos los coeficientes son negativos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor de ${x} en la ecuación ${p}x - ${q} = -${r}, sabiendo que ${p}, ${q}, y ${r} son negativos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${m}x - ${n} = -${o}, siendo ${m}, ${n} y ${o} negativos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${k}x - ${l} = -${m}, con todos los términos negativos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x - ${v} = -${w} y todos los valores son negativos, ¿cuál es el valor entero de ${x}?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x - ${g} = -${h}, siendo todos los coeficientes negativos.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular el valor entero de x en una ecuación diofántica cuadrática",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación cuadrática ${a}x^2 + ${b}x = ${c}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en ${p}x^2 - ${q}x = ${r}, donde ${p}, ${q}, y ${r} son enteros.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en la ecuación ${m}x^2 + ${n}x = ${o}, considerando que todos los coeficientes son enteros.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${k}x^2 - ${l}x = ${m}, donde los términos son enteros.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x^2 + ${v}x = ${w}, ¿cuál es el valor de ${x} entero que satisface la ecuación?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x^2 + ${g}x = ${h}, con coeficientes enteros.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en la ecuación cuadrática ${j}x^2 - ${k}x = ${l}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación cuadrática ${a}x^2 + ${b}x = ${c}, determina el valor entero de ${x}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en la ecuación ${p}x^2 - ${q}x = ${r}, con coeficientes enteros.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor de ${x} en la ecuación ${m}x^2 + ${n}x = ${o}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación cuadrática ${k}x^2 - ${l}x = ${m}, donde todos los términos son enteros.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x^2 + ${v}x = ${w}, encuentra el valor entero de ${x} que satisface la ecuación.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula ${x} en la ecuación cuadrática ${f}x^2 + ${g}x = ${h}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación cuadrática ${j}x^2 - ${k}x = ${l}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación cuadrática ${a}x^2 + ${b}x = ${c} donde ${a}, ${b}, y ${c} son enteros.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor de ${x} en ${p}x^2 - ${q}x = ${r}, asegurando que todos los coeficientes son enteros.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación cuadrática ${m}x^2 + ${n}x = ${o}, siendo ${m}, ${n} y ${o} enteros.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en la ecuación cuadrática ${k}x^2 - ${l}x = ${m} con coeficientes enteros.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x^2 + ${v}x = ${w}, encuentra el valor entero de ${x} en esta ecuación cuadrática.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra el valor de ${x} en ${f}x^2 + ${g}x = ${h}, con ${f}, ${g} y ${h} enteros.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Determinar el valor entero de x en una ecuación diofántica con coeficientes mixtos",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación ${a}x - ${b}y = ${c}, donde ${a} es positivo, ${b} es negativo y ${c} es positivo.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p}x + ${q}y = -${r}, siendo ${p} y ${r} positivos y ${q} negativo.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${m}x - ${n}y = ${o}, con ${m} negativo, ${n} positivo, y ${o} positivo.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${k}x + ${l}y = -${m}, donde ${k} y ${m} son positivos y ${l} es negativo.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x - ${v}y = ${w}, con ${u} positivo, ${v} negativo y ${w} positivo, ¿cuál es el valor de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g}y = -${h}, donde ${f} y ${h} son positivos y ${g} es negativo.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en la ecuación ${j}x - ${k}y = ${l}, siendo ${j} y ${l} negativos y ${k} positivo.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación ${a}x - ${b}y = ${c}, encuentra el valor entero de ${x} cuando ${a} es positivo, ${b} negativo, y ${c} positivo.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p}x + ${q}y = -${r}, donde ${p} es positivo, ${q} negativo y ${r} positivo.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en la ecuación ${m}x - ${n}y = ${o} con coeficientes mixtos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en ${k}x + ${l}y = -${m}, donde ${k} es positivo, ${l} negativo y ${m} positivo.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x - ${v}y = ${w} con ${u} positivo, ${v} negativo, y ${w} positivo, ¿cuál es el valor de ${x}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g}y = -${h}, donde ${f} y ${h} son positivos y ${g} negativo.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula ${x} en ${j}x - ${k}y = ${l}, siendo ${j} negativo, ${k} positivo y ${l} negativo.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${a}x - ${b}y = -${c}, donde ${a} positivo, ${b} negativo, y ${c} positivo.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${p}x + ${q}y = ${r}, donde ${p} y ${r} son negativos y ${q} positivo.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${m}x - ${n}y = ${o} con ${m} positivo, ${n} negativo y ${o} positivo.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula ${x} en ${k}x + ${l}y = -${m}, siendo ${k} y ${m} negativos y ${l} positivo.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x - ${v}y = ${w} y ${u} es positivo, ${v} negativo y ${w} negativo, ¿cuál es el valor de ${x}?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en ${f}x - ${g}y = ${h} con ${f} positivo, ${g} negativo y ${h} positivo.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular el valor entero de x en una ecuación diofántica con coeficientes consecutivos",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación ${a}x + ${b} = ${c}, donde ${a}, ${b}, y ${c} son números consecutivos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en la ecuación ${p}x - ${q} = ${r}, con ${p}, ${q}, y ${r} siendo enteros consecutivos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${m}x + ${n} = ${o}, considerando que ${m}, ${n}, y ${o} son consecutivos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${k}x - ${l} = ${m}, donde ${k}, ${l}, y ${m} son números consecutivos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w} y ${u}, ${v}, y ${w} son enteros consecutivos, ¿cuál es el valor de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g} = ${h}, con coeficientes consecutivos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en la ecuación ${j}x - ${k} = ${l}, con ${j}, ${k} y ${l} siendo consecutivos.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación ${a}x - ${b} = ${c}, encuentra el valor entero de ${x} si ${a}, ${b}, y ${c} son consecutivos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p}x + ${q} = ${r}, con ${p}, ${q} y ${r} como números consecutivos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor de ${x} en la ecuación ${m}x - ${n} = ${o}, donde ${m}, ${n}, y ${o} son consecutivos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en ${k}x + ${l} = ${m}, siendo ${k}, ${l}, y ${m} enteros consecutivos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x - ${v} = ${w} y ${u}, ${v}, y ${w} son consecutivos, ¿cuál es el valor entero de ${x}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g} = ${h}, donde ${f}, ${g} y ${h} son enteros consecutivos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en ${j}x - ${k} = ${l}, si los coeficientes son consecutivos.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para ${x} en ${a}x + ${b} = ${c}, con ${a}, ${b}, y ${c} como números consecutivos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${p}x - ${q} = ${r}, donde los coeficientes son consecutivos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${m}x + ${n} = ${o}, con ${m}, ${n}, y ${o} siendo consecutivos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula ${x} en ${k}x - ${l} = ${m}, siendo ${k}, ${l}, y ${m} números consecutivos.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w}, donde ${u}, ${v}, y ${w} son consecutivos, ¿cuál es el valor de ${x}?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación ${f}x - ${g} = ${h}, todos consecutivos.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Encontrar el valor entero de x en una ecuación diofántica con restricción de paridad",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación ${a}x + ${b} = ${c}, donde ${x} es un número par.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p}x - ${q} = ${r}, con la restricción de que ${x} debe ser impar.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${m}x + ${n} = ${o}, donde ${x} es un número par.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${k}x - ${l} = ${m}, con la restricción de que ${x} debe ser impar.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w}, y se requiere que ${x} sea par, ¿cuál es el valor de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g} = ${h}, donde ${x} debe ser un número impar.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en ${j}x - ${k} = ${l}, sabiendo que ${x} es par.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación ${a}x - ${b} = ${c}, encuentra el valor entero de ${x} bajo la condición de que ${x} sea impar.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p}x + ${q} = ${r}, con ${x} como un número par.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor de ${x} en la ecuación ${m}x - ${n} = ${o}, donde se impone que ${x} sea impar.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en ${k}x + ${l} = ${m}, bajo la condición de que ${x} sea par.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x - ${v} = ${w} y ${x} debe ser impar, ¿cuál es el valor entero de ${x}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g} = ${h}, donde se requiere que ${x} sea par.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en ${j}x - ${k} = ${l}, con la restricción de que ${x} es impar.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${a}x + ${b} = ${c}, donde ${x} debe ser un número par.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${p}x - ${q} = ${r}, bajo la condición de que ${x} sea impar.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${m}x + ${n} = ${o}, siendo ${x} par.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula ${x} en ${k}x - ${l} = ${m}, donde ${x} es impar.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w}, y ${x} debe ser par, ¿cuál es el valor entero de ${x}?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación ${f}x - ${g} = ${h}, con ${x} impar.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular el valor entero de x en una ecuación diofántica lineal con solución única",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor único de ${x} en la ecuación ${a}x + ${b} = ${c}, con coeficientes que aseguran solución única.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en la ecuación ${p}x - ${q} = ${r}, sabiendo que solo existe una solución.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor único de ${x} en ${m}x + ${n} = ${o}, donde la ecuación tiene una solución exacta.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${k}x - ${l} = ${m}, con una única solución posible.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w}, ¿cuál es el valor único de ${x} que satisface la ecuación?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g} = ${h}, donde existe una sola solución.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero único de ${x} en ${j}x - ${k} = ${l}, dado que la ecuación tiene solución única.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación ${a}x - ${b} = ${c}, encuentra el valor único de ${x}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor único de ${x} en ${p}x + ${q} = ${r}, asegurando que la solución sea única.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor único de ${x} en la ecuación ${m}x - ${n} = ${o}, que tiene una única solución.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en ${k}x + ${l} = ${m}, con una sola solución posible para ${x}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x - ${v} = ${w}, ¿cuál es el valor único de ${x} que satisface esta ecuación?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g} = ${h}, con la certeza de una sola solución.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor único de ${x} en ${j}x - ${k} = ${l}, sabiendo que solo existe una solución entera.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${a}x + ${b} = ${c}, con una única solución para ${x}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor único de ${x} en ${p}x - ${q} = ${r}, donde existe una única solución posible.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${m}x + ${n} = ${o}, asegurando que solo haya una solución.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula el valor único de ${x} en ${k}x - ${l} = ${m}, siendo la única solución entera posible.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w}, con una sola solución para ${x}, ¿cuál es ese valor?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra el valor único de ${x} en la ecuación ${f}x - ${g} = ${h}.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Determinar el valor entero de x en una ecuación diofántica con múltiplos conocidos",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor de ${x} en la ecuación ${a}x = ${b}, donde ${x} es un múltiplo de ${c}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p}x = ${q}, con ${x} como múltiplo de ${r}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${m}x = ${n}, sabiendo que ${x} es múltiplo de ${s}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${k}x = ${l}, con ${x} como múltiplo de ${t}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x = ${v} y ${x} es un múltiplo de ${w}, ¿cuál es el valor de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x = ${g}, donde ${x} debe ser múltiplo de ${h}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en ${j}x = ${k}, siendo ${x} múltiplo de ${l}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación ${a}x = ${b}, determina el valor de ${x} si es múltiplo de ${c}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p}x = ${q}, con ${x} como múltiplo de ${r}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor de ${x} en la ecuación ${m}x = ${n}, donde ${x} es múltiplo de ${s}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en ${k}x = ${l}, bajo la condición de que ${x} es múltiplo de ${t}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x = ${v} y ${x} debe ser múltiplo de ${w}, ¿cuál es el valor entero de ${x}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x = ${g}, donde ${x} es múltiplo de ${h}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${j}x = ${k}, siendo ${x} un múltiplo de ${l}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${a}x = ${b}, donde ${x} es múltiplo de ${c}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor de ${x} en ${p}x = ${q}, con la condición de que ${x} sea múltiplo de ${r}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${m}x = ${n}, con ${x} como múltiplo de ${s}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula ${x} en ${k}x = ${l}, siendo ${x} múltiplo de ${t}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x = ${v}, encuentra el valor entero de ${x} si ${x} es múltiplo de ${w}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra el valor entero de ${x} en ${f}x = ${g}, bajo la condición de que ${x} sea múltiplo de ${h}.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular el valor entero de x en una ecuación diofántica donde x es un número primo",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor de ${x} en la ecuación ${a}x + ${b} = ${c}, donde ${x} es un número primo.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p}x - ${q} = ${r}, con ${x} siendo un número primo.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor de ${x} en ${m}x + ${n} = ${o}, donde ${x} es un número primo.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${k}x - ${l} = ${m}, con la condición de que ${x} es un número primo.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w} y ${x} debe ser primo, ¿cuál es el valor de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g} = ${h}, donde ${x} es primo.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en ${j}x - ${k} = ${l}, con ${x} siendo un número primo.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación ${a}x - ${b} = ${c}, encuentra el valor de ${x} cuando es un número primo.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p}x + ${q} = ${r}, con ${x} como un número primo.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor de ${x} en la ecuación ${m}x - ${n} = ${o}, donde ${x} es un número primo.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en ${k}x + ${l} = ${m}, bajo la condición de que ${x} es primo.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x - ${v} = ${w} y ${x} debe ser un número primo, ¿cuál es el valor de ${x}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g} = ${h}, con ${x} siendo un número primo.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${j}x - ${k} = ${l}, siendo ${x} un número primo.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para ${x} en ${a}x + ${b} = ${c}, donde ${x} es un número primo.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${p}x - ${q} = ${r}, con ${x} como un número primo.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${m}x + ${n} = ${o}, con la condición de que ${x} es un número primo.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula ${x} en ${k}x - ${l} = ${m}, donde ${x} es un número primo.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w}, encuentra el valor entero de ${x} si ${x} es primo.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra el valor entero de ${x} en la ecuación ${f}x - ${g} = ${h}, siendo ${x} un número primo.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Encontrar el valor entero de x en una ecuación diofántica con múltiplos de un número dado",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor de ${x} en la ecuación ${a}x = ${b}, donde ${x} es múltiplo de ${n}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p}x - ${q} = ${r}, con ${x} como múltiplo de ${n}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${m}x + ${n} = ${o}, sabiendo que ${x} es múltiplo de ${d}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${k}x = ${l}, donde ${x} es múltiplo de ${d}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w}, y ${x} es múltiplo de ${d}, ¿cuál es el valor de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g} = ${h}, con ${x} como múltiplo de ${d}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en ${j}x = ${k}, dado que ${x} es múltiplo de ${n}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación ${a}x - ${b} = ${c}, encuentra el valor entero de ${x} cuando es múltiplo de ${n}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p}x + ${q} = ${r}, con ${x} como múltiplo de ${n}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor de ${x} en la ecuación ${m}x - ${n} = ${o}, bajo la condición de que ${x} es múltiplo de ${d}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en ${k}x + ${l} = ${m}, sabiendo que ${x} es múltiplo de ${n}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x - ${v} = ${w}, ¿cuál es el valor entero de ${x} si es múltiplo de ${d}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x = ${g}, con ${x} como múltiplo de ${d}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${j}x - ${k} = ${l}, siendo ${x} múltiplo de ${n}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para ${x} en ${a}x + ${b} = ${c}, con la condición de que ${x} sea múltiplo de ${d}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor de ${x} en ${p}x - ${q} = ${r}, donde ${x} es múltiplo de ${n}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${m}x = ${o}, con ${x} como múltiplo de ${d}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula ${x} en ${k}x + ${l} = ${m}, siendo ${x} un múltiplo de ${n}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x = ${v}, ¿cuál es el valor entero de ${x} sabiendo que es múltiplo de ${d}?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra el valor de ${x} en ${f}x - ${g} = ${h}, con la condición de que ${x} sea múltiplo de ${n}.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular el valor entero de x en una ecuación diofántica con suma de coeficientes",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor de ${x} en la ecuación ${a}x + ${b} = ${a + b}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p}x - ${q} = ${p + q}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor entero de ${x} en ${m}x + ${n} = ${m + n}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${k}x - ${l} = ${k + l}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${u + v}, ¿cuál es el valor de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g} = ${f + g}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor entero de ${x} en ${j}x - ${k} = ${j + k}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación ${a}x - ${b} = ${a + b}, encuentra el valor de ${x}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p}x + ${q} = ${p + q}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor de ${x} en la ecuación ${m}x - ${n} = ${m + n}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en ${k}x + ${l} = ${k + l}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x - ${v} = ${u + v}, ¿cuál es el valor entero de ${x}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x = ${f + g}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${j}x - ${k} = ${j + k}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para ${x} en ${a}x + ${b} = ${a + b}, con valor entero.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor de ${x} en ${p}x - ${q} = ${p + q}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${m}x = ${m + n}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula ${x} en ${k}x + ${l} = ${k + l}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x = ${u + v}, encuentra el valor de ${x}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra el valor entero de ${x} en ${f}x - ${g} = ${f + g}.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Determinar el valor entero de x en una ecuación diofántica con signo definido",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor positivo de ${x} en la ecuación ${a}x + ${b} = ${c}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor negativo de ${x} en ${p}x - ${q} = ${r}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor positivo de ${x} en ${m}x + ${n} = ${o}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para el valor negativo de ${x} en la ecuación ${k}x - ${l} = ${m}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w} y ${x} debe ser positivo, ¿cuál es el valor de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra el valor positivo de ${x} en la ecuación ${f}x + ${g} = ${h}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor negativo de ${x} en ${j}x - ${k} = ${l}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación ${a}x - ${b} = ${c}, encuentra el valor positivo de ${x}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor negativo de ${x} en ${p}x + ${q} = ${r}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor positivo de ${x} en la ecuación ${m}x - ${n} = ${o}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en ${k}x + ${l} = ${m}, sabiendo que ${x} es positivo.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x - ${v} = ${w} y ${x} debe ser negativo, ¿cuál es el valor de ${x}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra el valor positivo de ${x} en la ecuación ${f}x = ${g}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor negativo de ${x} en ${j}x - ${k} = ${l}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para el valor positivo de ${x} en ${a}x + ${b} = ${c}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor negativo de ${x} en ${p}x - ${q} = ${r}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${m}x = ${o}, sabiendo que ${x} es positivo.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula ${x} en ${k}x + ${l} = ${m}, donde ${x} debe ser negativo.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x = ${v}, ¿cuál es el valor positivo de ${x}?",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra el valor negativo de ${x} en la ecuación ${f}x - ${g} = ${h}.",
+              "difficulty": "2"
+            }
           ]
         },
         {
           "type": "Calcular el valor entero de x en una ecuación diofántica con divisor conocido",
           "problems": [
-
+            {
+              "statement": "Encuentra el valor de ${x} en la ecuación ${a}x + ${b} = ${c}, donde ${x} es divisible por ${d}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p}x - ${q} = ${r}, con ${x} divisible por ${s}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Determina el valor de ${x} en ${m}x + ${n} = ${o}, donde ${x} es divisible por ${t}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Resuelve para ${x} en la ecuación ${k}x - ${l} = ${m}, sabiendo que ${x} es divisible por ${d}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Si ${u}x + ${v} = ${w} y ${x} debe ser divisible por ${s}, ¿cuál es el valor de ${x}?",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x + ${g} = ${h}, con ${x} divisible por ${d}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${j}x - ${k} = ${l}, donde ${x} es divisible por ${t}.",
+              "difficulty": "0"
+            },
+            {
+              "statement": "Dada la ecuación ${a}x - ${b} = ${c}, encuentra el valor de ${x} si es divisible por ${d}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${p}x + ${q} = ${r}, con ${x} divisible por ${s}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Determina el valor de ${x} en la ecuación ${m}x - ${n} = ${o}, donde ${x} es divisible por ${t}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en ${k}x + ${l} = ${m}, sabiendo que ${x} es divisible por ${d}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Si ${u}x - ${v} = ${w}, ¿cuál es el valor entero de ${x} si es divisible por ${s}?",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${f}x = ${g}, con ${x} divisible por ${t}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Calcula el valor de ${x} en ${j}x - ${k} = ${l}, sabiendo que ${x} es divisible por ${d}.",
+              "difficulty": "1"
+            },
+            {
+              "statement": "Resuelve para ${x} en ${a}x + ${b} = ${c}, con ${x} divisible por ${d}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Determina el valor de ${x} en ${p}x - ${q} = ${r}, donde ${x} es divisible por ${s}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra ${x} en la ecuación ${m}x = ${o}, donde ${x} es divisible por ${t}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Calcula ${x} en ${k}x + ${l} = ${m}, sabiendo que ${x} es divisible por ${d}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Si ${u}x = ${v}, encuentra el valor de ${x} si es divisible por ${s}.",
+              "difficulty": "2"
+            },
+            {
+              "statement": "Encuentra el valor entero de ${x} en ${f}x - ${g} = ${h}, donde ${x} es divisible por ${t}.",
+              "difficulty": "2"
+            }
           ]
         }
       ]
