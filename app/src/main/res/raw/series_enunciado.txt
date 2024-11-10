@@ -1,2 +1,0 @@
-Encuentra la suma de los primeros _n_ términos de la siguiente sucesión aritmética:
- _sucesion_

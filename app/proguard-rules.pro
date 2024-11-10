@@ -8,7 +8,7 @@
 -keep class androidx.** { *; }
 
 # Mantener la clase principal de la actividad
--keep class com.mathematical_reasoning.raz_mat.MainActivity { *; }
+-keep class com.mathematical_reasoning.raz_mat.activities.MainActivity { *; }
 
 # Mantener todos los métodos nativos (JNI) y bibliotecas usadas
 -keepclasseswithmembernames class * {

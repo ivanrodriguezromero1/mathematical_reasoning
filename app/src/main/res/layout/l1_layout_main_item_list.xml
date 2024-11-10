@@ -8,7 +8,6 @@
               android:background="@drawable/rounded_item_background"
               android:layout_marginBottom="10dp">
 
-    <!-- Ícono del ítem (lado izquierdo) -->
     <ImageView
             android:id="@+id/item_icon"
             android:layout_width="40dp"
@@ -26,13 +25,11 @@
             android:textColor="@android:color/black"
             android:textSize="18sp" />
 
-    <!-- LinearLayout para los botones (lado derecho) -->
     <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-        <!-- Reemplazar ImageButton con ImageView -->
         <ImageButton
                 android:id="@+id/button_book"
                 android:layout_width="40dp"
@@ -49,10 +46,10 @@
                 android:contentDescription="@string/see_theory"/>
 
         <ImageButton
-                android:id="@+id/button_resolver"
+                android:id="@+id/button_solve"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/ic_resolver"
+                android:src="@drawable/ic_solve"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
                 android:padding="8dp"

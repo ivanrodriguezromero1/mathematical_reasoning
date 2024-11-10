@@ -1,7 +1,6 @@
 package com.mathematical_reasoning.raz_mat.utils;
 
-import android.content.Context;
-import com.mathematical_reasoning.raz_mat.R;  // Asegúrate de que esta línea esté presente
+import com.mathematical_reasoning.raz_mat.R;
 import com.mathematical_reasoning.raz_mat.models.input.MathematicalReasoning;
 import com.mathematical_reasoning.raz_mat.models.input.Topic;
 
@@ -37,19 +36,16 @@ public class TopicUtils {
         ICON_MAP.put("icon_areas_and_perimeters", R.drawable.symbols_square_foot);
     }
 
-    public static Map<String, Integer> createTopicMap(MathematicalReasoning reasoning, Context context) {
+    public static Map<String, Integer> createTopicMap(MathematicalReasoning reasoning) {
         Map<String, Integer> topicMap = new LinkedHashMap<>();
-
         for (Topic topic : reasoning.getTopics()) {
             String title = topic.getTitle();
             String iconName = topic.getIconName();
             Integer imageResource = ICON_MAP.get(iconName);
-
             if (imageResource != null) {
                 topicMap.put(title, imageResource);
             }
         }
-
         return topicMap;
     }
 }

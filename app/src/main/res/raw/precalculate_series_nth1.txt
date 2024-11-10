@@ -1,5 +1,0 @@
- Primer término: a₁ = _a_
- Razón aritmética: r = _r_
- Número de términos: n = _n_
-
- Sₙ = (_a_)(_n_) + [(_n_ - 1)(_n_)(_r_)]/2

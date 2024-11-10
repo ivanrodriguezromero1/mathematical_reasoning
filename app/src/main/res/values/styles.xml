@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
-        <item name="android:background">@color/splashBackgroundColor</item> <!-- Fondo del Splash -->
+        <item name="android:background">@android:color/white</item>
     </style>
     <style name="custom_recycler_view_scroll">
-        <!-- Color y grosor de la barra de desplazamiento vertical -->
         <item name="android:scrollbarThumbVertical">@drawable/custom_scrollbar_thumb</item>
-        <item name="android:scrollbarSize">10dp</item> <!-- Ajusta el grosor aquí -->
+        <item name="android:scrollbarSize">10dp</item>
     </style>
 
 </resources>

@@ -11,25 +11,13 @@ android {
         targetSdkVersion 35
         versionCode 1
         versionName "1.0"
-        ndkPath "C:\\Android\\NDK\\android-ndk-r27"
 
-        // Configuración para cmake y lib.cpp
-        externalNativeBuild {
-            cmake {
-                cppFlags ""
-            }
-        }
     }
     buildTypes {
         release {
             shrinkResources true
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-    externalNativeBuild {
-        cmake {
-            path "src/main/cpp/CMakeLists.txt"
         }
     }
 }

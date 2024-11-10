@@ -8,7 +8,6 @@
         android:focusable="true"
         android:onClick="goBackToProblem">
 
-    <!-- Fondo de color #0B429E -->
     <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -26,7 +25,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:layout_centerInParent="true"
             android:paddingTop="10dp">
 
         <ImageView

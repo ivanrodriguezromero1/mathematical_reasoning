@@ -1,41 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_title">Razonamiento Matemático</string>
-    <string name="see_theory">Ver Teoría</string>
-    <string name="solve_problem">Resolver Problema</string>
+    <string name="app_title">Rasona</string>
+    <string name="see_theory">View Theory</string>
+    <string name="solve_problem">Solve Problem</string>
     <string name="letter_a">A</string>
     <string name="letter_b">B</string>
     <string name="letter_c">C</string>
     <string name="letter_d">D</string>
-    <string name="options_title">Opciones</string>
-    <string name="label_difficulty">Dificultad del Problema:</string>
-    <string-array name="dificultad_opciones">
-        <item>@string/options_easy</item>
-        <item>@string/options_normal</item>
-        <item>@string/options_hard</item>
+    <string name="label_difficulty">Problem Difficulty:</string>
+    <string-array name="difficulty_options">
+        <item>@string/easy</item>
+        <item>@string/normal</item>
+        <item>@string/hard</item>
     </string-array>
-    <string name="options_easy">Fácil</string>
-    <string name="options_normal">Normal</string>
-    <string name="options_hard">Difícil</string>
-    <string name="label_tipo_problema">Tipo de Problema:</string>
-    <string name="close">Cerrar</string>
-    <string name="button_comprobar">COMPROBAR</string>
-    <string name="button_nuevo">NUEVO</string>
-    <string name="button_inicio">Inicio</string>
-    <string name="button_opciones">Opciones</string>
-    <string name="button_premium">Premium</string>
-    <string name="button_compartir">Compartir</string>
-    <string name="solution">SOLUCIÓN</string>
-    <string name="back">ATRÁS</string>
-    <string name="solution_icon">Icono de solución</string>
-    <string name="back_icon">Icono de atrás</string>
-    <string name="ver_solucion">VER SOLUCIÓN</string>
-    <string name="tip_title">Consejo</string>
-    <string name="answer_result_image">Imagen Resultado</string>
-    <string name="selecciona_opcion">Por favor, selecciona una opción.</string>
-    <string name="tachar_text">Tachar</string>
-    <string name="tip_text">Consejo</string>
-    <string name="precalculate_text">Avance</string>
-    <string name="send_problem_text">Enviar</string>
-    <string name="logo_description">Logo de Razona</string>
+    <string name="easy">Easy</string>
+    <string name="normal">Normal</string>
+    <string name="hard">Hard</string>
+    <string name="problem_type">Problem Type:</string>
+    <string name="close">Close</string>
+    <string name="check">CHECK</string>
+    <string name="new_problem">NEW</string>
+    <string name="home">Home</string>
+    <string name="premium">Premium</string>
+    <string name="share">Share</string>
+    <string name="solution">SOLUTION</string>
+    <string name="back">BACK</string>
+    <string name="solution_icon">Solution Icon</string>
+    <string name="back_icon">Back Icon</string>
+    <string name="icon">Icon</string>
+    <string name="view_solution">VIEW SOLUTION</string>
+    <string name="tip_title">Tip</string>
+    <string name="answer_result_image">Result Image</string>
+    <string name="select_option">Please, select an option.</string>
+    <string name="cross_out_text">Cross Out</string>
+    <string name="tip_text">Tip</string>
+    <string name="preview_text">Preview</string>
+    <string name="send_problem_text">Send</string>
+    <string name="logo_description">Razona Logo</string>
 </resources>

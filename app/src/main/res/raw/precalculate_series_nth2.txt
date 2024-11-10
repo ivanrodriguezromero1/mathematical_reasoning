@@ -1,7 +1,0 @@
- Primer término: a₁ = _a_
- Primera razón aritmética: r₁ = _r1_
- Segunda razón aritmética: r₂ = _r2_
- Número de términos: n = _n_
-
-  Sₙ = (_a_)(_n_) + [(_n_ - 1)(_n_)(_r1_)]/2 +
-      [(_n_ - 2)(_n_ - 1)(_n_)(_r2_)]/6

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@android:color/white">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <include layout="@layout/top_bar" />
+        <include layout="@layout/l3_layout_problems_header_content" />
+    </RelativeLayout>
+
+    <include layout="@layout/l3_layout_problems_selectors"/>
+    <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="outsideOverlay"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:fadeScrollbars="false"
+            android:scrollbarFadeDuration="0"
+            style="@style/custom_recycler_view_scroll">
+
+        <LinearLayout
+                    android:id="@+id/contentBlock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                        android:id="@+id/problemStatement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="8dp"
+                        android:textSize="17sp"
+                        android:textColor="@android:color/black" />
+                <TextView
+                        android:id="@+id/preview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="10dp"
+                        android:textSize="15sp"
+                        android:visibility="gone"
+                        android:textColor="@color/rasonaStrongGreen" />
+
+                <include layout="@layout/l3_layout_problems_help_buttons"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp">
+                    <include
+                            layout="@layout/l3_layout_problems_radio_group"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2" />
+                    <ImageView
+                            android:id="@+id/answerResultImage"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:padding="0dp"
+                            android:src="@drawable/image_correct"
+                            android:visibility="gone"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/answer_result_image"/>
+                </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+        <include layout="@layout/l3_layout_problems_check_button"/>
+        <include layout="@layout/l3_layout_problems_new_button"/>
+    </LinearLayout>
+    <include layout="@layout/bottom_bar"/>
+
+</LinearLayout>
