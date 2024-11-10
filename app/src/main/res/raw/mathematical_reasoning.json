@@ -13980,7 +13980,7 @@
                 "Calculate the difference in minutes and convert it to hours and minutes."
               ],
               "answer": "#{((event_hour * 60 + event_minute - 25 - (current_hour * 60 + current_minute) + 1440) % 1440) / 60} hours and #{((event_hour * 60 + event_minute - 25 - (current_hour * 60 + current_minute) + 1440) % 1440) % 60} minutes",
-              "step_by-step_solution": [
+              "step_by_step_solution": [
                 "Step 1: Convert the current time to minutes from midnight.",
                 "Step 2: Current minutes = (${current_hour} * 60) + ${current_minute} = #{current_hour * 60 + current_minute} minutes.",
                 "Step 3: Convert the class start time to minutes from midnight.",

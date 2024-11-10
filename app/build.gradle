@@ -3,10 +3,10 @@ plugins {
 }
 
 android {
-    namespace 'com.mathematical_reasoning.raz_mat'
+    namespace 'com.rasona.rasona'
     compileSdk 35
     defaultConfig {
-        applicationId "com.mathematical_reasoning.raz_mat"
+        applicationId "com.rasona.rasona"
         minSdkVersion 21
         targetSdkVersion 35
         versionCode 1
@@ -30,4 +30,5 @@ dependencies {
     implementation 'com.fasterxml.jackson.core:jackson-core:2.13.5'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.5'
     implementation 'net.objecthunter:exp4j:0.4.8'
+    implementation 'com.android.billingclient:billing:7.1.1'
 }
