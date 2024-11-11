@@ -1,13 +1,13 @@
 {
   "topics": [
     {
-      "title": "Mathematical Operations",
-      "icon_name": "icon_math_operations",
-      "theory": "Mathematical operations are basic actions performed with numbers to obtain results. The fundamental operations include addition, subtraction, multiplication, and division, which are used to manipulate numerical values in a logical and consistent manner. Additionally, there are more advanced operations such as exponentiation, root extraction, and the use of algebraic functions. Understanding how to apply these operations and their properties is essential for solving problems in arithmetic, algebra, and other branches of mathematics.",
+      "title": "Basic Arithmetic Operations",
+      "icon_name": "icon_basic_arithmetic",
+      "theory": "Basic arithmetic operations involve addition, subtraction, multiplication, and division, which are the foundational mathematical operations used to manipulate numbers and perform calculations. They serve as the basis for more complex mathematical concepts and are essential in everyday life.",
       "references": [
-        "https://www.mathsisfun.com",
-        "https://www.khanacademy.org",
-        "https://www.matematicasonline.com"
+        "https://www.khanacademy.org/math/arithmetic",
+        "https://mathworld.wolfram.com/Arithmetic.html",
+        "https://www.britannica.com/science/arithmetic"
       ],
       "types_of_problems":[
         {
@@ -1846,7 +1846,19 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "title": "Exponents and Percentages",
+      "icon_name": "icon_exponents_percentages",
+      "theory": "Exponents are used to represent repeated multiplication of a base number, while percentages are a way to express a number as a fraction of 100. These mathematical concepts are crucial for understanding growth, interest rates, proportions, and comparisons in various contexts such as finance, science, and everyday calculations.",
+      "references": [
+        "https://www.mathsisfun.com/exponents.html",
+        "https://www.britannica.com/science/percentage",
+        "https://www.khanacademy.org/math/pre-algebra/pre-algebra-exponents-radicals"
+      ],
+      "types_of_problems": [
         {
           "type": "Solve problems involving powers and square roots",
           "problems": [
@@ -2859,13 +2871,13 @@
       ]
     },
     {
-      "title": "Fractions",
-      "icon_name": "icon_fractions",
-      "theory": "Fractions represent parts of a whole and are used to express non-integer numbers. A fraction consists of a numerator, which indicates how many parts are taken, and a denominator, which shows into how many parts the total is divided. Fractions can be proper, improper, or mixed, and they can be simplified, added, subtracted, multiplied, and divided. Understanding operations with fractions is essential for arithmetic, algebra, and other areas of mathematics, as they allow for handling proportions and performing more precise calculations.",
+      "title": "Basic Fraction Operations",
+      "icon_name": "icon_basic_fractions",
+      "theory": "Basic fraction operations include addition, subtraction, multiplication, and division of fractions. These operations require understanding how to find a common denominator for addition and subtraction, as well as applying rules for multiplying and dividing numerators and denominators. Mastery of fractions is crucial in mathematical problem-solving, measurements, and real-world applications.",
       "references": [
-        "https://www.mathsisfun.com",
-        "https://www.khanacademy.org",
-        "https://www.matematicasonline.com"
+        "https://www.khanacademy.org/math/arithmetic/fractions",
+        "https://www.mathsisfun.com/fractions.html",
+        "https://www.britannica.com/science/fraction-mathematics"
       ],
       "types_of_problems":[
         {
@@ -4812,7 +4824,19 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "title": "Fraction Division and Conversion",
+      "icon_name": "icon_fraction_division_conversion",
+      "theory": "Fraction division involves inverting the divisor and then multiplying. Converting fractions may include changing improper fractions to mixed numbers, converting between decimals and fractions, or simplifying fractions. These concepts are essential for accurately handling fractional values in mathematical operations, problem-solving, and real-world contexts.",
+      "references": [
+        "https://www.khanacademy.org/math/arithmetic/fraction-arithmetic",
+        "https://www.mathsisfun.com/fractions-division.html",
+        "https://www.britannica.com/science/fraction-mathematics#ref813470"
+      ],
+      "types_of_problems":[
         {
           "type": "Divide an improper fraction by a proper fraction and simplify the result",
           "problems": [
@@ -5952,13 +5976,13 @@
       ]
     },
     {
-      "title": "Sequences",
-      "icon_name": "icon_successions",
-      "theory": "Sequences in mathematics are ordered sets of numbers that follow a defined pattern. These can primarily be classified into two types: arithmetic and geometric. An arithmetic sequence is one where each term is obtained by adding a constant (called the common difference) to the previous term, while in a geometric sequence, each term is obtained by multiplying the previous term by a constant (common ratio). Formulas can be used to determine any specific term in both sequences, as well as to calculate sums of finite terms. Sequences can also have limits, meaning they can converge to a finite value as the number of terms increases. Understanding how sequences behave, especially infinite ones, is essential in various fields of mathematics, including analysis and series theory.",
+      "title": "Arithmetic Sequences",
+      "icon_name": "icon_arithmetic_sequences",
+      "theory": "An arithmetic sequence is a sequence of numbers in which the difference between consecutive terms is constant. This difference is called the common difference. Arithmetic sequences are commonly used to model linear patterns in mathematics, and they have applications in areas such as finance, engineering, and everyday problem-solving.",
       "references": [
-        "https://www.math.columbia.edu",
-        "https://math.ou.edu",
-        "https://math.mit.edu"
+        "https://www.khanacademy.org/math/algebra/sequences",
+        "https://www.mathsisfun.com/algebra/sequences.html",
+        "https://www.britannica.com/science/arithmetic-progression"
       ],
       "types_of_problems": [
         {
@@ -6874,7 +6898,19 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "title": "Geometric Sequences",
+      "icon_name": "icon_geometric_sequences",
+      "theory": "A geometric sequence is a sequence of numbers where each term after the first is found by multiplying the previous term by a constant called the common ratio. Geometric sequences are used to represent exponential growth or decay and have applications in fields such as finance, physics, and computer science.",
+      "references": [
+        "https://www.khanacademy.org/math/algebra/sequences/geometric-sequences",
+        "https://www.mathsisfun.com/algebra/sequences-geometric.html",
+        "https://www.britannica.com/science/geometric-progression"
+      ],
+      "types_of_problems":[
         {
           "type": "Find the common ratio in a geometric sequence",
           "problems": [
@@ -7658,13 +7694,13 @@
       ]
     },
     {
-      "title": "Problems on Ages",
-      "icon_name": "icon_age_problems",
-      "theory": "Age problems are mathematical exercises that require determining the current or future age of one or more people. Equations are used to represent relationships between ages at different times, such as in the past, present, or future. These problems typically include information about age differences, the sum of ages, or ages at specific moments. Understanding how to set up and solve these equations is key to efficiently solving such problems.",
+      "title": "Current Age Calculations",
+      "icon_name": "icon_age_calculations",
+      "theory": "Current age calculations involve determining a person's present age based on known information, such as their age difference with another person or a specific event in the past or future. These problems are common in mathematics and help to build logical thinking and problem-solving skills.",
       "references": [
-        "https://www.universidadperu.edu",
-        "https://es.mathpedia.org",
-        "https://matematicasonline.com"
+        "https://www.khanacademy.org/math/pre-algebra/pre-algebra-arithmetic-reasoning",
+        "https://www.math-only-math.com/age-word-problems.html",
+        "https://www.bbc.co.uk/bitesize/guides/z6j6fg8/revision/1"
       ],
       "types_of_problems":[
         {
@@ -8794,7 +8830,19 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "title": "Age Relations Over Time",
+      "icon_name": "icon_age_relations",
+      "theory": "Age relations over time focus on determining changes in age relationships between individuals over different periods. These problems often require comparing ages in the past, present, and future, and are used to enhance logical thinking and algebraic reasoning.",
+      "references": [
+        "https://www.math-only-math.com/age-word-problems.html",
+        "https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:systems-of-equations/age-word-problems/v/age-word-problems",
+        "https://www.bbc.co.uk/bitesize/guides/z7mqtfr/revision/3"
+      ],
+      "types_of_problems":[
         {
           "type": "Find a person's age when the age relationship between two people changes over time",
           "problems": [
@@ -9723,13 +9771,13 @@
       ]
     },
     {
-      "title": "Problems on Motion",
-      "icon_name": "icon_mobile_problems",
-      "theory": "Motion problems in mathematics refer to situations where distances, speeds, or travel times of one or more moving objects must be calculated. These problems are based on the fundamental relationship given by the formula: Distance = Speed x Time. They can include cases of motion in the same direction, in opposite directions, or in scenarios involving pursuit and meeting points. Understanding how to set up the appropriate equations and analyze relative motion is essential for correctly solving these types of problems.",
+      "title": "Distance and Speed Calculations",
+      "icon_name": "icon_distance_speed",
+      "theory": "Distance and speed calculations involve determining the relationship between distance, speed, and time using formulas such as distance = speed × time. These calculations are fundamental in understanding motion, travel scenarios, and physics, and are widely applied in real-world contexts, including transportation and logistics.",
       "references": [
-        "https://www.fisicanet.com",
-        "https://matematicalibre.com",
-        "https://matematicasypunto.com"
+        "https://www.khanacademy.org/science/physics/one-dimensional-motion",
+        "https://www.mathsisfun.com/speed-time-distance.html",
+        "https://www.bbc.co.uk/bitesize/guides/zc2hsrd/revision/1"
       ],
       "types_of_problems":[
         {
@@ -10786,7 +10834,19 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "title": "Relative Motion Problems",
+      "icon_name": "icon_relative_motion",
+      "theory": "Relative motion problems involve determining the motion of objects with respect to each other, often requiring the calculation of relative speeds and distances. These problems are used to understand scenarios where multiple objects move towards or away from each other, commonly applied in physics and transportation scenarios.",
+      "references":[
+        "https://www.khanacademy.org/science/physics/one-dimensional-motion/relative-velocity",
+        "https://www.mathsisfun.com/geometry/motion-relative.html",
+        "https://www.britannica.com/science/relative-motion"
+      ],
+      "types_of_problems":[
         {
           "type": "Determine the total distance traveled by two objects moving in the same direction",
           "problems": [
@@ -11772,13 +11832,13 @@
       ]
     },
     {
-      "title": "Timekeeping",
-      "icon_name": "icon_timing",
-      "theory": "Timekeeping in mathematics focuses on problems related to the measurement and calculation of time. These problems may involve conversions between units of time, calculations of durations, time intervals, and the analysis of events occurring simultaneously or sequentially. It is essential to understand how to handle different time formats (hours, minutes, seconds) and use arithmetic operations to solve practical situations, such as determining the elapsed time between two events or the exact time an event will occur given a start time and duration.",
+      "title": "Elapsed Time Calculations",
+      "icon_name": "icon_elapsed_time",
+      "theory": "Elapsed time calculations involve finding the difference in time between two events or determining the duration of an event. These calculations are commonly used in scheduling, time management, and various real-world scenarios where time intervals are important.",
       "references": [
-        "https://www.matematicasvisuales.com",
-        "https://educaciontrespuntocero.com",
-        "https://www.cienciaviva.pt"
+        "https://www.khanacademy.org/math/cc-3rd-grade-math/cc-3rd-measurement-data/cc-3rd-elapsed-time",
+        "https://www.mathsisfun.com/time-calculations.html",
+        "https://www.bbc.co.uk/bitesize/topics/zm4k7ty/articles/ztwkvwx"
       ],
       "types_of_problems":[
         {
@@ -13439,7 +13499,19 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "title": "Time Interval Analysis",
+      "icon_name": "icon_time_interval",
+      "theory": "Time interval analysis involves measuring and comparing the duration between different events or segments of time. This analysis helps in understanding schedules, sequences, and breaks within a given period, and is used widely in project management, scheduling, and various mathematical applications.",
+      "references": [
+        "https://www.khanacademy.org/math/cc-4th-grade-math/cc-4th-measurement-topic/cc-4th-intervals-time",
+        "https://www.mathsisfun.com/measure/time-intervals.html",
+        "https://www.britannica.com/science/time-physics/Time-intervals"
+      ],
+      "types_of_problems":[
         {
           "type": "Determine the remaining time until a known future event",
           "problems": [
@@ -14609,13 +14681,13 @@
       ]
     },
     {
-      "title": "Introduction to Combinatorial Analysis",
-      "icon_name": "icon_intro_combinatorial_analysis",
-      "theory": "Combinatorial analysis is a branch of mathematics that deals with counting, enumerating, and organizing sets of elements according to specific rules. It is fundamental for solving problems related to combinations, permutations, and arrangements of elements. It is used to determine the number of ways to choose, order, or group a set of objects, with or without repetition and order. This analysis is essential in probability, statistics, and other areas of applied mathematics.",
+      "title": "Permutations and Combinations",
+      "icon_name": "icon_permutations_combinations",
+      "theory": "Permutations refer to the different ways in which a set of items can be arranged in order, while combinations focus on the selection of items without considering the order. These concepts are fundamental in probability, statistics, and various combinatorial problems in mathematics.",
       "references": [
-        "https://www.khanacademy.org",
-        "https://www.mathsisfun.com",
-        "https://www.matematicasonline.com"
+        "https://www.khanacademy.org/math/statistics-probability/counting-permutations-and-combinations",
+        "https://www.mathsisfun.com/combinatorics/combinations-permutations.html",
+        "https://www.britannica.com/science/combinatorics/Permutations-and-combinations"
       ],
       "types_of_problems":[
         {
@@ -15630,7 +15702,19 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "title": "Advanced Combinatorial Analysis",
+      "icon_name": "icon_advanced_combinatorial",
+      "theory": "Advanced combinatorial analysis involves complex techniques for counting, arranging, and partitioning elements in sets, often including advanced topics such as circular permutations, partitioning of groups, and more intricate combinatorial proofs. This field has applications in computer science, discrete mathematics, and optimization problems.",
+      "references":[
+        "https://www.khanacademy.org/math/statistics-probability/counting-permutations-and-combinations/advanced-combinatorial-topics",
+        "https://www.mathsisfun.com/combinatorics.html",
+        "https://www.britannica.com/science/combinatorial-analysis"
+      ],
+      "types_of_problems":[
         {
           "type": "Find the number of circular arrangements of n distinct objects",
           "problems": [
