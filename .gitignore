@@ -2,6 +2,7 @@
 .gradle
 .idea
 gradle/
+release/
 gradlew
 gradlew.bat
 local.properties

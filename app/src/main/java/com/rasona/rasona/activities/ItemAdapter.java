@@ -23,13 +23,15 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
     private final int[] iconsRight1;
     private final int[] iconsRight2;
     private final Context context;
+    private final boolean isSubscribed;
 
-    public ItemAdapter(Context context, List<String> titles, List<Integer> iconsLeft, int[] iconsRight1, int[] iconsRight2) {
+    public ItemAdapter(Context context, List<String> titles, List<Integer> iconsLeft, int[] iconsRight1, int[] iconsRight2, boolean isSubscribed) {
         this.titles = titles;
         this.iconsLeft = iconsLeft;
         this.iconsRight1 = iconsRight1;
         this.iconsRight2 = iconsRight2;
         this.context = context;
+        this.isSubscribed = isSubscribed;
     }
 
     @NonNull
@@ -53,14 +55,26 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         holder.buttonBook.setColorFilter(ContextCompat.getColor(context, color));
         holder.buttonSolve.setColorFilter(ContextCompat.getColor(context, color));
 
+        if (!isSubscribed && position >= titles.size() - 7) {
+            holder.buttonBook.setEnabled(false);
+            holder.buttonSolve.setEnabled(false);
+            holder.itemView.setAlpha(0.5f);
+        } else {
+            holder.buttonBook.setEnabled(true);
+            holder.buttonSolve.setEnabled(true);
+            holder.itemView.setAlpha(1f);
+        }
+
         holder.buttonBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int currentPosition = holder.getAdapterPosition();
                 if (currentPosition != RecyclerView.NO_POSITION) {
                     Intent intent = new Intent(context, TheoryActivity.class);
-                    intent.putExtra("iconResource", iconsLeft.get(currentPosition));
+                    intent.putExtra("resourceIcon", iconsLeft.get(currentPosition));
                     intent.putExtra("title", titles.get(currentPosition));
+                    intent.putExtra("currentPosition", currentPosition);
+
                     context.startActivity(intent);
                     if (context instanceof Activity) {
                         ((Activity) context).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);

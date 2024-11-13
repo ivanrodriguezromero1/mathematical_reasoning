@@ -5,13 +5,14 @@ import android.content.Context;
 import android.util.Log;
 import com.android.billingclient.api.*;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class BillingManager implements PurchasesUpdatedListener {
 
     private static final String TAG = "BillingManager";
-    private static final String SUBSCRIPTION_ID = "monthly_subscription";
+    private static final String SUBSCRIPTION_ID = "rasona_monthly_subscription";
     private final BillingClient billingClient;
     private final Context context;
     private boolean isSubscribed = false;
@@ -39,7 +40,9 @@ public class BillingManager implements PurchasesUpdatedListener {
 
             @Override
             public void onBillingServiceDisconnected() {
-                Log.e(TAG, "Billing service disconnected");
+                Log.e(TAG, "Billing service disconnected. Attempting to reconnect...");
+                connectToGooglePlay();
+                // Optionally, retry connecting here
             }
         });
     }
@@ -57,6 +60,8 @@ public class BillingManager implements PurchasesUpdatedListener {
                             if (purchase.getProducts().contains(SUBSCRIPTION_ID) && purchase.getPurchaseState() == Purchase.PurchaseState.PURCHASED) {
                                 isSubscribed = true;
                                 Log.d(TAG, "User is subscribed.");
+                            } else {
+                                Log.d(TAG, "User is not subscribed or purchase state is not valid.");
                             }
                         }
                     } else {
@@ -79,20 +84,39 @@ public class BillingManager implements PurchasesUpdatedListener {
                 .build();
 
         billingClient.queryProductDetailsAsync(params, (billingResult, productDetailsList) -> {
-            if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK && productDetailsList != null && !productDetailsList.isEmpty()) {
+            if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK && !productDetailsList.isEmpty()) {
                 ProductDetails productDetails = productDetailsList.get(0);
-                BillingFlowParams billingFlowParams = BillingFlowParams.newBuilder()
-                        .setProductDetailsParamsList(
-                                Collections.singletonList(
-                                        BillingFlowParams.ProductDetailsParams.newBuilder()
-                                                .setProductDetails(productDetails)
-                                                .build()
-                                )
-                        )
-                        .build();
-                billingClient.launchBillingFlow(activity, billingFlowParams);
+                Log.d(TAG, "Product details found: " + productDetails.getName());
+
+                List<ProductDetails.SubscriptionOfferDetails> offerDetailsList = productDetails.getSubscriptionOfferDetails();
+                if (offerDetailsList != null && !offerDetailsList.isEmpty()) {
+                    ProductDetails.SubscriptionOfferDetails offerDetails = offerDetailsList.get(0);
+
+                    BillingFlowParams billingFlowParams = BillingFlowParams.newBuilder()
+                            .setProductDetailsParamsList(
+                                    Collections.singletonList(
+                                            BillingFlowParams.ProductDetailsParams.newBuilder()
+                                                    .setProductDetails(productDetails)
+                                                    .setOfferToken(offerDetails.getOfferToken())
+                                                    .build()
+                                    )
+                            )
+                            .build();
+
+                    BillingResult result = billingClient.launchBillingFlow(activity, billingFlowParams);
+                    billingClient.queryPurchasesAsync(
+                            QueryPurchasesParams.newBuilder().setProductType(BillingClient.ProductType.SUBS).build(),
+                            this::onPurchasesUpdated);
+
+                    Log.d(TAG, "Launch billing flow result: " + result.getResponseCode());
+                } else {
+                    Log.e(TAG, "No subscription offer details found for the product.");
+                }
+            } else {
+                Log.e(TAG, "Failed to query product details: " + billingResult.getDebugMessage());
             }
         });
+
     }
 
     public boolean isSubscribed() {
@@ -105,8 +129,13 @@ public class BillingManager implements PurchasesUpdatedListener {
             for (Purchase purchase : purchases) {
                 if (purchase.getProducts().contains(SUBSCRIPTION_ID)) {
                     isSubscribed = true;
+                    Log.d(TAG, "Purchase updated: User is subscribed.");
                 }
             }
+        } else if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.USER_CANCELED) {
+            Log.d(TAG, "Purchase canceled by user.");
+        } else {
+            Log.e(TAG, "Purchase update failed: " + billingResult.getDebugMessage());
         }
     }
 }

@@ -5,11 +5,13 @@ import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.rasona.rasona.R;
 import com.rasona.rasona.models.input.MathematicalReasoning;
+import com.rasona.rasona.utils.SharedData;
 import com.rasona.rasona.utils.TopicUtils;
 import com.rasona.rasona.utils.billing.BillingManager;
 
@@ -31,7 +33,7 @@ public class HomeActivity extends AppCompatActivity {
         billingManager = new BillingManager(this);
         isSubscribed = billingManager.isSubscribed();
 
-        MathematicalReasoning reasoning = (MathematicalReasoning) getIntent().getSerializableExtra("reasoning");
+        MathematicalReasoning reasoning = SharedData.getInstance().getReasoning();
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -49,7 +51,7 @@ public class HomeActivity extends AppCompatActivity {
         List<String> itemTitles = new ArrayList<>(topicMap.keySet());
         List<Integer> itemIconsLeft = new ArrayList<>(topicMap.values());
 
-        ItemAdapter adapter = new ItemAdapter(this, itemTitles, itemIconsLeft, itemIconsRight1, itemIconsRight2);
+        ItemAdapter adapter = new ItemAdapter(this, itemTitles, itemIconsLeft, itemIconsRight1, itemIconsRight2, isSubscribed);
         recyclerView.setAdapter(adapter);
 
         LinearLayout btnHome = findViewById(R.id.btn_home);
@@ -79,6 +81,7 @@ public class HomeActivity extends AppCompatActivity {
         btnPremium.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 billingManager.startSubscription(HomeActivity.this);
             }
         });

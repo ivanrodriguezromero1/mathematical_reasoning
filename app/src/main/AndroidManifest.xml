@@ -2,7 +2,7 @@
 
     <uses-permission android:name="com.android.vending.BILLING" />
     <application
-        android:label="mathematical_reasoning"
+        android:label="Rasona"
         android:icon="@mipmap/ic_launcher"
         android:supportsRtl="true">
         <activity
@@ -20,15 +20,11 @@
         </activity>
         <activity android:name=".activities.HomeActivity"
                   android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".OptionsActivity"
-                  android:exported="true"
-                  android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-        />
         <activity
                 android:name=".activities.TheoryActivity"
                 android:exported="true"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".ProblemsActivity"
+        <activity android:name=".activities.ProblemsActivity"
                   android:exported="true"
                   android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".activities.SolutionActivity"
