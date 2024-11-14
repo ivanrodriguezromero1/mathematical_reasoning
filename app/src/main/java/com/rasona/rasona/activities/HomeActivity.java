@@ -5,13 +5,12 @@ import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.rasona.rasona.R;
 import com.rasona.rasona.models.input.MathematicalReasoning;
-import com.rasona.rasona.utils.SharedData;
+import com.rasona.rasona.utils.FileUtils;
 import com.rasona.rasona.utils.TopicUtils;
 import com.rasona.rasona.utils.billing.BillingManager;
 
@@ -33,7 +32,7 @@ public class HomeActivity extends AppCompatActivity {
         billingManager = new BillingManager(this);
         isSubscribed = billingManager.isSubscribed();
 
-        MathematicalReasoning reasoning = SharedData.getInstance().getReasoning();
+        MathematicalReasoning reasoning = FileUtils.readJsonFromRaw(this, R.raw.mathematical_reasoning);
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 

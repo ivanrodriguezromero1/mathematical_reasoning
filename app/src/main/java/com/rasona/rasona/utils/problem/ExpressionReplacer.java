@@ -26,6 +26,7 @@ public class ExpressionReplacer {
             String evaluatedResult = String.valueOf(evaluator.evaluateExpression(expression, variableValues));
             input = input.replace("#{" + expression + "}", evaluatedResult);
         }
+
         return input;
     }
 }

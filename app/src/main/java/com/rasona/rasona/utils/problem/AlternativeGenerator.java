@@ -1,5 +1,7 @@
 package com.rasona.rasona.utils.problem;
 
+import com.rasona.rasona.utils.NumberUtils;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -12,46 +14,48 @@ public class AlternativeGenerator {
 
     public List<String> generateAlternatives(String answer) {
         List<String> alternatives = new ArrayList<>();
-        alternatives.add(answer);
 
-        boolean isDouble;
         double ansDouble = 0;
-        int ansInt = 0;
+        Long ansLong;
 
-        try {
-            ansInt = Integer.parseInt(answer);
-            isDouble = false;
-        } catch (NumberFormatException e) {
-            try {
-                ansDouble = Double.parseDouble(answer);
-                isDouble = true;
-            } catch (NumberFormatException ex) {
-                throw new IllegalArgumentException("The answer must be an integer or decimal number.");
+        if (!NumberUtils.isDouble(answer)) {
+            ansLong = Long.parseLong(NumberUtils.transformIfNotDouble(answer));
+            alternatives.add(String.valueOf(ansLong));
+            for (int i = 0; i < 3; i++) {
+                String alternative;
+                do {
+                    alternative = generateAlternative(ansLong);
+                } while (alternatives.contains(alternative));
+                alternatives.add(alternative);
+            }
+        } else {
+            ansDouble = Double.parseDouble(answer);
+            ansDouble = Math.floor(ansDouble * 100) / 100;
+            alternatives.add(String.valueOf(ansDouble));
+            for (int i = 0; i < 3; i++) {
+                String alternative;
+                do {
+                    alternative = generateAlternative(ansDouble);
+                } while (alternatives.contains(alternative));
+                alternatives.add(alternative);
             }
         }
 
-        for (int i = 0; i < 3; i++) {
-            String alternative;
-            do {
-                alternative = generateAlternative(ansDouble, ansInt, isDouble);
-            } while (alternatives.contains(alternative));
-            alternatives.add(alternative);
-        }
         Collections.shuffle(alternatives);
         return alternatives;
     }
 
-    private String generateAlternative(double ansDouble, int ansInt, boolean isDouble) {
-        if (isDouble) {
-            double altDouble = random.nextInt(2) == 0
-                    ? ansDouble + random.nextDouble() * (random.nextInt(5) + 1)
-                    : ansDouble - random.nextDouble() * (random.nextInt(3) + 1);
-            return String.format(Locale.getDefault(), "%.2f", Math.round(altDouble * 100.0) / 100.0);
-        } else {
-            int altInt = random.nextInt(2) == 0
-                    ? ansInt + random.nextInt(5) + 1
-                    : ansInt - random.nextInt(3) - 1;
-            return String.valueOf(altInt);
-        }
+    private String generateAlternative(double ansDouble) {
+        double altDouble = random.nextInt(2) == 0
+                ? ansDouble + random.nextDouble() * (random.nextInt(5) + 1)
+                : ansDouble - random.nextDouble() * (random.nextInt(3) + 1);
+        return String.format(Locale.getDefault(), "%.2f", Math.round(altDouble * 100.0) / 100.0);
+    }
+
+    private String generateAlternative(Long ansLong) {
+        long altInt = random.nextInt(2) == 0
+                ? ansLong + random.nextInt(5) + 1
+                : ansLong - random.nextInt(3) - 1;
+        return String.valueOf(altInt);
     }
 }

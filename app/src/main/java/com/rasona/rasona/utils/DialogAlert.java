@@ -8,6 +8,7 @@ import android.view.ViewTreeObserver;
 import android.view.WindowManager;
 import android.widget.*;
 import com.rasona.rasona.R;
+import com.rasona.rasona.activities.ProblemsActivity;
 
 import java.util.List;
 
@@ -41,7 +42,7 @@ public class DialogAlert {
         dialog.show();
     }
 
-    public static void showSelectorDialog(Context context, String title, List<String> options, TextView textView, int index, int[] difficulty, int[] selectedOptionIndex) {
+    public static void showSelectorDifficultyDialog(Context context, String title, List<String> options, TextView textView, int index, int[] radioButtonValues, int[] selectedOptionIndex) {
         View dialogView = LayoutInflater.from(context).inflate(R.layout.selector_dialog, null);
 
         TextView selectorTitle = dialogView.findViewById(R.id.selector_title);
@@ -54,7 +55,7 @@ public class DialogAlert {
 
         selectorTitle.setText(title);
 
-        createRadioButtons(context, selectorRadioGroup, options, textView, index, difficulty, selectedOptionIndex);
+        createRadioButtons(context, selectorRadioGroup, options, textView, index, radioButtonValues, selectedOptionIndex);
 
         ((RadioButton) selectorRadioGroup.getChildAt(selectedOptionIndex[index])).setChecked(true);
 
@@ -68,6 +69,62 @@ public class DialogAlert {
         limitScrollViewHeight(selectorScrollView, 600);
 
         closeButton.setOnClickListener(v -> dialog.dismiss());
+
+        selectorRadioGroup.setOnCheckedChangeListener((group, checkedId) -> {
+            RadioButton selectedRadioButton = group.findViewById(checkedId);
+            if (selectedRadioButton != null) {
+                selectedOptionIndex[index] = checkedId;
+                textView.setText(options.get(checkedId));
+                radioButtonValues[0] = checkedId;
+
+                if (context instanceof ProblemsActivity) {
+                    ((ProblemsActivity) context).setCurrentSelectedDifficultyIndex(checkedId);
+                }
+            }
+        });
+
+        dialog.show();
+    }
+    public static void showSelectorProblemTypeDialog(Context context, String title, List<String> options, TextView textView, int index, int[] radioButtonValues, int[] selectedOptionIndex) {
+        View dialogView = LayoutInflater.from(context).inflate(R.layout.selector_dialog, null);
+
+        TextView selectorTitle = dialogView.findViewById(R.id.selector_title);
+        RadioGroup selectorRadioGroup = dialogView.findViewById(R.id.selector_radio_group);
+        ScrollView selectorScrollView = dialogView.findViewById(R.id.selector_scroll_view);
+        Button closeButton = dialogView.findViewById(R.id.close_button);
+
+        selectorScrollView.setVerticalScrollBarEnabled(true);
+        selectorScrollView.setScrollBarFadeDuration(0);
+
+        selectorTitle.setText(title);
+
+        createRadioButtons(context, selectorRadioGroup, options, textView, index, radioButtonValues, selectedOptionIndex);
+
+        ((RadioButton) selectorRadioGroup.getChildAt(selectedOptionIndex[index])).setChecked(true);
+
+        AlertDialog dialog = new AlertDialog.Builder(context)
+                .setView(dialogView)
+                .create();
+
+        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+        adjustDialogWidth(dialog, context);
+
+        limitScrollViewHeight(selectorScrollView, 600);
+
+        closeButton.setOnClickListener(v -> dialog.dismiss());
+
+        selectorRadioGroup.setOnCheckedChangeListener((group, checkedId) -> {
+            RadioButton selectedRadioButton = group.findViewById(checkedId);
+            if (selectedRadioButton != null) {
+                selectedOptionIndex[index] = checkedId;
+                textView.setText(options.get(checkedId));
+                radioButtonValues[0] = checkedId;
+
+                if (context instanceof ProblemsActivity) {
+                    ((ProblemsActivity) context).setCurrentSelectedProblemTypeIndex(checkedId);;
+                }
+            }
+        });
 
         dialog.show();
     }

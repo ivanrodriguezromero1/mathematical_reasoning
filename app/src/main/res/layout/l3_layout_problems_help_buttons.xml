@@ -26,7 +26,7 @@
                 android:background="@drawable/ripple_effect_cross_out"
                 android:clickable="true"
                 android:focusable="true"
-                app:tint="@color/rasonaGray"
+                app:tint="@color/rasonaBlue"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:contentDescription="@string/cross_out_text" />

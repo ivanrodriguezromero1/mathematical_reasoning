@@ -13,6 +13,7 @@ public class ProblemGenerated {
     private String statement;
     private List<String> alternatives;
     private int correctKeyIndex;
+    private String answer;
     private String preview;
     private String solution;
     private String tip;

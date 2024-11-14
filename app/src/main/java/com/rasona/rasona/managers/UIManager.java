@@ -2,13 +2,13 @@ package com.rasona.rasona.managers;
 
 import android.content.Context;
 import android.content.Intent;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import com.rasona.rasona.R;
-import com.rasona.rasona.activities.MainActivity;
+import com.rasona.rasona.activities.HomeActivity;
 import com.rasona.rasona.models.output.ProblemGenerated;
+
+import java.util.List;
 
 public class UIManager {
 
@@ -29,7 +29,7 @@ public class UIManager {
     public void configureHomeButton(Context context) {
         LinearLayout btnHome = ((AppCompatActivity) context).findViewById(R.id.btn_home);
         btnHome.setOnClickListener(v -> {
-            Intent intent = new Intent(context, MainActivity.class);
+            Intent intent = new Intent(context, HomeActivity.class);
             context.startActivity(intent);
             ((AppCompatActivity) context).overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
         });
@@ -38,7 +38,18 @@ public class UIManager {
     public void displayProblem(ProblemGenerated problemGenerated) {
         TextView problemStatement = ((AppCompatActivity) context).findViewById(R.id.problemStatement);
         TextView preview = ((AppCompatActivity) context).findViewById(R.id.preview);
+        RadioGroup answersRadioGroup = ((AppCompatActivity) context).findViewById(R.id.answersRadioGroup);
         problemStatement.setText(problemGenerated.getStatement());
         preview.setText(problemGenerated.getPreview());
+        answersRadioGroup.removeAllViews();
+        List<String> alternatives = problemGenerated.getAlternatives();
+        for (int i = 0; i < alternatives.size(); i++) {
+            RadioButton radioButton = new RadioButton(context);
+            radioButton.setText(alternatives.get(i));
+            radioButton.setId(i);
+            answersRadioGroup.addView(radioButton);
+        }
+
     }
+
 }

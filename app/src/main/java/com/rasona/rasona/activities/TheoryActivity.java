@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.rasona.rasona.R;
 import com.rasona.rasona.models.input.MathematicalReasoning;
 import com.rasona.rasona.models.input.Topic;
-import com.rasona.rasona.utils.SharedData;
+import com.rasona.rasona.utils.FileUtils;
 
 public class TheoryActivity extends AppCompatActivity {
 
@@ -20,7 +20,7 @@ public class TheoryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.l2_layout_theory);
-        MathematicalReasoning reasoning = SharedData.getInstance().getReasoning();
+        MathematicalReasoning reasoning = FileUtils.readJsonFromRaw(this, R.raw.mathematical_reasoning);
 
         ImageView iconImageView = findViewById(R.id.iconImageView);
         TextView appBarTitle = findViewById(R.id.appBarTitle);

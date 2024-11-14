@@ -16,7 +16,7 @@
     <string name="easy">Easy</string>
     <string name="normal">Normal</string>
     <string name="hard">Hard</string>
-    <string name="problem_type">Problem Type:</string>
+    <string name="label_problem_type">Problem Type:</string>
     <string name="close">Close</string>
     <string name="check">CHECK</string>
     <string name="new_problem">NEW</string>

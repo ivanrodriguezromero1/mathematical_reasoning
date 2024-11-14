@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import com.rasona.rasona.R;
+import com.rasona.rasona.activities.ProblemsActivity;
 import com.rasona.rasona.activities.SolutionActivity;
 import com.rasona.rasona.models.output.ProblemGenerated;
 import com.rasona.rasona.utils.RadioButtonManager;
@@ -14,7 +15,7 @@ import com.rasona.rasona.utils.DialogAlert;
 public class ButtonManager {
 
     private final Context context;
-
+    private boolean isCheckMode = true;
     public ButtonManager(Context context) {
         this.context = context;
     }
@@ -35,7 +36,7 @@ public class ButtonManager {
         btnTips.setOnClickListener(v -> DialogAlert.showTipDialog(context, problemGenerated.getTip()));
     }
 
-    public void setupCheckButton(ProblemGenerated problemGenerated, boolean isCheckMode) {
+    public void setupCheckButton(ProblemGenerated problemGenerated) {
         LinearLayout checkButtonLayout = ((AppCompatActivity) context).findViewById(R.id.checkButtonLayout);
         checkButtonLayout.setOnClickListener(v -> {
             if (isCheckMode) {
@@ -46,11 +47,62 @@ public class ButtonManager {
         });
     }
 
-    public void setupNewButton(ProblemGenerated problemGenerated) {
+    public void setupNewButton(int currentPosition, int[] difficulty, int[] problemType) {
         LinearLayout newButtonLayout = ((AppCompatActivity) context).findViewById(R.id.newButtonLayout);
         newButtonLayout.setOnClickListener(v -> {
+            LinearLayout contentBlock = ((AppCompatActivity) context).findViewById(R.id.contentBlock);
+            contentBlock.startAnimation(android.view.animation.AnimationUtils.loadAnimation(context, R.anim.rotate_page));
+
+            new android.os.Handler().postDelayed(() -> {
+                ProblemGenerated newProblemGenerated = ((ProblemsActivity) context).regenerateProblem(currentPosition, difficulty, problemType);
+                ((ProblemsActivity) context).displayNewProblem(newProblemGenerated);
+
+                contentBlock.startAnimation(android.view.animation.AnimationUtils.loadAnimation(context, R.anim.rotate_page_in));
+
+                enableHelpButtons();
+
+                resetRadioButtons();
+
+                ImageView resultIcon = ((AppCompatActivity) context).findViewById(R.id.answerResultImage);
+                resultIcon.setVisibility(View.GONE);
+
+                TextView previewText = ((AppCompatActivity) context).findViewById(R.id.preview);
+                previewText.setVisibility(View.GONE);
+
+                LinearLayout checkButtonLayout = ((AppCompatActivity) context).findViewById(R.id.checkButtonLayout);
+                TextView checkText = checkButtonLayout.findViewById(R.id.checkText);
+                checkText.setText(context.getString(R.string.check));
+                isCheckMode = true;
+            }, 300);
         });
     }
+
+    private void enableHelpButtons() {
+        ImageButton btnCrossOut = ((AppCompatActivity) context).findViewById(R.id.btnCrossOut);
+        ImageButton btnTips = ((AppCompatActivity) context).findViewById(R.id.btnTips);
+        ImageButton btnPreview = ((AppCompatActivity) context).findViewById(R.id.btnPreview);
+
+        btnCrossOut.setEnabled(true);
+        btnTips.setEnabled(true);
+        btnPreview.setEnabled(true);
+
+        btnCrossOut.setAlpha(1.0f);
+        btnTips.setAlpha(1.0f);
+        btnPreview.setAlpha(1.0f);
+    }
+
+    private void resetRadioButtons() {
+        RadioGroup answersRadioGroup = ((AppCompatActivity) context).findViewById(R.id.answersRadioGroup);
+        answersRadioGroup.clearCheck();
+        for (int i = 0; i < answersRadioGroup.getChildCount(); i++) {
+            View child = answersRadioGroup.getChildAt(i);
+            if (child instanceof RadioButton) {
+                child.setEnabled(true);
+                ((RadioButton) child).setChecked(false);
+            }
+        }
+    }
+
 
     public void setupPreviewButton() {
         ImageButton btnPreview = ((AppCompatActivity) context).findViewById(R.id.btnPreview);
@@ -89,6 +141,21 @@ public class ButtonManager {
             resultIcon.setImageResource(R.drawable.image_error);
         }
         resultIcon.setVisibility(View.VISIBLE);
+
+        for (int i = 0; i < answersRadioGroup.getChildCount(); i++) {
+            View child = answersRadioGroup.getChildAt(i);
+            if (child instanceof RadioButton) {
+                child.setEnabled(false);
+            }
+        }
+
+        LinearLayout checkButtonLayout = ((AppCompatActivity) context).findViewById(R.id.checkButtonLayout);
+        TextView checkText = checkButtonLayout.findViewById(R.id.checkText);
+        checkText.setText(context.getString(R.string.view_solution));
+        isCheckMode = false;
+        disableButton(((AppCompatActivity) context).findViewById(R.id.btnCrossOut));
+        disableButton(((AppCompatActivity) context).findViewById(R.id.btnPreview));
+        disableButton(((AppCompatActivity) context).findViewById(R.id.btnTips));
     }
 
     private void handleViewSolution(ProblemGenerated problemGenerated) {

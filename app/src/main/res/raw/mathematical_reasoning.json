@@ -1871,7 +1871,7 @@
                   "variable_type": "int",
                   "range": {
                     "min": 1,
-                    "max": 100
+                    "max": 10
                   }
                 },
                 {
@@ -1879,7 +1879,7 @@
                   "variable_type": "int",
                   "range": {
                     "min": 1,
-                    "max": 100
+                    "max": 10
                   }
                 },
                 {
@@ -1887,7 +1887,7 @@
                   "variable_type": "int",
                   "range": {
                     "min": 1,
-                    "max": 5
+                    "max": 4
                   }
                 }
               ],
@@ -1912,7 +1912,7 @@
                   "variable_type": "int",
                   "range": {
                     "min": 1,
-                    "max": 100
+                    "max": 10
                   }
                 },
                 {
@@ -1928,7 +1928,7 @@
                   "variable_type": "int",
                   "range": {
                     "min": 1,
-                    "max": 100
+                    "max": 5
                   }
                 }
               ],
@@ -2043,7 +2043,7 @@
                   "variable_type": "int",
                   "range": {
                     "min": 1,
-                    "max": 100
+                    "max": 10
                   }
                 },
                 {
@@ -2051,7 +2051,7 @@
                   "variable_type": "int",
                   "range": {
                     "min": 1,
-                    "max": 10
+                    "max": 5
                   }
                 },
                 {
@@ -2466,7 +2466,7 @@
                   "variable_type": "int",
                   "range": {
                     "min": 1,
-                    "max": 100
+                    "max": 10
                   }
                 },
                 {
