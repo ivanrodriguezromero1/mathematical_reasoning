@@ -3,6 +3,7 @@ package com.rasona.rasona.activities;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import com.rasona.rasona.models.input.Topic;
 import com.rasona.rasona.models.output.ProblemGenerated;
 import com.rasona.rasona.utils.DialogAlert;
 import com.rasona.rasona.utils.FileUtils;
+import com.rasona.rasona.utils.billing.BillingManager;
 import com.rasona.rasona.utils.problem.ProblemGenerator;
 import com.rasona.rasona.managers.ButtonManager;
 import com.rasona.rasona.managers.UIManager;
@@ -30,6 +32,7 @@ public class ProblemsActivity extends AppCompatActivity {
     private ProblemGenerated problemGenerated;
     private ButtonManager buttonManager;
     private UIManager uiManager;
+    private BillingManager billingManager;
     private static final String EASY = "Easy";
     private static final String NORMAL = "Normal";
     private static final String HARD = "Hard";
@@ -43,6 +46,8 @@ public class ProblemsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.l3_layout_problems);
+
+        billingManager = new BillingManager(this);
 
         buttonManager = new ButtonManager(this);
         uiManager = new UIManager(this);
@@ -82,12 +87,45 @@ public class ProblemsActivity extends AppCompatActivity {
                     (TextView) findViewById(R.id.text_view_select_problem_type), 0, problemType, new int[]{currentSelectedDifficultyIndex}, new int[]{currentSelectedProblemTypeIndex});
         });
         setupButtonListeners(difficulty, problemType);
+
+        LinearLayout btnHome = findViewById(R.id.btn_home);
+        LinearLayout btnPremium = findViewById(R.id.btn_premium);
+        LinearLayout btnShare = findViewById(R.id.btn_share);
+
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProblemsActivity.this, HomeActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+            }
+        });
+
+        btnPremium.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                billingManager.startSubscription(ProblemsActivity.this);
+            }
+        });
+
+        btnShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String shareMessage = "Boost your math skills with this interesting app! Check it out: https://play.google.com/store/apps/details?id=" + getPackageName();
+                Intent shareIntent = new Intent();
+                shareIntent.setAction(Intent.ACTION_SEND);
+                shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
+                shareIntent.setType("text/plain");
+                startActivity(Intent.createChooser(shareIntent, "Choose how to share"));
+            }
+        });
+
     }
 
     private void initializeUIComponents() {
         uiManager.setupIconAndTitle();
-        uiManager.configureHomeButton(this);
     }
+
 
     private void setupProblemGeneration(MathematicalReasoning reasoning, int currentPosition, int[] difficulty, int[] problemType) {
         ProblemGenerator problemGenerator = new ProblemGenerator();

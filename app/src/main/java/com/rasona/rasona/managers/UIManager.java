@@ -2,10 +2,12 @@ package com.rasona.rasona.managers;
 
 import android.content.Context;
 import android.content.Intent;
+import android.view.View;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import com.rasona.rasona.R;
 import com.rasona.rasona.activities.HomeActivity;
+import com.rasona.rasona.activities.TheoryActivity;
 import com.rasona.rasona.models.output.ProblemGenerated;
 
 import java.util.List;
@@ -24,15 +26,6 @@ public class UIManager {
         Intent intent = ((AppCompatActivity) context).getIntent();
         iconImageView.setImageResource(intent.getIntExtra("resourceIcon", 0));
         titleTextView.setText(intent.getStringExtra("title"));
-    }
-
-    public void configureHomeButton(Context context) {
-        LinearLayout btnHome = ((AppCompatActivity) context).findViewById(R.id.btn_home);
-        btnHome.setOnClickListener(v -> {
-            Intent intent = new Intent(context, HomeActivity.class);
-            context.startActivity(intent);
-            ((AppCompatActivity) context).overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
-        });
     }
 
     public void displayProblem(ProblemGenerated problemGenerated) {

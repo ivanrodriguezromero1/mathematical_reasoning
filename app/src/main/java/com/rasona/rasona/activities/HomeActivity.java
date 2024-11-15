@@ -80,7 +80,7 @@ public class HomeActivity extends AppCompatActivity {
         btnPremium.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                billingManager.startSubscription(HomeActivity.this, adapter);
+                billingManager.startSubscription(HomeActivity.this);
             }
         });
 

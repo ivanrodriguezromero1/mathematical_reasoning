@@ -65,8 +65,7 @@ public class BillingManager implements PurchasesUpdatedListener {
         );
     }
 
-    public void startSubscription(Activity activity, ItemAdapter adapter) {
-        this.adapter = adapter; // Save reference to adapter
+    public void startSubscription(Activity activity) {
         List<QueryProductDetailsParams.Product> productList = Collections.singletonList(
                 QueryProductDetailsParams.Product.newBuilder()
                         .setProductId(SUBSCRIPTION_ID)
@@ -117,9 +116,6 @@ public class BillingManager implements PurchasesUpdatedListener {
             for (Purchase purchase : purchases) {
                 if (purchase.getProducts().contains(SUBSCRIPTION_ID)) {
                     isSubscribed = true;
-                    if (adapter != null) {
-                        adapter.updateSubscriptionStatus(true);
-                    }
                     Log.d(TAG, "Purchase updated: User is subscribed.");
                 }
             }
