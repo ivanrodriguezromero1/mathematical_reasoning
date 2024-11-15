@@ -114,7 +114,7 @@ public class ProblemsActivity extends AppCompatActivity {
         buttonManager.setupCheckButton(problemGenerated);
         buttonManager.setupNewButton(currentPosition, difficulty, problemType);
         buttonManager.setupPreviewButton();
-        buttonManager.setupSendProblemButton();
+        buttonManager.setupSendProblemButton(problemGenerated);
         buttonManager.setupSelectorDialogs();
     }
 

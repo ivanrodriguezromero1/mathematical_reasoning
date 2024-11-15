@@ -2,6 +2,7 @@ package com.rasona.rasona.activities;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -31,7 +32,6 @@ public class HomeActivity extends AppCompatActivity {
 
         billingManager = new BillingManager(this);
         isSubscribed = billingManager.isSubscribed();
-        isSubscribed = true;
         MathematicalReasoning reasoning = FileUtils.readJsonFromRaw(this, R.raw.mathematical_reasoning);
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -87,7 +87,12 @@ public class HomeActivity extends AppCompatActivity {
         btnShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                String shareMessage = "Boost your math skills with this interesting app! Check it out: https://play.google.com/store/apps/details?id=" + getPackageName();
+                Intent shareIntent = new Intent();
+                shareIntent.setAction(Intent.ACTION_SEND);
+                shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
+                shareIntent.setType("text/plain");
+                startActivity(Intent.createChooser(shareIntent, "Choose how to share"));
             }
         });
 

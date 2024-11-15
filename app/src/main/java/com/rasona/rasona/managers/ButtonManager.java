@@ -11,6 +11,9 @@ import com.rasona.rasona.activities.SolutionActivity;
 import com.rasona.rasona.models.output.ProblemGenerated;
 import com.rasona.rasona.utils.RadioButtonManager;
 import com.rasona.rasona.utils.DialogAlert;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import java.util.List;
 
 public class ButtonManager {
 
@@ -84,7 +87,7 @@ public class ButtonManager {
                 }
 
                 setupCrossOutButton(newProblemGenerated);
-
+                setupSendProblemButton(newProblemGenerated);
             }, 300);
         });
     }
@@ -93,14 +96,17 @@ public class ButtonManager {
         ImageButton btnCrossOut = ((AppCompatActivity) context).findViewById(R.id.btnCrossOut);
         ImageButton btnTips = ((AppCompatActivity) context).findViewById(R.id.btnTips);
         ImageButton btnPreview = ((AppCompatActivity) context).findViewById(R.id.btnPreview);
+        ImageButton btnSendProblem = ((AppCompatActivity) context).findViewById(R.id.btnSendProblem);
 
         btnCrossOut.setEnabled(true);
         btnTips.setEnabled(true);
         btnPreview.setEnabled(true);
+        btnSendProblem.setEnabled(true);
 
         btnCrossOut.setAlpha(1.0f);
         btnTips.setAlpha(1.0f);
         btnPreview.setAlpha(1.0f);
+        btnSendProblem.setAlpha(1.0f);
     }
 
     private void resetRadioButtons() {
@@ -125,9 +131,26 @@ public class ButtonManager {
         });
     }
 
-    public void setupSendProblemButton() {
+    public void setupSendProblemButton(ProblemGenerated problemGenerated) {
         ImageButton btnSendProblem = ((AppCompatActivity) context).findViewById(R.id.btnSendProblem);
         btnSendProblem.setOnClickListener(v -> {
+            StringBuilder problemContent = new StringBuilder();
+            problemContent.append("Here's a problem I'm working on:\n\n");
+            problemContent.append("Problem Statement:\n").append(problemGenerated.getStatement()).append("\n\n");
+            problemContent.append("Alternatives:\n");
+
+            List<String> alternatives = problemGenerated.getAlternatives();
+            for (int i = 0; i < alternatives.size(); i++) {
+                problemContent.append((char) ('A' + i)).append(". ").append(alternatives.get(i)).append("\n");
+            }
+
+            Intent sendIntent = new Intent(Intent.ACTION_SEND);
+            sendIntent.setType("text/plain");
+            sendIntent.putExtra(Intent.EXTRA_TEXT, problemContent.toString());
+
+            Intent shareIntent = Intent.createChooser(sendIntent, "Choose an app to share the problem");
+            context.startActivity(shareIntent);
+            disableButton(btnSendProblem);
         });
     }
 
