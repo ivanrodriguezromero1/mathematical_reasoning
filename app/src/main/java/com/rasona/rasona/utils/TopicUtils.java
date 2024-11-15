@@ -24,8 +24,6 @@ public class TopicUtils {
         ICON_MAP.put("icon_relative_motion", R.drawable.symbols_directions_car);
         ICON_MAP.put("icon_elapsed_time", R.drawable.symbols_scale);
         ICON_MAP.put("icon_time_interval", R.drawable.symbols_timer);
-        ICON_MAP.put("icon_permutations_combinations", R.drawable.symbols_grid_on);
-        ICON_MAP.put("icon_advanced_combinatorial", R.drawable.symbols_widgets);
     }
 
     public static Map<String, Integer> createTopicMap(MathematicalReasoning reasoning) {

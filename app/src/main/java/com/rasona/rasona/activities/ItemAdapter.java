@@ -18,12 +18,13 @@ import java.util.List;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
+    private static final int NUM_ITEMS_RESTRICTED = 6;
     private final List<String> titles;
     private final List<Integer> iconsLeft;
     private final int[] iconsRight1;
     private final int[] iconsRight2;
     private final Context context;
-    private final boolean isSubscribed;
+    private boolean isSubscribed;
 
     public ItemAdapter(Context context, List<String> titles, List<Integer> iconsLeft, int[] iconsRight1, int[] iconsRight2, boolean isSubscribed) {
         this.titles = titles;
@@ -33,7 +34,10 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         this.context = context;
         this.isSubscribed = isSubscribed;
     }
-
+    public void updateSubscriptionStatus(boolean isSubscribed) {
+        this.isSubscribed = isSubscribed;
+        notifyDataSetChanged();
+    }
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -55,7 +59,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         holder.buttonBook.setColorFilter(ContextCompat.getColor(context, color));
         holder.buttonSolve.setColorFilter(ContextCompat.getColor(context, color));
 
-        if (!isSubscribed && position >= titles.size() - 7) {
+        if (!isSubscribed && position >= titles.size() - NUM_ITEMS_RESTRICTED) {
             holder.buttonBook.setEnabled(false);
             holder.buttonSolve.setEnabled(false);
             holder.itemView.setAlpha(0.5f);

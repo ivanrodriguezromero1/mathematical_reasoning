@@ -73,6 +73,18 @@ public class ButtonManager {
                 TextView checkText = checkButtonLayout.findViewById(R.id.checkText);
                 checkText.setText(context.getString(R.string.check));
                 isCheckMode = true;
+
+                String newTip = newProblemGenerated.getTip();
+                if (newTip != null && !newTip.isEmpty()) {
+                    setupTipsButton(newProblemGenerated);
+                }
+                String newSolution = newProblemGenerated.getSolution();
+                if (newSolution != null && !newSolution.isEmpty()) {
+                    setupCheckButton(newProblemGenerated);
+                }
+
+                setupCrossOutButton(newProblemGenerated);
+
             }, 300);
         });
     }

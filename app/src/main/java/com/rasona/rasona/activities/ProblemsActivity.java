@@ -68,7 +68,7 @@ public class ProblemsActivity extends AppCompatActivity {
         btnSelectDifficulty.setOnClickListener(v -> {
             List<String> difficultyOptions = Arrays.asList(EASY, NORMAL, HARD);
             DialogAlert.showSelectorDifficultyDialog(this, getString(R.string.label_difficulty), difficultyOptions,
-                    (TextView) findViewById(R.id.text_view_select_difficulty), 0, difficulty, new int[]{currentSelectedDifficultyIndex});
+                    (TextView) findViewById(R.id.text_view_select_difficulty), 0, difficulty, new int[]{currentSelectedDifficultyIndex}, new int[]{currentSelectedProblemTypeIndex} );
         });
         LinearLayout btnSelectProblemType = findViewById(R.id.btn_select_problem_type);
         btnSelectProblemType.setOnClickListener(v -> {
@@ -79,9 +79,9 @@ public class ProblemsActivity extends AppCompatActivity {
             }
 
             DialogAlert.showSelectorProblemTypeDialog(this, getString(R.string.label_problem_type), problemTypeOptions,
-                    (TextView) findViewById(R.id.text_view_select_problem_type), 0, problemType, new int[]{currentSelectedProblemTypeIndex});
+                    (TextView) findViewById(R.id.text_view_select_problem_type), 0, problemType, new int[]{currentSelectedDifficultyIndex}, new int[]{currentSelectedProblemTypeIndex});
         });
-        setupButtonListeners();
+        setupButtonListeners(difficulty, problemType);
     }
 
     private void initializeUIComponents() {
@@ -108,9 +108,7 @@ public class ProblemsActivity extends AppCompatActivity {
         uiManager.displayProblem(problemGenerated);
     }
 
-    private void setupButtonListeners() {
-        int[] difficulty = {currentSelectedDifficultyIndex};
-        int[] problemType = {currentSelectedProblemTypeIndex};
+    public void setupButtonListeners(int[] difficulty, int[] problemType) {
         buttonManager.setupCrossOutButton(problemGenerated);
         buttonManager.setupTipsButton(problemGenerated);
         buttonManager.setupCheckButton(problemGenerated);

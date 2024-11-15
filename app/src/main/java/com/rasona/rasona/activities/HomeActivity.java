@@ -23,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private BillingManager billingManager;
     private boolean isSubscribed;
-
+    private ItemAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +31,7 @@ public class HomeActivity extends AppCompatActivity {
 
         billingManager = new BillingManager(this);
         isSubscribed = billingManager.isSubscribed();
-
+        isSubscribed = true;
         MathematicalReasoning reasoning = FileUtils.readJsonFromRaw(this, R.raw.mathematical_reasoning);
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -50,7 +50,7 @@ public class HomeActivity extends AppCompatActivity {
         List<String> itemTitles = new ArrayList<>(topicMap.keySet());
         List<Integer> itemIconsLeft = new ArrayList<>(topicMap.values());
 
-        ItemAdapter adapter = new ItemAdapter(this, itemTitles, itemIconsLeft, itemIconsRight1, itemIconsRight2, isSubscribed);
+        adapter = new ItemAdapter(this, itemTitles, itemIconsLeft, itemIconsRight1, itemIconsRight2, isSubscribed);
         recyclerView.setAdapter(adapter);
 
         LinearLayout btnHome = findViewById(R.id.btn_home);
@@ -80,8 +80,7 @@ public class HomeActivity extends AppCompatActivity {
         btnPremium.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                billingManager.startSubscription(HomeActivity.this);
+                billingManager.startSubscription(HomeActivity.this, adapter);
             }
         });
 

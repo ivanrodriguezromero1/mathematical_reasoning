@@ -42,7 +42,7 @@ public class DialogAlert {
         dialog.show();
     }
 
-    public static void showSelectorDifficultyDialog(Context context, String title, List<String> options, TextView textView, int index, int[] radioButtonValues, int[] selectedOptionIndex) {
+    public static void showSelectorDifficultyDialog(Context context, String title, List<String> options, TextView textView, int index, int[] radioButtonValues, int[] selectedDifficultyIndex, int[] selectedProblemTypeIndex) {
         View dialogView = LayoutInflater.from(context).inflate(R.layout.selector_dialog, null);
 
         TextView selectorTitle = dialogView.findViewById(R.id.selector_title);
@@ -55,9 +55,9 @@ public class DialogAlert {
 
         selectorTitle.setText(title);
 
-        createRadioButtons(context, selectorRadioGroup, options, textView, index, radioButtonValues, selectedOptionIndex);
+        createRadioButtons(context, selectorRadioGroup, options, textView, index, radioButtonValues, selectedDifficultyIndex);
 
-        ((RadioButton) selectorRadioGroup.getChildAt(selectedOptionIndex[index])).setChecked(true);
+        ((RadioButton) selectorRadioGroup.getChildAt(selectedDifficultyIndex[index])).setChecked(true);
 
         AlertDialog dialog = new AlertDialog.Builder(context)
                 .setView(dialogView)
@@ -73,19 +73,20 @@ public class DialogAlert {
         selectorRadioGroup.setOnCheckedChangeListener((group, checkedId) -> {
             RadioButton selectedRadioButton = group.findViewById(checkedId);
             if (selectedRadioButton != null) {
-                selectedOptionIndex[index] = checkedId;
+                selectedDifficultyIndex[index] = checkedId;
                 textView.setText(options.get(checkedId));
                 radioButtonValues[0] = checkedId;
 
                 if (context instanceof ProblemsActivity) {
                     ((ProblemsActivity) context).setCurrentSelectedDifficultyIndex(checkedId);
+                    ((ProblemsActivity) context).setupButtonListeners(selectedDifficultyIndex, selectedProblemTypeIndex);
                 }
             }
         });
 
         dialog.show();
     }
-    public static void showSelectorProblemTypeDialog(Context context, String title, List<String> options, TextView textView, int index, int[] radioButtonValues, int[] selectedOptionIndex) {
+    public static void showSelectorProblemTypeDialog(Context context, String title, List<String> options, TextView textView, int index, int[] radioButtonValues, int[] selectedDifficultyIndex, int[] selectedProblemTypeIndex) {
         View dialogView = LayoutInflater.from(context).inflate(R.layout.selector_dialog, null);
 
         TextView selectorTitle = dialogView.findViewById(R.id.selector_title);
@@ -98,9 +99,9 @@ public class DialogAlert {
 
         selectorTitle.setText(title);
 
-        createRadioButtons(context, selectorRadioGroup, options, textView, index, radioButtonValues, selectedOptionIndex);
+        createRadioButtons(context, selectorRadioGroup, options, textView, index, radioButtonValues, selectedProblemTypeIndex);
 
-        ((RadioButton) selectorRadioGroup.getChildAt(selectedOptionIndex[index])).setChecked(true);
+        ((RadioButton) selectorRadioGroup.getChildAt(selectedProblemTypeIndex[index])).setChecked(true);
 
         AlertDialog dialog = new AlertDialog.Builder(context)
                 .setView(dialogView)
@@ -116,12 +117,13 @@ public class DialogAlert {
         selectorRadioGroup.setOnCheckedChangeListener((group, checkedId) -> {
             RadioButton selectedRadioButton = group.findViewById(checkedId);
             if (selectedRadioButton != null) {
-                selectedOptionIndex[index] = checkedId;
+                selectedProblemTypeIndex[index] = checkedId;
                 textView.setText(options.get(checkedId));
                 radioButtonValues[0] = checkedId;
 
                 if (context instanceof ProblemsActivity) {
-                    ((ProblemsActivity) context).setCurrentSelectedProblemTypeIndex(checkedId);;
+                    ((ProblemsActivity) context).setCurrentSelectedProblemTypeIndex(checkedId);
+                    ((ProblemsActivity) context).setupButtonListeners(selectedDifficultyIndex, selectedProblemTypeIndex);
                 }
             }
         });
