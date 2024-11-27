@@ -18,10 +18,10 @@ public class Topic12Type2ProblemsBuilder {
                 .statement("A workshop has a first segment of ${duration1_hour} hours and ${duration1_minute} minutes, followed by a second segment of ${duration2_hour} hours and ${duration2_minute} minutes. What is the total duration of the workshop in minutes?")
                 .difficulty(0)
                 .variables(Arrays.asList(
-                        new Variable("duration1_hour", new Range(0, 10)),
-                        new Variable("duration1_minute", new Range(0, 59)),
-                        new Variable("duration2_hour", new Range(0, 10)),
-                        new Variable("duration2_minute", new Range(0, 59))
+                        new Variable("duration1_hour", new Range(1, 10)),
+                        new Variable("duration1_minute", new Range(1, 59)),
+                        new Variable("duration2_hour", new Range(1, 10)),
+                        new Variable("duration2_minute", new Range(1, 59))
                 ))
                 .tip("Convert the hours to minutes and add all the minutes together to find the total duration.")
                 .preview(Arrays.asList(
@@ -45,10 +45,10 @@ public class Topic12Type2ProblemsBuilder {
                         .statement("A soccer game has a first segment of ${duration1_hour} hours and ${duration1_minute} minutes, followed by a second segment of ${duration2_hour} hours and ${duration2_minute} minutes. What is the total duration of the game in minutes?")
                         .difficulty(0)
                         .variables(Arrays.asList(
-                                new Variable("duration1_hour", new Range(0, 3)),
-                                new Variable("duration1_minute", new Range(0, 59)),
-                                new Variable("duration2_hour", new Range(0, 3)),
-                                new Variable("duration2_minute", new Range(0, 59))
+                                new Variable("duration1_hour", new Range(1, 3)),
+                                new Variable("duration1_minute", new Range(1, 59)),
+                                new Variable("duration2_hour", new Range(1, 3)),
+                                new Variable("duration2_minute", new Range(1, 59))
                         ))
                         .tip("Convert the hours to minutes and add all the minutes together to find the total duration.")
                         .preview(Arrays.asList(
@@ -72,10 +72,10 @@ public class Topic12Type2ProblemsBuilder {
                         .statement("A conference has a first segment of ${duration1_hour} hours and ${duration1_minute} minutes, followed by a second segment of ${duration2_hour} hours and ${duration2_minute} minutes. What is the total duration of the conference in minutes?")
                         .difficulty(0)
                         .variables(Arrays.asList(
-                                new Variable("duration1_hour", new Range(0, 5)),
-                                new Variable("duration1_minute", new Range(0, 59)),
-                                new Variable("duration2_hour", new Range(0, 5)),
-                                new Variable("duration2_minute", new Range(0, 59))
+                                new Variable("duration1_hour", new Range(1, 5)),
+                                new Variable("duration1_minute", new Range(1, 59)),
+                                new Variable("duration2_hour", new Range(1, 5)),
+                                new Variable("duration2_minute", new Range(1, 59))
                         ))
                         .tip("Convert the hours to minutes and add all the minutes together to find the total duration.")
                         .preview(Arrays.asList(
@@ -99,12 +99,12 @@ public class Topic12Type2ProblemsBuilder {
                         .statement("A class has a first segment of ${duration1_hour} hours and ${duration1_minute} minutes, a second segment of ${duration2_hour} hours and ${duration2_minute} minutes, and a third segment of ${duration3_hour} hours and ${duration3_minute} minutes. What is the total duration of the class in minutes?")
                         .difficulty(1)
                         .variables(Arrays.asList(
-                                new Variable("duration1_hour", new Range(0, 5)),
-                                new Variable("duration1_minute", new Range(0, 59)),
-                                new Variable("duration2_hour", new Range(0, 5)),
-                                new Variable("duration2_minute", new Range(0, 59)),
-                                new Variable("duration3_hour", new Range(0, 5)),
-                                new Variable("duration3_minute", new Range(0, 59))
+                                new Variable("duration1_hour", new Range(1, 5)),
+                                new Variable("duration1_minute", new Range(1, 59)),
+                                new Variable("duration2_hour", new Range(1, 5)),
+                                new Variable("duration2_minute", new Range(1, 59)),
+                                new Variable("duration3_hour", new Range(1, 5)),
+                                new Variable("duration3_minute", new Range(1, 59))
                         ))
                         .tip("Convert the hours to minutes for each segment, sum up all the minutes, and find the total duration.")
                         .preview(Arrays.asList(
@@ -132,12 +132,12 @@ public class Topic12Type2ProblemsBuilder {
                         .statement("A workshop has a first segment of ${duration1_hour} hours and ${duration1_minute} minutes, a second segment of ${duration2_hour} hours and ${duration2_minute} minutes, and a third segment of ${duration3_hour} hours and ${duration3_minute} minutes. What is the total duration of the workshop in minutes?")
                         .difficulty(1)
                         .variables(Arrays.asList(
-                                new Variable("duration1_hour", new Range(0, 5)),
-                                new Variable("duration1_minute", new Range(0, 59)),
-                                new Variable("duration2_hour", new Range(0, 5)),
-                                new Variable("duration2_minute", new Range(0, 59)),
-                                new Variable("duration3_hour", new Range(0, 5)),
-                                new Variable("duration3_minute", new Range(0, 59))
+                                new Variable("duration1_hour", new Range(1, 5)),
+                                new Variable("duration1_minute", new Range(1, 59)),
+                                new Variable("duration2_hour", new Range(1, 5)),
+                                new Variable("duration2_minute", new Range(1, 59)),
+                                new Variable("duration3_hour", new Range(1, 5)),
+                                new Variable("duration3_minute", new Range(1, 59))
                         ))
                         .tip("Convert all hours to minutes and add the total minutes from all segments to get the total duration in minutes.")
                         .preview(Arrays.asList(
@@ -165,12 +165,12 @@ public class Topic12Type2ProblemsBuilder {
                         .statement("A soccer match has a first segment of ${duration1_hour} hours and ${duration1_minute} minutes, a second segment of ${duration2_hour} hours and ${duration2_minute} minutes, and a third segment of ${duration3_hour} hours and ${duration3_minute} minutes. What is the total duration of the match in minutes?")
                         .difficulty(1)
                         .variables(Arrays.asList(
-                                new Variable("duration1_hour", new Range(0, 2)),
-                                new Variable("duration1_minute", new Range(0, 59)),
-                                new Variable("duration2_hour", new Range(0, 2)),
-                                new Variable("duration2_minute", new Range(0, 59)),
-                                new Variable("duration3_hour", new Range(0, 2)),
-                                new Variable("duration3_minute", new Range(0, 59))
+                                new Variable("duration1_hour", new Range(1, 2)),
+                                new Variable("duration1_minute", new Range(1, 59)),
+                                new Variable("duration2_hour", new Range(1, 2)),
+                                new Variable("duration2_minute", new Range(1, 59)),
+                                new Variable("duration3_hour", new Range(1, 2)),
+                                new Variable("duration3_minute", new Range(1, 59))
                         ))
                         .tip("Convert the hours of each segment to minutes and add all the minutes to find the total duration in minutes.")
                         .preview(Arrays.asList(
@@ -198,12 +198,12 @@ public class Topic12Type2ProblemsBuilder {
                         .statement("A meeting has a first segment of ${duration1_hour} hours and ${duration1_minute} minutes, a second segment of ${duration2_hour} hours and ${duration2_minute} minutes, and a third segment of ${duration3_hour} hours and ${duration3_minute} minutes, but is interrupted for 10 minutes during the second segment. What is the total time in minutes?")
                         .difficulty(2)
                         .variables(Arrays.asList(
-                                new Variable("duration1_hour", new Range(0, 3)),
-                                new Variable("duration1_minute", new Range(0, 59)),
-                                new Variable("duration2_hour", new Range(0, 3)),
-                                new Variable("duration2_minute", new Range(0, 59)),
-                                new Variable("duration3_hour", new Range(0, 3)),
-                                new Variable("duration3_minute", new Range(0, 59))
+                                new Variable("duration1_hour", new Range(1, 3)),
+                                new Variable("duration1_minute", new Range(1, 59)),
+                                new Variable("duration2_hour", new Range(1, 3)),
+                                new Variable("duration2_minute", new Range(1, 59)),
+                                new Variable("duration3_hour", new Range(1, 3)),
+                                new Variable("duration3_minute", new Range(1, 59))
                         ))
                         .tip("Convert all hours to minutes, add the total minutes, and subtract the interruption to get the total duration in minutes.")
                         .preview(Arrays.asList(
@@ -231,12 +231,12 @@ public class Topic12Type2ProblemsBuilder {
                         .statement("A flight has a first segment of ${duration1_hour} hours and ${duration1_minute} minutes, a second segment of ${duration2_hour} hours and ${duration2_minute} minutes, and a third segment of ${duration3_hour} hours and ${duration3_minute} minutes, with a 20-minute layover. What is the total duration in minutes?")
                         .difficulty(2)
                         .variables(Arrays.asList(
-                                new Variable("duration1_hour", new Range(0, 10)),
-                                new Variable("duration1_minute", new Range(0, 59)),
-                                new Variable("duration2_hour", new Range(0, 10)),
-                                new Variable("duration2_minute", new Range(0, 59)),
-                                new Variable("duration3_hour", new Range(0, 10)),
-                                new Variable("duration3_minute", new Range(0, 59))
+                                new Variable("duration1_hour", new Range(1, 10)),
+                                new Variable("duration1_minute", new Range(1, 59)),
+                                new Variable("duration2_hour", new Range(1, 10)),
+                                new Variable("duration2_minute", new Range(1, 59)),
+                                new Variable("duration3_hour", new Range(1, 10)),
+                                new Variable("duration3_minute", new Range(1, 59))
                         ))
                         .tip("Convert all hours to minutes, add the minutes, and include the 20-minute layover to find the total duration.")
                         .preview(Arrays.asList(
@@ -258,12 +258,12 @@ public class Topic12Type2ProblemsBuilder {
                         .statement("A class has a first segment of ${duration1_hour} hours and ${duration1_minute} minutes, a second segment of ${duration2_hour} hours and ${duration2_minute} minutes, and a third segment of ${duration3_hour} hours and ${duration3_minute} minutes, with a 25-minute break. What is the total duration in minutes?")
                         .difficulty(2)
                         .variables(Arrays.asList(
-                                new Variable("duration1_hour", new Range(0, 10)),
-                                new Variable("duration1_minute", new Range(0, 59)),
-                                new Variable("duration2_hour", new Range(0, 10)),
-                                new Variable("duration2_minute", new Range(0, 59)),
-                                new Variable("duration3_hour", new Range(0, 10)),
-                                new Variable("duration3_minute", new Range(0, 59))
+                                new Variable("duration1_hour", new Range(1, 10)),
+                                new Variable("duration1_minute", new Range(1, 59)),
+                                new Variable("duration2_hour", new Range(1, 10)),
+                                new Variable("duration2_minute", new Range(1, 59)),
+                                new Variable("duration3_hour", new Range(1, 10)),
+                                new Variable("duration3_minute", new Range(1, 59))
                         ))
                         .tip("Convert the hours to minutes, sum all minutes including the 25-minute break.")
                         .preview(Arrays.asList(
