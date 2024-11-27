@@ -17,16 +17,10 @@ public class ProblemVariableGenerator {
         for (Variable variable : variables) {
             try {
                 String varName = variable.getName();
-                String varType = variable.getVariableType();
                 Range range = variable.getRange();
+                int value = random.nextInt(range.getMax() - range.getMin() + 1) + range.getMin();
+                variableValues.put(varName, String.valueOf(value));
 
-                if ("int".equalsIgnoreCase(varType)) {
-                    int value = random.nextInt(range.getMax() - range.getMin() + 1) + range.getMin();
-                    variableValues.put(varName, String.valueOf(value));
-                } else if ("double".equalsIgnoreCase(varType)) {
-                    double value = range.getMin() + (range.getMax() - range.getMin()) * random.nextDouble();
-                    variableValues.put(varName, String.format(Locale.US, "%.2f", value));
-                }
             } catch (Exception e) {
                 System.err.println("Error generating value for variable: " + e.getMessage());
             }

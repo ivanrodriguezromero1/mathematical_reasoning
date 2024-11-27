@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class ExpressionEvaluator {
 
-    public double evaluateExpression(String expression, Map<String, String> variableValues) {
+    public Number evaluateExpression(String expression, Map<String, String> variableValues) {
         try {
             ExpressionBuilder expressionBuilder = new ExpressionBuilder(expression);
             for (String variable : variableValues.keySet()) {
@@ -19,10 +19,16 @@ public class ExpressionEvaluator {
                     exp.setVariable(entry.getKey(), Double.parseDouble(entry.getValue()));
                 }
             }
-            return exp.evaluate();
+            double result = exp.evaluate();
+
+            if (result == Math.floor(result)) {
+                return (int) result;
+            } else {
+                return Math.round(result * 100.0) / 100.0;
+            }
         } catch (Exception e) {
             System.err.println("Error evaluating the expression: " + expression + ". Message: " + e.getMessage());
-            return 0.0;
+            return 0;
         }
     }
 }

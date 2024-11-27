@@ -1,14 +1,15 @@
 package com.rasona.app.models.input;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
 import java.io.Serializable;
 
 @Data
+@Builder
+@AllArgsConstructor
 public class Variable implements Serializable {
     private String name;
-    @JsonProperty("variable_type")
-    private String variableType;
     private Range range;
 }

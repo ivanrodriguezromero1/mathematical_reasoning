@@ -37,14 +37,8 @@ public class SolutionActivity extends AppCompatActivity {
 
     public void goBackToProblem(View view) {
         try {
-            Intent intent = new Intent(SolutionActivity.this, ProblemsActivity.class);
-            ActivityOptions options = ActivityOptions.makeCustomAnimation(
-                    SolutionActivity.this,
-                    R.anim.slide_in_bottom,
-                    R.anim.slide_out_top
-            );
-            startActivity(intent, options.toBundle());
             finish();
+            overridePendingTransition(R.anim.slide_in_bottom, R.anim.slide_out_top);
         } catch (Exception e) {
             Log.e("SolutionActivity", "Error navigating back to ProblemsActivity", e);
             Toast.makeText(this, "An error occurred while navigating back.", Toast.LENGTH_SHORT).show();

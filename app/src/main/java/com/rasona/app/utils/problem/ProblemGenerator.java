@@ -28,8 +28,6 @@ public class ProblemGenerator {
             String processedTip = replacer.replaceAndEvaluateExpressions(problem.getTip(), variableValues);
             List<String> precalculateSteps = replaceAndEvaluateList(problem.getPreview(), variableValues);
             String answer = replacer.replaceAndEvaluateExpressions(problem.getAnswer(), variableValues);
-            answer = NumberUtils.isInteger(answer) ? NumberUtils.transformIfNotDouble(answer) : answer;
-            answer = NumberUtils.isDouble(answer) ? NumberUtils.formatToTwoDecimalsIfDouble(answer) : answer;
             List<String> solutionList = replaceAndEvaluateList(problem.getStepByStepSolution(), variableValues);
             List<String> alternatives = alternativeGenerator.generateAlternatives(answer);
 

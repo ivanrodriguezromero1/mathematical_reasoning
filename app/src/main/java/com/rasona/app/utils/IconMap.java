@@ -1,17 +1,12 @@
 package com.rasona.app.utils;
 
-import android.util.Log;
 import com.rasona.app.R;
-import com.rasona.app.models.input.MathematicalReasoning;
-import com.rasona.app.models.input.Topic;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class TopicUtils {
-
-    private static final String TAG = "TopicUtils";
-    private static final Map<String, Integer> ICON_MAP = new LinkedHashMap<>();
+public class IconMap {
+    public static final Map<String, Integer> ICON_MAP = new LinkedHashMap<>();
 
     static {
         ICON_MAP.put("icon_basic_arithmetic", R.drawable.symbols_calculate);
@@ -27,21 +22,5 @@ public class TopicUtils {
         ICON_MAP.put("icon_elapsed_time", R.drawable.symbols_scale);
         ICON_MAP.put("icon_time_interval", R.drawable.symbols_timer);
     }
-
-    public static Map<String, Integer> createTopicMap(MathematicalReasoning reasoning) {
-        Map<String, Integer> topicMap = new LinkedHashMap<>();
-        try {
-            for (Topic topic : reasoning.getTopics()) {
-                String title = topic.getTitle();
-                String iconName = topic.getIconName();
-                Integer imageResource = ICON_MAP.get(iconName);
-                if (imageResource != null) {
-                    topicMap.put(title, imageResource);
-                }
-            }
-        } catch (Exception e) {
-            Log.e(TAG, "Error creating topic map: " + e.getMessage(), e);
-        }
-        return topicMap;
-    }
 }
+

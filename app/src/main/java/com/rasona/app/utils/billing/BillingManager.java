@@ -13,7 +13,7 @@ import java.util.List;
 public class BillingManager implements PurchasesUpdatedListener {
 
     private static final String TAG = "BillingManager";
-    private static final String SUBSCRIPTION_ID = "rasona_monthly_subscription";
+    private static final String SUBSCRIPTION_ID = "monthly-basic-plan";
     private final BillingClient billingClient;
     private final Context context;
     private boolean isSubscribed = false;

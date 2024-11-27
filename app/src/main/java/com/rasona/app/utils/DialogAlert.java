@@ -94,7 +94,7 @@ public class DialogAlert {
             dialog.show();
         } catch (Exception e) {
             Toast.makeText(context, "Error displaying difficulty selector dialog.", Toast.LENGTH_SHORT).show();
-            Log.e("DialogAlert", "Error in showSelectorDifficultyDialog", e);
+             Log.e("DialogAlert", "Error in showSelectorDifficultyDialog", e);
         }
     }
 

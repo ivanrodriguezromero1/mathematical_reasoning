@@ -11,9 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.rasona.app.R;
-import com.rasona.app.models.input.MathematicalReasoning;
 import com.rasona.app.models.input.Topic;
-import com.rasona.app.utils.FileUtils;
+import com.rasona.app.utils.topic.TopicTheories;
 import com.rasona.app.utils.billing.BillingManager;
 
 import java.util.List;
@@ -30,7 +29,6 @@ public class TheoryActivity extends AppCompatActivity {
         setContentView(R.layout.l2_layout_theory);
 
         try {
-            MathematicalReasoning reasoning = FileUtils.readJsonFromRaw(this, R.raw.mathematical_reasoning);
             billingManager = new BillingManager(this);
             ImageView iconImageView = findViewById(R.id.iconImageView);
             TextView appBarTitle = findViewById(R.id.appBarTitle);
@@ -53,7 +51,7 @@ public class TheoryActivity extends AppCompatActivity {
             homeText.setTextColor(Color.WHITE);
 
             StringBuilder sb = new StringBuilder();
-            Topic topic = reasoning.getTopics().get(currentPosition);
+            Topic topic = TopicTheories.getTopicsTheories().get(currentPosition);
 
             if (topic != null) {
                 sb.append(topic.getTheory()).append(System.lineSeparator());

@@ -2,22 +2,19 @@ package com.rasona.app.activities;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.rasona.app.R;
-import com.rasona.app.models.input.MathematicalReasoning;
 import com.rasona.app.models.input.Problem;
 import com.rasona.app.models.input.ProblemType;
 import com.rasona.app.models.input.Topic;
 import com.rasona.app.models.output.ProblemGenerated;
 import com.rasona.app.utils.DialogAlert;
-import com.rasona.app.utils.FileUtils;
+import com.rasona.app.utils.topic.TopicProblems;
 import com.rasona.app.utils.billing.BillingManager;
 import com.rasona.app.utils.problem.ProblemGenerator;
 import com.rasona.app.managers.ButtonManager;
@@ -30,7 +27,6 @@ import java.util.List;
 
 public class ProblemsActivity extends AppCompatActivity {
 
-    private SharedPreferences sharedPreferences;
     private ProblemGenerated problemGenerated;
     private ButtonManager buttonManager;
     private UIManager uiManager;
@@ -43,7 +39,8 @@ public class ProblemsActivity extends AppCompatActivity {
     @Setter
     private int currentSelectedProblemTypeIndex = 0;
     private int currentPosition;
-    private MathematicalReasoning reasoning;
+
+    List<Topic> topicsProblems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,11 +50,10 @@ public class ProblemsActivity extends AppCompatActivity {
         billingManager = new BillingManager(this);
         buttonManager = new ButtonManager(this);
         uiManager = new UIManager(this);
-
+        topicsProblems = TopicProblems.getTopicsProblems();
         try {
             Intent intent = getIntent();
             currentPosition = intent.getIntExtra("currentPosition", 0);
-            reasoning = FileUtils.readJsonFromRaw(this, R.raw.mathematical_reasoning);
 
             initializeUIComponents();
             int[] difficulty = {0};
@@ -67,18 +63,18 @@ public class ProblemsActivity extends AppCompatActivity {
             difficultyTextView.setText(EASY);
 
             TextView problemTypeTextView = findViewById(R.id.text_view_select_problem_type);
-            if (!reasoning.getTopics().isEmpty() && !reasoning.getTopics().get(currentPosition).getProblemTypes().isEmpty()) {
-                problemTypeTextView.setText(reasoning.getTopics().get(currentPosition).getProblemTypes().get(0).getType());
+            if (!topicsProblems.isEmpty() && !topicsProblems.get(currentPosition).getProblemTypes().isEmpty()) {
+                problemTypeTextView.setText(topicsProblems.get(currentPosition).getProblemTypes().get(0).getType());
             }
 
-            setupProblemGeneration(reasoning, currentPosition, difficulty, problemType);
+            setupProblemGeneration(currentPosition, difficulty, problemType);
 
             LinearLayout btnSelectDifficulty = findViewById(R.id.btn_select_difficulty);
             btnSelectDifficulty.setOnClickListener(v -> {
                 try {
                     List<String> difficultyOptions = Arrays.asList(EASY, NORMAL, HARD);
                     DialogAlert.showSelectorDifficultyDialog(this, getString(R.string.label_difficulty), difficultyOptions,
-                            (TextView) findViewById(R.id.text_view_select_difficulty), 0, difficulty, new int[]{currentSelectedDifficultyIndex}, new int[]{currentSelectedProblemTypeIndex});
+                            findViewById(R.id.text_view_select_difficulty), 0, difficulty, new int[]{currentSelectedDifficultyIndex}, new int[]{currentSelectedProblemTypeIndex});
                 } catch (Exception e) {
                     Log.e("ProblemsActivity", "Error showing difficulty selector dialog", e);
                     Toast.makeText(this, "Failed to open difficulty selection.", Toast.LENGTH_SHORT).show();
@@ -88,14 +84,14 @@ public class ProblemsActivity extends AppCompatActivity {
             LinearLayout btnSelectProblemType = findViewById(R.id.btn_select_problem_type);
             btnSelectProblemType.setOnClickListener(v -> {
                 try {
-                    Topic topic = reasoning.getTopics().get(currentPosition);
+                    Topic topic = topicsProblems.get(currentPosition);
                     List<String> problemTypeOptions = new ArrayList<>();
                     for (ProblemType type : topic.getProblemTypes()) {
                         problemTypeOptions.add(type.getType());
                     }
 
                     DialogAlert.showSelectorProblemTypeDialog(this, getString(R.string.label_problem_type), problemTypeOptions,
-                            (TextView) findViewById(R.id.text_view_select_problem_type), 0, problemType, new int[]{currentSelectedDifficultyIndex}, new int[]{currentSelectedProblemTypeIndex});
+                            findViewById(R.id.text_view_select_problem_type), 0, problemType, new int[]{currentSelectedDifficultyIndex}, new int[]{currentSelectedProblemTypeIndex});
                 } catch (Exception e) {
                     Log.e("ProblemsActivity", "Error showing problem type selector dialog", e);
                     Toast.makeText(this, "Failed to open problem type selection.", Toast.LENGTH_SHORT).show();
@@ -119,10 +115,10 @@ public class ProblemsActivity extends AppCompatActivity {
         }
     }
 
-    private void setupProblemGeneration(MathematicalReasoning reasoning, int currentPosition, int[] difficulty, int[] problemType) {
+    private void setupProblemGeneration(int currentPosition, int[] difficulty, int[] problemType) {
         try {
             ProblemGenerator problemGenerator = new ProblemGenerator();
-            Topic topic = reasoning.getTopics().get(currentPosition);
+            Topic topic = topicsProblems.get(currentPosition);
             ProblemType selectedProblemType = topic.getProblemTypes().get(problemType[0]);
             List<Problem> problemsMatchingDifficulty = new ArrayList<>();
             for (Problem problem : selectedProblemType.getProblems()) {
@@ -163,50 +159,41 @@ public class ProblemsActivity extends AppCompatActivity {
         LinearLayout btnPremium = findViewById(R.id.btn_premium);
         LinearLayout btnShare = findViewById(R.id.btn_share);
 
-        btnHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    Intent intent = new Intent(ProblemsActivity.this, HomeActivity.class);
-                    ActivityOptions options = ActivityOptions.makeCustomAnimation(
-                            ProblemsActivity.this,
-                            R.anim.slide_in_left,
-                            R.anim.slide_out_right
-                    );
-                    startActivity(intent, options.toBundle());
-                } catch (Exception e) {
-                    Log.e("ProblemsActivity", "Error navigating to HomeActivity", e);
-                    Toast.makeText(ProblemsActivity.this, "Navigation failed.", Toast.LENGTH_SHORT).show();
-                }
+        btnHome.setOnClickListener(v -> {
+            try {
+                Intent intent = new Intent(ProblemsActivity.this, HomeActivity.class);
+                ActivityOptions options = ActivityOptions.makeCustomAnimation(
+                        ProblemsActivity.this,
+                        R.anim.slide_in_left,
+                        R.anim.slide_out_right
+                );
+                startActivity(intent, options.toBundle());
+            } catch (Exception e) {
+                Log.e("ProblemsActivity", "Error navigating to HomeActivity", e);
+                Toast.makeText(ProblemsActivity.this, "Navigation failed.", Toast.LENGTH_SHORT).show();
             }
         });
 
-        btnPremium.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    billingManager.startSubscription(ProblemsActivity.this);
-                } catch (Exception e) {
-                    Log.e("BillingError", "Subscription process encountered an error.", e);
-                    Toast.makeText(ProblemsActivity.this, "Subscription is not available at the moment.", Toast.LENGTH_SHORT).show();
-                }
+        btnPremium.setOnClickListener(v -> {
+            try {
+                billingManager.startSubscription(ProblemsActivity.this);
+            } catch (Exception e) {
+                Log.e("BillingError", "Subscription process encountered an error.", e);
+                Toast.makeText(ProblemsActivity.this, "Subscription is not available at the moment.", Toast.LENGTH_SHORT).show();
             }
         });
 
-        btnShare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    String shareMessage = "Boost your math skills with this interesting app! Check it out: https://play.google.com/store/apps/details?id=" + getPackageName();
-                    Intent shareIntent = new Intent();
-                    shareIntent.setAction(Intent.ACTION_SEND);
-                    shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
-                    shareIntent.setType("text/plain");
-                    startActivity(Intent.createChooser(shareIntent, "Choose how to share"));
-                } catch (Exception e) {
-                    Log.e("ProblemsActivity", "Error during sharing", e);
-                    Toast.makeText(ProblemsActivity.this, "Sharing failed.", Toast.LENGTH_SHORT).show();
-                }
+        btnShare.setOnClickListener(v -> {
+            try {
+                String shareMessage = "Boost your math skills with this interesting app! Check it out: https://play.google.com/store/apps/details?id=" + getPackageName();
+                Intent shareIntent = new Intent();
+                shareIntent.setAction(Intent.ACTION_SEND);
+                shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
+                shareIntent.setType("text/plain");
+                startActivity(Intent.createChooser(shareIntent, "Choose how to share"));
+            } catch (Exception e) {
+                Log.e("ProblemsActivity", "Error during sharing", e);
+                Toast.makeText(ProblemsActivity.this, "Sharing failed.", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -214,7 +201,7 @@ public class ProblemsActivity extends AppCompatActivity {
     public ProblemGenerated regenerateProblem(int currentPosition, int[] difficulty, int[] problemType) {
         try {
             ProblemGenerator problemGenerator = new ProblemGenerator();
-            Topic topic = reasoning.getTopics().get(currentPosition);
+            Topic topic = topicsProblems.get(currentPosition);
             ProblemType selectedProblemType = topic.getProblemTypes().get(problemType[0]);
             List<Problem> problemsMatchingDifficulty = new ArrayList<>();
             for (Problem problem : selectedProblemType.getProblems()) {

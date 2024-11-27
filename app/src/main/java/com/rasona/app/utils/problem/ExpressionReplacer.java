@@ -29,7 +29,7 @@ public class ExpressionReplacer {
                     input = input.replace("#{" + expression + "}", evaluatedResult);
                 } catch (Exception e) {
                     System.err.println("Error evaluating expression: " + matcher.group(1) + ". Message: " + e.getMessage());
-                    input = input.replace("#{" + matcher.group(1) + "}", "0.0"); // Default replacement for failed expressions
+                    input = input.replace("#{" + matcher.group(1) + "}", "0"); // Default replacement for failed expressions
                 }
             }
 

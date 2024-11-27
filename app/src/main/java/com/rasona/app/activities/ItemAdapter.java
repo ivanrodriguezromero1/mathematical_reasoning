@@ -21,7 +21,7 @@ import java.util.List;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
-    private static final int NUM_ITEMS_RESTRICTED = 6;
+    private static final int NUM_ITEMS_RESTRICTED = 0;
     private final List<String> titles;
     private final List<Integer> iconsLeft;
     private final int[] iconsRight1;

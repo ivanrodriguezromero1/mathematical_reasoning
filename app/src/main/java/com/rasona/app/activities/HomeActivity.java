@@ -12,9 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.rasona.app.R;
-import com.rasona.app.models.input.MathematicalReasoning;
-import com.rasona.app.utils.FileUtils;
-import com.rasona.app.utils.TopicUtils;
+import com.rasona.app.utils.topic.TopicUtils;
 import com.rasona.app.utils.billing.BillingManager;
 
 import java.util.ArrayList;
@@ -42,14 +40,13 @@ public class HomeActivity extends AppCompatActivity {
         }
 
         try {
-            MathematicalReasoning reasoning = FileUtils.readJsonFromRaw(this, R.raw.mathematical_reasoning);
             RecyclerView recyclerView = findViewById(R.id.recyclerView);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
             recyclerView.setVerticalScrollBarEnabled(true);
             recyclerView.setScrollBarFadeDuration(0);
 
-            Map<String, Integer> topicMap = TopicUtils.createTopicMap(reasoning);
+            Map<String, Integer> topicMap = TopicUtils.getTopicsIconsResources();
 
             int[] itemIconsRight1 = new int[topicMap.size()];
             int[] itemIconsRight2 = new int[topicMap.size()];
